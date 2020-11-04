@@ -60,7 +60,7 @@ Additionally, custom scripts can be found in the Scripts folder.
 
 ## Version databases
 ##################################
-1.KOhmms: downloaded 90419 from [here](https://www.genome.jp/tools/kofamkoala/)
+1. KOhmms: downloaded 90419 from [here](https://www.genome.jp/tools/kofamkoala/)
 2. TIGRFAMs_15.0_HMM.LIB: downloaded Sept 2018
 3. PFams: RELEASE 31.0, downloaded Sept 2018
 4. CAZymes: dbCAN-HMMdb-V7, dbCAN v2 on 21 Sept 2018
