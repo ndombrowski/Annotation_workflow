@@ -1,0 +1,1163 @@
+locus_tag	ftype	length_bp	gene	EC_number	COG	product
+CALJACFG_00010	CDS	1809		3.6.4.12	COG1204	ATP-dependent DNA helicase Hel308
+CALJACFG_00010	gene	1809				
+CALJACFG_00020	CDS	522		5.2.1.8	COG1047	Putative FKBP-type peptidyl-prolyl cis-trans isomerase
+CALJACFG_00020	gene	522				
+CALJACFG_00030	CDS	459			COG1371	Protein archease
+CALJACFG_00030	gene	459				
+CALJACFG_00040	CDS	921		2.1.1.218	COG2419	tRNA (adenine(9)-N1)-methyltransferase
+CALJACFG_00040	gene	921				
+CALJACFG_00050	CDS	411	ogt	2.1.1.63	COG0350	Methylated-DNA--protein-cysteine methyltransferase
+CALJACFG_00050	gene	411	ogt			
+CALJACFG_00060	CDS	534				hypothetical protein
+CALJACFG_00060	gene	534				
+CALJACFG_00070	CDS	171			COG2126	50S ribosomal protein L37e
+CALJACFG_00070	gene	171				
+CALJACFG_00080	CDS	1242	miaB	2.8.4.3		tRNA-2-methylthio-N(6)-dimethylallyladenosine synthase
+CALJACFG_00080	gene	1242	miaB			
+CALJACFG_00090	CDS	297				hypothetical protein
+CALJACFG_00090	gene	297				
+CALJACFG_00100	CDS	1026				hypothetical protein
+CALJACFG_00100	gene	1026				
+CALJACFG_00110	CDS	330	sorA	1.15.1.2	COG2033	Superoxide reductase
+CALJACFG_00110	gene	330	sorA			
+CALJACFG_00120	CDS	1041				hypothetical protein
+CALJACFG_00120	gene	1041				
+CALJACFG_00130	CDS	1041	pqqE			Coenzyme PQQ synthesis protein E
+CALJACFG_00130	gene	1041	pqqE			
+CALJACFG_00140	CDS	948				hypothetical protein
+CALJACFG_00140	gene	948				
+CALJACFG_00150	CDS	1059	thyX	2.1.1.148	COG1351	Flavin-dependent thymidylate synthase
+CALJACFG_00150	gene	1059	thyX			
+CALJACFG_00160	CDS	213				hypothetical protein
+CALJACFG_00160	gene	213				
+	repeat_region	933				
+CALJACFG_00170	CDS	258	cas2	3.1.-.-	COG1343	CRISPR-associated endoribonuclease Cas2
+CALJACFG_00170	gene	258	cas2			
+CALJACFG_00180	CDS	1002	cas1	3.1.-.-	COG1518	CRISPR-associated endonuclease Cas1
+CALJACFG_00180	gene	1002	cas1			
+CALJACFG_00190	CDS	1278				hypothetical protein
+CALJACFG_00190	gene	1278				
+CALJACFG_00200	CDS	969				hypothetical protein
+CALJACFG_00200	gene	969				
+CALJACFG_00210	CDS	705				hypothetical protein
+CALJACFG_00210	gene	705				
+CALJACFG_00220	CDS	2268	cas3	3.1.-.-	COG1203	CRISPR-associated nuclease/helicase Cas3
+CALJACFG_00220	gene	2268	cas3			
+CALJACFG_00230	CDS	507				hypothetical protein
+CALJACFG_00230	gene	507				
+CALJACFG_00240	CDS	258				hypothetical protein
+CALJACFG_00240	gene	258				
+CALJACFG_00250	CDS	894				hypothetical protein
+CALJACFG_00250	gene	894				
+CALJACFG_00260	CDS	1098	sqr	1.8.5.4		Sulfide-quinone reductase
+CALJACFG_00260	gene	1098	sqr			
+CALJACFG_00270	CDS	774	glmU		COG1208	Bifunctional protein GlmU
+CALJACFG_00270	gene	774	glmU			
+CALJACFG_00280	CDS	309				hypothetical protein
+CALJACFG_00280	gene	309				
+CALJACFG_00290	CDS	945				hypothetical protein
+CALJACFG_00290	gene	945				
+CALJACFG_00300	CDS	1095				hypothetical protein
+CALJACFG_00300	gene	1095				
+CALJACFG_00310	CDS	516				hypothetical protein
+CALJACFG_00310	gene	516				
+CALJACFG_00320	CDS	636				hypothetical protein
+CALJACFG_00320	gene	636				
+CALJACFG_00330	CDS	513				hypothetical protein
+CALJACFG_00330	gene	513				
+CALJACFG_00340	CDS	1152				hypothetical protein
+CALJACFG_00340	gene	1152				
+CALJACFG_00350	CDS	1788				hypothetical protein
+CALJACFG_00350	gene	1788				
+CALJACFG_00360	CDS	636				hypothetical protein
+CALJACFG_00360	gene	636				
+CALJACFG_00370	CDS	1401				hypothetical protein
+CALJACFG_00370	gene	1401				
+CALJACFG_00380	CDS	285				hypothetical protein
+CALJACFG_00380	gene	285				
+CALJACFG_00390	CDS	261			COG1997	50S ribosomal protein L37Ae
+CALJACFG_00390	gene	261				
+CALJACFG_00400	CDS	201			COG1958	Putative snRNP Sm-like protein
+CALJACFG_00400	gene	201				
+CALJACFG_00410	CDS	654	tbp		COG2101	TATA-box-binding protein
+CALJACFG_00410	gene	654	tbp			
+CALJACFG_00420	CDS	648				hypothetical protein
+CALJACFG_00420	gene	648				
+CALJACFG_00430	CDS	828				hypothetical protein
+CALJACFG_00430	gene	828				
+CALJACFG_00440	CDS	1452		3.4.17.19	COG2317	Thermostable carboxypeptidase 1
+CALJACFG_00440	gene	1452				
+CALJACFG_00450	CDS	255				hypothetical protein
+CALJACFG_00450	gene	255				
+CALJACFG_00460	CDS	573			COG0533	putative bifunctional tRNA threonylcarbamoyladenosine biosynthesis protein
+CALJACFG_00460	gene	573				
+CALJACFG_00470	CDS	1227	rgy_1		COG1110	Reverse gyrase
+CALJACFG_00470	gene	1227	rgy_1			
+CALJACFG_00480	CDS	579				hypothetical protein
+CALJACFG_00480	gene	579				
+CALJACFG_00490	CDS	798				hypothetical protein
+CALJACFG_00490	gene	798				
+CALJACFG_00500	CDS	1623				hypothetical protein
+CALJACFG_00500	gene	1623				
+CALJACFG_00510	CDS	693				hypothetical protein
+CALJACFG_00510	gene	693				
+CALJACFG_00520	CDS	642	shyC	1.12.98.4	COG0543	Sulfhydrogenase 2 subunit gamma
+CALJACFG_00520	gene	642	shyC			
+CALJACFG_00530	CDS	1077	prf1		COG1503	Peptide chain release factor subunit 1
+CALJACFG_00530	gene	1077	prf1			
+CALJACFG_00540	CDS	1344		2.1.1.35	COG2265	tRNA (uracil(54)-C(5))-methyltransferase
+CALJACFG_00540	gene	1344				
+CALJACFG_00550	CDS	411				hypothetical protein
+CALJACFG_00550	gene	411				
+CALJACFG_00560	CDS	1374	cysS	6.1.1.16	COG0215	Cysteine--tRNA ligase
+CALJACFG_00560	gene	1374	cysS			
+CALJACFG_00570	CDS	1035	cdc6		COG1474	ORC1-type DNA replication protein
+CALJACFG_00570	gene	1035	cdc6			
+CALJACFG_00580	CDS	546				hypothetical protein
+CALJACFG_00580	gene	546				
+CALJACFG_00590	CDS	432			COG0048	30S ribosomal protein S12
+CALJACFG_00590	gene	432				
+CALJACFG_00600	CDS	1794			COG1855	putative KH and PIN-domain containing protein
+CALJACFG_00600	gene	1794				
+CALJACFG_00610	CDS	540				hypothetical protein
+CALJACFG_00610	gene	540				
+CALJACFG_00620	CDS	1077				hypothetical protein
+CALJACFG_00620	gene	1077				
+CALJACFG_00630	CDS	867				hypothetical protein
+CALJACFG_00630	gene	867				
+CALJACFG_00640	CDS	1614				hypothetical protein
+CALJACFG_00640	gene	1614				
+CALJACFG_00650	CDS	603	rnhB	3.1.26.4	COG0164	Ribonuclease HII
+CALJACFG_00650	gene	603	rnhB			
+CALJACFG_00660	CDS	951	rnz	3.1.26.11	COG1234	Ribonuclease Z
+CALJACFG_00660	gene	951	rnz			
+CALJACFG_00670	CDS	237			COG0089	50S ribosomal protein L23
+CALJACFG_00670	gene	237				
+CALJACFG_00680	CDS	216				hypothetical protein
+CALJACFG_00680	gene	216				
+CALJACFG_00690	CDS	621				hypothetical protein
+CALJACFG_00690	gene	621				
+CALJACFG_00700	CDS	756				hypothetical protein
+CALJACFG_00700	gene	756				
+CALJACFG_00710	CDS	2010	pol_1	2.7.7.7	COG0417	DNA polymerase
+CALJACFG_00710	gene	2010	pol_1			
+CALJACFG_00720	CDS	393			COG0100	30S ribosomal protein S11
+CALJACFG_00720	gene	393				
+CALJACFG_00730	CDS	798				hypothetical protein
+CALJACFG_00730	gene	798				
+CALJACFG_00740	CDS	681				hypothetical protein
+CALJACFG_00740	gene	681				
+CALJACFG_00750	CDS	504				hypothetical protein
+CALJACFG_00750	gene	504				
+CALJACFG_00760	CDS	570				hypothetical protein
+CALJACFG_00760	gene	570				
+CALJACFG_00770	CDS	165				hypothetical protein
+CALJACFG_00770	gene	165				
+CALJACFG_00780	CDS	579	btuD_1	3.6.3.33		Vitamin B12 import ATP-binding protein BtuD
+CALJACFG_00780	gene	579	btuD_1			
+CALJACFG_00790	CDS	588			COG0256	50S ribosomal protein L18
+CALJACFG_00790	gene	588				
+CALJACFG_00800	CDS	1848	rnj_1	3.1.-.-	COG0595	Ribonuclease J
+CALJACFG_00800	gene	1848	rnj_1			
+CALJACFG_00810	CDS	1215	gdhA	1.4.1.3		Glutamate dehydrogenase
+CALJACFG_00810	gene	1215	gdhA			
+CALJACFG_00820	CDS	810	nfo	3.1.21.2		endonuclease 4
+CALJACFG_00820	gene	810	nfo			
+CALJACFG_00830	CDS	1434	rtcB	6.5.1.-	COG1690	tRNA-splicing ligase RtcB
+CALJACFG_00830	gene	1434	rtcB			
+CALJACFG_00840	CDS	255				hypothetical protein
+CALJACFG_00840	gene	255				
+CALJACFG_00850	CDS	942				hypothetical protein
+CALJACFG_00850	gene	942				
+CALJACFG_00860	CDS	1209				hypothetical protein
+CALJACFG_00860	gene	1209				
+CALJACFG_00870	CDS	603				hypothetical protein
+CALJACFG_00870	gene	603				
+CALJACFG_00880	CDS	1302	tuf		COG5256	Elongation factor 1-alpha
+CALJACFG_00880	gene	1302	tuf			
+CALJACFG_00890	CDS	330			COG0051	30S ribosomal protein S10
+CALJACFG_00890	gene	330				
+CALJACFG_00900	CDS	1059				hypothetical protein
+CALJACFG_00900	gene	1059				
+CALJACFG_00910	CDS	528				hypothetical protein
+CALJACFG_00910	gene	528				
+CALJACFG_00920	CDS	1494				hypothetical protein
+CALJACFG_00920	gene	1494				
+CALJACFG_00930	CDS	1020	fen	3.1.-.-	COG0258	Flap endonuclease 1
+CALJACFG_00930	gene	1020	fen			
+CALJACFG_00940	CDS	1788	lysS	6.1.1.6	COG1384	Lysine--tRNA ligase
+CALJACFG_00940	gene	1788	lysS			
+CALJACFG_00950	CDS	693				hypothetical protein
+CALJACFG_00950	gene	693				
+CALJACFG_00960	CDS	1182				hypothetical protein
+CALJACFG_00960	gene	1182				
+CALJACFG_00970	CDS	855			COG0244	50S ribosomal protein L10
+CALJACFG_00970	gene	855				
+CALJACFG_00980	CDS	402			COG0093	50S ribosomal protein L14
+CALJACFG_00980	gene	402				
+CALJACFG_00990	CDS	267				hypothetical protein
+CALJACFG_00990	gene	267				
+CALJACFG_01000	CDS	621				hypothetical protein
+CALJACFG_01000	gene	621				
+CALJACFG_01010	CDS	510	rpl5		COG0094	50S ribosomal protein L5
+CALJACFG_01010	gene	510	rpl5			
+CALJACFG_01020	CDS	558				hypothetical protein
+CALJACFG_01020	gene	558				
+CALJACFG_01030	CDS	831	tmcA_1	2.3.1.193		tRNA(Met) cytidine acetyltransferase TmcA
+CALJACFG_01030	gene	831	tmcA_1			
+CALJACFG_01040	CDS	654				hypothetical protein
+CALJACFG_01040	gene	654				
+CALJACFG_01050	CDS	831	trmBL2		COG1378	Putative HTH-type transcriptional regulator TrmBL2
+CALJACFG_01050	gene	831	trmBL2			
+CALJACFG_01060	CDS	777				hypothetical protein
+CALJACFG_01060	gene	777				
+CALJACFG_01070	CDS	915				hypothetical protein
+CALJACFG_01070	gene	915				
+CALJACFG_01080	CDS	483			COG0080	50S ribosomal protein L11
+CALJACFG_01080	gene	483				
+CALJACFG_01090	CDS	1713	atpA	3.6.3.14	COG1155	V-type ATP synthase alpha chain
+CALJACFG_01090	gene	1713	atpA			
+CALJACFG_01100	CDS	1215	hisS	6.1.1.21	COG0124	Histidine--tRNA ligase
+CALJACFG_01100	gene	1215	hisS			
+CALJACFG_01110	CDS	981				hypothetical protein
+CALJACFG_01110	gene	981				
+CALJACFG_01120	CDS	381	rps6e		COG2125	30S ribosomal protein S6e
+CALJACFG_01120	gene	381	rps6e			
+CALJACFG_01130	CDS	1113				hypothetical protein
+CALJACFG_01130	gene	1113				
+CALJACFG_01140	CDS	918	pelA	3.1.-.-	COG1537	Protein pelota 
+CALJACFG_01140	gene	918	pelA			
+CALJACFG_01150	CDS	1059	trm1	2.1.1.216	COG1867	tRNA (guanine(26)-N(2))-dimethyltransferase
+CALJACFG_01150	gene	1059	trm1			
+CALJACFG_01160	CDS	1263				hypothetical protein
+CALJACFG_01160	gene	1263				
+CALJACFG_01170	CDS	657			COG2123	Exosome complex component Rrp42
+CALJACFG_01170	gene	657				
+CALJACFG_01180	CDS	984	der			GTPase Der
+CALJACFG_01180	gene	984	der			
+CALJACFG_01190	CDS	441			COG1325	RNA-binding protein
+CALJACFG_01190	gene	441				
+CALJACFG_01200	CDS	1047				Deoxyguanosinetriphosphate triphosphohydrolase-like protein
+CALJACFG_01200	gene	1047				
+CALJACFG_01210	CDS	1134	trpS	6.1.1.2	COG0180	Tryptophan--tRNA ligase
+CALJACFG_01210	gene	1134	trpS			
+CALJACFG_01220	CDS	300				hypothetical protein
+CALJACFG_01220	gene	300				
+CALJACFG_01230	CDS	1014				hypothetical protein
+CALJACFG_01230	gene	1014				
+CALJACFG_01240	CDS	459		2.7.4.3	COG1936	Putative adenylate kinase
+CALJACFG_01240	gene	459				
+CALJACFG_01250	CDS	735			COG0489	Iron-sulfur cluster carrier protein
+CALJACFG_01250	gene	735				
+CALJACFG_01260	CDS	750				hypothetical protein
+CALJACFG_01260	gene	750				
+CALJACFG_01270	CDS	366				hypothetical protein
+CALJACFG_01270	gene	366				
+CALJACFG_01280	CDS	501				hypothetical protein
+CALJACFG_01280	gene	501				
+CALJACFG_01290	CDS	762	rbn	3.1.26.11		Ribonuclease BN
+CALJACFG_01290	gene	762	rbn			
+CALJACFG_01300	CDS	1233	tgtA_1	2.4.2.48	COG0343	tRNA-guanine(15) transglycosylase
+CALJACFG_01300	gene	1233	tgtA_1			
+CALJACFG_01310	CDS	699	flpA	2.1.1.-	COG1889	Fibrillarin-like rRNA/tRNA 2'-O-methyltransferase
+CALJACFG_01310	gene	699	flpA			
+CALJACFG_01320	CDS	1179	gatD	6.3.5.-	COG0252	Glutamyl-tRNA(Gln) amidotransferase subunit D
+CALJACFG_01320	gene	1179	gatD			
+CALJACFG_01330	CDS	384				hypothetical protein
+CALJACFG_01330	gene	384				
+CALJACFG_01340	CDS	1902				hypothetical protein
+CALJACFG_01340	gene	1902				
+CALJACFG_01350	CDS	1023				hypothetical protein
+CALJACFG_01350	gene	1023				
+CALJACFG_01360	CDS	330	eIF1A		COG0361	Translation initiation factor 1A
+CALJACFG_01360	gene	330	eIF1A			
+CALJACFG_01370	CDS	873				hypothetical protein
+CALJACFG_01370	gene	873				
+CALJACFG_01380	CDS	558				hypothetical protein
+CALJACFG_01380	gene	558				
+CALJACFG_01390	CDS	1068	ftsZ1		COG0206	Cell division protein FtsZ 1
+CALJACFG_01390	gene	1068	ftsZ1			
+CALJACFG_01400	CDS	561				hypothetical protein
+CALJACFG_01400	gene	561				
+CALJACFG_01410	CDS	861				hypothetical protein
+CALJACFG_01410	gene	861				
+CALJACFG_01420	CDS	1491				hypothetical protein
+CALJACFG_01420	gene	1491				
+CALJACFG_01430	CDS	753				hypothetical protein
+CALJACFG_01430	gene	753				
+CALJACFG_01440	CDS	1710				hypothetical protein
+CALJACFG_01440	gene	1710				
+CALJACFG_01450	CDS	1098				hypothetical protein
+CALJACFG_01450	gene	1098				
+CALJACFG_01460	CDS	699				hypothetical protein
+CALJACFG_01460	gene	699				
+CALJACFG_01470	CDS	879				hypothetical protein
+CALJACFG_01470	gene	879				
+CALJACFG_01480	CDS	1623	thsA			Thermosome subunit alpha
+CALJACFG_01480	gene	1623	thsA			
+CALJACFG_01490	CDS	1704	top6B	5.99.1.3	COG1389	Type 2 DNA topoisomerase 6 subunit B
+CALJACFG_01490	gene	1704	top6B			
+CALJACFG_01500	CDS	447				hypothetical protein
+CALJACFG_01500	gene	447				
+CALJACFG_01510	CDS	807	rpl4		COG0088	50S ribosomal protein L4
+CALJACFG_01510	gene	807	rpl4			
+CALJACFG_01520	CDS	654				hypothetical protein
+CALJACFG_01520	gene	654				
+CALJACFG_01530	CDS	381				hypothetical protein
+CALJACFG_01530	gene	381				
+CALJACFG_01540	CDS	1335	rimO	2.8.4.4		Ribosomal protein S12 methylthiotransferase RimO
+CALJACFG_01540	gene	1335	rimO			
+CALJACFG_01550	CDS	294			COG2118	DNA-binding protein
+CALJACFG_01550	gene	294				
+CALJACFG_01560	CDS	543	adkA	2.7.4.3	COG2019	Adenylate kinase
+CALJACFG_01560	gene	543	adkA			
+CALJACFG_01570	CDS	300				hypothetical protein
+CALJACFG_01570	gene	300				
+CALJACFG_01580	CDS	1179	cca	2.7.7.72		CCA-adding enzyme
+CALJACFG_01580	gene	1179	cca			
+CALJACFG_01590	CDS	282				hypothetical protein
+CALJACFG_01590	gene	282				
+CALJACFG_01600	CDS	363				hypothetical protein
+CALJACFG_01600	gene	363				
+CALJACFG_01610	CDS	2886				hypothetical protein
+CALJACFG_01610	gene	2886				
+CALJACFG_01620	CDS	1812	rpoB1	2.7.7.6		DNA-directed RNA polymerase subunit B'
+CALJACFG_01620	gene	1812	rpoB1			
+CALJACFG_01630	CDS	960			COG0370	Fe(2+) transporter FeoB
+CALJACFG_01630	gene	960				
+CALJACFG_01640	CDS	582				hypothetical protein
+CALJACFG_01640	gene	582				
+CALJACFG_01650	CDS	144				hypothetical protein
+CALJACFG_01650	gene	144				
+CALJACFG_01660	CDS	540				hypothetical protein
+CALJACFG_01660	gene	540				
+CALJACFG_01670	CDS	972				hypothetical protein
+CALJACFG_01670	gene	972				
+CALJACFG_01680	CDS	984				hypothetical protein
+CALJACFG_01680	gene	984				
+CALJACFG_01690	CDS	168				hypothetical protein
+CALJACFG_01690	gene	168				
+CALJACFG_01700	CDS	306				hypothetical protein
+CALJACFG_01700	gene	306				
+CALJACFG_01710	CDS	876				hypothetical protein
+CALJACFG_01710	gene	876				
+CALJACFG_01720	CDS	204				hypothetical protein
+CALJACFG_01720	gene	204				
+CALJACFG_01730	CDS	522				hypothetical protein
+CALJACFG_01730	gene	522				
+CALJACFG_01740	CDS	597	atpD		COG1394	V-type ATP synthase subunit D
+CALJACFG_01740	gene	597	atpD			
+CALJACFG_01750	CDS	1431	secY		COG0201	Protein translocase subunit SecY
+CALJACFG_01750	gene	1431	secY			
+CALJACFG_01760	CDS	969	rfcS_1		COG0470	Replication factor C small subunit
+CALJACFG_01760	gene	969	rfcS_1			
+CALJACFG_01770	CDS	1857			COG1372	putative protein
+CALJACFG_01770	gene	1857				
+CALJACFG_01780	CDS	1047				hypothetical protein
+CALJACFG_01780	gene	1047				
+CALJACFG_01790	CDS	807	aglI	2.4.1.-	COG0463	Glycosyltransferase AglI
+CALJACFG_01790	gene	807	aglI			
+CALJACFG_01800	CDS	1470	rpoB2	2.7.7.6		DNA-directed RNA polymerase subunit B''
+CALJACFG_01800	gene	1470	rpoB2			
+CALJACFG_01810	CDS	1146				hypothetical protein
+CALJACFG_01810	gene	1146				
+CALJACFG_01820	CDS	771				hypothetical protein
+CALJACFG_01820	gene	771				
+CALJACFG_01830	CDS	186			COG1998	30S ribosomal protein S27ae
+CALJACFG_01830	gene	186				
+CALJACFG_01840	CDS	1902	thrS	6.1.1.3	COG0441	Threonine--tRNA ligase
+CALJACFG_01840	gene	1902	thrS			
+CALJACFG_01850	CDS	345			COG2163	50S ribosomal protein L14e
+CALJACFG_01850	gene	345				
+CALJACFG_01860	CDS	261			COG1911	50S ribosomal protein L30e
+CALJACFG_01860	gene	261				
+CALJACFG_01870	CDS	411				hypothetical protein
+CALJACFG_01870	gene	411				
+CALJACFG_01880	CDS	291	rpoL	2.7.7.6	COG1761	DNA-directed RNA polymerase subunit L
+CALJACFG_01880	gene	291	rpoL			
+CALJACFG_01890	CDS	573			COG1632	50S ribosomal protein L15e
+CALJACFG_01890	gene	573				
+CALJACFG_01900	CDS	327			COG1631	50S ribosomal protein L44e
+CALJACFG_01900	gene	327				
+CALJACFG_01910	CDS	597	rrp4		COG1097	Exosome complex component Rrp4
+CALJACFG_01910	gene	597	rrp4			
+CALJACFG_01920	CDS	1350	gatB	6.3.5.-	COG0064	Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransferase subunit B
+CALJACFG_01920	gene	1350	gatB			
+CALJACFG_01930	CDS	1110	pan		COG1222	Proteasome-activating nucleotidase
+CALJACFG_01930	gene	1110	pan			
+CALJACFG_01940	CDS	321				hypothetical protein
+CALJACFG_01940	gene	321				
+CALJACFG_01950	CDS	480			COG2238	30S ribosomal protein S19e
+CALJACFG_01950	gene	480				
+CALJACFG_01960	CDS	879	ilvE	2.6.1.42	COG0115	Putative branched-chain-amino-acid aminotransferase
+CALJACFG_01960	gene	879	ilvE			
+CALJACFG_01970	CDS	1065				hypothetical protein
+CALJACFG_01970	gene	1065				
+CALJACFG_01980	CDS	669	ahpC	1.11.1.15	COG0450	Peroxiredoxin
+CALJACFG_01980	gene	669	ahpC			
+CALJACFG_01990	CDS	411				hypothetical protein
+CALJACFG_01990	gene	411				
+CALJACFG_02000	CDS	1776	pheA	4.2.1.51	COG0077	Prephenate dehydratase
+CALJACFG_02000	gene	1776	pheA			
+CALJACFG_02010	CDS	1167	gtf1	2.4.1.-		Glycosyltransferase Gtf1
+CALJACFG_02010	gene	1167	gtf1			
+CALJACFG_02020	CDS	306				hypothetical protein
+CALJACFG_02020	gene	306				
+CALJACFG_02030	CDS	411				hypothetical protein
+CALJACFG_02030	gene	411				
+CALJACFG_02040	CDS	1014			COG0668	Small-conductance mechanosensitive channel MscMJ
+CALJACFG_02040	gene	1014				
+CALJACFG_02050	CDS	1011				hypothetical protein
+CALJACFG_02050	gene	1011				
+CALJACFG_02060	CDS	732	rpa		COG1599	Replication factor A
+CALJACFG_02060	gene	732	rpa			
+CALJACFG_02070	CDS	543				hypothetical protein
+CALJACFG_02070	gene	543				
+CALJACFG_02080	CDS	309			COG2058	50S ribosomal protein L12
+CALJACFG_02080	gene	309				
+CALJACFG_02090	CDS	525			COG0091	50S ribosomal protein L22
+CALJACFG_02090	gene	525				
+CALJACFG_02100	CDS	591	psmB	3.4.25.1	COG0638	Proteasome subunit beta
+CALJACFG_02100	gene	591	psmB			
+CALJACFG_02110	CDS	465	endA	4.6.1.16	COG1676	tRNA-splicing endonuclease
+CALJACFG_02110	gene	465	endA			
+CALJACFG_02120	CDS	213	rpoK	2.7.7.6	COG1758	DNA-directed RNA polymerase subunit K
+CALJACFG_02120	gene	213	rpoK			
+CALJACFG_02130	CDS	429	truB_1	5.4.99.25	COG0130	putative tRNA pseudouridine synthase B
+CALJACFG_02130	gene	429	truB_1			
+CALJACFG_02140	CDS	1614	argS	6.1.1.19	COG0018	Arginine--tRNA ligase
+CALJACFG_02140	gene	1614	argS			
+CALJACFG_02150	CDS	489			COG0102	50S ribosomal protein L13
+CALJACFG_02150	gene	489				
+CALJACFG_02160	CDS	2136				hypothetical protein
+CALJACFG_02160	gene	2136				
+CALJACFG_02170	CDS	1614	proS_1	6.1.1.15	COG0442	Proline--tRNA ligase
+CALJACFG_02170	gene	1614	proS_1			
+CALJACFG_02180	CDS	417	nob1	3.1.-.-	COG1439	Endoribonuclease Nob1
+CALJACFG_02180	gene	417	nob1			
+CALJACFG_02190	CDS	1500	alaS_1	6.1.1.7	COG0013	Alanine--tRNA ligase
+CALJACFG_02190	gene	1500	alaS_1			
+CALJACFG_02200	CDS	567				hypothetical protein
+CALJACFG_02200	gene	567				
+CALJACFG_02210	CDS	264				hypothetical protein
+CALJACFG_02210	gene	264				
+CALJACFG_02220	CDS	1206				hypothetical protein
+CALJACFG_02220	gene	1206				
+CALJACFG_02230	CDS	675				hypothetical protein
+CALJACFG_02230	gene	675				
+CALJACFG_02240	CDS	273				hypothetical protein
+CALJACFG_02240	gene	273				
+CALJACFG_02250	CDS	210	atpP		COG0636	Membrane-associated ATPase C chain
+CALJACFG_02250	gene	210	atpP			
+CALJACFG_02260	CDS	501				hypothetical protein
+CALJACFG_02260	gene	501				
+CALJACFG_02270	CDS	198			COG2051	30S ribosomal protein S27e
+CALJACFG_02270	gene	198				
+CALJACFG_02280	CDS	267	ef1b		COG2092	Elongation factor 1-beta
+CALJACFG_02280	gene	267	ef1b			
+CALJACFG_02290	CDS	297				hypothetical protein
+CALJACFG_02290	gene	297				
+CALJACFG_02300	CDS	2007				hypothetical protein
+CALJACFG_02300	gene	2007				
+CALJACFG_02310	CDS	750		3.5.3.24	COG0010	N(1)-aminopropylagmatine ureohydrolase
+CALJACFG_02310	gene	750				
+CALJACFG_02320	CDS	135				hypothetical protein
+CALJACFG_02320	gene	135				
+CALJACFG_02330	CDS	414				hypothetical protein
+CALJACFG_02330	gene	414				
+CALJACFG_02340	CDS	789				hypothetical protein
+CALJACFG_02340	gene	789				
+CALJACFG_02350	CDS	891	dph2	2.5.1.108	COG1736	2-(3-amino-3-carboxypropyl)histidine synthase
+CALJACFG_02350	gene	891	dph2			
+CALJACFG_02360	CDS	234			COG0199	30S ribosomal protein S14 type Z
+CALJACFG_02360	gene	234				
+CALJACFG_02370	CDS	417	ptr2		COG1522	HTH-type transcriptional regulator Ptr2
+CALJACFG_02370	gene	417	ptr2			
+CALJACFG_02380	CDS	894		2.1.1.-	COG2520	tRNA (guanine(37)-N1)/4-demethylwyosine(37)-methyltransferase Taw22
+CALJACFG_02380	gene	894				
+CALJACFG_02390	CDS	3051	ileS_1	6.1.1.5	COG0060	Isoleucine--tRNA ligase
+CALJACFG_02390	gene	3051	ileS_1			
+CALJACFG_02400	CDS	198	spt4		COG2093	Transcription elongation factor Spt4
+CALJACFG_02400	gene	198	spt4			
+CALJACFG_02410	CDS	525				hypothetical protein
+CALJACFG_02410	gene	525				
+CALJACFG_02420	CDS	906				hypothetical protein
+CALJACFG_02420	gene	906				
+CALJACFG_02430	CDS	903	rfcS_2		COG0470	Replication factor C small subunit
+CALJACFG_02430	gene	903	rfcS_2			
+CALJACFG_02440	CDS	714				hypothetical protein
+CALJACFG_02440	gene	714				
+CALJACFG_02450	CDS	1011				hypothetical protein
+CALJACFG_02450	gene	1011				
+CALJACFG_02460	CDS	588				hypothetical protein
+CALJACFG_02460	gene	588				
+CALJACFG_02470	CDS	528	prmC	2.1.1.297		Release factor glutamine methyltransferase
+CALJACFG_02470	gene	528	prmC			
+CALJACFG_02480	CDS	2934	leuS	6.1.1.4	COG0495	Leucine--tRNA ligase
+CALJACFG_02480	gene	2934	leuS			
+CALJACFG_02490	CDS	1581	polB	2.7.7.7	COG1311	DNA polymerase II small subunit
+CALJACFG_02490	gene	1581	polB			
+CALJACFG_02500	CDS	579	rpl6		COG0097	50S ribosomal protein L6
+CALJACFG_02500	gene	579	rpl6			
+CALJACFG_02510	CDS	597	rps7		COG0049	30S ribosomal protein S7
+CALJACFG_02510	gene	597	rps7			
+CALJACFG_02520	CDS	663				hypothetical protein
+CALJACFG_02520	gene	663				
+CALJACFG_02530	CDS	813	gatE_1	6.3.5.-	COG2511	Glutamyl-tRNA(Gln) amidotransferase subunit E
+CALJACFG_02530	gene	813	gatE_1			
+CALJACFG_02540	CDS	348	pth	3.1.1.29	COG1990	Peptidyl-tRNA hydrolase
+CALJACFG_02540	gene	348	pth			
+CALJACFG_02550	CDS	651				hypothetical protein
+CALJACFG_02550	gene	651				
+CALJACFG_02560	CDS	543	rps4		COG0522	30S ribosomal protein S4
+CALJACFG_02560	gene	543	rps4			
+CALJACFG_02570	CDS	702		3.1.13.-	COG0689	Exosome complex component Rrp41
+CALJACFG_02570	gene	702				
+CALJACFG_02580	CDS	654				hypothetical protein
+CALJACFG_02580	gene	654				
+CALJACFG_02590	CDS	513				hypothetical protein
+CALJACFG_02590	gene	513				
+CALJACFG_02600	CDS	2256	ileS_2	6.1.1.5	COG0060	Isoleucine--tRNA ligase
+CALJACFG_02600	gene	2256	ileS_2			
+CALJACFG_02610	CDS	990				hypothetical protein
+CALJACFG_02610	gene	990				
+CALJACFG_02620	CDS	465				hypothetical protein
+CALJACFG_02620	gene	465				
+CALJACFG_02630	CDS	2361			COG0419	DNA double-strand break repair Rad50 ATPase
+CALJACFG_02630	gene	2361				
+CALJACFG_02640	CDS	549				hypothetical protein
+CALJACFG_02640	gene	549				
+CALJACFG_02650	CDS	423			COG0198	50S ribosomal protein L24
+CALJACFG_02650	gene	423				
+CALJACFG_02660	CDS	252				hypothetical protein
+CALJACFG_02660	gene	252				
+CALJACFG_02670	CDS	207				hypothetical protein
+CALJACFG_02670	gene	207				
+CALJACFG_02680	CDS	2061				hypothetical protein
+CALJACFG_02680	gene	2061				
+CALJACFG_02690	CDS	462				hypothetical protein
+CALJACFG_02690	gene	462				
+CALJACFG_02700	CDS	390				hypothetical protein
+CALJACFG_02700	gene	390				
+CALJACFG_02710	CDS	192	rpmC			50S ribosomal protein L29
+CALJACFG_02710	gene	192	rpmC			
+CALJACFG_02720	CDS	318			COG0023	Protein translation factor SUI1 
+CALJACFG_02720	gene	318				
+CALJACFG_02730	CDS	1251	atpB		COG1156	V-type ATP synthase beta chain
+CALJACFG_02730	gene	1251	atpB			
+CALJACFG_02740	CDS	6594				hypothetical protein
+CALJACFG_02740	gene	6594				
+CALJACFG_02750	CDS	588				hypothetical protein
+CALJACFG_02750	gene	588				
+CALJACFG_02760	CDS	1041				hypothetical protein
+CALJACFG_02760	gene	1041				
+CALJACFG_02770	CDS	882				hypothetical protein
+CALJACFG_02770	gene	882				
+CALJACFG_02780	CDS	1191	eif2g		COG5257	Translation initiation factor 2 subunit gamma
+CALJACFG_02780	gene	1191	eif2g			
+CALJACFG_02790	CDS	1104				hypothetical protein
+CALJACFG_02790	gene	1104				
+CALJACFG_02800	CDS	543				hypothetical protein
+CALJACFG_02800	gene	543				
+CALJACFG_02810	CDS	1125				hypothetical protein
+CALJACFG_02810	gene	1125				
+CALJACFG_02820	CDS	390	rps8		COG0096	30S ribosomal protein S8
+CALJACFG_02820	gene	390	rps8			
+CALJACFG_02830	CDS	948	tfb		COG1405	Transcription initiation factor IIB
+CALJACFG_02830	gene	948	tfb			
+CALJACFG_02840	CDS	219				hypothetical protein
+CALJACFG_02840	gene	219				
+CALJACFG_02850	CDS	378				hypothetical protein
+CALJACFG_02850	gene	378				
+CALJACFG_02860	CDS	840				hypothetical protein
+CALJACFG_02860	gene	840				
+CALJACFG_02870	CDS	495				hypothetical protein
+CALJACFG_02870	gene	495				
+CALJACFG_02880	CDS	1428				hypothetical protein
+CALJACFG_02880	gene	1428				
+CALJACFG_02890	CDS	699				hypothetical protein
+CALJACFG_02890	gene	699				
+CALJACFG_02900	CDS	1974	MCM	3.6.4.12	COG1241	Minichromosome maintenance protein MCM
+CALJACFG_02900	gene	1974	MCM			
+CALJACFG_02910	CDS	807	ttuA_1	2.8.1.-	COG0037	tRNA-5-methyluridine(54) 2-sulfurtransferase
+CALJACFG_02910	gene	807	ttuA_1			
+CALJACFG_02920	CDS	513				hypothetical protein
+CALJACFG_02920	gene	513				
+CALJACFG_02930	CDS	207			COG2260	Ribosome biogenesis protein Nop10
+CALJACFG_02930	gene	207				
+CALJACFG_02940	CDS	1821				hypothetical protein
+CALJACFG_02940	gene	1821				
+CALJACFG_02950	CDS	258				hypothetical protein
+CALJACFG_02950	gene	258				
+CALJACFG_02960	CDS	393				hypothetical protein
+CALJACFG_02960	gene	393				
+CALJACFG_02970	CDS	345				hypothetical protein
+CALJACFG_02970	gene	345				
+CALJACFG_02980	CDS	249			COG2036	Archaeal histone A
+CALJACFG_02980	gene	249				
+CALJACFG_02990	CDS	207				hypothetical protein
+CALJACFG_02990	gene	207				
+CALJACFG_03000	CDS	288				hypothetical protein
+CALJACFG_03000	gene	288				
+CALJACFG_03010	CDS	360				hypothetical protein
+CALJACFG_03010	gene	360				
+CALJACFG_03020	CDS	4173				hypothetical protein
+CALJACFG_03020	gene	4173				
+CALJACFG_03030	CDS	228				hypothetical protein
+CALJACFG_03030	gene	228				
+CALJACFG_03040	CDS	1125	truD	5.4.99.27	COG0585	putative tRNA pseudouridine synthase D
+CALJACFG_03040	gene	1125	truD			
+CALJACFG_03050	CDS	186				hypothetical protein
+CALJACFG_03050	gene	186				
+CALJACFG_03060	CDS	1131				hypothetical protein
+CALJACFG_03060	gene	1131				
+CALJACFG_03070	CDS	873	trm4	2.1.1.-	COG0144	tRNA (cytosine(48)-C(5))-methyltransferase
+CALJACFG_03070	gene	873	trm4			
+CALJACFG_03080	CDS	252			COG2174	50S ribosomal protein L34e
+CALJACFG_03080	gene	252				
+CALJACFG_03090	CDS	459				hypothetical protein
+CALJACFG_03090	gene	459				
+CALJACFG_03100	CDS	690				hypothetical protein
+CALJACFG_03100	gene	690				
+CALJACFG_03110	CDS	1716	btuD_2	3.6.3.33	COG1120	Cobalamin import ATP-binding protein BtuD
+CALJACFG_03110	gene	1716	btuD_2			
+CALJACFG_03120	CDS	2826				hypothetical protein
+CALJACFG_03120	gene	2826				
+CALJACFG_03130	CDS	288				hypothetical protein
+CALJACFG_03130	gene	288				
+CALJACFG_03140	CDS	1689	gltX	6.1.1.17	COG0008	Glutamate--tRNA ligase
+CALJACFG_03140	gene	1689	gltX			
+CALJACFG_03150	CDS	258			COG2451	50S ribosomal protein L35Ae
+CALJACFG_03150	gene	258				
+CALJACFG_03160	CDS	198				hypothetical protein
+CALJACFG_03160	gene	198				
+CALJACFG_03170	CDS	132				hypothetical protein
+CALJACFG_03170	gene	132				
+CALJACFG_03180	CDS	444	tgtA_2	2.4.2.48	COG0343	tRNA-guanine(15) transglycosylase
+CALJACFG_03180	gene	444	tgtA_2			
+CALJACFG_03190	CDS	669	rhaD	1.1.1.377	COG1028	L-rhamnose 1-dehydrogenase (NADP(+))
+CALJACFG_03190	gene	669	rhaD			
+CALJACFG_03200	CDS	528	ndk	2.7.4.6	COG0105	Nucleoside diphosphate kinase
+CALJACFG_03200	gene	528	ndk			
+CALJACFG_03210	CDS	414				hypothetical protein
+CALJACFG_03210	gene	414				
+CALJACFG_03220	CDS	1455	serS	6.1.1.11	COG0172	Serine--tRNA ligase
+CALJACFG_03220	gene	1455	serS			
+CALJACFG_03230	CDS	429	rsmF	2.1.1.178		Ribosomal RNA small subunit methyltransferase F
+CALJACFG_03230	gene	429	rsmF			
+CALJACFG_03240	CDS	486				hypothetical protein
+CALJACFG_03240	gene	486				
+CALJACFG_03250	CDS	468			COG1841	50S ribosomal protein L30
+CALJACFG_03250	gene	468				
+CALJACFG_03260	CDS	249				hypothetical protein
+CALJACFG_03260	gene	249				
+CALJACFG_03270	CDS	381				hypothetical protein
+CALJACFG_03270	gene	381				
+CALJACFG_03280	CDS	597	dcd	3.5.4.30	COG0717	dCTP deaminase, dUMP-forming
+CALJACFG_03280	gene	597	dcd			
+CALJACFG_03290	CDS	771				hypothetical protein
+CALJACFG_03290	gene	771				
+CALJACFG_03300	CDS	417			COG0200	50S ribosomal protein L15
+CALJACFG_03300	gene	417				
+CALJACFG_03310	CDS	2106	rgy_2		COG1110	Reverse gyrase
+CALJACFG_03310	gene	2106	rgy_2			
+CALJACFG_03320	CDS	378	rpl7ae		COG1358	50S ribosomal protein L7Ae
+CALJACFG_03320	gene	378	rpl7ae			
+CALJACFG_03330	CDS	441				hypothetical protein
+CALJACFG_03330	gene	441				
+CALJACFG_03340	CDS	219			COG1383	30S ribosomal protein S17e
+CALJACFG_03340	gene	219				
+CALJACFG_03350	CDS	228				hypothetical protein
+CALJACFG_03350	gene	228				
+CALJACFG_03360	CDS	519	rgy_3		COG1110	Reverse gyrase
+CALJACFG_03360	gene	519	rgy_3			
+CALJACFG_03370	CDS	420	eif2b		COG1601	Translation initiation factor 2 subunit beta
+CALJACFG_03370	gene	420	eif2b			
+CALJACFG_03380	CDS	630	taw3-1	2.1.1.282	COG1590	tRNA(Phe) 7-((3-amino-3-carboxypropyl)-4-demethylwyosine(37)-N(4))-methyltransferase 1
+CALJACFG_03380	gene	630	taw3-1			
+CALJACFG_03390	CDS	342			COG0186	30S ribosomal protein S17
+CALJACFG_03390	gene	342				
+CALJACFG_03400	CDS	237			COG1522	putative HTH-type transcriptional regulator
+CALJACFG_03400	gene	237				
+CALJACFG_03410	CDS	465				hypothetical protein
+CALJACFG_03410	gene	465				
+CALJACFG_03420	CDS	498	dut	3.6.1.23	COG0717	Deoxyuridine 5'-triphosphate nucleotidohydrolase
+CALJACFG_03420	gene	498	dut			
+CALJACFG_03430	CDS	942				hypothetical protein
+CALJACFG_03430	gene	942				
+CALJACFG_03440	CDS	240				hypothetical protein
+CALJACFG_03440	gene	240				
+CALJACFG_03450	CDS	270				hypothetical protein
+CALJACFG_03450	gene	270				
+CALJACFG_03460	CDS	843				hypothetical protein
+CALJACFG_03460	gene	843				
+CALJACFG_03470	CDS	519				hypothetical protein
+CALJACFG_03470	gene	519				
+CALJACFG_03480	CDS	630	truA	5.4.99.12		tRNA pseudouridine synthase A
+CALJACFG_03480	gene	630	truA			
+CALJACFG_03490	CDS	546				hypothetical protein
+CALJACFG_03490	gene	546				
+CALJACFG_03500	CDS	825				hypothetical protein
+CALJACFG_03500	gene	825				
+CALJACFG_03510	CDS	198	rpoN	2.7.7.6	COG1644	DNA-directed RNA polymerase subunit N
+CALJACFG_03510	gene	198	rpoN			
+CALJACFG_03520	CDS	561	trmI	2.1.1.219	COG2519	tRNA (adenine(57)-N(1)/adenine(58)-N(1))-methyltransferase TrmI
+CALJACFG_03520	gene	561	trmI			
+CALJACFG_03530	CDS	153			COG2075	50S ribosomal protein L24e
+CALJACFG_03530	gene	153				
+CALJACFG_03540	CDS	570	gph	3.1.3.18		Phosphoglycolate phosphatase
+CALJACFG_03540	gene	570	gph			
+CALJACFG_03550	CDS	474				hypothetical protein
+CALJACFG_03550	gene	474				
+CALJACFG_03560	CDS	1116	dnaG	2.7.7.-	COG0358	DNA primase DnaG
+CALJACFG_03560	gene	1116	dnaG			
+CALJACFG_03570	CDS	1026			COG1498	putative NOP5 family protein
+CALJACFG_03570	gene	1026				
+CALJACFG_03580	CDS	411				hypothetical protein
+CALJACFG_03580	gene	411				
+CALJACFG_03590	CDS	519		3.5.1.124	COG0693	Deglycase
+CALJACFG_03590	gene	519				
+CALJACFG_03600	CDS	1911				hypothetical protein
+CALJACFG_03600	gene	1911				
+CALJACFG_03610	CDS	900	nfi	3.1.21.7	COG1515	Endonuclease V
+CALJACFG_03610	gene	900	nfi			
+CALJACFG_03620	CDS	237			COG2157	50S ribosomal protein L18Ae
+CALJACFG_03620	gene	237				
+CALJACFG_03630	CDS	801				hypothetical protein
+CALJACFG_03630	gene	801				
+CALJACFG_03640	CDS	228	hmtA1		COG2036	DNA-binding protein HMt-1.1
+CALJACFG_03640	gene	228	hmtA1			
+CALJACFG_03650	CDS	1797	lon_1	3.4.21.-	COG1067	Archaeal Lon protease
+CALJACFG_03650	gene	1797	lon_1			
+CALJACFG_03660	CDS	312				hypothetical protein
+CALJACFG_03660	gene	312				
+CALJACFG_03670	CDS	279				hypothetical protein
+CALJACFG_03670	gene	279				
+CALJACFG_03680	CDS	630				hypothetical protein
+CALJACFG_03680	gene	630				
+CALJACFG_03690	CDS	1785				hypothetical protein
+CALJACFG_03690	gene	1785				
+CALJACFG_03700	CDS	246				hypothetical protein
+CALJACFG_03700	gene	246				
+CALJACFG_03710	CDS	420				hypothetical protein
+CALJACFG_03710	gene	420				
+CALJACFG_03720	CDS	276				hypothetical protein
+CALJACFG_03720	gene	276				
+CALJACFG_03730	CDS	663				hypothetical protein
+CALJACFG_03730	gene	663				
+CALJACFG_03740	CDS	435				hypothetical protein
+CALJACFG_03740	gene	435				
+CALJACFG_03750	CDS	267			COG2053	30S ribosomal protein S28e
+CALJACFG_03750	gene	267				
+CALJACFG_03760	CDS	717	rpl2		COG0090	50S ribosomal protein L2
+CALJACFG_03760	gene	717	rpl2			
+CALJACFG_03770	CDS	1293		3.5.1.4	COG0154	Amidase
+CALJACFG_03770	gene	1293				
+CALJACFG_03780	CDS	771				hypothetical protein
+CALJACFG_03780	gene	771				
+CALJACFG_03790	CDS	273	albA		COG1581	DNA/RNA-binding protein Alba
+CALJACFG_03790	gene	273	albA			
+CALJACFG_03800	CDS	240			COG2097	50S ribosomal protein L31e
+CALJACFG_03800	gene	240				
+CALJACFG_03810	CDS	1173				hypothetical protein
+CALJACFG_03810	gene	1173				
+CALJACFG_03820	CDS	687	mnmE	3.6.-.-		tRNA modification GTPase MnmE
+CALJACFG_03820	gene	687	mnmE			
+CALJACFG_03830	CDS	588		2.7.7.1		Nicotinamide-nucleotide adenylyltransferase
+CALJACFG_03830	gene	588				
+CALJACFG_03840	CDS	882				hypothetical protein
+CALJACFG_03840	gene	882				
+CALJACFG_03850	CDS	1623	dbpA	3.6.4.13		ATP-dependent RNA helicase DbpA
+CALJACFG_03850	gene	1623	dbpA			
+CALJACFG_03860	CDS	546	rpoE1	2.7.7.6	COG1095	DNA-directed RNA polymerase subunit E'
+CALJACFG_03860	gene	546	rpoE1			
+CALJACFG_03870	CDS	597		3.2.2.27	COG1573	Type-4 uracil-DNA glycosylase
+CALJACFG_03870	gene	597				
+CALJACFG_03880	CDS	840	smc			Chromosome partition protein Smc
+CALJACFG_03880	gene	840	smc			
+CALJACFG_03890	CDS	228				Ferredoxin
+CALJACFG_03890	gene	228				
+CALJACFG_03900	CDS	597	rps3ae		COG1890	30S ribosomal protein S3Ae
+CALJACFG_03900	gene	597	rps3ae			
+CALJACFG_03910	CDS	165				hypothetical protein
+CALJACFG_03910	gene	165				
+CALJACFG_03920	CDS	528				hypothetical protein
+CALJACFG_03920	gene	528				
+CALJACFG_03930	CDS	321	tfs			Transcription factor S
+CALJACFG_03930	gene	321	tfs			
+CALJACFG_03940	CDS	291				hypothetical protein
+CALJACFG_03940	gene	291				
+CALJACFG_03950	CDS	648	ulaG	3.1.1.-		L-ascorbate-6-phosphate lactonase UlaG
+CALJACFG_03950	gene	648	ulaG			
+CALJACFG_03960	CDS	444			COG2147	50S ribosomal protein L19e
+CALJACFG_03960	gene	444				
+CALJACFG_03970	CDS	1518				hypothetical protein
+CALJACFG_03970	gene	1518				
+CALJACFG_03980	CDS	738	queE_1	4.3.99.3		7-carboxy-7-deazaguanine synthase
+CALJACFG_03980	gene	738	queE_1			
+CALJACFG_03990	CDS	1086		3.1.-.-	COG0420	DNA double-strand break repair protein Mre11
+CALJACFG_03990	gene	1086				
+CALJACFG_04000	CDS	984	taw1	4.1.3.44	COG0731	S-adenosyl-L-methionine-dependent tRNA 4-demethylwyosine synthase
+CALJACFG_04000	gene	984	taw1			
+CALJACFG_04010	CDS	699	trmJ	2.1.1.-	COG0565	tRNA (cytidine-2'-O-)-methyltransferase TrmJ
+CALJACFG_04010	gene	699	trmJ			
+CALJACFG_04020	CDS	357				hypothetical protein
+CALJACFG_04020	gene	357				
+CALJACFG_04030	CDS	366	pfdA			Prefoldin subunit alpha
+CALJACFG_04030	gene	366	pfdA			
+CALJACFG_04040	CDS	2004	xpf		COG1948	3'-flap repair endonuclease Xpf
+CALJACFG_04040	gene	2004	xpf			
+CALJACFG_04050	CDS	696	rps5		COG0098	30S ribosomal protein S5
+CALJACFG_04050	gene	696	rps5			
+CALJACFG_04060	CDS	1131	tyrS	6.1.1.1	COG0162	Tyrosine--tRNA ligase
+CALJACFG_04060	gene	1131	tyrS			
+CALJACFG_04070	CDS	483				hypothetical protein
+CALJACFG_04070	gene	483				
+CALJACFG_04080	CDS	3039				hypothetical protein
+CALJACFG_04080	gene	3039				
+CALJACFG_04090	CDS	435	eif5a		COG0231	Translation initiation factor 5A
+CALJACFG_04090	gene	435	eif5a			
+CALJACFG_04100	CDS	987	gatE_2	6.3.5.-	COG2511	Glutamyl-tRNA(Gln) amidotransferase subunit E
+CALJACFG_04100	gene	987	gatE_2			
+CALJACFG_04110	CDS	1182				hypothetical protein
+CALJACFG_04110	gene	1182				
+CALJACFG_04120	CDS	297			COG2139	50S ribosomal protein L21e
+CALJACFG_04120	gene	297				
+CALJACFG_04130	CDS	633		3.2.2.-		G/T mismatches repair enzyme
+CALJACFG_04130	gene	633				
+CALJACFG_04140	CDS	855	map	3.4.11.18	COG0024	Methionine aminopeptidase
+CALJACFG_04140	gene	855	map			
+CALJACFG_04150	CDS	138	rpoP	2.7.7.6		DNA-directed RNA polymerase subunit P
+CALJACFG_04150	gene	138	rpoP			
+CALJACFG_04160	CDS	993	ruvB	3.6.4.12		Holliday junction ATP-dependent DNA helicase RuvB
+CALJACFG_04160	gene	993	ruvB			
+CALJACFG_04170	CDS	651				hypothetical protein
+CALJACFG_04170	gene	651				
+CALJACFG_04180	CDS	924	dys	2.5.1.46	COG1899	putative deoxyhypusine synthase
+CALJACFG_04180	gene	924	dys			
+CALJACFG_04190	CDS	3144				hypothetical protein
+CALJACFG_04190	gene	3144				
+CALJACFG_04200	CDS	762	eif2a		COG1093	Translation initiation factor 2 subunit alpha
+CALJACFG_04200	gene	762	eif2a			
+CALJACFG_04210	CDS	891				hypothetical protein
+CALJACFG_04210	gene	891				
+CALJACFG_04220	CDS	477				hypothetical protein
+CALJACFG_04220	gene	477				
+CALJACFG_04230	CDS	603				hypothetical protein
+CALJACFG_04230	gene	603				
+CALJACFG_04240	CDS	783				hypothetical protein
+CALJACFG_04240	gene	783				
+CALJACFG_04250	CDS	1389				hypothetical protein
+CALJACFG_04250	gene	1389				
+CALJACFG_04260	CDS	165				hypothetical protein
+CALJACFG_04260	gene	165				
+CALJACFG_04270	CDS	210				hypothetical protein
+CALJACFG_04270	gene	210				
+CALJACFG_04280	CDS	312			COG1460	putative protein
+CALJACFG_04280	gene	312				
+CALJACFG_04290	CDS	1332	pepA	3.4.11.10		cytosol aminopeptidase
+CALJACFG_04290	gene	1332	pepA			
+CALJACFG_04300	CDS	291				hypothetical protein
+CALJACFG_04300	gene	291				
+CALJACFG_04310	CDS	582				hypothetical protein
+CALJACFG_04310	gene	582				
+CALJACFG_04320	CDS	699	lon_2	3.4.21.53		Lon protease
+CALJACFG_04320	gene	699	lon_2			
+CALJACFG_04330	CDS	339				hypothetical protein
+CALJACFG_04330	gene	339				
+CALJACFG_04340	CDS	1539	proS_2	6.1.1.15	COG0442	Proline--tRNA ligase
+CALJACFG_04340	gene	1539	proS_2			
+CALJACFG_04350	CDS	1266				hypothetical protein
+CALJACFG_04350	gene	1266				
+CALJACFG_04360	CDS	3729	polC_1	2.7.7.7	COG1933	DNA polymerase II large subunit
+CALJACFG_04360	gene	3729	polC_1			
+CALJACFG_04370	CDS	540				hypothetical protein
+CALJACFG_04370	gene	540				
+CALJACFG_04380	CDS	219				hypothetical protein
+CALJACFG_04380	gene	219				
+CALJACFG_04390	CDS	693			COG1136	putative ABC transporter ATP-binding protein
+CALJACFG_04390	gene	693				
+CALJACFG_04400	CDS	654	dphB	2.1.1.98	COG1798	Diphthine synthase
+CALJACFG_04400	gene	654	dphB			
+CALJACFG_04410	CDS	378	hjc	3.1.22.4	COG1591	Holliday junction resolvase Hjc
+CALJACFG_04410	gene	378	hjc			
+CALJACFG_04420	CDS	1302	thiI	2.8.1.4		tRNA sulfurtransferase
+CALJACFG_04420	gene	1302	thiI			
+CALJACFG_04430	CDS	2145			COG1372	putative protein
+CALJACFG_04430	gene	2145				
+CALJACFG_04440	CDS	957	radA		COG0468	DNA repair and recombination protein RadA
+CALJACFG_04440	gene	957	radA			
+CALJACFG_04450	CDS	1125	rpoA2	2.7.7.6	COG0086	DNA-directed RNA polymerase subunit A''
+CALJACFG_04450	gene	1125	rpoA2			
+CALJACFG_04460	CDS	177				hypothetical protein
+CALJACFG_04460	gene	177				
+CALJACFG_04470	CDS	315				hypothetical protein
+CALJACFG_04470	gene	315				
+CALJACFG_04480	CDS	396				hypothetical protein
+CALJACFG_04480	gene	396				
+CALJACFG_04490	CDS	1293	rfcL		COG0470	Replication factor C large subunit
+CALJACFG_04490	gene	1293	rfcL			
+CALJACFG_04500	CDS	597				hypothetical protein
+CALJACFG_04500	gene	597				
+CALJACFG_04510	CDS	255				hypothetical protein
+CALJACFG_04510	gene	255				
+CALJACFG_04520	CDS	966	rpl3		COG0087	50S ribosomal protein L3
+CALJACFG_04520	gene	966	rpl3			
+CALJACFG_04530	CDS	591				hypothetical protein
+CALJACFG_04530	gene	591				
+CALJACFG_04540	CDS	141				hypothetical protein
+CALJACFG_04540	gene	141				
+CALJACFG_04550	CDS	1728	rgy_4		COG1110	Reverse gyrase
+CALJACFG_04550	gene	1728	rgy_4			
+CALJACFG_04560	CDS	723				hypothetical protein
+CALJACFG_04560	gene	723				
+CALJACFG_04570	CDS	1398	secD		COG0342	Protein-export membrane protein SecD
+CALJACFG_04570	gene	1398	secD			
+CALJACFG_04580	CDS	756	secF		COG0341	Protein-export membrane protein SecF
+CALJACFG_04580	gene	756	secF			
+CALJACFG_04590	CDS	999				hypothetical protein
+CALJACFG_04590	gene	999				
+CALJACFG_04600	CDS	888		2.1.1.213	COG1041	tRNA (guanine(10)-N2)-dimethyltransferase
+CALJACFG_04600	gene	888				
+CALJACFG_04610	CDS	2328				hypothetical protein
+CALJACFG_04610	gene	2328				
+CALJACFG_04620	CDS	543			COG2078	Protein
+CALJACFG_04620	gene	543				
+CALJACFG_04630	CDS	555				hypothetical protein
+CALJACFG_04630	gene	555				
+CALJACFG_04640	CDS	750				hypothetical protein
+CALJACFG_04640	gene	750				
+CALJACFG_04650	CDS	573				hypothetical protein
+CALJACFG_04650	gene	573				
+CALJACFG_04660	CDS	468				hypothetical protein
+CALJACFG_04660	gene	468				
+CALJACFG_04670	CDS	954				hypothetical protein
+CALJACFG_04670	gene	954				
+CALJACFG_04680	CDS	354				hypothetical protein
+CALJACFG_04680	gene	354				
+CALJACFG_04690	CDS	411	rps9		COG0103	30S ribosomal protein S9
+CALJACFG_04690	gene	411	rps9			
+CALJACFG_04700	CDS	357				hypothetical protein
+CALJACFG_04700	gene	357				
+CALJACFG_04710	CDS	495				hypothetical protein
+CALJACFG_04710	gene	495				
+CALJACFG_04720	CDS	561			COG0197	50S ribosomal protein L10e
+CALJACFG_04720	gene	561				
+CALJACFG_04730	CDS	513	amzA	3.4.-.-	COG1913	Archaemetzincin
+CALJACFG_04730	gene	513	amzA			
+CALJACFG_04740	CDS	684	rpoD	2.7.7.6	COG0202	DNA-directed RNA polymerase subunit D
+CALJACFG_04740	gene	684	rpoD			
+CALJACFG_04750	CDS	732				hypothetical protein
+CALJACFG_04750	gene	732				
+CALJACFG_04760	CDS	1029	truB_2	5.4.99.25	COG0130	putative tRNA pseudouridine synthase B
+CALJACFG_04760	gene	1029	truB_2			
+CALJACFG_04770	CDS	222				hypothetical protein
+CALJACFG_04770	gene	222				
+CALJACFG_04780	CDS	813				hypothetical protein
+CALJACFG_04780	gene	813				
+CALJACFG_04790	CDS	2331	metG	6.1.1.10	COG0073	Methionine--tRNA ligase
+CALJACFG_04790	gene	2331	metG			
+CALJACFG_04800	CDS	741	tatD	3.1.21.-		Tat-linked quality control protein TatD
+CALJACFG_04800	gene	741	tatD			
+CALJACFG_04810	CDS	939				hypothetical protein
+CALJACFG_04810	gene	939				
+CALJACFG_04820	CDS	720				hypothetical protein
+CALJACFG_04820	gene	720				
+CALJACFG_04830	CDS	753	rio1_1	2.7.11.1	COG1718	RIO-type serine/threonine-protein kinase Rio1
+CALJACFG_04830	gene	753	rio1_1			
+CALJACFG_04840	CDS	483	ppa	3.6.1.1	COG0221	Inorganic pyrophosphatase
+CALJACFG_04840	gene	483	ppa			
+CALJACFG_04850	CDS	2037				hypothetical protein
+CALJACFG_04850	gene	2037				
+CALJACFG_04860	CDS	843	rio1_2	2.7.11.1	COG1718	RIO-type serine/threonine-protein kinase Rio1
+CALJACFG_04860	gene	843	rio1_2			
+CALJACFG_04870	CDS	1194	ychF			Ribosome-binding ATPase YchF
+CALJACFG_04870	gene	1194	ychF			
+CALJACFG_04880	CDS	1335	rnj_2	3.1.-.-	COG0595	Ribonuclease J
+CALJACFG_04880	gene	1335	rnj_2			
+CALJACFG_04890	CDS	462			COG0099	30S ribosomal protein S13
+CALJACFG_04890	gene	462				
+CALJACFG_04900	CDS	1182				hypothetical protein
+CALJACFG_04900	gene	1182				
+CALJACFG_04910	CDS	384	rps8e		COG2007	30S ribosomal protein S8e
+CALJACFG_04910	gene	384	rps8e			
+CALJACFG_04920	CDS	171				hypothetical protein
+CALJACFG_04920	gene	171				
+CALJACFG_04930	CDS	216				hypothetical protein
+CALJACFG_04930	gene	216				
+CALJACFG_04940	CDS	477				hypothetical protein
+CALJACFG_04940	gene	477				
+CALJACFG_04950	CDS	621				hypothetical protein
+CALJACFG_04950	gene	621				
+CALJACFG_04960	CDS	1065	ftsZ			Cell division protein FtsZ
+CALJACFG_04960	gene	1065	ftsZ			
+CALJACFG_04970	CDS	2472	vat		COG0464	VCP-like ATPase
+CALJACFG_04970	gene	2472	vat			
+CALJACFG_04980	CDS	516				hypothetical protein
+CALJACFG_04980	gene	516				
+CALJACFG_04990	CDS	852				hypothetical protein
+CALJACFG_04990	gene	852				
+CALJACFG_05000	CDS	270				hypothetical protein
+CALJACFG_05000	gene	270				
+CALJACFG_05010	CDS	705	rps4e		COG1471	30S ribosomal protein S4e
+CALJACFG_05010	gene	705	rps4e			
+CALJACFG_05020	CDS	1524	pheT	6.1.1.20	COG0072	Phenylalanine--tRNA ligase beta subunit
+CALJACFG_05020	gene	1524	pheT			
+CALJACFG_05030	CDS	408			COG0185	30S ribosomal protein S19
+CALJACFG_05030	gene	408				
+CALJACFG_05040	CDS	693	rps3		COG0092	30S ribosomal protein S3
+CALJACFG_05040	gene	693	rps3			
+CALJACFG_05050	CDS	420	tfe		COG1675	Transcription factor E
+CALJACFG_05050	gene	420	tfe			
+CALJACFG_05060	CDS	306				hypothetical protein
+CALJACFG_05060	gene	306				
+CALJACFG_05070	CDS	513				hypothetical protein
+CALJACFG_05070	gene	513				
+CALJACFG_05080	CDS	462				hypothetical protein
+CALJACFG_05080	gene	462				
+CALJACFG_05090	CDS	927	maX1		COG0530	Sodium/calcium exchanger MaX1
+CALJACFG_05090	gene	927	maX1			
+CALJACFG_05100	CDS	465			COG0184	30S ribosomal protein S15
+CALJACFG_05100	gene	465				
+CALJACFG_05110	CDS	357			COG1727	50S ribosomal protein L18e
+CALJACFG_05110	gene	357				
+CALJACFG_05120	CDS	162	polC_2	2.7.7.7	COG1372	DNA polymerase II large subunit
+CALJACFG_05120	gene	162	polC_2			
+CALJACFG_05130	CDS	711				hypothetical protein
+CALJACFG_05130	gene	711				
+CALJACFG_05140	CDS	369				hypothetical protein
+CALJACFG_05140	gene	369				
+CALJACFG_05150	CDS	1407				hypothetical protein
+CALJACFG_05150	gene	1407				
+CALJACFG_05160	CDS	942	lpdA	1.8.1.4	COG1249	Dihydrolipoyl dehydrogenase
+CALJACFG_05160	gene	942	lpdA			
+CALJACFG_05170	CDS	690				hypothetical protein
+CALJACFG_05170	gene	690				
+CALJACFG_05180	CDS	945	kae1	2.3.1.234	COG0533	tRNA N6-adenosine threonylcarbamoyltransferase
+CALJACFG_05180	gene	945	kae1			
+CALJACFG_05190	CDS	1050	queE_2	4.3.99.3		7-carboxy-7-deazaguanine synthase
+CALJACFG_05190	gene	1050	queE_2			
+CALJACFG_05200	CDS	1485	tmcA_2	2.3.1.193		tRNA(Met) cytidine acetyltransferase TmcA
+CALJACFG_05200	gene	1485	tmcA_2			
+CALJACFG_05210	CDS	1725	infB		COG0532	putative translation initiation factor IF-2
+CALJACFG_05210	gene	1725	infB			
+CALJACFG_05220	CDS	504				hypothetical protein
+CALJACFG_05220	gene	504				
+CALJACFG_05230	CDS	402				hypothetical protein
+CALJACFG_05230	gene	402				
+CALJACFG_05240	CDS	1071				hypothetical protein
+CALJACFG_05240	gene	1071				
+CALJACFG_05250	CDS	519		3.1.4.-	COG1514	RNA 2',3'-cyclic phosphodiesterase
+CALJACFG_05250	gene	519				
+CALJACFG_05260	CDS	486				hypothetical protein
+CALJACFG_05260	gene	486				
+CALJACFG_05270	CDS	261				hypothetical protein
+CALJACFG_05270	gene	261				
+CALJACFG_05280	CDS	1068				hypothetical protein
+CALJACFG_05280	gene	1068				
+CALJACFG_05290	CDS	2613	rpoA1	2.7.7.6	COG0086	DNA-directed RNA polymerase subunit A'
+CALJACFG_05290	gene	2613	rpoA1			
+CALJACFG_05300	CDS	768				hypothetical protein
+CALJACFG_05300	gene	768				
+CALJACFG_05310	CDS	1452	pheS	6.1.1.20	COG0016	Phenylalanine--tRNA ligase alpha subunit
+CALJACFG_05310	gene	1452	pheS			
+CALJACFG_05320	CDS	189				hypothetical protein
+CALJACFG_05320	gene	189				
+CALJACFG_05330	CDS	276	rpoH	2.7.7.6	COG2012	DNA-directed RNA polymerase subunit H
+CALJACFG_05330	gene	276	rpoH			
+CALJACFG_05340	CDS	606	rps2		COG0052	30S ribosomal protein S2
+CALJACFG_05340	gene	606	rps2			
+CALJACFG_05350	CDS	1704	lig	6.5.1.6		DNA ligase
+CALJACFG_05350	gene	1704	lig			
+CALJACFG_05360	CDS	291				hypothetical protein
+CALJACFG_05360	gene	291				
+CALJACFG_05370	CDS	441				hypothetical protein
+CALJACFG_05370	gene	441				
+CALJACFG_05380	CDS	1119		3.-.-.-	COG0624	putative metallohydrolase
+CALJACFG_05380	gene	1119				
+CALJACFG_05390	CDS	1050	herA_1	3.6.4.12	COG0433	DNA double-strand break repair helicase HerA
+CALJACFG_05390	gene	1050	herA_1			
+CALJACFG_05400	CDS	255	gatC	6.3.5.-		Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransferase subunit C
+CALJACFG_05400	gene	255	gatC			
+CALJACFG_05410	CDS	663				hypothetical protein
+CALJACFG_05410	gene	663				
+CALJACFG_05420	CDS	651		3.2.2.-	COG4047	N-glycosylase/DNA lyase
+CALJACFG_05420	gene	651				
+CALJACFG_05430	CDS	252	pfdB		COG1382	Prefoldin subunit beta
+CALJACFG_05430	gene	252	pfdB			
+CALJACFG_05440	CDS	786				hypothetical protein
+CALJACFG_05440	gene	786				
+CALJACFG_05450	CDS	621	eif6		COG1976	Translation initiation factor 6
+CALJACFG_05450	gene	621	eif6			
+CALJACFG_05460	CDS	390				hypothetical protein
+CALJACFG_05460	gene	390				
+CALJACFG_05470	CDS	189				hypothetical protein
+CALJACFG_05470	gene	189				
+CALJACFG_05480	CDS	114				hypothetical protein
+CALJACFG_05480	gene	114				
+CALJACFG_05490	CDS	753	psmA	3.4.25.1	COG0638	Proteasome subunit alpha
+CALJACFG_05490	gene	753	psmA			
+CALJACFG_05500	CDS	933	ttuA_2	2.8.1.-	COG0037	tRNA-5-methyluridine(54) 2-sulfurtransferase
+CALJACFG_05500	gene	933	ttuA_2			
+CALJACFG_05510	CDS	1101		2.1.1.256	COG0116	tRNA (guanine(6)-N2)-methyltransferase
+CALJACFG_05510	gene	1101				
+CALJACFG_05520	CDS	1059	cysH	1.8.4.8		Phosphoadenosine phosphosulfate reductase
+CALJACFG_05520	gene	1059	cysH			
+CALJACFG_05530	CDS	681			COG1500	Ribosome maturation protein SDO1 
+CALJACFG_05530	gene	681				
+CALJACFG_05540	CDS	738				hypothetical protein
+CALJACFG_05540	gene	738				
+CALJACFG_05550	CDS	1470	herA_2	3.6.4.12	COG0433	DNA double-strand break repair helicase HerA
+CALJACFG_05550	gene	1470	herA_2			
+CALJACFG_05560	CDS	762	pol_2	2.7.7.7		DNA polymerase
+CALJACFG_05560	gene	762	pol_2			
+CALJACFG_05570	CDS	402				hypothetical protein
+CALJACFG_05570	gene	402				
+CALJACFG_05580	CDS	972			COG0668	Large-conductance mechanosensitive channel MscMJLR
+CALJACFG_05580	gene	972				
+CALJACFG_05590	CDS	375			COG1717	50S ribosomal protein L32e
+CALJACFG_05590	gene	375				
+CALJACFG_05600	CDS	282				hypothetical protein
+CALJACFG_05600	gene	282				
+CALJACFG_05610	CDS	345				hypothetical protein
+CALJACFG_05610	gene	345				
+CALJACFG_05620	CDS	156				hypothetical protein
+CALJACFG_05620	gene	156				
+CALJACFG_05630	CDS	228				hypothetical protein
+CALJACFG_05630	gene	228				
+CALJACFG_05640	CDS	444				hypothetical protein
+CALJACFG_05640	gene	444				
+CALJACFG_05650	CDS	1215	aspS	6.1.1.12	COG0017	Aspartate--tRNA(Asp) ligase
+CALJACFG_05650	gene	1215	aspS			
+CALJACFG_05660	CDS	999		2.1.1.-	COG0144	tRNA (cytosine(49)-C(5))-methyltransferase
+CALJACFG_05660	gene	999				
+CALJACFG_05670	CDS	864				hypothetical protein
+CALJACFG_05670	gene	864				
+CALJACFG_05680	CDS	750	pcn		COG0592	DNA polymerase sliding clamp
+CALJACFG_05680	gene	750	pcn			
+CALJACFG_05690	CDS	630				hypothetical protein
+CALJACFG_05690	gene	630				
+CALJACFG_05700	CDS	483	spt5		COG0250	Transcription elongation factor Spt5
+CALJACFG_05700	gene	483	spt5			
+CALJACFG_05710	CDS	312			COG3355	HTH-type transcriptional regulator lrs14
+CALJACFG_05710	gene	312				
+CALJACFG_05720	CDS	2232	fusA		COG0480	Elongation factor 2
+CALJACFG_05720	gene	2232	fusA			
+CALJACFG_05730	CDS	1080	top6A	5.99.1.3		Type 2 DNA topoisomerase 6 subunit A
+CALJACFG_05730	gene	1080	top6A			
+CALJACFG_05740	CDS	654				hypothetical protein
+CALJACFG_05740	gene	654				
+CALJACFG_05750	CDS	951				hypothetical protein
+CALJACFG_05750	gene	951				
+CALJACFG_05760	CDS	642	rpl1		COG0081	50S ribosomal protein L1
+CALJACFG_05760	gene	642	rpl1			
+CALJACFG_05770	CDS	285			COG2004	30S ribosomal protein S24e
+CALJACFG_05770	gene	285				
+CALJACFG_05780	CDS	1146	alaS_2	6.1.1.7	COG0013	Alanine--tRNA ligase
+CALJACFG_05780	gene	1146	alaS_2			
+CALJACFG_05790	CDS	795				hypothetical protein
+CALJACFG_05790	gene	795				
+CALJACFG_05800	CDS	540				hypothetical protein
+CALJACFG_05800	gene	540				
+	repeat_region	1977				

@@ -1,0 +1,5171 @@
+>Feature gnl|UU|CALJACFG_1
+883	2691	CDS
+			EC_number	3.6.4.12
+			dbxref	COG:COG1204
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O73946
+			locus_tag	CALJACFG_00010
+			product	ATP-dependent DNA helicase Hel308
+			protein_id	gnl|UU|CALJACFG_00010
+883	2691	gene
+			locus_tag	CALJACFG_00010
+3189	2668	CDS
+			EC_number	5.2.1.8
+			dbxref	COG:COG1047
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q58235
+			locus_tag	CALJACFG_00020
+			product	Putative FKBP-type peptidyl-prolyl cis-trans isomerase
+			protein_id	gnl|UU|CALJACFG_00020
+3189	2668	gene
+			locus_tag	CALJACFG_00020
+3748	3290	CDS
+			dbxref	COG:COG1371
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O59205
+			locus_tag	CALJACFG_00030
+			product	Protein archease
+			protein_id	gnl|UU|CALJACFG_00030
+3748	3290	gene
+			locus_tag	CALJACFG_00030
+4665	3745	CDS
+			EC_number	2.1.1.218
+			dbxref	COG:COG2419
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q4J894
+			locus_tag	CALJACFG_00040
+			product	tRNA (adenine(9)-N1)-methyltransferase
+			protein_id	gnl|UU|CALJACFG_00040
+4665	3745	gene
+			locus_tag	CALJACFG_00040
+4680	5090	CDS
+			EC_number	2.1.1.63
+			dbxref	COG:COG0350
+			gene	ogt
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q58924
+			locus_tag	CALJACFG_00050
+			product	Methylated-DNA--protein-cysteine methyltransferase
+			protein_id	gnl|UU|CALJACFG_00050
+4680	5090	gene
+			gene	ogt
+			locus_tag	CALJACFG_00050
+5561	5028	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00060
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00060
+5561	5028	gene
+			locus_tag	CALJACFG_00060
+5707	5537	CDS
+			dbxref	COG:COG2126
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U0P5
+			locus_tag	CALJACFG_00070
+			product	50S ribosomal protein L37e
+			protein_id	gnl|UU|CALJACFG_00070
+5707	5537	gene
+			locus_tag	CALJACFG_00070
+5759	7000	CDS
+			EC_number	2.8.4.3
+			gene	miaB
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_01864
+			locus_tag	CALJACFG_00080
+			product	tRNA-2-methylthio-N(6)-dimethylallyladenosine synthase
+			protein_id	gnl|UU|CALJACFG_00080
+5759	7000	gene
+			gene	miaB
+			locus_tag	CALJACFG_00080
+7401	7105	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00090
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00090
+7401	7105	gene
+			locus_tag	CALJACFG_00090
+8423	7398	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00100
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00100
+8423	7398	gene
+			locus_tag	CALJACFG_00100
+8728	8399	CDS
+			EC_number	1.15.1.2
+			dbxref	COG:COG2033
+			gene	sorA
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O58810
+			locus_tag	CALJACFG_00110
+			product	Superoxide reductase
+			protein_id	gnl|UU|CALJACFG_00110
+8728	8399	gene
+			gene	sorA
+			locus_tag	CALJACFG_00110
+8775	9815	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00120
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00120
+8775	9815	gene
+			locus_tag	CALJACFG_00120
+9793	10833	CDS
+			gene	pqqE
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_00660
+			locus_tag	CALJACFG_00130
+			product	Coenzyme PQQ synthesis protein E
+			protein_id	gnl|UU|CALJACFG_00130
+9793	10833	gene
+			gene	pqqE
+			locus_tag	CALJACFG_00130
+11984	11037	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00140
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00140
+11984	11037	gene
+			locus_tag	CALJACFG_00140
+12031	13089	CDS
+			EC_number	2.1.1.148
+			dbxref	COG:COG1351
+			gene	thyX
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U3C9
+			locus_tag	CALJACFG_00150
+			product	Flavin-dependent thymidylate synthase
+			protein_id	gnl|UU|CALJACFG_00150
+12031	13089	gene
+			gene	thyX
+			locus_tag	CALJACFG_00150
+13557	13345	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00160
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00160
+13557	13345	gene
+			locus_tag	CALJACFG_00160
+13653	14585	repeat_region
+			note	CRISPR with 14 repeat units
+			rpt_family	CRISPR
+			rpt_type	direct
+			score	14
+15129	14872	CDS
+			EC_number	3.1.-.-
+			dbxref	COG:COG1343
+			gene	cas2
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U1T8
+			locus_tag	CALJACFG_00170
+			product	CRISPR-associated endoribonuclease Cas2
+			protein_id	gnl|UU|CALJACFG_00170
+15129	14872	gene
+			gene	cas2
+			locus_tag	CALJACFG_00170
+15157	16158	CDS
+			EC_number	3.1.-.-
+			dbxref	COG:COG1518
+			gene	cas1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O58938
+			locus_tag	CALJACFG_00180
+			product	CRISPR-associated endonuclease Cas1
+			protein_id	gnl|UU|CALJACFG_00180
+15157	16158	gene
+			gene	cas1
+			locus_tag	CALJACFG_00180
+16354	17631	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00190
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00190
+16354	17631	gene
+			locus_tag	CALJACFG_00190
+17628	18596	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00200
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00200
+17628	18596	gene
+			locus_tag	CALJACFG_00200
+18593	19297	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00210
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00210
+18593	19297	gene
+			locus_tag	CALJACFG_00210
+19294	21561	CDS
+			EC_number	3.1.-.-
+			dbxref	COG:COG1203
+			gene	cas3
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O27158
+			locus_tag	CALJACFG_00220
+			product	CRISPR-associated nuclease/helicase Cas3
+			protein_id	gnl|UU|CALJACFG_00220
+19294	21561	gene
+			gene	cas3
+			locus_tag	CALJACFG_00220
+22061	21555	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00230
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00230
+22061	21555	gene
+			locus_tag	CALJACFG_00230
+22093	22350	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00240
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00240
+22093	22350	gene
+			locus_tag	CALJACFG_00240
+22304	23197	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00250
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00250
+22304	23197	gene
+			locus_tag	CALJACFG_00250
+23219	24316	CDS
+			EC_number	1.8.5.4
+			gene	sqr
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q7ZAG8
+			locus_tag	CALJACFG_00260
+			product	Sulfide-quinone reductase
+			protein_id	gnl|UU|CALJACFG_00260
+23219	24316	gene
+			gene	sqr
+			locus_tag	CALJACFG_00260
+24345	25118	CDS
+			dbxref	COG:COG1208
+			gene	glmU
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q58501
+			locus_tag	CALJACFG_00270
+			product	Bifunctional protein GlmU
+			protein_id	gnl|UU|CALJACFG_00270
+24345	25118	gene
+			gene	glmU
+			locus_tag	CALJACFG_00270
+25199	25507	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00280
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00280
+25199	25507	gene
+			locus_tag	CALJACFG_00280
+25482	26426	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00290
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00290
+25482	26426	gene
+			locus_tag	CALJACFG_00290
+27497	26403	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00300
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00300
+27497	26403	gene
+			locus_tag	CALJACFG_00300
+28059	27544	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00310
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00310
+28059	27544	gene
+			locus_tag	CALJACFG_00310
+28691	28056	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00320
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00320
+28691	28056	gene
+			locus_tag	CALJACFG_00320
+29234	28722	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00330
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00330
+29234	28722	gene
+			locus_tag	CALJACFG_00330
+29432	30583	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00340
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00340
+29432	30583	gene
+			locus_tag	CALJACFG_00340
+30576	32363	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00350
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00350
+30576	32363	gene
+			locus_tag	CALJACFG_00350
+32363	32998	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00360
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00360
+32363	32998	gene
+			locus_tag	CALJACFG_00360
+33020	34420	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00370
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00370
+33020	34420	gene
+			locus_tag	CALJACFG_00370
+34449	34733	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00380
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00380
+34449	34733	gene
+			locus_tag	CALJACFG_00380
+34755	35015	CDS
+			dbxref	COG:COG1997
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8TZI4
+			locus_tag	CALJACFG_00390
+			product	50S ribosomal protein L37Ae
+			protein_id	gnl|UU|CALJACFG_00390
+34755	35015	gene
+			locus_tag	CALJACFG_00390
+35199	34999	CDS
+			dbxref	COG:COG1958
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O29386
+			locus_tag	CALJACFG_00400
+			product	Putative snRNP Sm-like protein
+			protein_id	gnl|UU|CALJACFG_00400
+35199	34999	gene
+			locus_tag	CALJACFG_00400
+35478	36131	CDS
+			dbxref	COG:COG2101
+			gene	tbp
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q57930
+			locus_tag	CALJACFG_00410
+			product	TATA-box-binding protein
+			protein_id	gnl|UU|CALJACFG_00410
+35478	36131	gene
+			gene	tbp
+			locus_tag	CALJACFG_00410
+36124	36771	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00420
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00420
+36124	36771	gene
+			locus_tag	CALJACFG_00420
+37566	36739	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00430
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00430
+37566	36739	gene
+			locus_tag	CALJACFG_00430
+39014	37563	CDS
+			EC_number	3.4.17.19
+			dbxref	COG:COG2317
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U3L0
+			locus_tag	CALJACFG_00440
+			product	Thermostable carboxypeptidase 1
+			protein_id	gnl|UU|CALJACFG_00440
+39014	37563	gene
+			locus_tag	CALJACFG_00440
+39294	39040	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00450
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00450
+39294	39040	gene
+			locus_tag	CALJACFG_00450
+39895	39323	CDS
+			dbxref	COG:COG0533
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q58530
+			locus_tag	CALJACFG_00460
+			product	putative bifunctional tRNA threonylcarbamoyladenosine biosynthesis protein
+			protein_id	gnl|UU|CALJACFG_00460
+39895	39323	gene
+			locus_tag	CALJACFG_00460
+41099	39873	CDS
+			dbxref	COG:COG1110
+			gene	rgy_1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O29238
+			locus_tag	CALJACFG_00470
+			product	Reverse gyrase
+			protein_id	gnl|UU|CALJACFG_00470
+41099	39873	gene
+			gene	rgy_1
+			locus_tag	CALJACFG_00470
+41483	42061	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00480
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00480
+41483	42061	gene
+			locus_tag	CALJACFG_00480
+42006	42803	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00490
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00490
+42006	42803	gene
+			locus_tag	CALJACFG_00490
+42814	44436	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00500
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00500
+42814	44436	gene
+			locus_tag	CALJACFG_00500
+45112	44420	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00510
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00510
+45112	44420	gene
+			locus_tag	CALJACFG_00510
+45753	45112	CDS
+			EC_number	1.12.98.4
+			dbxref	COG:COG0543
+			gene	shyC
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:E7FHW8
+			locus_tag	CALJACFG_00520
+			product	Sulfhydrogenase 2 subunit gamma
+			protein_id	gnl|UU|CALJACFG_00520
+45753	45112	gene
+			gene	shyC
+			locus_tag	CALJACFG_00520
+45858	46934	CDS
+			dbxref	COG:COG1503
+			gene	prf1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q97W96
+			locus_tag	CALJACFG_00530
+			product	Peptide chain release factor subunit 1
+			protein_id	gnl|UU|CALJACFG_00530
+45858	46934	gene
+			gene	prf1
+			locus_tag	CALJACFG_00530
+48291	46948	CDS
+			EC_number	2.1.1.35
+			dbxref	COG:COG2265
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9UZR7
+			locus_tag	CALJACFG_00540
+			product	tRNA (uracil(54)-C(5))-methyltransferase
+			protein_id	gnl|UU|CALJACFG_00540
+48291	46948	gene
+			locus_tag	CALJACFG_00540
+48814	48404	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00550
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00550
+48814	48404	gene
+			locus_tag	CALJACFG_00550
+48853	50226	CDS
+			EC_number	6.1.1.16
+			dbxref	COG:COG0215
+			gene	cysS
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9HQL9
+			locus_tag	CALJACFG_00560
+			product	Cysteine--tRNA ligase
+			protein_id	gnl|UU|CALJACFG_00560
+48853	50226	gene
+			gene	cysS
+			locus_tag	CALJACFG_00560
+50213	51247	CDS
+			dbxref	COG:COG1474
+			gene	cdc6
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P81413
+			locus_tag	CALJACFG_00570
+			product	ORC1-type DNA replication protein
+			protein_id	gnl|UU|CALJACFG_00570
+50213	51247	gene
+			gene	cdc6
+			locus_tag	CALJACFG_00570
+51779	51234	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00580
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00580
+51779	51234	gene
+			locus_tag	CALJACFG_00580
+52191	51760	CDS
+			dbxref	COG:COG0048
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P61994
+			locus_tag	CALJACFG_00590
+			product	30S ribosomal protein S12
+			protein_id	gnl|UU|CALJACFG_00590
+52191	51760	gene
+			locus_tag	CALJACFG_00590
+52238	54031	CDS
+			dbxref	COG:COG1855
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q58928
+			locus_tag	CALJACFG_00600
+			product	putative KH and PIN-domain containing protein
+			protein_id	gnl|UU|CALJACFG_00600
+52238	54031	gene
+			locus_tag	CALJACFG_00600
+54197	54736	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00610
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00610
+54197	54736	gene
+			locus_tag	CALJACFG_00610
+55813	54737	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00620
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00620
+55813	54737	gene
+			locus_tag	CALJACFG_00620
+55825	56691	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00630
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00630
+55825	56691	gene
+			locus_tag	CALJACFG_00630
+58431	56818	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00640
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00640
+58431	56818	gene
+			locus_tag	CALJACFG_00640
+59030	58428	CDS
+			EC_number	3.1.26.4
+			dbxref	COG:COG0164
+			gene	rnhB
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O59351
+			locus_tag	CALJACFG_00650
+			product	Ribonuclease HII
+			protein_id	gnl|UU|CALJACFG_00650
+59030	58428	gene
+			gene	rnhB
+			locus_tag	CALJACFG_00650
+59961	59011	CDS
+			EC_number	3.1.26.11
+			dbxref	COG:COG1234
+			gene	rnz
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q58897
+			locus_tag	CALJACFG_00660
+			product	Ribonuclease Z
+			protein_id	gnl|UU|CALJACFG_00660
+59961	59011	gene
+			gene	rnz
+			locus_tag	CALJACFG_00660
+59997	60233	CDS
+			dbxref	COG:COG0089
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U000
+			locus_tag	CALJACFG_00670
+			product	50S ribosomal protein L23
+			protein_id	gnl|UU|CALJACFG_00670
+59997	60233	gene
+			locus_tag	CALJACFG_00670
+60255	60470	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00680
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00680
+60255	60470	gene
+			locus_tag	CALJACFG_00680
+61065	60445	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00690
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00690
+61065	60445	gene
+			locus_tag	CALJACFG_00690
+61805	61050	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00700
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00700
+61805	61050	gene
+			locus_tag	CALJACFG_00700
+63795	61786	CDS
+			EC_number	2.7.7.7
+			dbxref	COG:COG0417
+			gene	pol_1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P61875
+			locus_tag	CALJACFG_00710
+			product	DNA polymerase
+			protein_id	gnl|UU|CALJACFG_00710
+63795	61786	gene
+			gene	pol_1
+			locus_tag	CALJACFG_00710
+64144	63752	CDS
+			dbxref	COG:COG0100
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P62010
+			locus_tag	CALJACFG_00720
+			product	30S ribosomal protein S11
+			protein_id	gnl|UU|CALJACFG_00720
+64144	63752	gene
+			locus_tag	CALJACFG_00720
+64202	64999	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00730
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00730
+64202	64999	gene
+			locus_tag	CALJACFG_00730
+64996	65676	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00740
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00740
+64996	65676	gene
+			locus_tag	CALJACFG_00740
+66171	65668	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00750
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00750
+66171	65668	gene
+			locus_tag	CALJACFG_00750
+66709	66140	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00760
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00760
+66709	66140	gene
+			locus_tag	CALJACFG_00760
+66866	66702	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00770
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00770
+66866	66702	gene
+			locus_tag	CALJACFG_00770
+67453	66875	CDS
+			EC_number	3.6.3.33
+			gene	btuD_1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_01005
+			locus_tag	CALJACFG_00780
+			product	Vitamin B12 import ATP-binding protein BtuD
+			protein_id	gnl|UU|CALJACFG_00780
+67453	66875	gene
+			gene	btuD_1
+			locus_tag	CALJACFG_00780
+68070	67483	CDS
+			dbxref	COG:COG0256
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9HH80
+			locus_tag	CALJACFG_00790
+			product	50S ribosomal protein L18
+			protein_id	gnl|UU|CALJACFG_00790
+68070	67483	gene
+			locus_tag	CALJACFG_00790
+68124	69971	CDS
+			EC_number	3.1.-.-
+			dbxref	COG:COG0595
+			gene	rnj_1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9V076
+			locus_tag	CALJACFG_00800
+			product	Ribonuclease J
+			protein_id	gnl|UU|CALJACFG_00800
+68124	69971	gene
+			gene	rnj_1
+			locus_tag	CALJACFG_00800
+69993	71207	CDS
+			EC_number	1.4.1.3
+			gene	gdhA
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q56304
+			locus_tag	CALJACFG_00810
+			product	Glutamate dehydrogenase
+			protein_id	gnl|UU|CALJACFG_00810
+69993	71207	gene
+			gene	gdhA
+			locus_tag	CALJACFG_00810
+71224	72033	CDS
+			EC_number	3.1.21.2
+			gene	nfo
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_00152
+			locus_tag	CALJACFG_00820
+			product	endonuclease 4
+			protein_id	gnl|UU|CALJACFG_00820
+71224	72033	gene
+			gene	nfo
+			locus_tag	CALJACFG_00820
+72158	73591	CDS
+			EC_number	6.5.1.-
+			dbxref	COG:COG1690
+			gene	rtcB
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8ZY09
+			locus_tag	CALJACFG_00830
+			product	tRNA-splicing ligase RtcB
+			protein_id	gnl|UU|CALJACFG_00830
+72158	73591	gene
+			gene	rtcB
+			locus_tag	CALJACFG_00830
+73588	73842	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00840
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00840
+73588	73842	gene
+			locus_tag	CALJACFG_00840
+73902	74843	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00850
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00850
+73902	74843	gene
+			locus_tag	CALJACFG_00850
+74944	76152	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00860
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00860
+74944	76152	gene
+			locus_tag	CALJACFG_00860
+76183	76785	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00870
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00870
+76183	76785	gene
+			locus_tag	CALJACFG_00870
+76817	78118	CDS
+			dbxref	COG:COG5256
+			gene	tuf
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O59153
+			locus_tag	CALJACFG_00880
+			product	Elongation factor 1-alpha
+			protein_id	gnl|UU|CALJACFG_00880
+76817	78118	gene
+			gene	tuf
+			locus_tag	CALJACFG_00880
+78118	78447	CDS
+			dbxref	COG:COG0051
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P61885
+			locus_tag	CALJACFG_00890
+			product	30S ribosomal protein S10
+			protein_id	gnl|UU|CALJACFG_00890
+78118	78447	gene
+			locus_tag	CALJACFG_00890
+78469	79527	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00900
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00900
+78469	79527	gene
+			locus_tag	CALJACFG_00900
+79524	80051	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00910
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00910
+79524	80051	gene
+			locus_tag	CALJACFG_00910
+80035	81528	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00920
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00920
+80035	81528	gene
+			locus_tag	CALJACFG_00920
+81536	82555	CDS
+			EC_number	3.1.-.-
+			dbxref	COG:COG0258
+			gene	fen
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O50123
+			locus_tag	CALJACFG_00930
+			product	Flap endonuclease 1
+			protein_id	gnl|UU|CALJACFG_00930
+81536	82555	gene
+			gene	fen
+			locus_tag	CALJACFG_00930
+84323	82536	CDS
+			EC_number	6.1.1.6
+			dbxref	COG:COG1384
+			gene	lysS
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P0CW67
+			locus_tag	CALJACFG_00940
+			product	Lysine--tRNA ligase
+			protein_id	gnl|UU|CALJACFG_00940
+84323	82536	gene
+			gene	lysS
+			locus_tag	CALJACFG_00940
+85015	84323	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00950
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00950
+85015	84323	gene
+			locus_tag	CALJACFG_00950
+86202	85021	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00960
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00960
+86202	85021	gene
+			locus_tag	CALJACFG_00960
+87040	86186	CDS
+			dbxref	COG:COG0244
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P15826
+			locus_tag	CALJACFG_00970
+			product	50S ribosomal protein L10
+			protein_id	gnl|UU|CALJACFG_00970
+87040	86186	gene
+			locus_tag	CALJACFG_00970
+87470	87069	CDS
+			dbxref	COG:COG0093
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U009
+			locus_tag	CALJACFG_00980
+			product	50S ribosomal protein L14
+			protein_id	gnl|UU|CALJACFG_00980
+87470	87069	gene
+			locus_tag	CALJACFG_00980
+87498	87764	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_00990
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_00990
+87498	87764	gene
+			locus_tag	CALJACFG_00990
+87733	88353	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01000
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01000
+87733	88353	gene
+			locus_tag	CALJACFG_01000
+88855	88346	CDS
+			dbxref	COG:COG0094
+			gene	rpl5
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U012
+			locus_tag	CALJACFG_01010
+			product	50S ribosomal protein L5
+			protein_id	gnl|UU|CALJACFG_01010
+88855	88346	gene
+			gene	rpl5
+			locus_tag	CALJACFG_01010
+88887	89444	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01020
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01020
+88887	89444	gene
+			locus_tag	CALJACFG_01020
+89466	90296	CDS
+			EC_number	2.3.1.193
+			gene	tmcA_1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_01886
+			locus_tag	CALJACFG_01030
+			product	tRNA(Met) cytidine acetyltransferase TmcA
+			protein_id	gnl|UU|CALJACFG_01030
+89466	90296	gene
+			gene	tmcA_1
+			locus_tag	CALJACFG_01030
+90266	90919	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01040
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01040
+90266	90919	gene
+			locus_tag	CALJACFG_01040
+91776	90946	CDS
+			dbxref	COG:COG1378
+			gene	trmBL2
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U3H1
+			locus_tag	CALJACFG_01050
+			product	Putative HTH-type transcriptional regulator TrmBL2
+			protein_id	gnl|UU|CALJACFG_01050
+91776	90946	gene
+			gene	trmBL2
+			locus_tag	CALJACFG_01050
+91875	92651	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01060
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01060
+91875	92651	gene
+			locus_tag	CALJACFG_01060
+92681	93595	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01070
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01070
+92681	93595	gene
+			locus_tag	CALJACFG_01070
+93702	94184	CDS
+			dbxref	COG:COG0080
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P54030
+			locus_tag	CALJACFG_01080
+			product	50S ribosomal protein L11
+			protein_id	gnl|UU|CALJACFG_01080
+93702	94184	gene
+			locus_tag	CALJACFG_01080
+94177	95889	CDS
+			EC_number	3.6.3.14
+			dbxref	COG:COG1155
+			gene	atpA
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q74MJ7
+			locus_tag	CALJACFG_01090
+			product	V-type ATP synthase alpha chain
+			protein_id	gnl|UU|CALJACFG_01090
+94177	95889	gene
+			gene	atpA
+			locus_tag	CALJACFG_01090
+97063	95849	CDS
+			EC_number	6.1.1.21
+			dbxref	COG:COG0124
+			gene	hisS
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9HLX5
+			locus_tag	CALJACFG_01100
+			product	Histidine--tRNA ligase
+			protein_id	gnl|UU|CALJACFG_01100
+97063	95849	gene
+			gene	hisS
+			locus_tag	CALJACFG_01100
+98040	97060	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01110
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01110
+98040	97060	gene
+			locus_tag	CALJACFG_01110
+98417	98037	CDS
+			dbxref	COG:COG2125
+			gene	rps6e
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P21509
+			locus_tag	CALJACFG_01120
+			product	30S ribosomal protein S6e
+			protein_id	gnl|UU|CALJACFG_01120
+98417	98037	gene
+			gene	rps6e
+			locus_tag	CALJACFG_01120
+98707	99819	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01130
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01130
+98707	99819	gene
+			locus_tag	CALJACFG_01130
+99803	100720	CDS
+			EC_number	3.1.-.-
+			dbxref	COG:COG1537
+			gene	pelA
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P96026
+			locus_tag	CALJACFG_01140
+			product	Protein pelota 
+			protein_id	gnl|UU|CALJACFG_01140
+99803	100720	gene
+			gene	pelA
+			locus_tag	CALJACFG_01140
+101753	100695	CDS
+			EC_number	2.1.1.216
+			dbxref	COG:COG1867
+			gene	trm1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O59493
+			locus_tag	CALJACFG_01150
+			product	tRNA (guanine(26)-N(2))-dimethyltransferase
+			protein_id	gnl|UU|CALJACFG_01150
+101753	100695	gene
+			gene	trm1
+			locus_tag	CALJACFG_01150
+103012	101750	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01160
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01160
+103012	101750	gene
+			locus_tag	CALJACFG_01160
+103665	103009	CDS
+			dbxref	COG:COG2123
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9V118
+			locus_tag	CALJACFG_01170
+			product	Exosome complex component Rrp42
+			protein_id	gnl|UU|CALJACFG_01170
+103665	103009	gene
+			locus_tag	CALJACFG_01170
+104675	103692	CDS
+			gene	der
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_00195
+			locus_tag	CALJACFG_01180
+			product	GTPase Der
+			protein_id	gnl|UU|CALJACFG_01180
+104675	103692	gene
+			gene	der
+			locus_tag	CALJACFG_01180
+105105	104665	CDS
+			dbxref	COG:COG1325
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9UXX8
+			locus_tag	CALJACFG_01190
+			product	RNA-binding protein
+			protein_id	gnl|UU|CALJACFG_01190
+105105	104665	gene
+			locus_tag	CALJACFG_01190
+106161	105115	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_01212
+			locus_tag	CALJACFG_01200
+			product	Deoxyguanosinetriphosphate triphosphohydrolase-like protein
+			protein_id	gnl|UU|CALJACFG_01200
+106161	105115	gene
+			locus_tag	CALJACFG_01200
+107291	106158	CDS
+			EC_number	6.1.1.2
+			dbxref	COG:COG0180
+			gene	trpS
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O59584
+			locus_tag	CALJACFG_01210
+			product	Tryptophan--tRNA ligase
+			protein_id	gnl|UU|CALJACFG_01210
+107291	106158	gene
+			gene	trpS
+			locus_tag	CALJACFG_01210
+107338	107637	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01220
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01220
+107338	107637	gene
+			locus_tag	CALJACFG_01220
+107634	108647	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01230
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01230
+107634	108647	gene
+			locus_tag	CALJACFG_01230
+109071	108613	CDS
+			EC_number	2.7.4.3
+			dbxref	COG:COG1936
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9UZK4
+			locus_tag	CALJACFG_01240
+			product	Putative adenylate kinase
+			protein_id	gnl|UU|CALJACFG_01240
+109071	108613	gene
+			locus_tag	CALJACFG_01240
+109802	109068	CDS
+			dbxref	COG:COG0489
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q6LZC5
+			locus_tag	CALJACFG_01250
+			product	Iron-sulfur cluster carrier protein
+			protein_id	gnl|UU|CALJACFG_01250
+109802	109068	gene
+			locus_tag	CALJACFG_01250
+110592	109843	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01260
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01260
+110592	109843	gene
+			locus_tag	CALJACFG_01260
+110671	111036	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01270
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01270
+110671	111036	gene
+			locus_tag	CALJACFG_01270
+111051	111551	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01280
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01280
+111051	111551	gene
+			locus_tag	CALJACFG_01280
+112301	111540	CDS
+			EC_number	3.1.26.11
+			gene	rbn
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_01818
+			locus_tag	CALJACFG_01290
+			product	Ribonuclease BN
+			protein_id	gnl|UU|CALJACFG_01290
+112301	111540	gene
+			gene	rbn
+			locus_tag	CALJACFG_01290
+113551	112319	CDS
+			EC_number	2.4.2.48
+			dbxref	COG:COG0343
+			gene	tgtA_1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O58843
+			locus_tag	CALJACFG_01300
+			product	tRNA-guanine(15) transglycosylase
+			protein_id	gnl|UU|CALJACFG_01300
+113551	112319	gene
+			gene	tgtA_1
+			locus_tag	CALJACFG_01300
+113656	114354	CDS
+			EC_number	2.1.1.-
+			dbxref	COG:COG1889
+			gene	flpA
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U4M2
+			locus_tag	CALJACFG_01310
+			product	Fibrillarin-like rRNA/tRNA 2'-O-methyltransferase
+			protein_id	gnl|UU|CALJACFG_01310
+113656	114354	gene
+			gene	flpA
+			locus_tag	CALJACFG_01310
+114348	115526	CDS
+			EC_number	6.3.5.-
+			dbxref	COG:COG0252
+			gene	gatD
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9V0T9
+			locus_tag	CALJACFG_01320
+			product	Glutamyl-tRNA(Gln) amidotransferase subunit D
+			protein_id	gnl|UU|CALJACFG_01320
+114348	115526	gene
+			gene	gatD
+			locus_tag	CALJACFG_01320
+115523	115906	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01330
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01330
+115523	115906	gene
+			locus_tag	CALJACFG_01330
+117727	115826	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01340
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01340
+117727	115826	gene
+			locus_tag	CALJACFG_01340
+118780	117758	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01350
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01350
+118780	117758	gene
+			locus_tag	CALJACFG_01350
+118934	119263	CDS
+			dbxref	COG:COG0361
+			gene	eIF1A
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q57887
+			locus_tag	CALJACFG_01360
+			product	Translation initiation factor 1A
+			protein_id	gnl|UU|CALJACFG_01360
+118934	119263	gene
+			gene	eIF1A
+			locus_tag	CALJACFG_01360
+120114	119242	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01370
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01370
+120114	119242	gene
+			locus_tag	CALJACFG_01370
+120161	120718	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01380
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01380
+120161	120718	gene
+			locus_tag	CALJACFG_01380
+120868	121935	CDS
+			dbxref	COG:COG0206
+			gene	ftsZ1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q57816
+			locus_tag	CALJACFG_01390
+			product	Cell division protein FtsZ 1
+			protein_id	gnl|UU|CALJACFG_01390
+120868	121935	gene
+			gene	ftsZ1
+			locus_tag	CALJACFG_01390
+122488	121928	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01400
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01400
+122488	121928	gene
+			locus_tag	CALJACFG_01400
+123342	122482	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01410
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01410
+123342	122482	gene
+			locus_tag	CALJACFG_01410
+124808	123318	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01420
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01420
+124808	123318	gene
+			locus_tag	CALJACFG_01420
+125557	124805	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01430
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01430
+125557	124805	gene
+			locus_tag	CALJACFG_01430
+127263	125554	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01440
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01440
+127263	125554	gene
+			locus_tag	CALJACFG_01440
+127309	128406	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01450
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01450
+127309	128406	gene
+			locus_tag	CALJACFG_01450
+128983	128285	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01460
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01460
+128983	128285	gene
+			locus_tag	CALJACFG_01460
+129858	128980	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01470
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01470
+129858	128980	gene
+			locus_tag	CALJACFG_01470
+131510	129888	CDS
+			gene	thsA
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P61112
+			locus_tag	CALJACFG_01480
+			product	Thermosome subunit alpha
+			protein_id	gnl|UU|CALJACFG_01480
+131510	129888	gene
+			gene	thsA
+			locus_tag	CALJACFG_01480
+131657	133360	CDS
+			EC_number	5.99.1.3
+			dbxref	COG:COG1389
+			gene	top6B
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8PUB8
+			locus_tag	CALJACFG_01490
+			product	Type 2 DNA topoisomerase 6 subunit B
+			protein_id	gnl|UU|CALJACFG_01490
+131657	133360	gene
+			gene	top6B
+			locus_tag	CALJACFG_01490
+133780	133334	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01500
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01500
+133780	133334	gene
+			locus_tag	CALJACFG_01500
+133827	134633	CDS
+			dbxref	COG:COG0088
+			gene	rpl4
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8TZZ9
+			locus_tag	CALJACFG_01510
+			product	50S ribosomal protein L4
+			protein_id	gnl|UU|CALJACFG_01510
+133827	134633	gene
+			gene	rpl4
+			locus_tag	CALJACFG_01510
+135251	134598	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01520
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01520
+135251	134598	gene
+			locus_tag	CALJACFG_01520
+135754	135374	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01530
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01530
+135754	135374	gene
+			locus_tag	CALJACFG_01530
+137045	135711	CDS
+			EC_number	2.8.4.4
+			gene	rimO
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_01865
+			locus_tag	CALJACFG_01540
+			product	Ribosomal protein S12 methylthiotransferase RimO
+			protein_id	gnl|UU|CALJACFG_01540
+137045	135711	gene
+			gene	rimO
+			locus_tag	CALJACFG_01540
+137072	137365	CDS
+			dbxref	COG:COG2118
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O27652
+			locus_tag	CALJACFG_01550
+			product	DNA-binding protein
+			protein_id	gnl|UU|CALJACFG_01550
+137072	137365	gene
+			locus_tag	CALJACFG_01550
+137894	137352	CDS
+			EC_number	2.7.4.3
+			dbxref	COG:COG2019
+			gene	adkA
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P35028
+			locus_tag	CALJACFG_01560
+			product	Adenylate kinase
+			protein_id	gnl|UU|CALJACFG_01560
+137894	137352	gene
+			gene	adkA
+			locus_tag	CALJACFG_01560
+138190	137891	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01570
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01570
+138190	137891	gene
+			locus_tag	CALJACFG_01570
+139480	138302	CDS
+			EC_number	2.7.7.72
+			gene	cca
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P77978
+			locus_tag	CALJACFG_01580
+			product	CCA-adding enzyme
+			protein_id	gnl|UU|CALJACFG_01580
+139480	138302	gene
+			gene	cca
+			locus_tag	CALJACFG_01580
+139761	139480	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01590
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01590
+139761	139480	gene
+			locus_tag	CALJACFG_01590
+140154	139792	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01600
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01600
+140154	139792	gene
+			locus_tag	CALJACFG_01600
+143145	140260	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01610
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01610
+143145	140260	gene
+			locus_tag	CALJACFG_01610
+144920	143109	CDS
+			EC_number	2.7.7.6
+			gene	rpoB1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:B0R8D5
+			locus_tag	CALJACFG_01620
+			product	DNA-directed RNA polymerase subunit B'
+			protein_id	gnl|UU|CALJACFG_01620
+144920	143109	gene
+			gene	rpoB1
+			locus_tag	CALJACFG_01620
+145932	144973	CDS
+			dbxref	COG:COG0370
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q57986
+			locus_tag	CALJACFG_01630
+			product	Fe(2+) transporter FeoB
+			protein_id	gnl|UU|CALJACFG_01630
+145932	144973	gene
+			locus_tag	CALJACFG_01630
+146043	146624	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01640
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01640
+146043	146624	gene
+			locus_tag	CALJACFG_01640
+146731	146588	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01650
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01650
+146731	146588	gene
+			locus_tag	CALJACFG_01650
+147267	146728	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01660
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01660
+147267	146728	gene
+			locus_tag	CALJACFG_01660
+147299	148270	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01670
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01670
+147299	148270	gene
+			locus_tag	CALJACFG_01670
+148267	149250	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01680
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01680
+148267	149250	gene
+			locus_tag	CALJACFG_01680
+149369	149202	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01690
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01690
+149369	149202	gene
+			locus_tag	CALJACFG_01690
+149716	149411	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01700
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01700
+149716	149411	gene
+			locus_tag	CALJACFG_01700
+150581	149706	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01710
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01710
+150581	149706	gene
+			locus_tag	CALJACFG_01710
+150628	150831	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01720
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01720
+150628	150831	gene
+			locus_tag	CALJACFG_01720
+151317	150796	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01730
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01730
+151317	150796	gene
+			locus_tag	CALJACFG_01730
+151945	151349	CDS
+			dbxref	COG:COG1394
+			gene	atpD
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P62017
+			locus_tag	CALJACFG_01740
+			product	V-type ATP synthase subunit D
+			protein_id	gnl|UU|CALJACFG_01740
+151945	151349	gene
+			gene	atpD
+			locus_tag	CALJACFG_01740
+152110	153540	CDS
+			dbxref	COG:COG0201
+			gene	secY
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U019
+			locus_tag	CALJACFG_01750
+			product	Protein translocase subunit SecY
+			protein_id	gnl|UU|CALJACFG_01750
+152110	153540	gene
+			gene	secY
+			locus_tag	CALJACFG_01750
+153568	154536	CDS
+			dbxref	COG:COG0470
+			gene	rfcS_1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O28219
+			locus_tag	CALJACFG_01760
+			product	Replication factor C small subunit
+			protein_id	gnl|UU|CALJACFG_01760
+153568	154536	gene
+			gene	rfcS_1
+			locus_tag	CALJACFG_01760
+156382	154526	CDS
+			dbxref	COG:COG1372
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q58191
+			locus_tag	CALJACFG_01770
+			product	putative protein
+			protein_id	gnl|UU|CALJACFG_01770
+156382	154526	gene
+			locus_tag	CALJACFG_01770
+157468	156422	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01780
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01780
+157468	156422	gene
+			locus_tag	CALJACFG_01780
+158271	157465	CDS
+			EC_number	2.4.1.-
+			dbxref	COG:COG0463
+			gene	aglI
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:D4GYH2
+			locus_tag	CALJACFG_01790
+			product	Glycosyltransferase AglI
+			protein_id	gnl|UU|CALJACFG_01790
+158271	157465	gene
+			gene	aglI
+			locus_tag	CALJACFG_01790
+158320	159789	CDS
+			EC_number	2.7.7.6
+			gene	rpoB2
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:B0R8D6
+			locus_tag	CALJACFG_01800
+			product	DNA-directed RNA polymerase subunit B''
+			protein_id	gnl|UU|CALJACFG_01800
+158320	159789	gene
+			gene	rpoB2
+			locus_tag	CALJACFG_01800
+159773	160918	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01810
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01810
+159773	160918	gene
+			locus_tag	CALJACFG_01810
+161685	160915	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O58022
+			locus_tag	CALJACFG_01820
+			note	UPF0273 protein PH0284
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01820
+161685	160915	gene
+			locus_tag	CALJACFG_01820
+161733	161918	CDS
+			dbxref	COG:COG1998
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U443
+			locus_tag	CALJACFG_01830
+			product	30S ribosomal protein S27ae
+			protein_id	gnl|UU|CALJACFG_01830
+161733	161918	gene
+			locus_tag	CALJACFG_01830
+163932	162031	CDS
+			EC_number	6.1.1.3
+			dbxref	COG:COG0441
+			gene	thrS
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9UZ14
+			locus_tag	CALJACFG_01840
+			product	Threonine--tRNA ligase
+			protein_id	gnl|UU|CALJACFG_01840
+163932	162031	gene
+			gene	thrS
+			locus_tag	CALJACFG_01840
+164310	164654	CDS
+			dbxref	COG:COG2163
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U2L5
+			locus_tag	CALJACFG_01850
+			product	50S ribosomal protein L14e
+			protein_id	gnl|UU|CALJACFG_01850
+164310	164654	gene
+			locus_tag	CALJACFG_01850
+164686	164946	CDS
+			dbxref	COG:COG1911
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P54061
+			locus_tag	CALJACFG_01860
+			product	50S ribosomal protein L30e
+			protein_id	gnl|UU|CALJACFG_01860
+164686	164946	gene
+			locus_tag	CALJACFG_01860
+164948	165358	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01870
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01870
+164948	165358	gene
+			locus_tag	CALJACFG_01870
+165355	165645	CDS
+			EC_number	2.7.7.6
+			dbxref	COG:COG1761
+			gene	rpoL
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q980K0
+			locus_tag	CALJACFG_01880
+			product	DNA-directed RNA polymerase subunit L
+			protein_id	gnl|UU|CALJACFG_01880
+165355	165645	gene
+			gene	rpoL
+			locus_tag	CALJACFG_01880
+166207	165635	CDS
+			dbxref	COG:COG1632
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U2F9
+			locus_tag	CALJACFG_01890
+			product	50S ribosomal protein L15e
+			protein_id	gnl|UU|CALJACFG_01890
+166207	165635	gene
+			locus_tag	CALJACFG_01890
+166244	166570	CDS
+			dbxref	COG:COG1631
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U475
+			locus_tag	CALJACFG_01900
+			product	50S ribosomal protein L44e
+			protein_id	gnl|UU|CALJACFG_01900
+166244	166570	gene
+			locus_tag	CALJACFG_01900
+166567	167163	CDS
+			dbxref	COG:COG1097
+			gene	rrp4
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O29758
+			locus_tag	CALJACFG_01910
+			product	Exosome complex component Rrp4
+			protein_id	gnl|UU|CALJACFG_01910
+166567	167163	gene
+			gene	rrp4
+			locus_tag	CALJACFG_01910
+167163	168512	CDS
+			EC_number	6.3.5.-
+			dbxref	COG:COG0064
+			gene	gatB
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O27341
+			locus_tag	CALJACFG_01920
+			product	Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransferase subunit B
+			protein_id	gnl|UU|CALJACFG_01920
+167163	168512	gene
+			gene	gatB
+			locus_tag	CALJACFG_01920
+168505	169614	CDS
+			dbxref	COG:COG1222
+			gene	pan
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O28303
+			locus_tag	CALJACFG_01930
+			product	Proteasome-activating nucleotidase
+			protein_id	gnl|UU|CALJACFG_01930
+168505	169614	gene
+			gene	pan
+			locus_tag	CALJACFG_01930
+169614	169934	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01940
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01940
+169614	169934	gene
+			locus_tag	CALJACFG_01940
+170403	169924	CDS
+			dbxref	COG:COG2238
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9V0G8
+			locus_tag	CALJACFG_01950
+			product	30S ribosomal protein S19e
+			protein_id	gnl|UU|CALJACFG_01950
+170403	169924	gene
+			locus_tag	CALJACFG_01950
+170450	171328	CDS
+			EC_number	2.6.1.42
+			dbxref	COG:COG0115
+			gene	ilvE
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O29329
+			locus_tag	CALJACFG_01960
+			product	Putative branched-chain-amino-acid aminotransferase
+			protein_id	gnl|UU|CALJACFG_01960
+170450	171328	gene
+			gene	ilvE
+			locus_tag	CALJACFG_01960
+172383	171319	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01970
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01970
+172383	171319	gene
+			locus_tag	CALJACFG_01970
+172477	173145	CDS
+			EC_number	1.11.1.15
+			dbxref	COG:COG0450
+			gene	ahpC
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O58966
+			locus_tag	CALJACFG_01980
+			product	Peroxiredoxin
+			protein_id	gnl|UU|CALJACFG_01980
+172477	173145	gene
+			gene	ahpC
+			locus_tag	CALJACFG_01980
+173193	173603	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_01990
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_01990
+173193	173603	gene
+			locus_tag	CALJACFG_01990
+175362	173587	CDS
+			EC_number	4.2.1.51
+			dbxref	COG:COG0077
+			gene	pheA
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q58054
+			locus_tag	CALJACFG_02000
+			product	Prephenate dehydratase
+			protein_id	gnl|UU|CALJACFG_02000
+175362	173587	gene
+			gene	pheA
+			locus_tag	CALJACFG_02000
+175392	176558	CDS
+			EC_number	2.4.1.-
+			gene	gtf1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_01472
+			locus_tag	CALJACFG_02010
+			product	Glycosyltransferase Gtf1
+			protein_id	gnl|UU|CALJACFG_02010
+175392	176558	gene
+			gene	gtf1
+			locus_tag	CALJACFG_02010
+176888	177193	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02020
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02020
+176888	177193	gene
+			locus_tag	CALJACFG_02020
+177181	177591	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02030
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02030
+177181	177591	gene
+			locus_tag	CALJACFG_02030
+177596	178609	CDS
+			dbxref	COG:COG0668
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q57634
+			locus_tag	CALJACFG_02040
+			product	Small-conductance mechanosensitive channel MscMJ
+			protein_id	gnl|UU|CALJACFG_02040
+177596	178609	gene
+			locus_tag	CALJACFG_02040
+178606	179616	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02050
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02050
+178606	179616	gene
+			locus_tag	CALJACFG_02050
+180388	179657	CDS
+			dbxref	COG:COG1599
+			gene	rpa
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q58559
+			locus_tag	CALJACFG_02060
+			product	Replication factor A
+			protein_id	gnl|UU|CALJACFG_02060
+180388	179657	gene
+			gene	rpa
+			locus_tag	CALJACFG_02060
+180923	180381	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02070
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02070
+180923	180381	gene
+			locus_tag	CALJACFG_02070
+181203	180895	CDS
+			dbxref	COG:COG2058
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O57705
+			locus_tag	CALJACFG_02080
+			product	50S ribosomal protein L12
+			protein_id	gnl|UU|CALJACFG_02080
+181203	180895	gene
+			locus_tag	CALJACFG_02080
+181267	181791	CDS
+			dbxref	COG:COG0091
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U003
+			locus_tag	CALJACFG_02090
+			product	50S ribosomal protein L22
+			protein_id	gnl|UU|CALJACFG_02090
+181267	181791	gene
+			locus_tag	CALJACFG_02090
+182358	181768	CDS
+			EC_number	3.4.25.1
+			dbxref	COG:COG0638
+			gene	psmB
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q58634
+			locus_tag	CALJACFG_02100
+			product	Proteasome subunit beta
+			protein_id	gnl|UU|CALJACFG_02100
+182358	181768	gene
+			gene	psmB
+			locus_tag	CALJACFG_02100
+182851	182387	CDS
+			EC_number	4.6.1.16
+			dbxref	COG:COG1676
+			gene	endA
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q74MP4
+			locus_tag	CALJACFG_02110
+			product	tRNA-splicing endonuclease
+			protein_id	gnl|UU|CALJACFG_02110
+182851	182387	gene
+			gene	endA
+			locus_tag	CALJACFG_02110
+183060	182848	CDS
+			EC_number	2.7.7.6
+			dbxref	COG:COG1758
+			gene	rpoK
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q5JJD0
+			locus_tag	CALJACFG_02120
+			product	DNA-directed RNA polymerase subunit K
+			protein_id	gnl|UU|CALJACFG_02120
+183060	182848	gene
+			gene	rpoK
+			locus_tag	CALJACFG_02120
+183094	183522	CDS
+			EC_number	5.4.99.25
+			dbxref	COG:COG0130
+			gene	truB_1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q7LWY0
+			locus_tag	CALJACFG_02130
+			product	putative tRNA pseudouridine synthase B
+			protein_id	gnl|UU|CALJACFG_02130
+183094	183522	gene
+			gene	truB_1
+			locus_tag	CALJACFG_02130
+183522	185135	CDS
+			EC_number	6.1.1.19
+			dbxref	COG:COG0018
+			gene	argS
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O59147
+			locus_tag	CALJACFG_02140
+			product	Arginine--tRNA ligase
+			protein_id	gnl|UU|CALJACFG_02140
+183522	185135	gene
+			gene	argS
+			locus_tag	CALJACFG_02140
+185616	185128	CDS
+			dbxref	COG:COG0102
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U0E6
+			locus_tag	CALJACFG_02150
+			product	50S ribosomal protein L13
+			protein_id	gnl|UU|CALJACFG_02150
+185616	185128	gene
+			locus_tag	CALJACFG_02150
+187769	185634	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02160
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02160
+187769	185634	gene
+			locus_tag	CALJACFG_02160
+189403	187790	CDS
+			EC_number	6.1.1.15
+			dbxref	COG:COG0442
+			gene	proS_1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q58635
+			locus_tag	CALJACFG_02170
+			product	Proline--tRNA ligase
+			protein_id	gnl|UU|CALJACFG_02170
+189403	187790	gene
+			gene	proS_1
+			locus_tag	CALJACFG_02170
+189419	189835	CDS
+			EC_number	3.1.-.-
+			dbxref	COG:COG1439
+			gene	nob1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O58440
+			locus_tag	CALJACFG_02180
+			product	Endoribonuclease Nob1
+			protein_id	gnl|UU|CALJACFG_02180
+189419	189835	gene
+			gene	nob1
+			locus_tag	CALJACFG_02180
+191306	189807	CDS
+			EC_number	6.1.1.7
+			dbxref	COG:COG0013
+			gene	alaS_1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O58035
+			locus_tag	CALJACFG_02190
+			product	Alanine--tRNA ligase
+			protein_id	gnl|UU|CALJACFG_02190
+191306	189807	gene
+			gene	alaS_1
+			locus_tag	CALJACFG_02190
+191856	191290	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02200
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02200
+191856	191290	gene
+			locus_tag	CALJACFG_02200
+191884	192147	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02210
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02210
+191884	192147	gene
+			locus_tag	CALJACFG_02210
+193333	192128	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02220
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02220
+193333	192128	gene
+			locus_tag	CALJACFG_02220
+194009	193335	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02230
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02230
+194009	193335	gene
+			locus_tag	CALJACFG_02230
+194268	193996	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02240
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02240
+194268	193996	gene
+			locus_tag	CALJACFG_02240
+194470	194261	CDS
+			dbxref	COG:COG0636
+			gene	atpP
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P62021
+			locus_tag	CALJACFG_02250
+			product	Membrane-associated ATPase C chain
+			protein_id	gnl|UU|CALJACFG_02250
+194470	194261	gene
+			gene	atpP
+			locus_tag	CALJACFG_02250
+194992	194492	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02260
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02260
+194992	194492	gene
+			locus_tag	CALJACFG_02260
+195189	194992	CDS
+			dbxref	COG:COG2051
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U474
+			locus_tag	CALJACFG_02270
+			product	30S ribosomal protein S27e
+			protein_id	gnl|UU|CALJACFG_02270
+195189	194992	gene
+			locus_tag	CALJACFG_02270
+195236	195502	CDS
+			dbxref	COG:COG2092
+			gene	ef1b
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O27734
+			locus_tag	CALJACFG_02280
+			product	Elongation factor 1-beta
+			protein_id	gnl|UU|CALJACFG_02280
+195236	195502	gene
+			gene	ef1b
+			locus_tag	CALJACFG_02280
+195532	195828	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02290
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02290
+195532	195828	gene
+			locus_tag	CALJACFG_02290
+195858	197864	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02300
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02300
+195858	197864	gene
+			locus_tag	CALJACFG_02300
+198624	197875	CDS
+			EC_number	3.5.3.24
+			dbxref	COG:COG0010
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q5JI38
+			locus_tag	CALJACFG_02310
+			product	N(1)-aminopropylagmatine ureohydrolase
+			protein_id	gnl|UU|CALJACFG_02310
+198624	197875	gene
+			locus_tag	CALJACFG_02310
+198657	198791	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02320
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02320
+198657	198791	gene
+			locus_tag	CALJACFG_02320
+198788	199201	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02330
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02330
+198788	199201	gene
+			locus_tag	CALJACFG_02330
+199209	199997	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02340
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02340
+199209	199997	gene
+			locus_tag	CALJACFG_02340
+199994	200884	CDS
+			EC_number	2.5.1.108
+			dbxref	COG:COG1736
+			gene	dph2
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O58832
+			locus_tag	CALJACFG_02350
+			product	2-(3-amino-3-carboxypropyl)histidine synthase
+			protein_id	gnl|UU|CALJACFG_02350
+199994	200884	gene
+			gene	dph2
+			locus_tag	CALJACFG_02350
+200885	201118	CDS
+			dbxref	COG:COG0199
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U013
+			locus_tag	CALJACFG_02360
+			product	30S ribosomal protein S14 type Z
+			protein_id	gnl|UU|CALJACFG_02360
+200885	201118	gene
+			locus_tag	CALJACFG_02360
+201106	201522	CDS
+			dbxref	COG:COG1522
+			gene	ptr2
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q58133
+			locus_tag	CALJACFG_02370
+			product	HTH-type transcriptional regulator Ptr2
+			protein_id	gnl|UU|CALJACFG_02370
+201106	201522	gene
+			gene	ptr2
+			locus_tag	CALJACFG_02370
+202403	201510	CDS
+			EC_number	2.1.1.-
+			dbxref	COG:COG2520
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q74NE4
+			locus_tag	CALJACFG_02380
+			product	tRNA (guanine(37)-N1)/4-demethylwyosine(37)-methyltransferase Taw22
+			protein_id	gnl|UU|CALJACFG_02380
+202403	201510	gene
+			locus_tag	CALJACFG_02380
+205450	202400	CDS
+			EC_number	6.1.1.5
+			dbxref	COG:COG0060
+			gene	ileS_1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P26499
+			locus_tag	CALJACFG_02390
+			product	Isoleucine--tRNA ligase
+			protein_id	gnl|UU|CALJACFG_02390
+205450	202400	gene
+			gene	ileS_1
+			locus_tag	CALJACFG_02390
+205498	205695	CDS
+			dbxref	COG:COG2093
+			gene	spt4
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q57839
+			locus_tag	CALJACFG_02400
+			product	Transcription elongation factor Spt4
+			protein_id	gnl|UU|CALJACFG_02400
+205498	205695	gene
+			gene	spt4
+			locus_tag	CALJACFG_02400
+205695	206219	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02410
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02410
+205695	206219	gene
+			locus_tag	CALJACFG_02410
+207111	206206	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02420
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02420
+207111	206206	gene
+			locus_tag	CALJACFG_02420
+208010	207108	CDS
+			dbxref	COG:COG0470
+			gene	rfcS_2
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O28219
+			locus_tag	CALJACFG_02430
+			product	Replication factor C small subunit
+			protein_id	gnl|UU|CALJACFG_02430
+208010	207108	gene
+			gene	rfcS_2
+			locus_tag	CALJACFG_02430
+208039	208752	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02440
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02440
+208039	208752	gene
+			locus_tag	CALJACFG_02440
+208820	209830	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02450
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02450
+208820	209830	gene
+			locus_tag	CALJACFG_02450
+209835	210422	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02460
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02460
+209835	210422	gene
+			locus_tag	CALJACFG_02460
+210409	210936	CDS
+			EC_number	2.1.1.297
+			gene	prmC
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_02126
+			locus_tag	CALJACFG_02470
+			product	Release factor glutamine methyltransferase
+			protein_id	gnl|UU|CALJACFG_02470
+210409	210936	gene
+			gene	prmC
+			locus_tag	CALJACFG_02470
+210954	213887	CDS
+			EC_number	6.1.1.4
+			dbxref	COG:COG0495
+			gene	leuS
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O58698
+			locus_tag	CALJACFG_02480
+			product	Leucine--tRNA ligase
+			protein_id	gnl|UU|CALJACFG_02480
+210954	213887	gene
+			gene	leuS
+			locus_tag	CALJACFG_02480
+213933	215513	CDS
+			EC_number	2.7.7.7
+			dbxref	COG:COG1311
+			gene	polB
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9V2F3
+			locus_tag	CALJACFG_02490
+			product	DNA polymerase II small subunit
+			protein_id	gnl|UU|CALJACFG_02490
+213933	215513	gene
+			gene	polB
+			locus_tag	CALJACFG_02490
+215545	216123	CDS
+			dbxref	COG:COG0097
+			gene	rpl6
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U015
+			locus_tag	CALJACFG_02500
+			product	50S ribosomal protein L6
+			protein_id	gnl|UU|CALJACFG_02500
+215545	216123	gene
+			gene	rpl6
+			locus_tag	CALJACFG_02500
+216154	216750	CDS
+			dbxref	COG:COG0049
+			gene	rps7
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O59230
+			locus_tag	CALJACFG_02510
+			product	30S ribosomal protein S7
+			protein_id	gnl|UU|CALJACFG_02510
+216154	216750	gene
+			gene	rps7
+			locus_tag	CALJACFG_02510
+216750	217412	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02520
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02520
+216750	217412	gene
+			locus_tag	CALJACFG_02520
+217416	218228	CDS
+			EC_number	6.3.5.-
+			dbxref	COG:COG2511
+			gene	gatE_1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9V0U0
+			locus_tag	CALJACFG_02530
+			product	Glutamyl-tRNA(Gln) amidotransferase subunit E
+			protein_id	gnl|UU|CALJACFG_02530
+217416	218228	gene
+			gene	gatE_1
+			locus_tag	CALJACFG_02530
+218561	218214	CDS
+			EC_number	3.1.1.29
+			dbxref	COG:COG1990
+			gene	pth
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9HLW6
+			locus_tag	CALJACFG_02540
+			product	Peptidyl-tRNA hydrolase
+			protein_id	gnl|UU|CALJACFG_02540
+218561	218214	gene
+			gene	pth
+			locus_tag	CALJACFG_02540
+219196	218546	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02550
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02550
+219196	218546	gene
+			locus_tag	CALJACFG_02550
+219722	219180	CDS
+			dbxref	COG:COG0522
+			gene	rps4
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P61992
+			locus_tag	CALJACFG_02560
+			product	30S ribosomal protein S4
+			protein_id	gnl|UU|CALJACFG_02560
+219722	219180	gene
+			gene	rps4
+			locus_tag	CALJACFG_02560
+219770	220471	CDS
+			EC_number	3.1.13.-
+			dbxref	COG:COG0689
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9V119
+			locus_tag	CALJACFG_02570
+			product	Exosome complex component Rrp41
+			protein_id	gnl|UU|CALJACFG_02570
+219770	220471	gene
+			locus_tag	CALJACFG_02570
+221221	220568	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02580
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02580
+221221	220568	gene
+			locus_tag	CALJACFG_02580
+221737	221225	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02590
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02590
+221737	221225	gene
+			locus_tag	CALJACFG_02590
+221873	224128	CDS
+			EC_number	6.1.1.5
+			dbxref	COG:COG0060
+			gene	ileS_2
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P26499
+			locus_tag	CALJACFG_02600
+			product	Isoleucine--tRNA ligase
+			protein_id	gnl|UU|CALJACFG_02600
+221873	224128	gene
+			gene	ileS_2
+			locus_tag	CALJACFG_02600
+224167	225156	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02610
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02610
+224167	225156	gene
+			locus_tag	CALJACFG_02610
+225577	225113	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02620
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02620
+225577	225113	gene
+			locus_tag	CALJACFG_02620
+225745	228105	CDS
+			dbxref	COG:COG0419
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P58301
+			locus_tag	CALJACFG_02630
+			product	DNA double-strand break repair Rad50 ATPase
+			protein_id	gnl|UU|CALJACFG_02630
+225745	228105	gene
+			locus_tag	CALJACFG_02630
+228643	228095	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02640
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02640
+228643	228095	gene
+			locus_tag	CALJACFG_02640
+229019	228597	CDS
+			dbxref	COG:COG0198
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U010
+			locus_tag	CALJACFG_02650
+			product	50S ribosomal protein L24
+			protein_id	gnl|UU|CALJACFG_02650
+229019	228597	gene
+			locus_tag	CALJACFG_02650
+229299	229048	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02660
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02660
+229299	229048	gene
+			locus_tag	CALJACFG_02660
+229335	229541	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02670
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02670
+229335	229541	gene
+			locus_tag	CALJACFG_02670
+229561	231621	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02680
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02680
+229561	231621	gene
+			locus_tag	CALJACFG_02680
+231618	232079	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02690
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02690
+231618	232079	gene
+			locus_tag	CALJACFG_02690
+232435	232046	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02700
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02700
+232435	232046	gene
+			locus_tag	CALJACFG_02700
+232468	232659	CDS
+			gene	rpmC
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_00374
+			locus_tag	CALJACFG_02710
+			product	50S ribosomal protein L29
+			protein_id	gnl|UU|CALJACFG_02710
+232468	232659	gene
+			gene	rpmC
+			locus_tag	CALJACFG_02710
+232649	232966	CDS
+			dbxref	COG:COG0023
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q57902
+			locus_tag	CALJACFG_02720
+			product	Protein translation factor SUI1 
+			protein_id	gnl|UU|CALJACFG_02720
+232649	232966	gene
+			locus_tag	CALJACFG_02720
+234173	232923	CDS
+			dbxref	COG:COG1156
+			gene	atpB
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:A8AAA9
+			locus_tag	CALJACFG_02730
+			product	V-type ATP synthase beta chain
+			protein_id	gnl|UU|CALJACFG_02730
+234173	232923	gene
+			gene	atpB
+			locus_tag	CALJACFG_02730
+241066	234473	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02740
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02740
+241066	234473	gene
+			locus_tag	CALJACFG_02740
+241692	241105	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02750
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02750
+241692	241105	gene
+			locus_tag	CALJACFG_02750
+242729	241689	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02760
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02760
+242729	241689	gene
+			locus_tag	CALJACFG_02760
+243607	242726	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02770
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02770
+243607	242726	gene
+			locus_tag	CALJACFG_02770
+244840	243650	CDS
+			dbxref	COG:COG5257
+			gene	eif2g
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9V1G0
+			locus_tag	CALJACFG_02780
+			product	Translation initiation factor 2 subunit gamma
+			protein_id	gnl|UU|CALJACFG_02780
+244840	243650	gene
+			gene	eif2g
+			locus_tag	CALJACFG_02780
+245958	244855	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02790
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02790
+245958	244855	gene
+			locus_tag	CALJACFG_02790
+246109	246651	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02800
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02800
+246109	246651	gene
+			locus_tag	CALJACFG_02800
+246651	247775	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02810
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02810
+246651	247775	gene
+			locus_tag	CALJACFG_02810
+248158	247769	CDS
+			dbxref	COG:COG0096
+			gene	rps8
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U014
+			locus_tag	CALJACFG_02820
+			product	30S ribosomal protein S8
+			protein_id	gnl|UU|CALJACFG_02820
+248158	247769	gene
+			gene	rps8
+			locus_tag	CALJACFG_02820
+248284	249231	CDS
+			dbxref	COG:COG1405
+			gene	tfb
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P61998
+			locus_tag	CALJACFG_02830
+			product	Transcription initiation factor IIB
+			protein_id	gnl|UU|CALJACFG_02830
+248284	249231	gene
+			gene	tfb
+			locus_tag	CALJACFG_02830
+249215	249433	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02840
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02840
+249215	249433	gene
+			locus_tag	CALJACFG_02840
+249770	249393	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02850
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02850
+249770	249393	gene
+			locus_tag	CALJACFG_02850
+250614	249775	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02860
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02860
+250614	249775	gene
+			locus_tag	CALJACFG_02860
+250706	251200	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02870
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02870
+250706	251200	gene
+			locus_tag	CALJACFG_02870
+251228	252655	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02880
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02880
+251228	252655	gene
+			locus_tag	CALJACFG_02880
+253332	252634	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02890
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02890
+253332	252634	gene
+			locus_tag	CALJACFG_02890
+255448	253475	CDS
+			EC_number	3.6.4.12
+			dbxref	COG:COG1241
+			gene	MCM
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9UXG1
+			locus_tag	CALJACFG_02900
+			product	Minichromosome maintenance protein MCM
+			protein_id	gnl|UU|CALJACFG_02900
+255448	253475	gene
+			gene	MCM
+			locus_tag	CALJACFG_02900
+255499	256305	CDS
+			EC_number	2.8.1.-
+			dbxref	COG:COG0037
+			gene	ttuA_1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O58038
+			locus_tag	CALJACFG_02910
+			product	tRNA-5-methyluridine(54) 2-sulfurtransferase
+			protein_id	gnl|UU|CALJACFG_02910
+255499	256305	gene
+			gene	ttuA_1
+			locus_tag	CALJACFG_02910
+256280	256792	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02920
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02920
+256280	256792	gene
+			locus_tag	CALJACFG_02920
+256966	256760	CDS
+			dbxref	COG:COG2260
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P81303
+			locus_tag	CALJACFG_02930
+			product	Ribosome biogenesis protein Nop10
+			protein_id	gnl|UU|CALJACFG_02930
+256966	256760	gene
+			locus_tag	CALJACFG_02930
+258790	256970	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02940
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02940
+258790	256970	gene
+			locus_tag	CALJACFG_02940
+258839	259096	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02950
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02950
+258839	259096	gene
+			locus_tag	CALJACFG_02950
+259684	259292	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02960
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02960
+259684	259292	gene
+			locus_tag	CALJACFG_02960
+259743	260087	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_02970
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02970
+259743	260087	gene
+			locus_tag	CALJACFG_02970
+260106	260354	CDS
+			dbxref	COG:COG2036
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O74098
+			locus_tag	CALJACFG_02980
+			product	Archaeal histone A
+			protein_id	gnl|UU|CALJACFG_02980
+260106	260354	gene
+			locus_tag	CALJACFG_02980
+260552	260346	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O26734
+			locus_tag	CALJACFG_02990
+			note	UPF0235 protein MTH_637
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_02990
+260552	260346	gene
+			locus_tag	CALJACFG_02990
+260701	260988	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03000
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03000
+260701	260988	gene
+			locus_tag	CALJACFG_03000
+261327	260968	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03010
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03010
+261327	260968	gene
+			locus_tag	CALJACFG_03010
+265511	261339	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03020
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03020
+265511	261339	gene
+			locus_tag	CALJACFG_03020
+265735	265508	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03030
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03030
+265735	265508	gene
+			locus_tag	CALJACFG_03030
+266881	265757	CDS
+			EC_number	5.4.99.27
+			dbxref	COG:COG0585
+			gene	truD
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8Q0M2
+			locus_tag	CALJACFG_03040
+			product	putative tRNA pseudouridine synthase D
+			protein_id	gnl|UU|CALJACFG_03040
+266881	265757	gene
+			gene	truD
+			locus_tag	CALJACFG_03040
+267076	266891	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03050
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03050
+267076	266891	gene
+			locus_tag	CALJACFG_03050
+268246	267116	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03060
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03060
+268246	267116	gene
+			locus_tag	CALJACFG_03060
+269115	268243	CDS
+			EC_number	2.1.1.-
+			dbxref	COG:COG0144
+			gene	trm4
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q60343
+			locus_tag	CALJACFG_03070
+			product	tRNA (cytosine(48)-C(5))-methyltransferase
+			protein_id	gnl|UU|CALJACFG_03070
+269115	268243	gene
+			gene	trm4
+			locus_tag	CALJACFG_03070
+269150	269401	CDS
+			dbxref	COG:COG2174
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U2L3
+			locus_tag	CALJACFG_03080
+			product	50S ribosomal protein L34e
+			protein_id	gnl|UU|CALJACFG_03080
+269150	269401	gene
+			locus_tag	CALJACFG_03080
+269825	269367	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03090
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03090
+269825	269367	gene
+			locus_tag	CALJACFG_03090
+270507	269818	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03100
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03100
+270507	269818	gene
+			locus_tag	CALJACFG_03100
+272222	270507	CDS
+			EC_number	3.6.3.33
+			dbxref	COG:COG1120
+			gene	btuD_2
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9HQ18
+			locus_tag	CALJACFG_03110
+			product	Cobalamin import ATP-binding protein BtuD
+			protein_id	gnl|UU|CALJACFG_03110
+272222	270507	gene
+			gene	btuD_2
+			locus_tag	CALJACFG_03110
+272316	275141	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03120
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03120
+272316	275141	gene
+			locus_tag	CALJACFG_03120
+275433	275146	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03130
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03130
+275433	275146	gene
+			locus_tag	CALJACFG_03130
+275497	277185	CDS
+			EC_number	6.1.1.17
+			dbxref	COG:COG0008
+			gene	gltX
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O26157
+			locus_tag	CALJACFG_03140
+			product	Glutamate--tRNA ligase
+			protein_id	gnl|UU|CALJACFG_03140
+275497	277185	gene
+			gene	gltX
+			locus_tag	CALJACFG_03140
+277214	277471	CDS
+			dbxref	COG:COG2451
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8TZV6
+			locus_tag	CALJACFG_03150
+			product	50S ribosomal protein L35Ae
+			protein_id	gnl|UU|CALJACFG_03150
+277214	277471	gene
+			locus_tag	CALJACFG_03150
+277468	277665	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03160
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03160
+277468	277665	gene
+			locus_tag	CALJACFG_03160
+277715	277846	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03170
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03170
+277715	277846	gene
+			locus_tag	CALJACFG_03170
+277847	278290	CDS
+			EC_number	2.4.2.48
+			dbxref	COG:COG0343
+			gene	tgtA_2
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O58843
+			locus_tag	CALJACFG_03180
+			product	tRNA-guanine(15) transglycosylase
+			protein_id	gnl|UU|CALJACFG_03180
+277847	278290	gene
+			gene	tgtA_2
+			locus_tag	CALJACFG_03180
+278262	278930	CDS
+			EC_number	1.1.1.377
+			dbxref	COG:COG1028
+			gene	rhaD
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9HK58
+			locus_tag	CALJACFG_03190
+			product	L-rhamnose 1-dehydrogenase (NADP(+))
+			protein_id	gnl|UU|CALJACFG_03190
+278262	278930	gene
+			gene	rhaD
+			locus_tag	CALJACFG_03190
+279572	279045	CDS
+			EC_number	2.7.4.6
+			dbxref	COG:COG0105
+			gene	ndk
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8ZWY4
+			locus_tag	CALJACFG_03200
+			product	Nucleoside diphosphate kinase
+			protein_id	gnl|UU|CALJACFG_03200
+279572	279045	gene
+			gene	ndk
+			locus_tag	CALJACFG_03200
+279649	280062	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03210
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03210
+279649	280062	gene
+			locus_tag	CALJACFG_03210
+281498	280044	CDS
+			EC_number	6.1.1.11
+			dbxref	COG:COG0172
+			gene	serS
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O58441
+			locus_tag	CALJACFG_03220
+			product	Serine--tRNA ligase
+			protein_id	gnl|UU|CALJACFG_03220
+281498	280044	gene
+			gene	serS
+			locus_tag	CALJACFG_03220
+281526	281954	CDS
+			EC_number	2.1.1.178
+			gene	rsmF
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_01579
+			locus_tag	CALJACFG_03230
+			product	Ribosomal RNA small subunit methyltransferase F
+			protein_id	gnl|UU|CALJACFG_03230
+281526	281954	gene
+			gene	rsmF
+			locus_tag	CALJACFG_03230
+281951	282436	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03240
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03240
+281951	282436	gene
+			locus_tag	CALJACFG_03240
+282889	282422	CDS
+			dbxref	COG:COG1841
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9HH78
+			locus_tag	CALJACFG_03250
+			product	50S ribosomal protein L30
+			protein_id	gnl|UU|CALJACFG_03250
+282889	282422	gene
+			locus_tag	CALJACFG_03250
+283002	283250	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03260
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03260
+283002	283250	gene
+			locus_tag	CALJACFG_03260
+283625	283245	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03270
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03270
+283625	283245	gene
+			locus_tag	CALJACFG_03270
+283658	284254	CDS
+			EC_number	3.5.4.30
+			dbxref	COG:COG0717
+			gene	dcd
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q57872
+			locus_tag	CALJACFG_03280
+			product	dCTP deaminase, dUMP-forming
+			protein_id	gnl|UU|CALJACFG_03280
+283658	284254	gene
+			gene	dcd
+			locus_tag	CALJACFG_03280
+285017	284247	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03290
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03290
+285017	284247	gene
+			locus_tag	CALJACFG_03290
+285430	285014	CDS
+			dbxref	COG:COG0200
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U018
+			locus_tag	CALJACFG_03300
+			product	50S ribosomal protein L15
+			protein_id	gnl|UU|CALJACFG_03300
+285430	285014	gene
+			locus_tag	CALJACFG_03300
+285479	287584	CDS
+			dbxref	COG:COG1110
+			gene	rgy_2
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O29238
+			locus_tag	CALJACFG_03310
+			product	Reverse gyrase
+			protein_id	gnl|UU|CALJACFG_03310
+285479	287584	gene
+			gene	rgy_2
+			locus_tag	CALJACFG_03310
+287613	287990	CDS
+			dbxref	COG:COG1358
+			gene	rpl7ae
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9YAX7
+			locus_tag	CALJACFG_03320
+			product	50S ribosomal protein L7Ae
+			protein_id	gnl|UU|CALJACFG_03320
+287613	287990	gene
+			gene	rpl7ae
+			locus_tag	CALJACFG_03320
+287987	288427	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03330
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03330
+287987	288427	gene
+			locus_tag	CALJACFG_03330
+288622	288404	CDS
+			dbxref	COG:COG1383
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U0U1
+			locus_tag	CALJACFG_03340
+			product	30S ribosomal protein S17e
+			protein_id	gnl|UU|CALJACFG_03340
+288622	288404	gene
+			locus_tag	CALJACFG_03340
+288671	288898	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03350
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03350
+288671	288898	gene
+			locus_tag	CALJACFG_03350
+288899	289417	CDS
+			dbxref	COG:COG1110
+			gene	rgy_3
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O29238
+			locus_tag	CALJACFG_03360
+			product	Reverse gyrase
+			protein_id	gnl|UU|CALJACFG_03360
+288899	289417	gene
+			gene	rgy_3
+			locus_tag	CALJACFG_03360
+289787	289368	CDS
+			dbxref	COG:COG1601
+			gene	eif2b
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U3I5
+			locus_tag	CALJACFG_03370
+			product	Translation initiation factor 2 subunit beta
+			protein_id	gnl|UU|CALJACFG_03370
+289787	289368	gene
+			gene	eif2b
+			locus_tag	CALJACFG_03370
+290425	289796	CDS
+			EC_number	2.1.1.282
+			dbxref	COG:COG1590
+			gene	taw3-1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O58796
+			locus_tag	CALJACFG_03380
+			product	tRNA(Phe) 7-((3-amino-3-carboxypropyl)-4-demethylwyosine(37)-N(4))-methyltransferase 1
+			protein_id	gnl|UU|CALJACFG_03380
+290425	289796	gene
+			gene	taw3-1
+			locus_tag	CALJACFG_03380
+290465	290806	CDS
+			dbxref	COG:COG0186
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U008
+			locus_tag	CALJACFG_03390
+			product	30S ribosomal protein S17
+			protein_id	gnl|UU|CALJACFG_03390
+290465	290806	gene
+			locus_tag	CALJACFG_03390
+290803	291039	CDS
+			dbxref	COG:COG1522
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O59188
+			locus_tag	CALJACFG_03400
+			product	putative HTH-type transcriptional regulator
+			protein_id	gnl|UU|CALJACFG_03400
+290803	291039	gene
+			locus_tag	CALJACFG_03400
+291486	291022	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03410
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03410
+291486	291022	gene
+			locus_tag	CALJACFG_03410
+291970	291473	CDS
+			EC_number	3.6.1.23
+			dbxref	COG:COG0717
+			gene	dut
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q58502
+			locus_tag	CALJACFG_03420
+			product	Deoxyuridine 5'-triphosphate nucleotidohydrolase
+			protein_id	gnl|UU|CALJACFG_03420
+291970	291473	gene
+			gene	dut
+			locus_tag	CALJACFG_03420
+292908	291967	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03430
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03430
+292908	291967	gene
+			locus_tag	CALJACFG_03430
+293176	292937	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03440
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03440
+293176	292937	gene
+			locus_tag	CALJACFG_03440
+293211	293480	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03450
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03450
+293211	293480	gene
+			locus_tag	CALJACFG_03450
+293477	294319	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03460
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03460
+293477	294319	gene
+			locus_tag	CALJACFG_03460
+294337	294855	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03470
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03470
+294337	294855	gene
+			locus_tag	CALJACFG_03470
+295471	294842	CDS
+			EC_number	5.4.99.12
+			gene	truA
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_00171
+			locus_tag	CALJACFG_03480
+			product	tRNA pseudouridine synthase A
+			protein_id	gnl|UU|CALJACFG_03480
+295471	294842	gene
+			gene	truA
+			locus_tag	CALJACFG_03480
+296003	295458	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03490
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03490
+296003	295458	gene
+			locus_tag	CALJACFG_03490
+296818	295994	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03500
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03500
+296818	295994	gene
+			locus_tag	CALJACFG_03500
+296866	297063	CDS
+			EC_number	2.7.7.6
+			dbxref	COG:COG1644
+			gene	rpoN
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q5JJC9
+			locus_tag	CALJACFG_03510
+			product	DNA-directed RNA polymerase subunit N
+			protein_id	gnl|UU|CALJACFG_03510
+296866	297063	gene
+			gene	rpoN
+			locus_tag	CALJACFG_03510
+297610	297050	CDS
+			EC_number	2.1.1.219
+			dbxref	COG:COG2519
+			gene	trmI
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9V1J7
+			locus_tag	CALJACFG_03520
+			product	tRNA (adenine(57)-N(1)/adenine(58)-N(1))-methyltransferase TrmI
+			protein_id	gnl|UU|CALJACFG_03520
+297610	297050	gene
+			gene	trmI
+			locus_tag	CALJACFG_03520
+297715	297867	CDS
+			dbxref	COG:COG2075
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U158
+			locus_tag	CALJACFG_03530
+			product	50S ribosomal protein L24e
+			protein_id	gnl|UU|CALJACFG_03530
+297715	297867	gene
+			locus_tag	CALJACFG_03530
+297849	298418	CDS
+			EC_number	3.1.3.18
+			gene	gph
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_00495
+			locus_tag	CALJACFG_03540
+			product	Phosphoglycolate phosphatase
+			protein_id	gnl|UU|CALJACFG_03540
+297849	298418	gene
+			gene	gph
+			locus_tag	CALJACFG_03540
+298865	298392	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03550
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03550
+298865	298392	gene
+			locus_tag	CALJACFG_03550
+299977	298862	CDS
+			EC_number	2.7.7.-
+			dbxref	COG:COG0358
+			gene	dnaG
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P95980
+			locus_tag	CALJACFG_03560
+			product	DNA primase DnaG
+			protein_id	gnl|UU|CALJACFG_03560
+299977	298862	gene
+			gene	dnaG
+			locus_tag	CALJACFG_03560
+301024	299999	CDS
+			dbxref	COG:COG1498
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q58105
+			locus_tag	CALJACFG_03570
+			product	putative NOP5 family protein
+			protein_id	gnl|UU|CALJACFG_03570
+301024	299999	gene
+			locus_tag	CALJACFG_03570
+301096	301506	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03580
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03580
+301096	301506	gene
+			locus_tag	CALJACFG_03580
+302014	301496	CDS
+			EC_number	3.5.1.124
+			dbxref	COG:COG0693
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O59413
+			locus_tag	CALJACFG_03590
+			product	Deglycase
+			protein_id	gnl|UU|CALJACFG_03590
+302014	301496	gene
+			locus_tag	CALJACFG_03590
+303954	302044	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03600
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03600
+303954	302044	gene
+			locus_tag	CALJACFG_03600
+305006	304107	CDS
+			EC_number	3.1.21.7
+			dbxref	COG:COG1515
+			gene	nfi
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O30108
+			locus_tag	CALJACFG_03610
+			product	Endonuclease V
+			protein_id	gnl|UU|CALJACFG_03610
+305006	304107	gene
+			gene	nfi
+			locus_tag	CALJACFG_03610
+305229	304993	CDS
+			dbxref	COG:COG2157
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U3S9
+			locus_tag	CALJACFG_03620
+			product	50S ribosomal protein L18Ae
+			protein_id	gnl|UU|CALJACFG_03620
+305229	304993	gene
+			locus_tag	CALJACFG_03620
+306059	305259	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03630
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03630
+306059	305259	gene
+			locus_tag	CALJACFG_03630
+306309	306082	CDS
+			dbxref	COG:COG2036
+			gene	hmtA1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P50483
+			locus_tag	CALJACFG_03640
+			product	DNA-binding protein HMt-1.1
+			protein_id	gnl|UU|CALJACFG_03640
+306309	306082	gene
+			gene	hmtA1
+			locus_tag	CALJACFG_03640
+308131	306335	CDS
+			EC_number	3.4.21.-
+			dbxref	COG:COG1067
+			gene	lon_1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8NKS6
+			locus_tag	CALJACFG_03650
+			product	Archaeal Lon protease
+			protein_id	gnl|UU|CALJACFG_03650
+308131	306335	gene
+			gene	lon_1
+			locus_tag	CALJACFG_03650
+308474	308163	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03660
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03660
+308474	308163	gene
+			locus_tag	CALJACFG_03660
+308653	308931	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03670
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03670
+308653	308931	gene
+			locus_tag	CALJACFG_03670
+309033	309662	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03680
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03680
+309033	309662	gene
+			locus_tag	CALJACFG_03680
+309789	311573	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03690
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03690
+309789	311573	gene
+			locus_tag	CALJACFG_03690
+311819	311574	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03700
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03700
+311819	311574	gene
+			locus_tag	CALJACFG_03700
+311847	312266	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03710
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03710
+311847	312266	gene
+			locus_tag	CALJACFG_03710
+312534	312259	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03720
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03720
+312534	312259	gene
+			locus_tag	CALJACFG_03720
+312583	313245	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03730
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03730
+312583	313245	gene
+			locus_tag	CALJACFG_03730
+313666	313232	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03740
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03740
+313666	313232	gene
+			locus_tag	CALJACFG_03740
+313932	313666	CDS
+			dbxref	COG:COG2053
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P61030
+			locus_tag	CALJACFG_03750
+			product	30S ribosomal protein S28e
+			protein_id	gnl|UU|CALJACFG_03750
+313932	313666	gene
+			locus_tag	CALJACFG_03750
+313982	314698	CDS
+			dbxref	COG:COG0090
+			gene	rpl2
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U001
+			locus_tag	CALJACFG_03760
+			product	50S ribosomal protein L2
+			protein_id	gnl|UU|CALJACFG_03760
+313982	314698	gene
+			gene	rpl2
+			locus_tag	CALJACFG_03760
+315965	314673	CDS
+			EC_number	3.5.1.4
+			dbxref	COG:COG0154
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P95896
+			locus_tag	CALJACFG_03770
+			product	Amidase
+			protein_id	gnl|UU|CALJACFG_03770
+315965	314673	gene
+			locus_tag	CALJACFG_03770
+316076	316846	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03780
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03780
+316076	316846	gene
+			locus_tag	CALJACFG_03780
+316877	317149	CDS
+			dbxref	COG:COG1581
+			gene	albA
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O74101
+			locus_tag	CALJACFG_03790
+			product	DNA/RNA-binding protein Alba
+			protein_id	gnl|UU|CALJACFG_03790
+316877	317149	gene
+			gene	albA
+			locus_tag	CALJACFG_03790
+317390	317151	CDS
+			dbxref	COG:COG2097
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U3S7
+			locus_tag	CALJACFG_03800
+			product	50S ribosomal protein L31e
+			protein_id	gnl|UU|CALJACFG_03800
+317390	317151	gene
+			locus_tag	CALJACFG_03800
+318866	317694	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03810
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03810
+318866	317694	gene
+			locus_tag	CALJACFG_03810
+319626	318940	CDS
+			EC_number	3.6.-.-
+			gene	mnmE
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_00379
+			locus_tag	CALJACFG_03820
+			product	tRNA modification GTPase MnmE
+			protein_id	gnl|UU|CALJACFG_03820
+319626	318940	gene
+			gene	mnmE
+			locus_tag	CALJACFG_03820
+320206	319619	CDS
+			EC_number	2.7.7.1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_00243
+			locus_tag	CALJACFG_03830
+			product	Nicotinamide-nucleotide adenylyltransferase
+			protein_id	gnl|UU|CALJACFG_03830
+320206	319619	gene
+			locus_tag	CALJACFG_03830
+320437	321318	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03840
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03840
+320437	321318	gene
+			locus_tag	CALJACFG_03840
+321315	322937	CDS
+			EC_number	3.6.4.13
+			gene	dbpA
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_00965
+			locus_tag	CALJACFG_03850
+			product	ATP-dependent RNA helicase DbpA
+			protein_id	gnl|UU|CALJACFG_03850
+321315	322937	gene
+			gene	dbpA
+			locus_tag	CALJACFG_03850
+323609	323064	CDS
+			EC_number	2.7.7.6
+			dbxref	COG:COG1095
+			gene	rpoE1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q57840
+			locus_tag	CALJACFG_03860
+			product	DNA-directed RNA polymerase subunit E'
+			protein_id	gnl|UU|CALJACFG_03860
+323609	323064	gene
+			gene	rpoE1
+			locus_tag	CALJACFG_03860
+323644	324240	CDS
+			EC_number	3.2.2.27
+			dbxref	COG:COG1573
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q96YD0
+			locus_tag	CALJACFG_03870
+			product	Type-4 uracil-DNA glycosylase
+			protein_id	gnl|UU|CALJACFG_03870
+323644	324240	gene
+			locus_tag	CALJACFG_03870
+325072	324233	CDS
+			gene	smc
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_01894
+			locus_tag	CALJACFG_03880
+			product	Chromosome partition protein Smc
+			protein_id	gnl|UU|CALJACFG_03880
+325072	324233	gene
+			gene	smc
+			locus_tag	CALJACFG_03880
+325343	325116	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P29604
+			locus_tag	CALJACFG_03890
+			product	Ferredoxin
+			protein_id	gnl|UU|CALJACFG_03890
+325343	325116	gene
+			locus_tag	CALJACFG_03890
+325689	326285	CDS
+			dbxref	COG:COG1890
+			gene	rps3ae
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8TZE1
+			locus_tag	CALJACFG_03900
+			product	30S ribosomal protein S3Ae
+			protein_id	gnl|UU|CALJACFG_03900
+325689	326285	gene
+			gene	rps3ae
+			locus_tag	CALJACFG_03900
+326282	326446	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03910
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03910
+326282	326446	gene
+			locus_tag	CALJACFG_03910
+326455	326982	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03920
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03920
+326455	326982	gene
+			locus_tag	CALJACFG_03920
+327013	327333	CDS
+			gene	tfs
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q56254
+			locus_tag	CALJACFG_03930
+			product	Transcription factor S
+			protein_id	gnl|UU|CALJACFG_03930
+327013	327333	gene
+			gene	tfs
+			locus_tag	CALJACFG_03930
+327536	327826	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03940
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03940
+327536	327826	gene
+			locus_tag	CALJACFG_03940
+328872	328225	CDS
+			EC_number	3.1.1.-
+			gene	ulaG
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_01266
+			locus_tag	CALJACFG_03950
+			product	L-ascorbate-6-phosphate lactonase UlaG
+			protein_id	gnl|UU|CALJACFG_03950
+328872	328225	gene
+			gene	ulaG
+			locus_tag	CALJACFG_03950
+328987	329430	CDS
+			dbxref	COG:COG2147
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U016
+			locus_tag	CALJACFG_03960
+			product	50S ribosomal protein L19e
+			protein_id	gnl|UU|CALJACFG_03960
+328987	329430	gene
+			locus_tag	CALJACFG_03960
+329427	330944	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_03970
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_03970
+329427	330944	gene
+			locus_tag	CALJACFG_03970
+330966	331703	CDS
+			EC_number	4.3.99.3
+			gene	queE_1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_00917
+			locus_tag	CALJACFG_03980
+			product	7-carboxy-7-deazaguanine synthase
+			protein_id	gnl|UU|CALJACFG_03980
+330966	331703	gene
+			gene	queE_1
+			locus_tag	CALJACFG_03980
+331796	332881	CDS
+			EC_number	3.1.-.-
+			dbxref	COG:COG0420
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q58719
+			locus_tag	CALJACFG_03990
+			product	DNA double-strand break repair protein Mre11
+			protein_id	gnl|UU|CALJACFG_03990
+331796	332881	gene
+			locus_tag	CALJACFG_03990
+333830	332847	CDS
+			EC_number	4.1.3.44
+			dbxref	COG:COG0731
+			gene	taw1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O59412
+			locus_tag	CALJACFG_04000
+			product	S-adenosyl-L-methionine-dependent tRNA 4-demethylwyosine synthase
+			protein_id	gnl|UU|CALJACFG_04000
+333830	332847	gene
+			gene	taw1
+			locus_tag	CALJACFG_04000
+333862	334560	CDS
+			EC_number	2.1.1.-
+			dbxref	COG:COG0565
+			gene	trmJ
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q4JB16
+			locus_tag	CALJACFG_04010
+			product	tRNA (cytidine-2'-O-)-methyltransferase TrmJ
+			protein_id	gnl|UU|CALJACFG_04010
+333862	334560	gene
+			gene	trmJ
+			locus_tag	CALJACFG_04010
+334635	334991	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04020
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04020
+334635	334991	gene
+			locus_tag	CALJACFG_04020
+335330	334965	CDS
+			gene	pfdA
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_00308
+			locus_tag	CALJACFG_04030
+			product	Prefoldin subunit alpha
+			protein_id	gnl|UU|CALJACFG_04030
+335330	334965	gene
+			gene	pfdA
+			locus_tag	CALJACFG_04030
+335454	337457	CDS
+			dbxref	COG:COG1948
+			gene	xpf
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q7LXL5
+			locus_tag	CALJACFG_04040
+			product	3'-flap repair endonuclease Xpf
+			protein_id	gnl|UU|CALJACFG_04040
+335454	337457	gene
+			gene	xpf
+			locus_tag	CALJACFG_04040
+338192	337497	CDS
+			dbxref	COG:COG0098
+			gene	rps5
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U017
+			locus_tag	CALJACFG_04050
+			product	30S ribosomal protein S5
+			protein_id	gnl|UU|CALJACFG_04050
+338192	337497	gene
+			gene	rps5
+			locus_tag	CALJACFG_04050
+339353	338223	CDS
+			EC_number	6.1.1.1
+			dbxref	COG:COG0162
+			gene	tyrS
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O58739
+			locus_tag	CALJACFG_04060
+			product	Tyrosine--tRNA ligase
+			protein_id	gnl|UU|CALJACFG_04060
+339353	338223	gene
+			gene	tyrS
+			locus_tag	CALJACFG_04060
+339701	340183	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04070
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04070
+339701	340183	gene
+			locus_tag	CALJACFG_04070
+343141	340103	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04080
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04080
+343141	340103	gene
+			locus_tag	CALJACFG_04080
+343604	343170	CDS
+			dbxref	COG:COG0231
+			gene	eif5a
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O50089
+			locus_tag	CALJACFG_04090
+			product	Translation initiation factor 5A
+			protein_id	gnl|UU|CALJACFG_04090
+343604	343170	gene
+			gene	eif5a
+			locus_tag	CALJACFG_04090
+343651	344637	CDS
+			EC_number	6.3.5.-
+			dbxref	COG:COG2511
+			gene	gatE_2
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9V0U0
+			locus_tag	CALJACFG_04100
+			product	Glutamyl-tRNA(Gln) amidotransferase subunit E
+			protein_id	gnl|UU|CALJACFG_04100
+343651	344637	gene
+			gene	gatE_2
+			locus_tag	CALJACFG_04100
+345807	344626	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04110
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04110
+345807	344626	gene
+			locus_tag	CALJACFG_04110
+346096	345800	CDS
+			dbxref	COG:COG2139
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U217
+			locus_tag	CALJACFG_04120
+			product	50S ribosomal protein L21e
+			protein_id	gnl|UU|CALJACFG_04120
+346096	345800	gene
+			locus_tag	CALJACFG_04120
+346131	346763	CDS
+			EC_number	3.2.2.-
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P29588
+			locus_tag	CALJACFG_04130
+			product	G/T mismatches repair enzyme
+			protein_id	gnl|UU|CALJACFG_04130
+346131	346763	gene
+			locus_tag	CALJACFG_04130
+346764	347618	CDS
+			EC_number	3.4.11.18
+			dbxref	COG:COG0024
+			gene	map
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P56218
+			locus_tag	CALJACFG_04140
+			product	Methionine aminopeptidase
+			protein_id	gnl|UU|CALJACFG_04140
+346764	347618	gene
+			gene	map
+			locus_tag	CALJACFG_04140
+347640	347777	CDS
+			EC_number	2.7.7.6
+			gene	rpoP
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P59283
+			locus_tag	CALJACFG_04150
+			product	DNA-directed RNA polymerase subunit P
+			protein_id	gnl|UU|CALJACFG_04150
+347640	347777	gene
+			gene	rpoP
+			locus_tag	CALJACFG_04150
+347905	348897	CDS
+			EC_number	3.6.4.12
+			gene	ruvB
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_00016
+			locus_tag	CALJACFG_04160
+			product	Holliday junction ATP-dependent DNA helicase RuvB
+			protein_id	gnl|UU|CALJACFG_04160
+347905	348897	gene
+			gene	ruvB
+			locus_tag	CALJACFG_04160
+349065	349715	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04170
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04170
+349065	349715	gene
+			locus_tag	CALJACFG_04170
+350635	349712	CDS
+			EC_number	2.5.1.46
+			dbxref	COG:COG1899
+			gene	dys
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O50105
+			locus_tag	CALJACFG_04180
+			product	putative deoxyhypusine synthase
+			protein_id	gnl|UU|CALJACFG_04180
+350635	349712	gene
+			gene	dys
+			locus_tag	CALJACFG_04180
+353778	350635	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04190
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04190
+353778	350635	gene
+			locus_tag	CALJACFG_04190
+354517	353756	CDS
+			dbxref	COG:COG1093
+			gene	eif2a
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O58655
+			locus_tag	CALJACFG_04200
+			product	Translation initiation factor 2 subunit alpha
+			protein_id	gnl|UU|CALJACFG_04200
+354517	353756	gene
+			gene	eif2a
+			locus_tag	CALJACFG_04200
+355404	354514	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04210
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04210
+355404	354514	gene
+			locus_tag	CALJACFG_04210
+355436	355912	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04220
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04220
+355436	355912	gene
+			locus_tag	CALJACFG_04220
+356505	355903	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04230
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04230
+356505	355903	gene
+			locus_tag	CALJACFG_04230
+357378	356596	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04240
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04240
+357378	356596	gene
+			locus_tag	CALJACFG_04240
+358754	357366	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04250
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04250
+358754	357366	gene
+			locus_tag	CALJACFG_04250
+358915	358751	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04260
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04260
+358915	358751	gene
+			locus_tag	CALJACFG_04260
+359087	358878	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04270
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04270
+359087	358878	gene
+			locus_tag	CALJACFG_04270
+359135	359446	CDS
+			dbxref	COG:COG1460
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q60351
+			locus_tag	CALJACFG_04280
+			product	putative protein
+			protein_id	gnl|UU|CALJACFG_04280
+359135	359446	gene
+			locus_tag	CALJACFG_04280
+360798	359467	CDS
+			EC_number	3.4.11.10
+			gene	pepA
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_00181
+			locus_tag	CALJACFG_04290
+			product	cytosol aminopeptidase
+			protein_id	gnl|UU|CALJACFG_04290
+360798	359467	gene
+			gene	pepA
+			locus_tag	CALJACFG_04290
+360845	361135	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04300
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04300
+360845	361135	gene
+			locus_tag	CALJACFG_04300
+361132	361713	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04310
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04310
+361132	361713	gene
+			locus_tag	CALJACFG_04310
+362396	361698	CDS
+			EC_number	3.4.21.53
+			gene	lon_2
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_01973
+			locus_tag	CALJACFG_04320
+			product	Lon protease
+			protein_id	gnl|UU|CALJACFG_04320
+362396	361698	gene
+			gene	lon_2
+			locus_tag	CALJACFG_04320
+362731	362393	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04330
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04330
+362731	362393	gene
+			locus_tag	CALJACFG_04330
+364320	362782	CDS
+			EC_number	6.1.1.15
+			dbxref	COG:COG0442
+			gene	proS_2
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q58635
+			locus_tag	CALJACFG_04340
+			product	Proline--tRNA ligase
+			protein_id	gnl|UU|CALJACFG_04340
+364320	362782	gene
+			gene	proS_2
+			locus_tag	CALJACFG_04340
+365603	364338	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04350
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04350
+365603	364338	gene
+			locus_tag	CALJACFG_04350
+365711	369439	CDS
+			EC_number	2.7.7.7
+			dbxref	COG:COG1933
+			gene	polC_1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P81409
+			locus_tag	CALJACFG_04360
+			product	DNA polymerase II large subunit
+			protein_id	gnl|UU|CALJACFG_04360
+365711	369439	gene
+			gene	polC_1
+			locus_tag	CALJACFG_04360
+369965	369426	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04370
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04370
+369965	369426	gene
+			locus_tag	CALJACFG_04370
+369997	370215	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04380
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04380
+369997	370215	gene
+			locus_tag	CALJACFG_04380
+370202	370894	CDS
+			dbxref	COG:COG1136
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q58206
+			locus_tag	CALJACFG_04390
+			product	putative ABC transporter ATP-binding protein
+			protein_id	gnl|UU|CALJACFG_04390
+370202	370894	gene
+			locus_tag	CALJACFG_04390
+370891	371544	CDS
+			EC_number	2.1.1.98
+			dbxref	COG:COG1798
+			gene	dphB
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O58456
+			locus_tag	CALJACFG_04400
+			product	Diphthine synthase
+			protein_id	gnl|UU|CALJACFG_04400
+370891	371544	gene
+			gene	dphB
+			locus_tag	CALJACFG_04400
+371519	371896	CDS
+			EC_number	3.1.22.4
+			dbxref	COG:COG1591
+			gene	hjc
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O27336
+			locus_tag	CALJACFG_04410
+			product	Holliday junction resolvase Hjc
+			protein_id	gnl|UU|CALJACFG_04410
+371519	371896	gene
+			gene	hjc
+			locus_tag	CALJACFG_04410
+373187	371886	CDS
+			EC_number	2.8.1.4
+			gene	thiI
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_00021
+			locus_tag	CALJACFG_04420
+			product	tRNA sulfurtransferase
+			protein_id	gnl|UU|CALJACFG_04420
+373187	371886	gene
+			gene	thiI
+			locus_tag	CALJACFG_04420
+375321	373177	CDS
+			dbxref	COG:COG1372
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q58191
+			locus_tag	CALJACFG_04430
+			product	putative protein
+			protein_id	gnl|UU|CALJACFG_04430
+375321	373177	gene
+			locus_tag	CALJACFG_04430
+376354	375398	CDS
+			dbxref	COG:COG0468
+			gene	radA
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O74036
+			locus_tag	CALJACFG_04440
+			product	DNA repair and recombination protein RadA
+			protein_id	gnl|UU|CALJACFG_04440
+376354	375398	gene
+			gene	radA
+			locus_tag	CALJACFG_04440
+377521	376397	CDS
+			EC_number	2.7.7.6
+			dbxref	COG:COG0086
+			gene	rpoA2
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U0M5
+			locus_tag	CALJACFG_04450
+			product	DNA-directed RNA polymerase subunit A''
+			protein_id	gnl|UU|CALJACFG_04450
+377521	376397	gene
+			gene	rpoA2
+			locus_tag	CALJACFG_04450
+377568	377744	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04460
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04460
+377568	377744	gene
+			locus_tag	CALJACFG_04460
+378041	377727	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04470
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04470
+378041	377727	gene
+			locus_tag	CALJACFG_04470
+378405	378010	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04480
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04480
+378405	378010	gene
+			locus_tag	CALJACFG_04480
+378494	379786	CDS
+			dbxref	COG:COG0470
+			gene	rfcL
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q58294
+			locus_tag	CALJACFG_04490
+			product	Replication factor C large subunit
+			protein_id	gnl|UU|CALJACFG_04490
+378494	379786	gene
+			gene	rfcL
+			locus_tag	CALJACFG_04490
+379770	380366	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O28839
+			locus_tag	CALJACFG_04500
+			note	UPF0215 protein AF_1433
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04500
+379770	380366	gene
+			locus_tag	CALJACFG_04500
+380477	380731	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04510
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04510
+380477	380731	gene
+			locus_tag	CALJACFG_04510
+380753	381718	CDS
+			dbxref	COG:COG0087
+			gene	rpl3
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8TZZ8
+			locus_tag	CALJACFG_04520
+			product	50S ribosomal protein L3
+			protein_id	gnl|UU|CALJACFG_04520
+380753	381718	gene
+			gene	rpl3
+			locus_tag	CALJACFG_04520
+382305	381715	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04530
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04530
+382305	381715	gene
+			locus_tag	CALJACFG_04530
+382423	382283	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04540
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04540
+382423	382283	gene
+			locus_tag	CALJACFG_04540
+384209	382482	CDS
+			dbxref	COG:COG1110
+			gene	rgy_4
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q08582
+			locus_tag	CALJACFG_04550
+			product	Reverse gyrase
+			protein_id	gnl|UU|CALJACFG_04550
+384209	382482	gene
+			gene	rgy_4
+			locus_tag	CALJACFG_04550
+384993	384271	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04560
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04560
+384993	384271	gene
+			locus_tag	CALJACFG_04560
+386395	384998	CDS
+			dbxref	COG:COG0342
+			gene	secD
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:D4GTK5
+			locus_tag	CALJACFG_04570
+			product	Protein-export membrane protein SecD
+			protein_id	gnl|UU|CALJACFG_04570
+386395	384998	gene
+			gene	secD
+			locus_tag	CALJACFG_04570
+387147	386392	CDS
+			dbxref	COG:COG0341
+			gene	secF
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:D4GTK4
+			locus_tag	CALJACFG_04580
+			product	Protein-export membrane protein SecF
+			protein_id	gnl|UU|CALJACFG_04580
+387147	386392	gene
+			gene	secF
+			locus_tag	CALJACFG_04580
+387180	388178	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04590
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04590
+387180	388178	gene
+			locus_tag	CALJACFG_04590
+388175	389062	CDS
+			EC_number	2.1.1.213
+			dbxref	COG:COG1041
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9UY84
+			locus_tag	CALJACFG_04600
+			product	tRNA (guanine(10)-N2)-dimethyltransferase
+			protein_id	gnl|UU|CALJACFG_04600
+388175	389062	gene
+			locus_tag	CALJACFG_04600
+389084	391411	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04610
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04610
+389084	391411	gene
+			locus_tag	CALJACFG_04610
+391950	391408	CDS
+			dbxref	COG:COG2078
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O57770
+			locus_tag	CALJACFG_04620
+			product	Protein
+			protein_id	gnl|UU|CALJACFG_04620
+391950	391408	gene
+			locus_tag	CALJACFG_04620
+392470	391916	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04630
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04630
+392470	391916	gene
+			locus_tag	CALJACFG_04630
+392551	393300	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04640
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04640
+392551	393300	gene
+			locus_tag	CALJACFG_04640
+393310	393882	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04650
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04650
+393310	393882	gene
+			locus_tag	CALJACFG_04650
+394385	393918	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04660
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04660
+394385	393918	gene
+			locus_tag	CALJACFG_04660
+396266	395313	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04670
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04670
+396266	395313	gene
+			locus_tag	CALJACFG_04670
+396558	396205	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04680
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04680
+396558	396205	gene
+			locus_tag	CALJACFG_04680
+397016	397426	CDS
+			dbxref	COG:COG0103
+			gene	rps9
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U0E7
+			locus_tag	CALJACFG_04690
+			product	30S ribosomal protein S9
+			protein_id	gnl|UU|CALJACFG_04690
+397016	397426	gene
+			gene	rps9
+			locus_tag	CALJACFG_04690
+397423	397779	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04700
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04700
+397423	397779	gene
+			locus_tag	CALJACFG_04700
+398666	398172	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04710
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04710
+398666	398172	gene
+			locus_tag	CALJACFG_04710
+399279	398719	CDS
+			dbxref	COG:COG0197
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9UWP5
+			locus_tag	CALJACFG_04720
+			product	50S ribosomal protein L10e
+			protein_id	gnl|UU|CALJACFG_04720
+399279	398719	gene
+			locus_tag	CALJACFG_04720
+399328	399840	CDS
+			EC_number	3.4.-.-
+			dbxref	COG:COG1913
+			gene	amzA
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8TXW1
+			locus_tag	CALJACFG_04730
+			product	Archaemetzincin
+			protein_id	gnl|UU|CALJACFG_04730
+399328	399840	gene
+			gene	amzA
+			locus_tag	CALJACFG_04730
+399847	400530	CDS
+			EC_number	2.7.7.6
+			dbxref	COG:COG0202
+			gene	rpoD
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q5JJF4
+			locus_tag	CALJACFG_04740
+			product	DNA-directed RNA polymerase subunit D
+			protein_id	gnl|UU|CALJACFG_04740
+399847	400530	gene
+			gene	rpoD
+			locus_tag	CALJACFG_04740
+400523	401254	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04750
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04750
+400523	401254	gene
+			locus_tag	CALJACFG_04750
+402291	401263	CDS
+			EC_number	5.4.99.25
+			dbxref	COG:COG0130
+			gene	truB_2
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q7LWY0
+			locus_tag	CALJACFG_04760
+			product	putative tRNA pseudouridine synthase B
+			protein_id	gnl|UU|CALJACFG_04760
+402291	401263	gene
+			gene	truB_2
+			locus_tag	CALJACFG_04760
+402322	402543	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04770
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04770
+402322	402543	gene
+			locus_tag	CALJACFG_04770
+402648	403460	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04780
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04780
+402648	403460	gene
+			locus_tag	CALJACFG_04780
+403546	405876	CDS
+			EC_number	6.1.1.10
+			dbxref	COG:COG0073
+			gene	metG
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q74MZ1
+			locus_tag	CALJACFG_04790
+			product	Methionine--tRNA ligase
+			protein_id	gnl|UU|CALJACFG_04790
+403546	405876	gene
+			gene	metG
+			locus_tag	CALJACFG_04790
+406591	405851	CDS
+			EC_number	3.1.21.-
+			gene	tatD
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_00901
+			locus_tag	CALJACFG_04800
+			product	Tat-linked quality control protein TatD
+			protein_id	gnl|UU|CALJACFG_04800
+406591	405851	gene
+			gene	tatD
+			locus_tag	CALJACFG_04800
+406638	407576	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04810
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04810
+406638	407576	gene
+			locus_tag	CALJACFG_04810
+408399	407680	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04820
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04820
+408399	407680	gene
+			locus_tag	CALJACFG_04820
+408446	409198	CDS
+			EC_number	2.7.11.1
+			dbxref	COG:COG1718
+			gene	rio1_1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O28471
+			locus_tag	CALJACFG_04830
+			product	RIO-type serine/threonine-protein kinase Rio1
+			protein_id	gnl|UU|CALJACFG_04830
+408446	409198	gene
+			gene	rio1_1
+			locus_tag	CALJACFG_04830
+409771	409289	CDS
+			EC_number	3.6.1.1
+			dbxref	COG:COG0221
+			gene	ppa
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P50308
+			locus_tag	CALJACFG_04840
+			product	Inorganic pyrophosphatase
+			protein_id	gnl|UU|CALJACFG_04840
+409771	409289	gene
+			gene	ppa
+			locus_tag	CALJACFG_04840
+409864	411900	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04850
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04850
+409864	411900	gene
+			locus_tag	CALJACFG_04850
+411930	412772	CDS
+			EC_number	2.7.11.1
+			dbxref	COG:COG1718
+			gene	rio1_2
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:D4GYY1
+			locus_tag	CALJACFG_04860
+			product	RIO-type serine/threonine-protein kinase Rio1
+			protein_id	gnl|UU|CALJACFG_04860
+411930	412772	gene
+			gene	rio1_2
+			locus_tag	CALJACFG_04860
+413944	412751	CDS
+			gene	ychF
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_00944
+			locus_tag	CALJACFG_04870
+			product	Ribosome-binding ATPase YchF
+			protein_id	gnl|UU|CALJACFG_04870
+413944	412751	gene
+			gene	ychF
+			locus_tag	CALJACFG_04870
+413981	415315	CDS
+			EC_number	3.1.-.-
+			dbxref	COG:COG0595
+			gene	rnj_2
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9V076
+			locus_tag	CALJACFG_04880
+			product	Ribonuclease J
+			protein_id	gnl|UU|CALJACFG_04880
+413981	415315	gene
+			gene	rnj_2
+			locus_tag	CALJACFG_04880
+415778	415317	CDS
+			dbxref	COG:COG0099
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U0E2
+			locus_tag	CALJACFG_04890
+			product	30S ribosomal protein S13
+			protein_id	gnl|UU|CALJACFG_04890
+415778	415317	gene
+			locus_tag	CALJACFG_04890
+416991	415810	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04900
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04900
+416991	415810	gene
+			locus_tag	CALJACFG_04900
+417163	417546	CDS
+			dbxref	COG:COG2007
+			gene	rps8e
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O26309
+			locus_tag	CALJACFG_04910
+			product	30S ribosomal protein S8e
+			protein_id	gnl|UU|CALJACFG_04910
+417163	417546	gene
+			gene	rps8e
+			locus_tag	CALJACFG_04910
+417693	417523	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04920
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04920
+417693	417523	gene
+			locus_tag	CALJACFG_04920
+417884	417669	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04930
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04930
+417884	417669	gene
+			locus_tag	CALJACFG_04930
+418539	418063	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04940
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04940
+418539	418063	gene
+			locus_tag	CALJACFG_04940
+419146	418526	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04950
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04950
+419146	418526	gene
+			locus_tag	CALJACFG_04950
+419350	420414	CDS
+			gene	ftsZ
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9V2S6
+			locus_tag	CALJACFG_04960
+			product	Cell division protein FtsZ
+			protein_id	gnl|UU|CALJACFG_04960
+419350	420414	gene
+			gene	ftsZ
+			locus_tag	CALJACFG_04960
+420503	422974	CDS
+			dbxref	COG:COG0464
+			gene	vat
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O05209
+			locus_tag	CALJACFG_04970
+			product	VCP-like ATPase
+			protein_id	gnl|UU|CALJACFG_04970
+420503	422974	gene
+			gene	vat
+			locus_tag	CALJACFG_04970
+423477	422962	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04980
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04980
+423477	422962	gene
+			locus_tag	CALJACFG_04980
+424315	423464	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_04990
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_04990
+424315	423464	gene
+			locus_tag	CALJACFG_04990
+424619	424350	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05000
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05000
+424619	424350	gene
+			locus_tag	CALJACFG_05000
+425397	424693	CDS
+			dbxref	COG:COG1471
+			gene	rps4e
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U011
+			locus_tag	CALJACFG_05010
+			product	30S ribosomal protein S4e
+			protein_id	gnl|UU|CALJACFG_05010
+425397	424693	gene
+			gene	rps4e
+			locus_tag	CALJACFG_05010
+426943	425420	CDS
+			EC_number	6.1.1.20
+			dbxref	COG:COG0072
+			gene	pheT
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q76KA7
+			locus_tag	CALJACFG_05020
+			product	Phenylalanine--tRNA ligase beta subunit
+			protein_id	gnl|UU|CALJACFG_05020
+426943	425420	gene
+			gene	pheT
+			locus_tag	CALJACFG_05020
+426994	427401	CDS
+			dbxref	COG:COG0185
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U002
+			locus_tag	CALJACFG_05030
+			product	30S ribosomal protein S19
+			protein_id	gnl|UU|CALJACFG_05030
+426994	427401	gene
+			locus_tag	CALJACFG_05030
+428287	427595	CDS
+			dbxref	COG:COG0092
+			gene	rps3
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U004
+			locus_tag	CALJACFG_05040
+			product	30S ribosomal protein S3
+			protein_id	gnl|UU|CALJACFG_05040
+428287	427595	gene
+			gene	rps3
+			locus_tag	CALJACFG_05040
+428382	428801	CDS
+			dbxref	COG:COG1675
+			gene	tfe
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O27705
+			locus_tag	CALJACFG_05050
+			product	Transcription factor E
+			protein_id	gnl|UU|CALJACFG_05050
+428382	428801	gene
+			gene	tfe
+			locus_tag	CALJACFG_05050
+428798	429103	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05060
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05060
+428798	429103	gene
+			locus_tag	CALJACFG_05060
+429155	429667	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05070
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05070
+429155	429667	gene
+			locus_tag	CALJACFG_05070
+430123	429662	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05080
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05080
+430123	429662	gene
+			locus_tag	CALJACFG_05080
+431049	430123	CDS
+			dbxref	COG:COG0530
+			gene	maX1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8TPA6
+			locus_tag	CALJACFG_05090
+			product	Sodium/calcium exchanger MaX1
+			protein_id	gnl|UU|CALJACFG_05090
+431049	430123	gene
+			gene	maX1
+			locus_tag	CALJACFG_05090
+431488	431024	CDS
+			dbxref	COG:COG0184
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8TZD9
+			locus_tag	CALJACFG_05100
+			product	30S ribosomal protein S15
+			protein_id	gnl|UU|CALJACFG_05100
+431488	431024	gene
+			locus_tag	CALJACFG_05100
+431876	431520	CDS
+			dbxref	COG:COG1727
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U0E5
+			locus_tag	CALJACFG_05110
+			product	50S ribosomal protein L18e
+			protein_id	gnl|UU|CALJACFG_05110
+431876	431520	gene
+			locus_tag	CALJACFG_05110
+431924	432085	CDS
+			EC_number	2.7.7.7
+			dbxref	COG:COG1372
+			gene	polC_2
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O57861
+			locus_tag	CALJACFG_05120
+			product	DNA polymerase II large subunit
+			protein_id	gnl|UU|CALJACFG_05120
+431924	432085	gene
+			gene	polC_2
+			locus_tag	CALJACFG_05120
+432829	432119	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05130
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05130
+432829	432119	gene
+			locus_tag	CALJACFG_05130
+433860	434228	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05140
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05140
+433860	434228	gene
+			locus_tag	CALJACFG_05140
+434260	435666	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05150
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05150
+434260	435666	gene
+			locus_tag	CALJACFG_05150
+435677	436618	CDS
+			EC_number	1.8.1.4
+			dbxref	COG:COG1249
+			gene	lpdA
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q04829
+			locus_tag	CALJACFG_05160
+			product	Dihydrolipoyl dehydrogenase
+			protein_id	gnl|UU|CALJACFG_05160
+435677	436618	gene
+			gene	lpdA
+			locus_tag	CALJACFG_05160
+437393	436704	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05170
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05170
+437393	436704	gene
+			locus_tag	CALJACFG_05170
+438387	437443	CDS
+			EC_number	2.3.1.234
+			dbxref	COG:COG0533
+			gene	kae1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9UXT7
+			locus_tag	CALJACFG_05180
+			product	tRNA N6-adenosine threonylcarbamoyltransferase
+			protein_id	gnl|UU|CALJACFG_05180
+438387	437443	gene
+			gene	kae1
+			locus_tag	CALJACFG_05180
+439433	438384	CDS
+			EC_number	4.3.99.3
+			gene	queE_2
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_00917
+			locus_tag	CALJACFG_05190
+			product	7-carboxy-7-deazaguanine synthase
+			protein_id	gnl|UU|CALJACFG_05190
+439433	438384	gene
+			gene	queE_2
+			locus_tag	CALJACFG_05190
+440923	439439	CDS
+			EC_number	2.3.1.193
+			gene	tmcA_2
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_01886
+			locus_tag	CALJACFG_05200
+			product	tRNA(Met) cytidine acetyltransferase TmcA
+			protein_id	gnl|UU|CALJACFG_05200
+440923	439439	gene
+			gene	tmcA_2
+			locus_tag	CALJACFG_05200
+440955	442679	CDS
+			dbxref	COG:COG0532
+			gene	infB
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9Y9B3
+			locus_tag	CALJACFG_05210
+			product	putative translation initiation factor IF-2
+			protein_id	gnl|UU|CALJACFG_05210
+440955	442679	gene
+			gene	infB
+			locus_tag	CALJACFG_05210
+443179	442676	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05220
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05220
+443179	442676	gene
+			locus_tag	CALJACFG_05220
+443207	443608	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05230
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05230
+443207	443608	gene
+			locus_tag	CALJACFG_05230
+443677	444747	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05240
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05240
+443677	444747	gene
+			locus_tag	CALJACFG_05240
+444866	445384	CDS
+			EC_number	3.1.4.-
+			dbxref	COG:COG1514
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O57823
+			locus_tag	CALJACFG_05250
+			product	RNA 2',3'-cyclic phosphodiesterase
+			protein_id	gnl|UU|CALJACFG_05250
+444866	445384	gene
+			locus_tag	CALJACFG_05250
+445850	445365	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05260
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05260
+445850	445365	gene
+			locus_tag	CALJACFG_05260
+446086	445826	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05270
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05270
+446086	445826	gene
+			locus_tag	CALJACFG_05270
+446123	447190	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05280
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05280
+446123	447190	gene
+			locus_tag	CALJACFG_05280
+449789	447177	CDS
+			EC_number	2.7.7.6
+			dbxref	COG:COG0086
+			gene	rpoA1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q980R2
+			locus_tag	CALJACFG_05290
+			product	DNA-directed RNA polymerase subunit A'
+			protein_id	gnl|UU|CALJACFG_05290
+449789	447177	gene
+			gene	rpoA1
+			locus_tag	CALJACFG_05290
+449825	450592	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05300
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05300
+449825	450592	gene
+			locus_tag	CALJACFG_05300
+452030	450579	CDS
+			EC_number	6.1.1.20
+			dbxref	COG:COG0016
+			gene	pheS
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q76KA8
+			locus_tag	CALJACFG_05310
+			product	Phenylalanine--tRNA ligase alpha subunit
+			protein_id	gnl|UU|CALJACFG_05310
+452030	450579	gene
+			gene	pheS
+			locus_tag	CALJACFG_05310
+452080	452268	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05320
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05320
+452080	452268	gene
+			locus_tag	CALJACFG_05320
+452545	452270	CDS
+			EC_number	2.7.7.6
+			dbxref	COG:COG2012
+			gene	rpoH
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q58443
+			locus_tag	CALJACFG_05330
+			product	DNA-directed RNA polymerase subunit H
+			protein_id	gnl|UU|CALJACFG_05330
+452545	452270	gene
+			gene	rpoH
+			locus_tag	CALJACFG_05330
+453147	452542	CDS
+			dbxref	COG:COG0052
+			gene	rps2
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U0F0
+			locus_tag	CALJACFG_05340
+			product	30S ribosomal protein S2
+			protein_id	gnl|UU|CALJACFG_05340
+453147	452542	gene
+			gene	rps2
+			locus_tag	CALJACFG_05340
+453195	454898	CDS
+			EC_number	6.5.1.6
+			gene	lig
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9HH07
+			locus_tag	CALJACFG_05350
+			product	DNA ligase
+			protein_id	gnl|UU|CALJACFG_05350
+453195	454898	gene
+			gene	lig
+			locus_tag	CALJACFG_05350
+454939	455229	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05360
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05360
+454939	455229	gene
+			locus_tag	CALJACFG_05360
+455634	455194	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05370
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05370
+455634	455194	gene
+			locus_tag	CALJACFG_05370
+456742	455624	CDS
+			EC_number	3.-.-.-
+			dbxref	COG:COG0624
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q6LXF3
+			locus_tag	CALJACFG_05380
+			product	putative metallohydrolase
+			protein_id	gnl|UU|CALJACFG_05380
+456742	455624	gene
+			locus_tag	CALJACFG_05380
+457806	456757	CDS
+			EC_number	3.6.4.12
+			dbxref	COG:COG0433
+			gene	herA_1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q97WG8
+			locus_tag	CALJACFG_05390
+			product	DNA double-strand break repair helicase HerA
+			protein_id	gnl|UU|CALJACFG_05390
+457806	456757	gene
+			gene	herA_1
+			locus_tag	CALJACFG_05390
+458057	457803	CDS
+			EC_number	6.3.5.-
+			gene	gatC
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_00122
+			locus_tag	CALJACFG_05400
+			product	Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransferase subunit C
+			protein_id	gnl|UU|CALJACFG_05400
+458057	457803	gene
+			gene	gatC
+			locus_tag	CALJACFG_05400
+458731	458069	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05410
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05410
+458731	458069	gene
+			locus_tag	CALJACFG_05410
+458738	459388	CDS
+			EC_number	3.2.2.-
+			dbxref	COG:COG4047
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8U2D5
+			locus_tag	CALJACFG_05420
+			product	N-glycosylase/DNA lyase
+			protein_id	gnl|UU|CALJACFG_05420
+458738	459388	gene
+			locus_tag	CALJACFG_05420
+459410	459661	CDS
+			dbxref	COG:COG1382
+			gene	pfdB
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O58268
+			locus_tag	CALJACFG_05430
+			product	Prefoldin subunit beta
+			protein_id	gnl|UU|CALJACFG_05430
+459410	459661	gene
+			gene	pfdB
+			locus_tag	CALJACFG_05430
+459721	460506	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05440
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05440
+459721	460506	gene
+			locus_tag	CALJACFG_05440
+461123	460503	CDS
+			dbxref	COG:COG1976
+			gene	eif6
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q980G0
+			locus_tag	CALJACFG_05450
+			product	Translation initiation factor 6
+			protein_id	gnl|UU|CALJACFG_05450
+461123	460503	gene
+			gene	eif6
+			locus_tag	CALJACFG_05450
+461181	461570	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05460
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05460
+461181	461570	gene
+			locus_tag	CALJACFG_05460
+461563	461751	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05470
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05470
+461563	461751	gene
+			locus_tag	CALJACFG_05470
+461861	461748	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05480
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05480
+461861	461748	gene
+			locus_tag	CALJACFG_05480
+462597	461845	CDS
+			EC_number	3.4.25.1
+			dbxref	COG:COG0638
+			gene	psmA
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q6M0L9
+			locus_tag	CALJACFG_05490
+			product	Proteasome subunit alpha
+			protein_id	gnl|UU|CALJACFG_05490
+462597	461845	gene
+			gene	psmA
+			locus_tag	CALJACFG_05490
+462645	463577	CDS
+			EC_number	2.8.1.-
+			dbxref	COG:COG0037
+			gene	ttuA_2
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O58038
+			locus_tag	CALJACFG_05500
+			product	tRNA-5-methyluridine(54) 2-sulfurtransferase
+			protein_id	gnl|UU|CALJACFG_05500
+462645	463577	gene
+			gene	ttuA_2
+			locus_tag	CALJACFG_05500
+464642	463542	CDS
+			EC_number	2.1.1.256
+			dbxref	COG:COG0116
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q57880
+			locus_tag	CALJACFG_05510
+			product	tRNA (guanine(6)-N2)-methyltransferase
+			protein_id	gnl|UU|CALJACFG_05510
+464642	463542	gene
+			locus_tag	CALJACFG_05510
+464677	465735	CDS
+			EC_number	1.8.4.8
+			gene	cysH
+			inference	ab initio prediction:Prodigal:2.6
+			inference	protein motif:HAMAP:MF_00063
+			locus_tag	CALJACFG_05520
+			product	Phosphoadenosine phosphosulfate reductase
+			protein_id	gnl|UU|CALJACFG_05520
+464677	465735	gene
+			gene	cysH
+			locus_tag	CALJACFG_05520
+466401	465721	CDS
+			dbxref	COG:COG1500
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O29759
+			locus_tag	CALJACFG_05530
+			product	Ribosome maturation protein SDO1 
+			protein_id	gnl|UU|CALJACFG_05530
+466401	465721	gene
+			locus_tag	CALJACFG_05530
+467119	466382	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05540
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05540
+467119	466382	gene
+			locus_tag	CALJACFG_05540
+468585	467116	CDS
+			EC_number	3.6.4.12
+			dbxref	COG:COG0433
+			gene	herA_2
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:F2Z5Z6
+			locus_tag	CALJACFG_05550
+			product	DNA double-strand break repair helicase HerA
+			protein_id	gnl|UU|CALJACFG_05550
+468585	467116	gene
+			gene	herA_2
+			locus_tag	CALJACFG_05550
+468614	469375	CDS
+			EC_number	2.7.7.7
+			gene	pol_2
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P30317
+			locus_tag	CALJACFG_05560
+			product	DNA polymerase
+			protein_id	gnl|UU|CALJACFG_05560
+468614	469375	gene
+			gene	pol_2
+			locus_tag	CALJACFG_05560
+469372	469773	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05570
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05570
+469372	469773	gene
+			locus_tag	CALJACFG_05570
+469788	470759	CDS
+			dbxref	COG:COG0668
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q58543
+			locus_tag	CALJACFG_05580
+			product	Large-conductance mechanosensitive channel MscMJLR
+			protein_id	gnl|UU|CALJACFG_05580
+469788	470759	gene
+			locus_tag	CALJACFG_05580
+471111	470737	CDS
+			dbxref	COG:COG1717
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9HH82
+			locus_tag	CALJACFG_05590
+			product	50S ribosomal protein L32e
+			protein_id	gnl|UU|CALJACFG_05590
+471111	470737	gene
+			locus_tag	CALJACFG_05590
+471450	471731	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05600
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05600
+471450	471731	gene
+			locus_tag	CALJACFG_05600
+471728	472072	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05610
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05610
+471728	472072	gene
+			locus_tag	CALJACFG_05610
+472048	472203	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05620
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05620
+472048	472203	gene
+			locus_tag	CALJACFG_05620
+472200	472427	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05630
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05630
+472200	472427	gene
+			locus_tag	CALJACFG_05630
+472505	472948	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05640
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05640
+472505	472948	gene
+			locus_tag	CALJACFG_05640
+472991	474205	CDS
+			EC_number	6.1.1.12
+			dbxref	COG:COG0017
+			gene	aspS
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q52428
+			locus_tag	CALJACFG_05650
+			product	Aspartate--tRNA(Asp) ligase
+			protein_id	gnl|UU|CALJACFG_05650
+472991	474205	gene
+			gene	aspS
+			locus_tag	CALJACFG_05650
+474202	475200	CDS
+			EC_number	2.1.1.-
+			dbxref	COG:COG0144
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9V106
+			locus_tag	CALJACFG_05660
+			product	tRNA (cytosine(49)-C(5))-methyltransferase
+			protein_id	gnl|UU|CALJACFG_05660
+474202	475200	gene
+			locus_tag	CALJACFG_05660
+475197	476060	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05670
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05670
+475197	476060	gene
+			locus_tag	CALJACFG_05670
+476796	476047	CDS
+			dbxref	COG:COG0592
+			gene	pcn
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q9UYX8
+			locus_tag	CALJACFG_05680
+			product	DNA polymerase sliding clamp
+			protein_id	gnl|UU|CALJACFG_05680
+476796	476047	gene
+			gene	pcn
+			locus_tag	CALJACFG_05680
+477558	476929	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05690
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05690
+477558	476929	gene
+			locus_tag	CALJACFG_05690
+477607	478089	CDS
+			dbxref	COG:COG0250
+			gene	spt5
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8TZK1
+			locus_tag	CALJACFG_05700
+			product	Transcription elongation factor Spt5
+			protein_id	gnl|UU|CALJACFG_05700
+477607	478089	gene
+			gene	spt5
+			locus_tag	CALJACFG_05700
+478090	478401	CDS
+			dbxref	COG:COG3355
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O93774
+			locus_tag	CALJACFG_05710
+			product	HTH-type transcriptional regulator lrs14
+			protein_id	gnl|UU|CALJACFG_05710
+478090	478401	gene
+			locus_tag	CALJACFG_05710
+478433	480664	CDS
+			dbxref	COG:COG0480
+			gene	fusA
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O59521
+			locus_tag	CALJACFG_05720
+			product	Elongation factor 2
+			protein_id	gnl|UU|CALJACFG_05720
+478433	480664	gene
+			gene	fusA
+			locus_tag	CALJACFG_05720
+481740	480661	CDS
+			EC_number	5.99.1.3
+			gene	top6A
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:O05208
+			locus_tag	CALJACFG_05730
+			product	Type 2 DNA topoisomerase 6 subunit A
+			protein_id	gnl|UU|CALJACFG_05730
+481740	480661	gene
+			gene	top6A
+			locus_tag	CALJACFG_05730
+481777	482430	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05740
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05740
+481777	482430	gene
+			locus_tag	CALJACFG_05740
+483370	482420	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05750
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05750
+483370	482420	gene
+			locus_tag	CALJACFG_05750
+483418	484059	CDS
+			dbxref	COG:COG0081
+			gene	rpl1
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q8TZJ9
+			locus_tag	CALJACFG_05760
+			product	50S ribosomal protein L1
+			protein_id	gnl|UU|CALJACFG_05760
+483418	484059	gene
+			gene	rpl1
+			locus_tag	CALJACFG_05760
+484082	484366	CDS
+			dbxref	COG:COG2004
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P19953
+			locus_tag	CALJACFG_05770
+			product	30S ribosomal protein S24e
+			protein_id	gnl|UU|CALJACFG_05770
+484082	484366	gene
+			locus_tag	CALJACFG_05770
+485503	484358	CDS
+			EC_number	6.1.1.7
+			dbxref	COG:COG0013
+			gene	alaS_2
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:Q57984
+			locus_tag	CALJACFG_05780
+			product	Alanine--tRNA ligase
+			protein_id	gnl|UU|CALJACFG_05780
+485503	484358	gene
+			gene	alaS_2
+			locus_tag	CALJACFG_05780
+486290	485496	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05790
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05790
+486290	485496	gene
+			locus_tag	CALJACFG_05790
+486962	486423	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	CALJACFG_05800
+			product	hypothetical protein
+			protein_id	gnl|UU|CALJACFG_05800
+486962	486423	gene
+			locus_tag	CALJACFG_05800
+488561	490537	repeat_region
+			note	CRISPR with 29 repeat units
+			rpt_family	CRISPR
+			rpt_type	direct
+			score	29

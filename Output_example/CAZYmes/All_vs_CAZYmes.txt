@@ -1,0 +1,8 @@
+target name	accession	query name	accession2	E-value_full_sequence	score_full_sequence	bias_full_sequence	E-value_best_first_domain	score_best_first_domain	bias_best_first_domain	exp	reg	clu	ov	env	dom	rep	inc	Description_target
+GCA_000017945-FLGBHGLA_00160	-	GT66.hmm	-	2e-46	155.6	53.9	2.7e-46	155.1	53.9	1.1	1	0	0	1	1	1	1	-
+GCA_000017945-FLGBHGLA_04530	-	GT2_Glycos_transf_2.hmm	PF00535.25	5.6e-33	111.1	0.0	7.9e-33	110.6	0.0	1.2	1	0	0	1	1	1	1	-
+GCA_000008085-CALJACFG_02010	-	GT4.hmm	-	5.7e-28	94.6	0.1	8.6e-28	94.0	0.1	1.2	1	0	0	1	1	1	1	-
+GCA_000008085-CALJACFG_01610	-	GT66.hmm	-	2.2e-25	86.0	66.4	2.2e-25	86.0	66.4	2.6	2	1	0	2	2	2	1	-
+GCA_000008085-CALJACFG_01790	-	GT2_Glycos_transf_2.hmm	PF00535.25	2.6e-23	79.6	0.0	3.7e-23	79.1	0.0	1.2	1	0	0	1	1	1	1	-
+GCA_000017945-FLGBHGLA_08410	-	GT2_Glyco_tranf_2_3.hmm	PF13641.5	1e-21	74.9	0.0	3.1e-21	73.3	0.0	1.8	1	1	0	1	1	1	1	-
+GCA_000017945-FLGBHGLA_08970	-	GH130.hmm	-	5.6e-21	71.6	0.0	7.3e-21	71.3	0.0	1.1	1	0	0	1	1	1	1	-
