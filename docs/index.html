@@ -1618,7 +1618,6 @@ $(document).ready(function () {
       </ul></li>
       <li><a href="#do-the-annotations">Do the annotations</a><ul>
       <li><a href="#cog-search">COG search</a></li>
-      <li><a href="#profiles-using-the-ncbi-2020-set">Profiles using the NCBI 2020 set</a></li>
       <li><a href="#arcogs-search">ArCOGs search</a></li>
       <li><a href="#ko-search-using-hmms">KO search using Hmm’s</a></li>
       <li><a href="#pfam-search">Pfam search</a></li>
@@ -1996,16 +1995,12 @@ $(document).ready(function () {
 <h2>COG search</h2>
 <div id="section-22" class="section level34">
 <p class="heading"></p>
+<p>For this part we first have a more detailed description on how the COG hmm’s were generated. You do not need to run this yourself but can start the analysis at the section ** Run COG search **</p>
 </div>
-</div>
-<div id="profiles-using-the-ncbi-2020-set" class="section level2">
-<h2>Profiles using the NCBI 2020 set</h2>
-<div id="section-23" class="section level20">
-<p class="heading"></p>
-<p>The protein files are here: /export/lv1/user/spang_team/Databases/COGs/FTP_2020 and were downloaded from <a href="ftp://ftp.ncbi.nlm.nih.gov/pub/COG/COG2020/">here</a></p>
-</div>
-<div id="prepare-aln" class="section level3">
-<h3>Prepare aln</h3>
+<div id="generate-profiles-using-the-ncbi-2020-set" class="section level3">
+<h3>Generate profiles using the NCBI 2020 set</h3>
+<div id="prepare-aln" class="section level4">
+<h4>Prepare aln</h4>
 <div class="sourceCode" id="cb9"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1"></a></span>
 <span id="cb9-2"><a href="#cb9-2"></a><span class="co">#add COG id into the fasta header and remove extra info</span></span>
 <span id="cb9-3"><a href="#cb9-3"></a><span class="bu">cd</span> faa</span>
@@ -2015,38 +2010,37 @@ $(document).ready(function () {
 <span id="cb9-7"><a href="#cb9-7"></a></span>
 <span id="cb9-8"><a href="#cb9-8"></a><span class="bu">cd</span> ..</span>
 <span id="cb9-9"><a href="#cb9-9"></a></span>
-<span id="cb9-10"><a href="#cb9-10"></a></span>
-<span id="cb9-11"><a href="#cb9-11"></a><span class="co">#make a list with the nr of sequences/COG</span></span>
-<span id="cb9-12"><a href="#cb9-12"></a><span class="fu">grep</span> -c <span class="st">&quot;&gt;&quot;</span> faa/*fa <span class="kw">|</span> <span class="fu">awk</span> -F<span class="st">&#39;:&#39;</span> -v OFS=<span class="st">&quot;\t&quot;</span>  <span class="st">&#39;{print $1, $2}&#39;</span>  <span class="kw">|</span>  <span class="fu">sed</span> <span class="st">&#39;s/\.fa//g&#39;</span> <span class="kw">|</span> <span class="fu">sed</span> <span class="st">&#39;s/faa\///g&#39;</span> <span class="op">&gt;</span> COG_counts.txt </span>
-<span id="cb9-13"><a href="#cb9-13"></a></span>
-<span id="cb9-14"><a href="#cb9-14"></a><span class="co">#make a list for sequences smaller than or equal to 1000 seqs</span></span>
-<span id="cb9-15"><a href="#cb9-15"></a><span class="fu">awk</span> -F<span class="st">&#39;\t&#39;</span> -v OFS=<span class="st">&quot;\t&quot;</span> <span class="st">&#39;$2&lt;=1000 {print $1}&#39;</span>  COG_counts.txt <span class="op">&gt;</span> List_1000</span>
-<span id="cb9-16"><a href="#cb9-16"></a></span>
-<span id="cb9-17"><a href="#cb9-17"></a><span class="co">#make list larger than 100 seqs</span></span>
-<span id="cb9-18"><a href="#cb9-18"></a><span class="fu">awk</span> -F<span class="st">&#39;\t&#39;</span> -v OFS=<span class="st">&quot;\t&quot;</span> <span class="st">&#39;$2&gt;1000 {print $1}&#39;</span>  COG_counts.txt <span class="op">&gt;</span> List_larger_1000</span>
+<span id="cb9-10"><a href="#cb9-10"></a><span class="co">#make a list with the nr of sequences/COG</span></span>
+<span id="cb9-11"><a href="#cb9-11"></a><span class="fu">grep</span> -c <span class="st">&quot;&gt;&quot;</span> faa/*fa <span class="kw">|</span> <span class="fu">awk</span> -F<span class="st">&#39;:&#39;</span> -v OFS=<span class="st">&quot;\t&quot;</span>  <span class="st">&#39;{print $1, $2}&#39;</span>  <span class="kw">|</span>  <span class="fu">sed</span> <span class="st">&#39;s/\.fa//g&#39;</span> <span class="kw">|</span> <span class="fu">sed</span> <span class="st">&#39;s/faa\///g&#39;</span> <span class="op">&gt;</span> COG_counts.txt </span>
+<span id="cb9-12"><a href="#cb9-12"></a></span>
+<span id="cb9-13"><a href="#cb9-13"></a><span class="co">#make a list for sequences smaller than or equal to 1000 seqs</span></span>
+<span id="cb9-14"><a href="#cb9-14"></a><span class="fu">awk</span> -F<span class="st">&#39;\t&#39;</span> -v OFS=<span class="st">&quot;\t&quot;</span> <span class="st">&#39;$2&lt;=1000 {print $1}&#39;</span>  COG_counts.txt <span class="op">&gt;</span> List_1000</span>
+<span id="cb9-15"><a href="#cb9-15"></a></span>
+<span id="cb9-16"><a href="#cb9-16"></a><span class="co">#make list larger than 100 seqs</span></span>
+<span id="cb9-17"><a href="#cb9-17"></a><span class="fu">awk</span> -F<span class="st">&#39;\t&#39;</span> -v OFS=<span class="st">&quot;\t&quot;</span> <span class="st">&#39;$2&gt;1000 {print $1}&#39;</span>  COG_counts.txt <span class="op">&gt;</span> List_larger_1000</span>
+<span id="cb9-18"><a href="#cb9-18"></a></span>
 <span id="cb9-19"><a href="#cb9-19"></a></span>
-<span id="cb9-20"><a href="#cb9-20"></a></span>
-<span id="cb9-21"><a href="#cb9-21"></a><span class="co">#run alns on laplace</span></span>
-<span id="cb9-22"><a href="#cb9-22"></a><span class="fu">mkdir</span> Alignment</span>
-<span id="cb9-23"><a href="#cb9-23"></a><span class="fu">mkdir</span> Alignment/mafft_linsi</span>
-<span id="cb9-24"><a href="#cb9-24"></a></span>
-<span id="cb9-25"><a href="#cb9-25"></a><span class="fu">nano</span> mafft_short.sh</span>
-<span id="cb9-26"><a href="#cb9-26"></a></span>
-<span id="cb9-27"><a href="#cb9-27"></a><span class="co">#!/bin/sh</span></span>
-<span id="cb9-28"><a href="#cb9-28"></a><span class="co">#SBATCH --partition=LONG1</span></span>
-<span id="cb9-29"><a href="#cb9-29"></a><span class="co">#SBATCH --nodelist=no71</span></span>
-<span id="cb9-30"><a href="#cb9-30"></a><span class="co">#SBATCH --nodes=1       # require 2 nodes</span></span>
-<span id="cb9-31"><a href="#cb9-31"></a><span class="co">#SBATCH --ntasks-per-node=80  # (by default, &quot;ntasks&quot;=&quot;cpus&quot;)</span></span>
-<span id="cb9-32"><a href="#cb9-32"></a><span class="co">#SBATCH --error=job.%J.err</span></span>
-<span id="cb9-33"><a href="#cb9-33"></a><span class="co">#SBATCH --output=job.%J.out</span></span>
-<span id="cb9-34"><a href="#cb9-34"></a><span class="co"># The above two lines reflect file locations for standard error and output</span></span>
-<span id="cb9-35"><a href="#cb9-35"></a><span class="co"># Executable commands :</span></span>
-<span id="cb9-36"><a href="#cb9-36"></a></span>
-<span id="cb9-37"><a href="#cb9-37"></a><span class="ex">parallel</span> -j20 <span class="st">&#39;i={}; mafft-linsi --reorder --thread 4 faa/renamed/$i* &gt; Alignment/mafft_linsi/${i}.aln &#39;</span> ::: <span class="kw">`</span><span class="fu">cat</span> List_1000<span class="kw">`</span></span>
-<span id="cb9-38"><a href="#cb9-38"></a><span class="ex">parallel</span> -j20 <span class="st">&#39;i={}; mafft --reorder --thread 4 faa/renamed/$i* &gt; Alignment/mafft_linsi/${i}.aln &#39;</span> ::: <span class="kw">`</span><span class="fu">cat</span> List_larger_1000<span class="kw">`</span></span></code></pre></div>
+<span id="cb9-20"><a href="#cb9-20"></a><span class="co">#run alns on laplace</span></span>
+<span id="cb9-21"><a href="#cb9-21"></a><span class="fu">mkdir</span> Alignment</span>
+<span id="cb9-22"><a href="#cb9-22"></a><span class="fu">mkdir</span> Alignment/mafft_linsi</span>
+<span id="cb9-23"><a href="#cb9-23"></a></span>
+<span id="cb9-24"><a href="#cb9-24"></a><span class="fu">nano</span> mafft_short.sh</span>
+<span id="cb9-25"><a href="#cb9-25"></a></span>
+<span id="cb9-26"><a href="#cb9-26"></a><span class="co">#!/bin/sh</span></span>
+<span id="cb9-27"><a href="#cb9-27"></a><span class="co">#SBATCH --partition=LONG1</span></span>
+<span id="cb9-28"><a href="#cb9-28"></a><span class="co">#SBATCH --nodelist=no71</span></span>
+<span id="cb9-29"><a href="#cb9-29"></a><span class="co">#SBATCH --nodes=1       # require 2 nodes</span></span>
+<span id="cb9-30"><a href="#cb9-30"></a><span class="co">#SBATCH --ntasks-per-node=80  # (by default, &quot;ntasks&quot;=&quot;cpus&quot;)</span></span>
+<span id="cb9-31"><a href="#cb9-31"></a><span class="co">#SBATCH --error=job.%J.err</span></span>
+<span id="cb9-32"><a href="#cb9-32"></a><span class="co">#SBATCH --output=job.%J.out</span></span>
+<span id="cb9-33"><a href="#cb9-33"></a><span class="co"># The above two lines reflect file locations for standard error and output</span></span>
+<span id="cb9-34"><a href="#cb9-34"></a><span class="co"># Executable commands :</span></span>
+<span id="cb9-35"><a href="#cb9-35"></a></span>
+<span id="cb9-36"><a href="#cb9-36"></a><span class="ex">parallel</span> -j20 <span class="st">&#39;i={}; mafft-linsi --reorder --thread 4 faa/renamed/$i* &gt; Alignment/mafft_linsi/${i}.aln &#39;</span> ::: <span class="kw">`</span><span class="fu">cat</span> List_1000<span class="kw">`</span></span>
+<span id="cb9-37"><a href="#cb9-37"></a><span class="ex">parallel</span> -j20 <span class="st">&#39;i={}; mafft --reorder --thread 4 faa/renamed/$i* &gt; Alignment/mafft_linsi/${i}.aln &#39;</span> ::: <span class="kw">`</span><span class="fu">cat</span> List_larger_1000<span class="kw">`</span></span></code></pre></div>
 </div>
-<div id="prepare-hmm-profile-database" class="section level3">
-<h3>Prepare hmm profile database</h3>
+<div id="prepare-hmm-profile-database" class="section level4">
+<h4>Prepare hmm profile database</h4>
 <div class="sourceCode" id="cb10"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">mkdir</span> hmm</span>
 <span id="cb10-2"><a href="#cb10-2"></a><span class="fu">mkdir</span> hmm/single</span>
 <span id="cb10-3"><a href="#cb10-3"></a></span>
@@ -2058,7 +2052,14 @@ $(document).ready(function () {
 <span id="cb10-9"><a href="#cb10-9"></a><span class="co">#combine profiles</span></span>
 <span id="cb10-10"><a href="#cb10-10"></a><span class="fu">cat</span> hmm/single/*hmm <span class="op">&gt;&gt;</span> hmm/NCBI_COGs_Oct2020.hmm</span>
 <span id="cb10-11"><a href="#cb10-11"></a><span class="ex">hmmpress</span> hmm/NCBI_COGs_Oct2020.hmm </span></code></pre></div>
-<p>Pressed and indexed 4768 HMMs (4768 names). Models pressed into binary file: hmm/NCBI_COGs_Oct2020.hmm.h3m SSI index for binary model file: hmm/NCBI_COGs_Oct2020.hmm.h3i Profiles (MSV part) pressed into: hmm/NCBI_COGs_Oct2020.hmm.h3f Profiles (remainder) pressed into: hmm/NCBI_COGs_Oct2020.hmm.h3p</p>
+<p>Pressed and indexed 4768 HMMs (4768 names).</p>
+<ul>
+<li>Models pressed into binary file: hmm/NCBI_COGs_Oct2020.hmm.h3m</li>
+<li>SSI index for binary model file: hmm/NCBI_COGs_Oct2020.hmm.h3i</li>
+<li>Profiles (MSV part) pressed into: hmm/NCBI_COGs_Oct2020.hmm.h3f</li>
+<li>Profiles (remainder) pressed into: hmm/NCBI_COGs_Oct2020.hmm.h3p</li>
+</ul>
+</div>
 </div>
 <div id="run-cog-search" class="section level3">
 <h3>Run COG search</h3>
@@ -2090,7 +2091,7 @@ $(document).ready(function () {
 </div>
 <div id="arcogs-search" class="section level2">
 <h2>ArCOGs search</h2>
-<div id="section-24" class="section level34">
+<div id="section-23" class="section level34">
 <p class="heading"></p>
 <p><a href="ftp://ftp.ncbi.nih.gov/pub/wolf/COGs/arCOG/">download files from here</a></p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1"></a></span>
@@ -2122,7 +2123,7 @@ $(document).ready(function () {
 </div>
 <div id="ko-search-using-hmms" class="section level2">
 <h2>KO search using Hmm’s</h2>
-<div id="section-25" class="section level34">
+<div id="section-24" class="section level34">
 <p class="heading"></p>
 <div class="sourceCode" id="cb13"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1"></a><span class="co">#1. Setup directories</span></span>
 <span id="cb13-2"><a href="#cb13-2"></a><span class="fu">mkdir</span> KO_hmm</span>
@@ -2157,7 +2158,7 @@ $(document).ready(function () {
 </div>
 <div id="pfam-search" class="section level2">
 <h2>Pfam search</h2>
-<div id="section-26" class="section level34">
+<div id="section-25" class="section level34">
 <p class="heading"></p>
 <div class="sourceCode" id="cb14"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1"></a><span class="co">#1. Setup directories</span></span>
 <span id="cb14-2"><a href="#cb14-2"></a><span class="fu">mkdir</span> pfam</span>
@@ -2195,7 +2196,7 @@ $(document).ready(function () {
 </div>
 <div id="tirg-search" class="section level2">
 <h2>TIRG search</h2>
-<div id="section-27" class="section level34">
+<div id="section-26" class="section level34">
 <p class="heading"></p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1"></a><span class="co">#1. Setup directories</span></span>
 <span id="cb15-2"><a href="#cb15-2"></a><span class="fu">mkdir</span> TIGRs</span>
@@ -2227,7 +2228,7 @@ $(document).ready(function () {
 </div>
 <div id="cazydb-search" class="section level2">
 <h2>CazyDB search</h2>
-<div id="section-28" class="section level34">
+<div id="section-27" class="section level34">
 <p class="heading"></p>
 <div class="sourceCode" id="cb16"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1"></a><span class="co">#modify mapping file</span></span>
 <span id="cb16-2"><a href="#cb16-2"></a><span class="co">#sed &#39;s/ /_/g&#39; CAZY_mapping.txt &gt; CAZY_mapping.txt</span></span>
@@ -2265,7 +2266,7 @@ $(document).ready(function () {
 </div>
 <div id="transporter-db-search" class="section level2">
 <h2>Transporter DB search</h2>
-<div id="section-29" class="section level34">
+<div id="section-28" class="section level34">
 <p class="heading"></p>
 <div class="sourceCode" id="cb17"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1"></a></span>
 <span id="cb17-2"><a href="#cb17-2"></a><span class="co">#make folder</span></span>
@@ -2303,7 +2304,7 @@ $(document).ready(function () {
 </div>
 <div id="hyddb-search" class="section level2">
 <h2>HydDB search</h2>
-<div id="section-30" class="section level34">
+<div id="section-29" class="section level34">
 <p class="heading"></p>
 <div class="sourceCode" id="cb18"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1"></a></span>
 <span id="cb18-2"><a href="#cb18-2"></a><span class="co">#make folder</span></span>
@@ -2341,7 +2342,7 @@ $(document).ready(function () {
 </div>
 <div id="iprscan-done" class="section level2">
 <h2>IPRscan –&gt; done</h2>
-<div id="section-31" class="section level34">
+<div id="section-30" class="section level34">
 <p class="heading"></p>
 </div>
 <div id="genome-cleanup" class="section level3">
@@ -2410,7 +2411,7 @@ $(document).ready(function () {
 </div>
 <div id="diamond-against-ncbi-nr" class="section level2">
 <h2>Diamond against NCBI NR</h2>
-<div id="section-32" class="section level34">
+<div id="section-31" class="section level34">
 <p class="heading"></p>
 <div class="sourceCode" id="cb21"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1"></a><span class="co">#make folder</span></span>
 <span id="cb21-2"><a href="#cb21-2"></a><span class="fu">mkdir</span> NCBI_NR</span>
@@ -2453,10 +2454,10 @@ $(document).ready(function () {
 <span id="cb21-39"><a href="#cb21-39"></a></span>
 <span id="cb21-40"><a href="#cb21-40"></a><span class="co">#clean up</span></span>
 <span id="cb21-41"><a href="#cb21-41"></a><span class="fu">rm</span> NCBI_NR/temp*</span></code></pre></div>
-<div id="section-33" class="section level83">
+<div id="section-32" class="section level83">
 <p class="heading"></p>
 </div>
-<div id="section-34" class="section level83">
+<div id="section-33" class="section level83">
 <p class="heading"></p>
 </div>
 </div>
@@ -2464,10 +2465,10 @@ $(document).ready(function () {
 </div>
 <div id="modify-final-dataframe" class="section level1">
 <h1>Modify final dataframe</h1>
-<div id="section-35" class="section level83">
+<div id="section-34" class="section level83">
 <p class="heading"></p>
 </div>
-<div id="section-36" class="section level83">
+<div id="section-35" class="section level83">
 <p class="heading"></p>
 <p>Now, lets cleanup the final dataframe and then we made it!</p>
 <div class="sourceCode" id="cb22"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1"></a><span class="co">#duplicate column and add new header</span></span>

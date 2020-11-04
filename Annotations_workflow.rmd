@@ -407,13 +407,11 @@ and then in the final step clean the final dataframe by removing redundant infor
 ##################################
 
 
-## Profiles using the NCBI 2020 set
-####################
+For this part we first have a more detailed description on how the COG hmm's were generated. You do not need to run this yourself but can start the analysis at the section ** Run COG search **
 
-The protein files are here: /export/lv1/user/spang_team/Databases/COGs/FTP_2020 and were downloaded from [here](ftp://ftp.ncbi.nlm.nih.gov/pub/COG/COG2020/)
+### Generate profiles using the NCBI 2020 set
 
-
-### Prepare aln
+#### Prepare aln
 
 ```bash
 
@@ -424,7 +422,6 @@ mkdir renamed
 for i in *fa; do awk '/>/{sub(">","&"FILENAME"-");sub(/\.fa/,x)}1' $i | cut -f1 -d " " | sed 's/\./_/g' > renamed/$i; done
 
 cd ..
-
 
 #make a list with the nr of sequences/COG
 grep -c ">" faa/*fa | awk -F':' -v OFS="\t"  '{print $1, $2}'  |  sed 's/\.fa//g' | sed 's/faa\///g' > COG_counts.txt 
@@ -457,7 +454,7 @@ parallel -j20 'i={}; mafft --reorder --thread 4 faa/renamed/$i* > Alignment/maff
 
 ```
 
-### Prepare hmm profile database
+#### Prepare hmm profile database
 
 ```bash 
 mkdir hmm
@@ -476,10 +473,11 @@ hmmpress hmm/NCBI_COGs_Oct2020.hmm
 
 
 Pressed and indexed 4768 HMMs (4768 names).
-Models pressed into binary file:   hmm/NCBI_COGs_Oct2020.hmm.h3m
-SSI index for binary model file:   hmm/NCBI_COGs_Oct2020.hmm.h3i
-Profiles (MSV part) pressed into:  hmm/NCBI_COGs_Oct2020.hmm.h3f
-Profiles (remainder) pressed into: hmm/NCBI_COGs_Oct2020.hmm.h3p
+
+- Models pressed into binary file:   hmm/NCBI_COGs_Oct2020.hmm.h3m
+- SSI index for binary model file:   hmm/NCBI_COGs_Oct2020.hmm.h3i
+- Profiles (MSV part) pressed into:  hmm/NCBI_COGs_Oct2020.hmm.h3f
+- Profiles (remainder) pressed into: hmm/NCBI_COGs_Oct2020.hmm.h3p
 
 
 ### Run COG search
