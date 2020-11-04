@@ -1,5 +1,5 @@
 ---
-title: "Annotation pipeline for DKE genomes"
+title: "Annotation pipeline for microbial genomes"
 author: "Nina Dombrowski"
 affiliation: "NIOZ"
 date: "`r Sys.Date()`"
