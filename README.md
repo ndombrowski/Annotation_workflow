@@ -1,4 +1,4 @@
-# Annotation_worfklow
+# Annotation_workflow
 
 The HTML rendered workflow can be found [here](https://ndombrowski.github.io/Annotation_workflow/).
 
