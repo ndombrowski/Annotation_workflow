@@ -1,6 +1,6 @@
 # Annotation_worfklow
 
-The HTML rendered workflow can be found [here](https://ndombrowski.github.io/Annotation_worfklow/).
+The HTML rendered workflow can be found [here](https://ndombrowski.github.io/Annotation_workflow/).
 
 The goal of this workflow is to:
 
