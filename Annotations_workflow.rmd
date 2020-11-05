@@ -487,6 +487,7 @@ Pressed and indexed 4768 HMMs (4768 names).
 
 #1. Setup directories
 mkdir NCBI_COGs
+mkdir merge
 
 #2. run hmmsearch against all pfams
 ~/../spang_team/Scripts/Hmmer/hmmsearchTable faa/Prokka/All_Genomes_clean.faa /export/lv1/user/spang_team/Databases/COGs/FTP_2020/hmm/NCBI_COGs_Oct2020.hmm 20 -E 1e-5 > NCBI_COGs/All_NCBI_COGs.txt
@@ -521,7 +522,6 @@ rm NCBI_COGs/temp*
 ```bash
 
 #prepare folders
-mkdir merge
 mkdir arcogs
 
 #run arcog search
