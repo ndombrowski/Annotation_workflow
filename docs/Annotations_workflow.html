@@ -1667,10 +1667,10 @@ $(document).ready(function () {
 <p>If you already have proteins, simply continue with the Annotation part. The only thing you might want to generate is a file that lists all the proteins you are working with.</p>
 <p>General comments:</p>
 <ul>
-<li>Most programs we run in loops to speed things up. While this might not make so much sense if we only have to work with two genomes, if you work with thousands of files this gets really useful.</li>
-<li>For most annotation steps we can make use of several CPUs. Typically, this workflow uses 10-20 CPUS, but this can be adjusted according to the avail. resources. More on how to check resources can be found in the <a href="https://github.com/ndombrowski/Unix_tutorial">Unix tutorial</a></li>
-<li>Also you will notice, that this script uses a lot of AWK for parsing tables. If you want to have a collection of AWK commands check our <a href="https://github.com/ndombrowski/AWK_tutorial">AWK tutorial</a></li>
-<li>Once you have the annotation table, we do have an <a href="https://github.com/ndombrowski/R_tutorial">R tutorial</a> that gives an example how to summarize the data. This can get memory extensive the more genomes we analyse and we will add a python tutorial for this analysis at a later point.</li>
+<li><p>Most programs we run in loops to speed things up. While this might not make so much sense if we only have to work with two genomes, if you work with thousands of files this gets really useful.</p></li>
+<li><p>For most annotation steps we can make use of several CPUs. Typically, this workflow uses 10-20 CPUS, but this can be adjusted according to the avail. resources. More on how to check resources can be found in the <a href="https://github.com/ndombrowski/Unix_tutorial">Unix tutorial</a></p></li>
+<li><p>Also you will notice, that this script uses a lot of AWK for parsing tables. If you want to have a collection of AWK commands check our <a href="https://github.com/ndombrowski/AWK_tutorial">AWK tutorial</a></p></li>
+<li><p>Once you have the annotation table, we do have an <a href="https://github.com/ndombrowski/R_tutorial">R tutorial</a> that gives an example how to summarize the data. This can get memory extensive the more genomes we analyse and we will add a python tutorial for this analysis at a later point.</p></li>
 </ul>
 <div id="section" class="section level83">
 <p class="heading"></p>
@@ -1739,8 +1739,17 @@ $(document).ready(function () {
 <h2>Set working directory</h2>
 <div id="section-10" class="section level34">
 <p class="heading"></p>
-<p>Change this accordingly for whereever you download the folder.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="bu">cd</span> /export/lv1/user/ndombrowski/Annotation_workflow</span></code></pre></div>
+<p>Change username to your personal username. If you do not have access to ada yet, contact <a href="hans.malschaert@nioz.nl">Hans Malschaert</a>.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="co">#log into ada</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="fu">ssh</span> -XY username@ada.nioz.nl</span>
+<span id="cb1-4"><a href="#cb1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="co">#go to your home directory, or to wherever you want to work</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="bu">cd</span> /export/lv1/user/username</span>
+<span id="cb1-7"><a href="#cb1-7"></a></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="co">#set and go into working directory</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="fu">mkdir</span> Annotations</span>
+<span id="cb1-10"><a href="#cb1-10"></a><span class="bu">cd</span> Annotations</span></code></pre></div>
 </div>
 </div>
 <div id="get-genomes-of-interest" class="section level2">

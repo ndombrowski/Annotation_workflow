@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1605019654867.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "58BE8B5A",
+    "lastKnownWriteTime" : 1605019981,
+    "last_content_update" : 1605019981684,
+    "path" : "~/Desktop/WorkingDir/Github_Workflows/Annotation_workflow_NIOZ/Annotations_workflow.rmd",
+    "project_path" : "Annotations_workflow.rmd",
+    "properties" : {
+        "chunk_output_type" : "console",
+        "cursorPosition" : "15,46",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
