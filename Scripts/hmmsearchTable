@@ -1,0 +1,23 @@
+#!/bin/bash
+
+fasta=$1
+hmm=$2
+threads=${3:-6}
+
+
+if [ "$#" -lt 1 ]
+then
+  echo "USAGE: $0 <fasta file> <HMM(s) file) [<threads> <additional hmmsearch params>]
+   Runs hmmsearch and parse output to include best hits on tabular output
+
+   Default values:
+   threads = $threads
+
+   EXAMPLES:
+   $0 seq.faa hmm.db 12 -E 0.01 -T 25
+   $0 seq.faa hmm.db 12 --cut_nc
+"
+  exit 1
+fi
+
+cat /export/lv1/user/spang_team/Scripts/Hmmer/hmmsearch.header.tab; hmmsearch --tblout /dev/stdout -o /dev/null --cpu $threads ${@:4} --notextw  $hmm $fasta  | grep -v ^# | perl -lane 'print join "	",@F[0..17],join " ",@F[18..$#F]' | sort -t$'\t' -k6,6gr | sort -t$'\t' --stable -u -k1,1  | sort -t$'\t' -k6,6gr

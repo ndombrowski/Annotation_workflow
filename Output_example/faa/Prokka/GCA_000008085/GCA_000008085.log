@@ -1,0 +1,164 @@
+[16:33:17] This is prokka 1.14-dev
+[16:33:17] Written by Torsten Seemann <torsten.seemann@gmail.com>
+[16:33:17] Homepage is https://github.com/tseemann/prokka
+[16:33:17] Local time is Tue Nov  3 16:33:17 2020
+[16:33:17] You are ndombrowski
+[16:33:17] Operating system is linux
+[16:33:17] You have BioPerl 1.007002
+[16:33:17] System has 144 cores.
+[16:33:17] Will use maximum of 20 cores.
+[16:33:17] Annotating as >>> Archaea <<<
+[16:33:17] Generating locus_tag from 'fna/renamed/GCA_000008085.fna' contents.
+[16:33:17] Setting --locustag CALJACFG from MD5 ca53acf05ca4a83f7e2ea1222d9926ef
+[16:33:17] Enabling options to ensure Genbank/ENA/DDJB submission compliance.
+[16:33:17] Creating new output folder: faa/Prokka/GCA_000008085
+[16:33:17] Running: mkdir -p faa\/Prokka\/GCA_000008085
+[16:33:17] Using filename prefix: GCA_000008085.XXX
+[16:33:17] Setting HMMER_NCPU=1
+[16:33:17] Writing log to: faa/Prokka/GCA_000008085/GCA_000008085.log
+[16:33:17] Command: /opt/biolinux/prokka/bin/prokka fna/renamed/GCA_000008085.fna --outdir faa/Prokka/GCA_000008085 --prefix GCA_000008085 --kingdom Archaea --addgenes --force --increment 10 --compliant --centre UU --cpus 20 --norrna --notrna
+[16:33:17] Appending to PATH: /opt/biolinux/prokka/bin/../binaries/linux
+[16:33:17] Appending to PATH: /opt/biolinux/prokka/bin/../binaries/linux/../common
+[16:33:17] Appending to PATH: /opt/biolinux/prokka/bin
+[16:33:17] Looking for 'aragorn' - found /usr/local/bin/aragorn
+[16:33:17] Determined aragorn version is 1.2
+[16:33:17] Looking for 'barrnap' - found /usr/local/bin/barrnap
+[16:33:17] Determined barrnap version is 0.9
+[16:33:17] Looking for 'blastp' - found /usr/bin/blastp
+[16:33:17] Determined blastp version is 2.7
+[16:33:17] Looking for 'cmpress' - found /usr/local/bin/cmpress
+[16:33:17] Determined cmpress version is 1.1
+[16:33:17] Looking for 'cmscan' - found /usr/local/bin/cmscan
+[16:33:17] Determined cmscan version is 1.1
+[16:33:17] Looking for 'egrep' - found /usr/bin/egrep
+[16:33:17] Looking for 'find' - found /usr/bin/find
+[16:33:17] Looking for 'grep' - found /usr/bin/grep
+[16:33:17] Looking for 'hmmpress' - found /usr/local/bin/hmmpress
+[16:33:17] Determined hmmpress version is 3.1
+[16:33:17] Looking for 'hmmscan' - found /usr/local/bin/hmmscan
+[16:33:17] Determined hmmscan version is 3.1
+[16:33:17] Looking for 'java' - found /usr/bin/java
+[16:33:17] Looking for 'less' - found /usr/bin/less
+[16:33:17] Looking for 'makeblastdb' - found /usr/bin/makeblastdb
+[16:33:17] Determined makeblastdb version is 2.7
+[16:33:17] Looking for 'minced' - found /opt/biolinux/prokka/bin/../binaries/linux/../common/minced
+[16:33:18] Determined minced version is 2.0
+[16:33:18] Looking for 'parallel' - found /usr/local/bin/parallel
+[16:33:18] Determined parallel version is 20181222
+[16:33:18] Looking for 'prodigal' - found /usr/local/bin/prodigal
+[16:33:18] Determined prodigal version is 2.6
+[16:33:18] Looking for 'prokka-genbank_to_fasta_db' - found /opt/biolinux/prokka/bin/prokka-genbank_to_fasta_db
+[16:33:18] Looking for 'sed' - found /usr/bin/sed
+[16:33:18] Looking for 'tbl2asn' - found /opt/biolinux/prokka/binaries/linux/tbl2asn
+[16:33:18] Determined tbl2asn version is 25.8
+[16:33:18] Using genetic code table 11.
+[16:33:18] Loading and checking input file: fna/renamed/GCA_000008085.fna
+[16:33:18] Wrote 1 contigs totalling 490885 bp.
+[16:33:18] Skipping tRNA search at user request.
+[16:33:18] Disabling rRNA search: --kingdom=Archaea or --norrna=1
+[16:33:18] Skipping ncRNA search, enable with --rfam if desired.
+[16:33:18] Total of 0 tRNA + rRNA features
+[16:33:18] Searching for CRISPR repeats
+[16:33:18] CRISPR1 gnl|UU|CALJACFG_1 13653 with 14 spacers
+[16:33:18] CRISPR2 gnl|UU|CALJACFG_1 488561 with 29 spacers
+[16:33:18] Found 2 CRISPRs
+[16:33:18] Predicting coding sequences
+[16:33:18] Contigs total 490885 bp, so using single mode
+[16:33:18] Running: prodigal -i faa\/Prokka\/GCA_000008085\/GCA_000008085\.fna -c -m -g 11 -p single -f sco -q
+[16:33:19] Excluding CDS which overlaps existing RNA (repeat_region) at gnl|UU|CALJACFG_1:488400..488570 on - strand
+[16:33:19] Excluding CDS which overlaps existing RNA (repeat_region) at gnl|UU|CALJACFG_1:489272..489448 on - strand
+[16:33:19] Found 580 CDS
+[16:33:19] Connecting features back to sequences
+[16:33:19] Not using genus-specific database. Try --usegenus to enable it.
+[16:33:19] Annotating CDS, please be patient.
+[16:33:19] Will use 20 CPUs for similarity searching.
+[16:33:19] There are still 580 unannotated CDS left (started with 580)
+[16:33:19] Will use blast to search against /opt/biolinux/prokka/db/kingdom/Archaea/sprot with 20 CPUs
+[16:33:19] Running: cat faa\/Prokka\/GCA_000008085\/sprot\.faa | parallel --gnu --plain -j 20 --block 3950 --recstart '>' --pipe blastp -query - -db /opt/biolinux/prokka/db/kingdom/Archaea/sprot -evalue 1e-06 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > faa\/Prokka\/GCA_000008085\/sprot\.blast 2> /dev/null
+[16:33:20] Modify product: Putative FKBP-type peptidyl-prolyl cis-trans isomerase MJ0825 => Putative FKBP-type peptidyl-prolyl cis-trans isomerase
+[16:33:20] Modify product: Probable bifunctional tRNA threonylcarbamoyladenosine biosynthesis protein => putative bifunctional tRNA threonylcarbamoyladenosine biosynthesis protein
+[16:33:21] Modify product: Uncharacterized KH and PIN-domain containing protein MJ1533 => putative KH and PIN-domain containing protein
+[16:33:21] Modify product: Uncharacterized protein MJ0781 => putative protein
+[16:33:21] Modify product: Protein pelota homolog => Protein pelota 
+[16:33:21] Modify product: RNA-binding protein PAB1135 => RNA-binding protein
+[16:33:21] Modify product: Probable tRNA pseudouridine synthase B => putative tRNA pseudouridine synthase B
+[16:33:21] Modify product: UPF0273 protein PH0284 => hypothetical protein
+[16:33:21] Modify product: DNA-binding protein MTH_1615 => DNA-binding protein
+[16:33:21] Modify product: UPF0235 protein MTH_637 => hypothetical protein
+[16:33:21] Modify product: Protein translation factor SUI1 homolog => Protein translation factor SUI1 
+[16:33:21] Modify product: Probable tRNA pseudouridine synthase D => putative tRNA pseudouridine synthase D
+[16:33:21] Modify product: Uncharacterized NOP5 family protein MJ0694 => putative NOP5 family protein
+[16:33:21] Modify product: Deglycase PH1704 => Deglycase
+[16:33:21] Modify product: Uncharacterized HTH-type transcriptional regulator PH1519 => putative HTH-type transcriptional regulator
+[16:33:21] Modify product: Uncharacterized protein MJ0039 => putative protein
+[16:33:21] Modify product: Probable deoxyhypusine synthase => putative deoxyhypusine synthase
+[16:33:21] Modify product: Probable tRNA pseudouridine synthase B => putative tRNA pseudouridine synthase B
+[16:33:21] Modify product: Uncharacterized ABC transporter ATP-binding protein MJ0796 => putative ABC transporter ATP-binding protein
+[16:33:21] Modify product: Uncharacterized protein MJ0781 => putative protein
+[16:33:21] Modify product: Protein PH0010 => Protein
+[16:33:21] Modify product: UPF0215 protein AF_1433 => hypothetical protein
+[16:33:21] Modify product: Uncharacterized metallohydrolase MMP1398 => putative metallohydrolase
+[16:33:21] Modify product: Probable translation initiation factor IF-2 => putative translation initiation factor IF-2
+[16:33:21] Modify product: Ribosome maturation protein SDO1 homolog => Ribosome maturation protein SDO1 
+[16:33:21] Cleaned 25 /product names
+[16:33:21] Deleting unwanted file: faa/Prokka/GCA_000008085/sprot.faa
+[16:33:21] Deleting unwanted file: faa/Prokka/GCA_000008085/sprot.blast
+[16:33:21] There are still 318 unannotated CDS left (started with 580)
+[16:33:21] Will use hmmer3 to search against /opt/biolinux/prokka/db/hmm/HAMAP.hmm with 20 CPUs
+[16:33:21] Running: cat faa\/Prokka\/GCA_000008085\/HAMAP\.hmm\.faa | parallel --gnu --plain -j 20 --block 2013 --recstart '>' --pipe hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 /opt/biolinux/prokka/db/hmm/HAMAP.hmm /dev/stdin > faa\/Prokka\/GCA_000008085\/HAMAP\.hmm\.hmmer3 2> /dev/null
+[16:33:23] Deleting unwanted file: faa/Prokka/GCA_000008085/HAMAP.hmm.faa
+[16:33:23] Deleting unwanted file: faa/Prokka/GCA_000008085/HAMAP.hmm.hmmer3
+[16:33:23] Labelling remaining 286 proteins as 'hypothetical protein'
+[16:33:23] Found 183 unique /gene codes.
+[16:33:23] Fixed 2 duplicate /gene - tgtA_1 tgtA_2
+[16:33:23] Fixed 2 duplicate /gene - proS_1 proS_2
+[16:33:23] Fixed 2 duplicate /gene - rio1_1 rio1_2
+[16:33:23] Fixed 2 duplicate /gene - ttuA_1 ttuA_2
+[16:33:23] Fixed 2 duplicate /gene - pol_1 pol_2
+[16:33:23] Fixed 2 duplicate /gene - rfcS_1 rfcS_2
+[16:33:23] Fixed 2 duplicate /gene - btuD_1 btuD_2
+[16:33:23] Fixed 2 duplicate /gene - polC_1 polC_2
+[16:33:23] Fixed 2 duplicate /gene - gatE_1 gatE_2
+[16:33:23] Fixed 2 duplicate /gene - truB_1 truB_2
+[16:33:23] Fixed 2 duplicate /gene - tmcA_1 tmcA_2
+[16:33:23] Fixed 2 duplicate /gene - queE_1 queE_2
+[16:33:23] Fixed 2 duplicate /gene - rnj_1 rnj_2
+[16:33:23] Fixed 2 duplicate /gene - herA_1 herA_2
+[16:33:23] Fixed 2 duplicate /gene - ileS_1 ileS_2
+[16:33:23] Fixed 2 duplicate /gene - lon_1 lon_2
+[16:33:23] Fixed 2 duplicate /gene - alaS_1 alaS_2
+[16:33:23] Fixed 4 duplicate /gene - rgy_1 rgy_2 rgy_3 rgy_4
+[16:33:23] Fixed 18 colliding /gene names.
+[16:33:23] Adding /locus_tag identifiers
+[16:33:23] Assigned 580 locus_tags to CDS and RNA features.
+[16:33:23] Writing outputs to faa/Prokka/GCA_000008085/
+[16:33:24] Generating annotation statistics file
+[16:33:24] Generating Genbank and Sequin files
+[16:33:24] Running: tbl2asn -V b -a r10k -l paired-ends -M n -N 1 -y 'Annotated using prokka 1.14-dev from https://github.com/tseemann/prokka' -Z faa\/Prokka\/GCA_000008085\/GCA_000008085\.err -i faa\/Prokka\/GCA_000008085\/GCA_000008085\.fsa 2> /dev/null
+[16:33:25] Deleting unwanted file: faa/Prokka/GCA_000008085/errorsummary.val
+[16:33:25] Deleting unwanted file: faa/Prokka/GCA_000008085/GCA_000008085.dr
+[16:33:25] Deleting unwanted file: faa/Prokka/GCA_000008085/GCA_000008085.fixedproducts
+[16:33:25] Deleting unwanted file: faa/Prokka/GCA_000008085/GCA_000008085.ecn
+[16:33:25] Deleting unwanted file: faa/Prokka/GCA_000008085/GCA_000008085.val
+[16:33:25] Repairing broken .GBK output that tbl2asn produces...
+[16:33:25] Running: sed 's/COORDINATES: profile/COORDINATES:profile/' < faa\/Prokka\/GCA_000008085\/GCA_000008085\.gbf > faa\/Prokka\/GCA_000008085\/GCA_000008085\.gbk
+[16:33:25] Deleting unwanted file: faa/Prokka/GCA_000008085/GCA_000008085.gbf
+[16:33:25] Output files:
+[16:33:25] faa/Prokka/GCA_000008085/GCA_000008085.log
+[16:33:25] faa/Prokka/GCA_000008085/GCA_000008085.fna
+[16:33:25] faa/Prokka/GCA_000008085/GCA_000008085.gff
+[16:33:25] faa/Prokka/GCA_000008085/GCA_000008085.faa
+[16:33:25] faa/Prokka/GCA_000008085/GCA_000008085.ffn
+[16:33:25] faa/Prokka/GCA_000008085/GCA_000008085.tbl
+[16:33:25] faa/Prokka/GCA_000008085/GCA_000008085.fsa
+[16:33:25] faa/Prokka/GCA_000008085/GCA_000008085.tsv
+[16:33:25] faa/Prokka/GCA_000008085/GCA_000008085.txt
+[16:33:25] faa/Prokka/GCA_000008085/GCA_000008085.sqn
+[16:33:25] faa/Prokka/GCA_000008085/GCA_000008085.err
+[16:33:25] faa/Prokka/GCA_000008085/GCA_000008085.gbk
+[16:33:25] Annotation finished successfully.
+[16:33:25] Walltime used: 0.13 minutes
+[16:33:25] If you use this result please cite the Prokka paper:
+[16:33:25] Seemann T (2014) Prokka: rapid prokaryotic genome annotation. Bioinformatics. 30(14):2068-9.
+[16:33:25] Type 'prokka --citation' for more details.
+[16:33:25] Thank you, come again.

@@ -1,0 +1,2986 @@
+locus_tag	ftype	length_bp	gene	EC_number	COG	product
+FLGBHGLA_00010	CDS	1821	infB		COG0532	putative translation initiation factor IF-2
+FLGBHGLA_00010	gene	1821	infB			
+FLGBHGLA_00020	CDS	1302	dld	1.1.99.6	COG0277	D-lactate dehydrogenase (acceptor)
+FLGBHGLA_00020	gene	1302	dld			
+FLGBHGLA_00030	CDS	423				hypothetical protein
+FLGBHGLA_00030	gene	423				
+FLGBHGLA_00040	CDS	579				hypothetical protein
+FLGBHGLA_00040	gene	579				
+FLGBHGLA_00050	CDS	738	queE_1	4.3.99.3		7-carboxy-7-deazaguanine synthase
+FLGBHGLA_00050	gene	738	queE_1			
+FLGBHGLA_00060	CDS	381				hypothetical protein
+FLGBHGLA_00060	gene	381				
+FLGBHGLA_00070	CDS	1974	rgy_1		COG1110	Reverse gyrase
+FLGBHGLA_00070	gene	1974	rgy_1			
+FLGBHGLA_00080	CDS	816				hypothetical protein
+FLGBHGLA_00080	gene	816				
+FLGBHGLA_00090	CDS	1959	rnj_1	3.1.-.-	COG0595	Ribonuclease J
+FLGBHGLA_00090	gene	1959	rnj_1			
+FLGBHGLA_00100	CDS	432				hypothetical protein
+FLGBHGLA_00100	gene	432				
+FLGBHGLA_00110	CDS	525	moaB	2.7.7.75	COG0521	Molybdopterin adenylyltransferase
+FLGBHGLA_00110	gene	525	moaB			
+FLGBHGLA_00120	CDS	435			COG1371	Protein archease
+FLGBHGLA_00120	gene	435				
+FLGBHGLA_00130	CDS	1455	gatB	6.3.5.-	COG0064	Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransferase subunit B
+FLGBHGLA_00130	gene	1455	gatB			
+FLGBHGLA_00140	CDS	405				hypothetical protein
+FLGBHGLA_00140	gene	405				
+FLGBHGLA_00150	CDS	642				hypothetical protein
+FLGBHGLA_00150	gene	642				
+FLGBHGLA_00160	CDS	2232				hypothetical protein
+FLGBHGLA_00160	gene	2232				
+FLGBHGLA_00170	CDS	3054				hypothetical protein
+FLGBHGLA_00170	gene	3054				
+FLGBHGLA_00180	CDS	1104	aroB	4.2.3.4		3-dehydroquinate synthase
+FLGBHGLA_00180	gene	1104	aroB			
+FLGBHGLA_00190	CDS	711				hypothetical protein
+FLGBHGLA_00190	gene	711				
+FLGBHGLA_00200	CDS	426				hypothetical protein
+FLGBHGLA_00200	gene	426				
+FLGBHGLA_00210	CDS	1155		6.3.4.21	COG1488	Putative nicotinate phosphoribosyltransferase
+FLGBHGLA_00210	gene	1155				
+FLGBHGLA_00220	CDS	486	proB	2.7.2.11		Glutamate 5-kinase
+FLGBHGLA_00220	gene	486	proB			
+FLGBHGLA_00230	CDS	702				hypothetical protein
+FLGBHGLA_00230	gene	702				
+FLGBHGLA_00240	CDS	375				hypothetical protein
+FLGBHGLA_00240	gene	375				
+FLGBHGLA_00250	CDS	1815	aor_1	1.2.7.5	COG2414	Tungsten-containing aldehyde ferredoxin oxidoreductase
+FLGBHGLA_00250	gene	1815	aor_1			
+FLGBHGLA_00260	CDS	417				hypothetical protein
+FLGBHGLA_00260	gene	417				
+FLGBHGLA_00270	CDS	333				hypothetical protein
+FLGBHGLA_00270	gene	333				
+FLGBHGLA_00280	CDS	240				hypothetical protein
+FLGBHGLA_00280	gene	240				
+FLGBHGLA_00290	CDS	309	hisE	3.6.1.31		Phosphoribosyl-ATP pyrophosphatase
+FLGBHGLA_00290	gene	309	hisE			
+FLGBHGLA_00300	CDS	594	hisH	2.4.2.-		Imidazole glycerol phosphate synthase subunit HisH
+FLGBHGLA_00300	gene	594	hisH			
+FLGBHGLA_00310	CDS	585				hypothetical protein
+FLGBHGLA_00310	gene	585				
+FLGBHGLA_00320	CDS	390				hypothetical protein
+FLGBHGLA_00320	gene	390				
+FLGBHGLA_00330	CDS	489				hypothetical protein
+FLGBHGLA_00330	gene	489				
+FLGBHGLA_00340	CDS	1215				hypothetical protein
+FLGBHGLA_00340	gene	1215				
+FLGBHGLA_00350	CDS	660				hypothetical protein
+FLGBHGLA_00350	gene	660				
+FLGBHGLA_00360	CDS	1941				hypothetical protein
+FLGBHGLA_00360	gene	1941				
+FLGBHGLA_00370	CDS	360				hypothetical protein
+FLGBHGLA_00370	gene	360				
+FLGBHGLA_00380	CDS	1815	wtpC_1	3.6.3.-	COG3839	Molybdate/tungstate import ATP-binding protein WtpC
+FLGBHGLA_00380	gene	1815	wtpC_1			
+FLGBHGLA_00390	CDS	168	cren7			Chromatin protein Cren7
+FLGBHGLA_00390	gene	168	cren7			
+FLGBHGLA_00400	CDS	1245	ahcY	3.3.1.1		Adenosylhomocysteinase
+FLGBHGLA_00400	gene	1245	ahcY			
+FLGBHGLA_00410	CDS	894		2.7.1.213	COG0524	Nucleoside kinase
+FLGBHGLA_00410	gene	894				
+FLGBHGLA_00420	CDS	114				hypothetical protein
+FLGBHGLA_00420	gene	114				
+FLGBHGLA_00430	CDS	663	hydG	1.12.98.4	COG0543	Sulfhydrogenase 1 subunit gamma
+FLGBHGLA_00430	gene	663	hydG			
+FLGBHGLA_00440	CDS	474	pyrI		COG1781	Aspartate carbamoyltransferase regulatory chain
+FLGBHGLA_00440	gene	474	pyrI			
+FLGBHGLA_00450	CDS	918	pyrB	2.1.3.2	COG0540	Aspartate carbamoyltransferase
+FLGBHGLA_00450	gene	918	pyrB			
+FLGBHGLA_00460	CDS	2040				hypothetical protein
+FLGBHGLA_00460	gene	2040				
+FLGBHGLA_00470	CDS	423	vapC9	3.1.-.-	COG1412	Ribonuclease VapC9
+FLGBHGLA_00470	gene	423	vapC9			
+FLGBHGLA_00480	CDS	1098	ccsA_1			Cytochrome c biogenesis protein CcsA
+FLGBHGLA_00480	gene	1098	ccsA_1			
+FLGBHGLA_00490	CDS	396				hypothetical protein
+FLGBHGLA_00490	gene	396				
+FLGBHGLA_00500	CDS	738				hypothetical protein
+FLGBHGLA_00500	gene	738				
+FLGBHGLA_00510	CDS	735				hypothetical protein
+FLGBHGLA_00510	gene	735				
+FLGBHGLA_00520	CDS	1158	rlmI_1	2.1.1.191		Ribosomal RNA large subunit methyltransferase I
+FLGBHGLA_00520	gene	1158	rlmI_1			
+FLGBHGLA_00530	CDS	867		2.7.8.39	COG0558	Archaetidylinositol phosphate synthase
+FLGBHGLA_00530	gene	867				
+FLGBHGLA_00540	CDS	1761		3.6.4.12	COG1199	ATP-dependent DNA helicase
+FLGBHGLA_00540	gene	1761				
+FLGBHGLA_00550	CDS	429				hypothetical protein
+FLGBHGLA_00550	gene	429				
+FLGBHGLA_00560	CDS	732				hypothetical protein
+FLGBHGLA_00560	gene	732				
+FLGBHGLA_00570	CDS	774			COG0668	Large-conductance mechanosensitive channel MscMJLR
+FLGBHGLA_00570	gene	774				
+FLGBHGLA_00580	CDS	846	lysX	6.3.2.43	COG0189	Alpha-aminoadipate--LysW ligase LysX
+FLGBHGLA_00580	gene	846	lysX			
+FLGBHGLA_00590	CDS	720		5.2.1.8	COG1047	Putative FKBP-type peptidyl-prolyl cis-trans isomerase
+FLGBHGLA_00590	gene	720				
+FLGBHGLA_00600	CDS	525				hypothetical protein
+FLGBHGLA_00600	gene	525				
+FLGBHGLA_00610	CDS	672				hypothetical protein
+FLGBHGLA_00610	gene	672				
+FLGBHGLA_00620	CDS	1326	dnaG	2.7.7.-	COG0358	DNA primase DnaG
+FLGBHGLA_00620	gene	1326	dnaG			
+FLGBHGLA_00630	CDS	2361	pol	2.7.7.7		DNA polymerase
+FLGBHGLA_00630	gene	2361	pol			
+FLGBHGLA_00640	CDS	372				hypothetical protein
+FLGBHGLA_00640	gene	372				
+FLGBHGLA_00650	CDS	642				hypothetical protein
+FLGBHGLA_00650	gene	642				
+FLGBHGLA_00660	CDS	321			COG0051	30S ribosomal protein S10
+FLGBHGLA_00660	gene	321				
+FLGBHGLA_00670	CDS	1059	norW	1.18.1.-		Nitric oxide reductase FlRd-NAD(+) reductase
+FLGBHGLA_00670	gene	1059	norW			
+FLGBHGLA_00680	CDS	981	trm4_1	2.1.1.-	COG0144	tRNA (cytosine(48)-C(5))-methyltransferase
+FLGBHGLA_00680	gene	981	trm4_1			
+FLGBHGLA_00690	CDS	753				hypothetical protein
+FLGBHGLA_00690	gene	753				
+FLGBHGLA_00700	CDS	723				hypothetical protein
+FLGBHGLA_00700	gene	723				
+FLGBHGLA_00710	CDS	1302			COG1498	putative NOP5 family protein
+FLGBHGLA_00710	gene	1302				
+FLGBHGLA_00720	CDS	693				hypothetical protein
+FLGBHGLA_00720	gene	693				
+FLGBHGLA_00730	CDS	924				hypothetical protein
+FLGBHGLA_00730	gene	924				
+FLGBHGLA_00740	CDS	1068				hypothetical protein
+FLGBHGLA_00740	gene	1068				
+FLGBHGLA_00750	CDS	801				hypothetical protein
+FLGBHGLA_00750	gene	801				
+FLGBHGLA_00760	CDS	378				hypothetical protein
+FLGBHGLA_00760	gene	378				
+FLGBHGLA_00770	CDS	186				hypothetical protein
+FLGBHGLA_00770	gene	186				
+FLGBHGLA_00780	CDS	1914	gatE	6.3.5.-	COG2511	Glutamyl-tRNA(Gln) amidotransferase subunit E
+FLGBHGLA_00780	gene	1914	gatE			
+FLGBHGLA_00790	CDS	1071	priL		COG2219	DNA primase large subunit PriL
+FLGBHGLA_00790	gene	1071	priL			
+FLGBHGLA_00800	CDS	684				hypothetical protein
+FLGBHGLA_00800	gene	684				
+FLGBHGLA_00810	CDS	357	rhaS			HTH-type transcriptional activator RhaS
+FLGBHGLA_00810	gene	357	rhaS			
+FLGBHGLA_00820	CDS	4179				hypothetical protein
+FLGBHGLA_00820	gene	4179				
+FLGBHGLA_00830	CDS	519				hypothetical protein
+FLGBHGLA_00830	gene	519				
+FLGBHGLA_00840	CDS	213	spt4		COG2093	Transcription elongation factor Spt4
+FLGBHGLA_00840	gene	213	spt4			
+FLGBHGLA_00850	CDS	534	rpoE	2.7.7.6	COG1095	DNA-directed RNA polymerase subunit E
+FLGBHGLA_00850	gene	534	rpoE			
+FLGBHGLA_00860	CDS	891	sucD	6.2.1.5	COG0074	Succinate--CoA ligase [ADP-forming] subunit alpha
+FLGBHGLA_00860	gene	891	sucD			
+FLGBHGLA_00870	CDS	1131		6.2.1.13	COG1042	Acetate--CoA ligase [ADP-forming] II
+FLGBHGLA_00870	gene	1131				
+FLGBHGLA_00880	CDS	447	pfdA_1		COG1730	Prefoldin subunit alpha
+FLGBHGLA_00880	gene	447	pfdA_1			
+FLGBHGLA_00890	CDS	213				hypothetical protein
+FLGBHGLA_00890	gene	213				
+FLGBHGLA_00900	CDS	747	cobA	2.1.1.107		Uroporphyrinogen-III C-methyltransferase
+FLGBHGLA_00900	gene	747	cobA			
+FLGBHGLA_00910	CDS	705				hypothetical protein
+FLGBHGLA_00910	gene	705				
+FLGBHGLA_00920	CDS	159				hypothetical protein
+FLGBHGLA_00920	gene	159				
+FLGBHGLA_00930	CDS	615				hypothetical protein
+FLGBHGLA_00930	gene	615				
+FLGBHGLA_00940	CDS	648				hypothetical protein
+FLGBHGLA_00940	gene	648				
+FLGBHGLA_00950	CDS	405				hypothetical protein
+FLGBHGLA_00950	gene	405				
+FLGBHGLA_00960	CDS	309				hypothetical protein
+FLGBHGLA_00960	gene	309				
+	repeat_region	358				
+FLGBHGLA_00970	CDS	1677	thsA		COG0459	Thermosome subunit alpha
+FLGBHGLA_00970	gene	1677	thsA			
+FLGBHGLA_00980	CDS	816				hypothetical protein
+FLGBHGLA_00980	gene	816				
+FLGBHGLA_00990	CDS	1065				hypothetical protein
+FLGBHGLA_00990	gene	1065				
+FLGBHGLA_01000	CDS	414				hypothetical protein
+FLGBHGLA_01000	gene	414				
+FLGBHGLA_01010	CDS	1026	pepQ	3.4.13.9	COG0006	Xaa-Pro dipeptidase
+FLGBHGLA_01010	gene	1026	pepQ			
+FLGBHGLA_01020	CDS	537	cdvB2		COG5491	Cell division protein B2
+FLGBHGLA_01020	gene	537	cdvB2			
+FLGBHGLA_01030	CDS	1056	hmeD		COG0247	Hdr-like menaquinol oxidoreductase iron-sulfur subunit 2
+FLGBHGLA_01030	gene	1056	hmeD			
+FLGBHGLA_01040	CDS	210			COG2051	30S ribosomal protein S27e
+FLGBHGLA_01040	gene	210				
+FLGBHGLA_01050	CDS	1320	thiC	4.1.99.17		Phosphomethylpyrimidine synthase
+FLGBHGLA_01050	gene	1320	thiC			
+FLGBHGLA_01060	CDS	1125				hypothetical protein
+FLGBHGLA_01060	gene	1125				
+FLGBHGLA_01070	CDS	759	malK_1	3.6.3.19		Trehalose/maltose import ATP-binding protein MalK
+FLGBHGLA_01070	gene	759	malK_1			
+FLGBHGLA_01080	CDS	840				hypothetical protein
+FLGBHGLA_01080	gene	840				
+FLGBHGLA_01090	CDS	924				hypothetical protein
+FLGBHGLA_01090	gene	924				
+FLGBHGLA_01100	CDS	588				hypothetical protein
+FLGBHGLA_01100	gene	588				
+FLGBHGLA_01110	CDS	336	metG_1	6.1.1.10	COG0073	Methionine--tRNA ligase
+FLGBHGLA_01110	gene	336	metG_1			
+FLGBHGLA_01120	CDS	981				hypothetical protein
+FLGBHGLA_01120	gene	981				
+FLGBHGLA_01130	CDS	882				hypothetical protein
+FLGBHGLA_01130	gene	882				
+FLGBHGLA_01140	CDS	294				hypothetical protein
+FLGBHGLA_01140	gene	294				
+FLGBHGLA_01150	CDS	801				hypothetical protein
+FLGBHGLA_01150	gene	801				
+FLGBHGLA_01160	CDS	573				hypothetical protein
+FLGBHGLA_01160	gene	573				
+FLGBHGLA_01170	CDS	786				hypothetical protein
+FLGBHGLA_01170	gene	786				
+FLGBHGLA_01180	CDS	816			COG1136	putative ABC transporter ATP-binding protein
+FLGBHGLA_01180	gene	816				
+FLGBHGLA_01190	CDS	369				hypothetical protein
+FLGBHGLA_01190	gene	369				
+FLGBHGLA_01200	CDS	543	endA	4.6.1.16	COG1676	tRNA-splicing endonuclease
+FLGBHGLA_01200	gene	543	endA			
+FLGBHGLA_01210	CDS	693				hypothetical protein
+FLGBHGLA_01210	gene	693				
+FLGBHGLA_01220	CDS	549	lrpA		COG1522	HTH-type transcriptional regulator LrpA
+FLGBHGLA_01220	gene	549	lrpA			
+FLGBHGLA_01230	CDS	630	egtC	3.5.1.118		Gamma-glutamyl-hercynylcysteine sulfoxide hydrolase
+FLGBHGLA_01230	gene	630	egtC			
+FLGBHGLA_01240	CDS	231				hypothetical protein
+FLGBHGLA_01240	gene	231				
+FLGBHGLA_01250	CDS	777				hypothetical protein
+FLGBHGLA_01250	gene	777				
+FLGBHGLA_01260	CDS	1794				hypothetical protein
+FLGBHGLA_01260	gene	1794				
+FLGBHGLA_01270	CDS	687	trmJ	2.1.1.-	COG0565	tRNA (cytidine-2'-O-)-methyltransferase TrmJ
+FLGBHGLA_01270	gene	687	trmJ			
+FLGBHGLA_01280	CDS	591				hypothetical protein
+FLGBHGLA_01280	gene	591				
+FLGBHGLA_01290	CDS	2436	tmcA_1	2.3.1.193		tRNA(Met) cytidine acetyltransferase TmcA
+FLGBHGLA_01290	gene	2436	tmcA_1			
+FLGBHGLA_01300	CDS	699	tatD	3.1.21.-		Tat-linked quality control protein TatD
+FLGBHGLA_01300	gene	699	tatD			
+FLGBHGLA_01310	CDS	591	yfbR	3.1.3.89		5'-deoxynucleotidase YfbR
+FLGBHGLA_01310	gene	591	yfbR			
+FLGBHGLA_01320	CDS	1245				hypothetical protein
+FLGBHGLA_01320	gene	1245				
+FLGBHGLA_01330	CDS	1266	cysH_1	1.8.4.8		Phosphoadenosine phosphosulfate reductase
+FLGBHGLA_01330	gene	1266	cysH_1			
+FLGBHGLA_01340	CDS	798				hypothetical protein
+FLGBHGLA_01340	gene	798				
+FLGBHGLA_01350	CDS	447				hypothetical protein
+FLGBHGLA_01350	gene	447				
+FLGBHGLA_01360	CDS	729				hypothetical protein
+FLGBHGLA_01360	gene	729				
+FLGBHGLA_01370	CDS	819				hypothetical protein
+FLGBHGLA_01370	gene	819				
+FLGBHGLA_01380	CDS	792				hypothetical protein
+FLGBHGLA_01380	gene	792				
+FLGBHGLA_01390	CDS	1290	basB			Chemotactic signal transduction system substrate-binding protein BasB
+FLGBHGLA_01390	gene	1290	basB			
+FLGBHGLA_01400	CDS	1296				hypothetical protein
+FLGBHGLA_01400	gene	1296				
+FLGBHGLA_01410	CDS	678				hypothetical protein
+FLGBHGLA_01410	gene	678				
+FLGBHGLA_01420	CDS	516				hypothetical protein
+FLGBHGLA_01420	gene	516				
+FLGBHGLA_01430	CDS	201				hypothetical protein
+FLGBHGLA_01430	gene	201				
+FLGBHGLA_01440	CDS	444			COG0589	Universal stress protein
+FLGBHGLA_01440	gene	444				
+FLGBHGLA_01450	CDS	1680	dbpA	3.6.4.13		ATP-dependent RNA helicase DbpA
+FLGBHGLA_01450	gene	1680	dbpA			
+FLGBHGLA_01460	CDS	960	malK_2	3.6.3.19		Trehalose/maltose import ATP-binding protein MalK
+FLGBHGLA_01460	gene	960	malK_2			
+FLGBHGLA_01470	CDS	768				hypothetical protein
+FLGBHGLA_01470	gene	768				
+FLGBHGLA_01480	CDS	288				hypothetical protein
+FLGBHGLA_01480	gene	288				
+FLGBHGLA_01490	CDS	858				hypothetical protein
+FLGBHGLA_01490	gene	858				
+FLGBHGLA_01500	CDS	126				hypothetical protein
+FLGBHGLA_01500	gene	126				
+FLGBHGLA_01510	CDS	3057	leuS_1	6.1.1.4	COG0495	Leucine--tRNA ligase
+FLGBHGLA_01510	gene	3057	leuS_1			
+FLGBHGLA_01520	CDS	294	rpoK	2.7.7.6	COG1758	DNA-directed RNA polymerase subunit K
+FLGBHGLA_01520	gene	294	rpoK			
+FLGBHGLA_01530	CDS	906				hypothetical protein
+FLGBHGLA_01530	gene	906				
+FLGBHGLA_01540	CDS	489				hypothetical protein
+FLGBHGLA_01540	gene	489				
+FLGBHGLA_01550	CDS	567				hypothetical protein
+FLGBHGLA_01550	gene	567				
+FLGBHGLA_01560	CDS	594	pdxT	4.3.3.6	COG0311	Pyridoxal 5'-phosphate synthase subunit PdxT
+FLGBHGLA_01560	gene	594	pdxT			
+FLGBHGLA_01570	CDS	1029	pdxS	4.3.3.6	COG0214	Pyridoxal 5'-phosphate synthase subunit PdxS
+FLGBHGLA_01570	gene	1029	pdxS			
+FLGBHGLA_01580	CDS	276			COG1958	Putative snRNP Sm-like protein
+FLGBHGLA_01580	gene	276				
+FLGBHGLA_01590	CDS	1206	mat	2.5.1.6	COG1812	S-adenosylmethionine synthase
+FLGBHGLA_01590	gene	1206	mat			
+FLGBHGLA_01600	CDS	279				hypothetical protein
+FLGBHGLA_01600	gene	279				
+FLGBHGLA_01610	CDS	585		2.1.1.-	COG2813	putative S-adenosylmethionine-dependent methyltransferase
+FLGBHGLA_01610	gene	585				
+FLGBHGLA_01620	CDS	192				hypothetical protein
+FLGBHGLA_01620	gene	192				
+FLGBHGLA_01630	CDS	612	malK_3	3.6.3.19		Trehalose/maltose import ATP-binding protein MalK
+FLGBHGLA_01630	gene	612	malK_3			
+FLGBHGLA_01640	CDS	1755				hypothetical protein
+FLGBHGLA_01640	gene	1755				
+FLGBHGLA_01650	CDS	726			COG1136	putative ABC transporter ATP-binding protein
+FLGBHGLA_01650	gene	726				
+FLGBHGLA_01660	CDS	543				hypothetical protein
+FLGBHGLA_01660	gene	543				
+FLGBHGLA_01670	CDS	1386	purD	6.3.4.13		Phosphoribosylamine--glycine ligase
+FLGBHGLA_01670	gene	1386	purD			
+FLGBHGLA_01680	CDS	696				hypothetical protein
+FLGBHGLA_01680	gene	696				
+FLGBHGLA_01690	CDS	792	der			GTPase Der
+FLGBHGLA_01690	gene	792	der			
+FLGBHGLA_01700	CDS	882	mptN	6.3.2.33	COG0189	Tetrahydromethanopterin:alpha-L-glutamate ligase
+FLGBHGLA_01700	gene	882	mptN			
+FLGBHGLA_01710	CDS	348				hypothetical protein
+FLGBHGLA_01710	gene	348				
+FLGBHGLA_01720	CDS	378				hypothetical protein
+FLGBHGLA_01720	gene	378				
+FLGBHGLA_01730	CDS	1779	glmS_1	2.6.1.16	COG0449	Glutamine--fructose-6-phosphate aminotransferase [isomerizing]
+FLGBHGLA_01730	gene	1779	glmS_1			
+FLGBHGLA_01740	CDS	735	rsxB_1			Electron transport complex subunit RsxB
+FLGBHGLA_01740	gene	735	rsxB_1			
+FLGBHGLA_01750	CDS	636	porD_1		COG1144	Pyruvate synthase subunit PorD
+FLGBHGLA_01750	gene	636	porD_1			
+FLGBHGLA_01760	CDS	294	albA1			DNA/RNA-binding protein Alba 1
+FLGBHGLA_01760	gene	294	albA1			
+FLGBHGLA_01770	CDS	321				hypothetical protein
+FLGBHGLA_01770	gene	321				
+FLGBHGLA_01780	CDS	273				hypothetical protein
+FLGBHGLA_01780	gene	273				
+FLGBHGLA_01790	CDS	708	hisF_1	4.1.3.-	COG0107	Imidazole glycerol phosphate synthase subunit HisF
+FLGBHGLA_01790	gene	708	hisF_1			
+FLGBHGLA_01800	CDS	615		3.6.-.-	COG3642	KEOPS complex subunit Bud32
+FLGBHGLA_01800	gene	615				
+FLGBHGLA_01810	CDS	567		3.6.1.66	COG0127	dITP/XTP pyrophosphatase
+FLGBHGLA_01810	gene	567				
+FLGBHGLA_01820	CDS	459			COG0099	30S ribosomal protein S13
+FLGBHGLA_01820	gene	459				
+FLGBHGLA_01830	CDS	501	rps4		COG0522	30S ribosomal protein S4
+FLGBHGLA_01830	gene	501	rps4			
+FLGBHGLA_01840	CDS	393			COG0100	30S ribosomal protein S11
+FLGBHGLA_01840	gene	393				
+FLGBHGLA_01850	CDS	852	rpoD	2.7.7.6	COG0202	DNA-directed RNA polymerase subunit D
+FLGBHGLA_01850	gene	852	rpoD			
+FLGBHGLA_01860	CDS	357			COG1727	50S ribosomal protein L18e
+FLGBHGLA_01860	gene	357				
+FLGBHGLA_01870	CDS	447			COG0102	50S ribosomal protein L13
+FLGBHGLA_01870	gene	447				
+FLGBHGLA_01880	CDS	447	rps9		COG0103	30S ribosomal protein S9
+FLGBHGLA_01880	gene	447	rps9			
+FLGBHGLA_01890	CDS	171	rpoN	2.7.7.6	COG1644	DNA-directed RNA polymerase subunit N
+FLGBHGLA_01890	gene	171	rpoN			
+FLGBHGLA_01900	CDS	639	rps2		COG0052	30S ribosomal protein S2
+FLGBHGLA_01900	gene	639	rps2			
+FLGBHGLA_01910	CDS	240	fdxA		COG1141	Ferredoxin
+FLGBHGLA_01910	gene	240	fdxA			
+FLGBHGLA_01920	CDS	246				hypothetical protein
+FLGBHGLA_01920	gene	246				
+FLGBHGLA_01930	CDS	2826		3.6.4.12	COG1204	ATP-dependent DNA helicase Hel308
+FLGBHGLA_01930	gene	2826				
+FLGBHGLA_01940	CDS	1389				hypothetical protein
+FLGBHGLA_01940	gene	1389				
+FLGBHGLA_01950	CDS	375				hypothetical protein
+FLGBHGLA_01950	gene	375				
+FLGBHGLA_01960	CDS	738				hypothetical protein
+FLGBHGLA_01960	gene	738				
+FLGBHGLA_01970	CDS	309				hypothetical protein
+FLGBHGLA_01970	gene	309				
+FLGBHGLA_01980	CDS	2706	alaS	6.1.1.7	COG0013	Alanine--tRNA ligase
+FLGBHGLA_01980	gene	2706	alaS			
+FLGBHGLA_01990	CDS	1467				hypothetical protein
+FLGBHGLA_01990	gene	1467				
+FLGBHGLA_02000	CDS	1035	pqqE_1			Coenzyme PQQ synthesis protein E
+FLGBHGLA_02000	gene	1035	pqqE_1			
+FLGBHGLA_02010	CDS	1386		2.7.2.4	COG0527	putative aspartokinase
+FLGBHGLA_02010	gene	1386				
+FLGBHGLA_02020	CDS	162				hypothetical protein
+FLGBHGLA_02020	gene	162				
+FLGBHGLA_02030	CDS	1329	gatD	6.3.5.-	COG0252	Glutamyl-tRNA(Gln) amidotransferase subunit D
+FLGBHGLA_02030	gene	1329	gatD			
+FLGBHGLA_02040	CDS	729				hypothetical protein
+FLGBHGLA_02040	gene	729				
+FLGBHGLA_02050	CDS	255				hypothetical protein
+FLGBHGLA_02050	gene	255				
+FLGBHGLA_02060	CDS	306	ogt	2.1.1.63	COG0350	Methylated-DNA--protein-cysteine methyltransferase
+FLGBHGLA_02060	gene	306	ogt			
+FLGBHGLA_02070	CDS	369				hypothetical protein
+FLGBHGLA_02070	gene	369				
+FLGBHGLA_02080	CDS	945	ruvB_1	3.6.4.12		Holliday junction ATP-dependent DNA helicase RuvB
+FLGBHGLA_02080	gene	945	ruvB_1			
+FLGBHGLA_02090	CDS	1287				hypothetical protein
+FLGBHGLA_02090	gene	1287				
+FLGBHGLA_02100	CDS	345				hypothetical protein
+FLGBHGLA_02100	gene	345				
+FLGBHGLA_02110	CDS	777				hypothetical protein
+FLGBHGLA_02110	gene	777				
+FLGBHGLA_02120	CDS	303				hypothetical protein
+FLGBHGLA_02120	gene	303				
+FLGBHGLA_02130	CDS	831			COG2123	Exosome complex component Rrp42
+FLGBHGLA_02130	gene	831				
+FLGBHGLA_02140	CDS	726		3.1.13.-	COG0689	Exosome complex component Rrp41
+FLGBHGLA_02140	gene	726				
+FLGBHGLA_02150	CDS	720	rrp4		COG1097	Exosome complex component Rrp4
+FLGBHGLA_02150	gene	720	rrp4			
+FLGBHGLA_02160	CDS	711				hypothetical protein
+FLGBHGLA_02160	gene	711				
+FLGBHGLA_02170	CDS	486				hypothetical protein
+FLGBHGLA_02170	gene	486				
+FLGBHGLA_02180	CDS	309				hypothetical protein
+FLGBHGLA_02180	gene	309				
+FLGBHGLA_02190	CDS	789	aroE	1.1.1.25	COG0169	Shikimate dehydrogenase (NADP(+))
+FLGBHGLA_02190	gene	789	aroE			
+FLGBHGLA_02200	CDS	1194				hypothetical protein
+FLGBHGLA_02200	gene	1194				
+FLGBHGLA_02210	CDS	291				hypothetical protein
+FLGBHGLA_02210	gene	291				
+FLGBHGLA_02220	CDS	849	thiL_1	2.7.4.16	COG0611	Thiamine-monophosphate kinase
+FLGBHGLA_02220	gene	849	thiL_1			
+FLGBHGLA_02230	CDS	2379	ileS_1	6.1.1.5	COG0060	Isoleucine--tRNA ligase
+FLGBHGLA_02230	gene	2379	ileS_1			
+FLGBHGLA_02240	CDS	1209	herA_1	3.6.4.12	COG0433	DNA double-strand break repair helicase HerA
+FLGBHGLA_02240	gene	1209	herA_1			
+FLGBHGLA_02250	CDS	546		2.7.4.3	COG1936	Putative adenylate kinase
+FLGBHGLA_02250	gene	546				
+FLGBHGLA_02260	CDS	858			COG1082	putative protein
+FLGBHGLA_02260	gene	858				
+FLGBHGLA_02270	CDS	543	dcd	3.5.4.30	COG0717	dCTP deaminase, dUMP-forming
+FLGBHGLA_02270	gene	543	dcd			
+FLGBHGLA_02280	CDS	357				hypothetical protein
+FLGBHGLA_02280	gene	357				
+FLGBHGLA_02290	CDS	234				hypothetical protein
+FLGBHGLA_02290	gene	234				
+FLGBHGLA_02300	CDS	909	pyrD	1.3.-.-		Dihydroorotate dehydrogenase
+FLGBHGLA_02300	gene	909	pyrD			
+FLGBHGLA_02310	CDS	867				hypothetical protein
+FLGBHGLA_02310	gene	867				
+FLGBHGLA_02320	CDS	657	queE_2	4.3.99.3		7-carboxy-7-deazaguanine synthase
+FLGBHGLA_02320	gene	657	queE_2			
+FLGBHGLA_02330	CDS	387	rpl7ae		COG1358	50S ribosomal protein L7Ae
+FLGBHGLA_02330	gene	387	rpl7ae			
+FLGBHGLA_02340	CDS	1326				hypothetical protein
+FLGBHGLA_02340	gene	1326				
+FLGBHGLA_02350	CDS	399				hypothetical protein
+FLGBHGLA_02350	gene	399				
+FLGBHGLA_02360	CDS	531	gpt_1	2.4.2.22		Xanthine phosphoribosyltransferase
+FLGBHGLA_02360	gene	531	gpt_1			
+FLGBHGLA_02370	CDS	294				hypothetical protein
+FLGBHGLA_02370	gene	294				
+FLGBHGLA_02380	CDS	753				hypothetical protein
+FLGBHGLA_02380	gene	753				
+FLGBHGLA_02390	CDS	663	trkA		COG0569	Trk system potassium uptake protein TrkA 
+FLGBHGLA_02390	gene	663	trkA			
+FLGBHGLA_02400	CDS	309				hypothetical protein
+FLGBHGLA_02400	gene	309				
+FLGBHGLA_02410	CDS	687				hypothetical protein
+FLGBHGLA_02410	gene	687				
+FLGBHGLA_02420	CDS	675				hypothetical protein
+FLGBHGLA_02420	gene	675				
+FLGBHGLA_02430	CDS	435			COG1325	RNA-binding protein
+FLGBHGLA_02430	gene	435				
+FLGBHGLA_02440	CDS	438				hypothetical protein
+FLGBHGLA_02440	gene	438				
+FLGBHGLA_02450	CDS	627		3.1.3.3	COG0560	Phosphoserine phosphatase
+FLGBHGLA_02450	gene	627				
+FLGBHGLA_02460	CDS	2670	rpoA1	2.7.7.6	COG0086	DNA-directed RNA polymerase subunit A'
+FLGBHGLA_02460	gene	2670	rpoA1			
+FLGBHGLA_02470	CDS	1269	rpoA2	2.7.7.6	COG0086	DNA-directed RNA polymerase subunit A''
+FLGBHGLA_02470	gene	1269	rpoA2			
+FLGBHGLA_02480	CDS	318			COG1911	50S ribosomal protein L30e
+FLGBHGLA_02480	gene	318				
+FLGBHGLA_02490	CDS	432				hypothetical protein
+FLGBHGLA_02490	gene	432				
+FLGBHGLA_02500	CDS	444			COG0048	30S ribosomal protein S12
+FLGBHGLA_02500	gene	444				
+FLGBHGLA_02510	CDS	471				hypothetical protein
+FLGBHGLA_02510	gene	471				
+FLGBHGLA_02520	CDS	588	rps7		COG0049	30S ribosomal protein S7
+FLGBHGLA_02520	gene	588	rps7			
+FLGBHGLA_02530	CDS	1212	cdc6-1		COG1474	ORC1-type DNA replication protein 1
+FLGBHGLA_02530	gene	1212	cdc6-1			
+FLGBHGLA_02540	CDS	453				hypothetical protein
+FLGBHGLA_02540	gene	453				
+FLGBHGLA_02550	CDS	897	prs_1	2.7.6.1	COG0462	Ribose-phosphate pyrophosphokinase
+FLGBHGLA_02550	gene	897	prs_1			
+FLGBHGLA_02560	CDS	1041	pelA	3.1.-.-	COG1537	Protein pelota 
+FLGBHGLA_02560	gene	1041	pelA			
+FLGBHGLA_02570	CDS	234				hypothetical protein
+FLGBHGLA_02570	gene	234				
+FLGBHGLA_02580	CDS	426			COG0589	Universal stress protein
+FLGBHGLA_02580	gene	426				
+FLGBHGLA_02590	CDS	1239	acsA	6.2.1.1	COG0365	Acetyl-coenzyme A synthetase
+FLGBHGLA_02590	gene	1239	acsA			
+FLGBHGLA_02600	CDS	768		6.2.1.36	COG0365	3-hydroxypropionyl-coenzyme A synthetase
+FLGBHGLA_02600	gene	768				
+FLGBHGLA_02610	CDS	417				hypothetical protein
+FLGBHGLA_02610	gene	417				
+FLGBHGLA_02620	CDS	750				hypothetical protein
+FLGBHGLA_02620	gene	750				
+FLGBHGLA_02630	CDS	663	moaE	2.8.1.-	COG0314	putative molybdopterin synthase
+FLGBHGLA_02630	gene	663	moaE			
+FLGBHGLA_02640	CDS	1467	cimA_1	2.3.1.182	COG0119	(R)-citramalate synthase CimA
+FLGBHGLA_02640	gene	1467	cimA_1			
+FLGBHGLA_02650	CDS	186				hypothetical protein
+FLGBHGLA_02650	gene	186				
+FLGBHGLA_02660	CDS	300				hypothetical protein
+FLGBHGLA_02660	gene	300				
+FLGBHGLA_02670	CDS	384				hypothetical protein
+FLGBHGLA_02670	gene	384				
+FLGBHGLA_02680	CDS	1449				hypothetical protein
+FLGBHGLA_02680	gene	1449				
+FLGBHGLA_02690	CDS	990	kae1	2.3.1.234	COG0533	tRNA N6-adenosine threonylcarbamoyltransferase
+FLGBHGLA_02690	gene	990	kae1			
+FLGBHGLA_02700	CDS	516				hypothetical protein
+FLGBHGLA_02700	gene	516				
+FLGBHGLA_02710	CDS	1395				hypothetical protein
+FLGBHGLA_02710	gene	1395				
+FLGBHGLA_02720	CDS	648	faeB-hpsB		COG0269	Bifunctional enzyme Fae/Hps
+FLGBHGLA_02720	gene	648	faeB-hpsB			
+FLGBHGLA_02730	CDS	177			COG1998	30S ribosomal protein S27ae
+FLGBHGLA_02730	gene	177				
+FLGBHGLA_02740	CDS	318			COG2004	30S ribosomal protein S24e
+FLGBHGLA_02740	gene	318				
+FLGBHGLA_02750	CDS	225			COG1383	30S ribosomal protein S17e
+FLGBHGLA_02750	gene	225				
+FLGBHGLA_02760	CDS	1104	dadD_1	3.5.4.31		5'-deoxyadenosine deaminase
+FLGBHGLA_02760	gene	1104	dadD_1			
+FLGBHGLA_02770	CDS	1227	pgk	2.7.2.3	COG0126	Phosphoglycerate kinase
+FLGBHGLA_02770	gene	1227	pgk			
+FLGBHGLA_02780	CDS	186				hypothetical protein
+FLGBHGLA_02780	gene	186				
+FLGBHGLA_02790	CDS	1686	tfrA	1.3.4.1	COG1053	Fumarate reductase (CoM/CoB) subunit A
+FLGBHGLA_02790	gene	1686	tfrA			
+FLGBHGLA_02800	CDS	1188				hypothetical protein
+FLGBHGLA_02800	gene	1188				
+FLGBHGLA_02810	CDS	1155		3.1.-.-	COG0420	DNA double-strand break repair protein Mre11
+FLGBHGLA_02810	gene	1155				
+FLGBHGLA_02820	CDS	360				hypothetical protein
+FLGBHGLA_02820	gene	360				
+FLGBHGLA_02830	CDS	648	aroD	4.2.1.10	COG0710	3-dehydroquinate dehydratase
+FLGBHGLA_02830	gene	648	aroD			
+FLGBHGLA_02840	CDS	372	ubiE_1	2.1.1.163		Ubiquinone/menaquinone biosynthesis C-methyltransferase UbiE
+FLGBHGLA_02840	gene	372	ubiE_1			
+FLGBHGLA_02850	CDS	192				hypothetical protein
+FLGBHGLA_02850	gene	192				
+FLGBHGLA_02860	CDS	1119	hflX		COG2262	GTPase HflX
+FLGBHGLA_02860	gene	1119	hflX			
+FLGBHGLA_02870	CDS	468			COG2238	30S ribosomal protein S19e
+FLGBHGLA_02870	gene	468				
+FLGBHGLA_02880	CDS	351			COG2118	DNA-binding protein
+FLGBHGLA_02880	gene	351				
+FLGBHGLA_02890	CDS	159			COG2167	50S ribosomal protein L39e
+FLGBHGLA_02890	gene	159				
+FLGBHGLA_02900	CDS	306			COG2097	50S ribosomal protein L31e
+FLGBHGLA_02900	gene	306				
+FLGBHGLA_02910	CDS	672	eif6		COG1976	Translation initiation factor 6
+FLGBHGLA_02910	gene	672	eif6			
+FLGBHGLA_02920	CDS	1068	aglF	2.7.7.9	COG1209	UTP--glucose-1-phosphate uridylyltransferase AglF
+FLGBHGLA_02920	gene	1068	aglF			
+FLGBHGLA_02930	CDS	288				hypothetical protein
+FLGBHGLA_02930	gene	288				
+FLGBHGLA_02940	CDS	285				hypothetical protein
+FLGBHGLA_02940	gene	285				
+FLGBHGLA_02950	CDS	570	trmY_1	2.1.1.257	COG1901	tRNA (pseudouridine(54)-N(1))-methyltransferase
+FLGBHGLA_02950	gene	570	trmY_1			
+FLGBHGLA_02960	CDS	1488				hypothetical protein
+FLGBHGLA_02960	gene	1488				
+FLGBHGLA_02970	CDS	822				hypothetical protein
+FLGBHGLA_02970	gene	822				
+FLGBHGLA_02980	CDS	594				hypothetical protein
+FLGBHGLA_02980	gene	594				
+FLGBHGLA_02990	CDS	921	map	3.4.11.18	COG0024	Methionine aminopeptidase
+FLGBHGLA_02990	gene	921	map			
+FLGBHGLA_03000	CDS	1905	gor	1.2.7.6	COG2414	Glyceraldehyde-3-phosphate:ferredoxin oxidoreductase
+FLGBHGLA_03000	gene	1905	gor			
+FLGBHGLA_03010	CDS	444				hypothetical protein
+FLGBHGLA_03010	gene	444				
+FLGBHGLA_03020	CDS	1086				hypothetical protein
+FLGBHGLA_03020	gene	1086				
+FLGBHGLA_03030	CDS	297				hypothetical protein
+FLGBHGLA_03030	gene	297				
+FLGBHGLA_03040	CDS	1131				hypothetical protein
+FLGBHGLA_03040	gene	1131				
+FLGBHGLA_03050	CDS	576	afung	3.2.2.27	COG1573	Type-4 uracil-DNA glycosylase
+FLGBHGLA_03050	gene	576	afung			
+FLGBHGLA_03060	CDS	1080				hypothetical protein
+FLGBHGLA_03060	gene	1080				
+FLGBHGLA_03070	CDS	276	purU	3.5.1.10		Formyltetrahydrofolate deformylase
+FLGBHGLA_03070	gene	276	purU			
+FLGBHGLA_03080	CDS	507	leuD_1	4.2.1.33	COG0066	Isopropylmalate/citramalate isomerase small subunit
+FLGBHGLA_03080	gene	507	leuD_1			
+FLGBHGLA_03090	CDS	492				hypothetical protein
+FLGBHGLA_03090	gene	492				
+	repeat_region	627				
+FLGBHGLA_03100	CDS	801				hypothetical protein
+FLGBHGLA_03100	gene	801				
+FLGBHGLA_03110	CDS	936	pheA	4.2.1.51	COG0077	Prephenate dehydratase
+FLGBHGLA_03110	gene	936	pheA			
+FLGBHGLA_03120	CDS	246				hypothetical protein
+FLGBHGLA_03120	gene	246				
+FLGBHGLA_03130	CDS	1194	tiaS	6.3.4.22	COG1571	tRNA(Ile2) 2-agmatinylcytidine synthetase TiaS
+FLGBHGLA_03130	gene	1194	tiaS			
+FLGBHGLA_03140	CDS	351				hypothetical protein
+FLGBHGLA_03140	gene	351				
+FLGBHGLA_03150	CDS	951	purM	6.3.3.1		Phosphoribosylformylglycinamidine cyclo-ligase
+FLGBHGLA_03150	gene	951	purM			
+FLGBHGLA_03160	CDS	543				hypothetical protein
+FLGBHGLA_03160	gene	543				
+FLGBHGLA_03170	CDS	1659	thrS_1	6.1.1.3	COG0441	Threonine--tRNA ligase
+FLGBHGLA_03170	gene	1659	thrS_1			
+FLGBHGLA_03180	CDS	2925	ccsA_2			Cytochrome c biogenesis protein CcsA
+FLGBHGLA_03180	gene	2925	ccsA_2			
+FLGBHGLA_03190	CDS	1158		3.-.-.-	COG0624	putative metallohydrolase
+FLGBHGLA_03190	gene	1158				
+FLGBHGLA_03200	CDS	1467				hypothetical protein
+FLGBHGLA_03200	gene	1467				
+FLGBHGLA_03210	CDS	768		2.7.1.169	COG1829	Pantoate kinase
+FLGBHGLA_03210	gene	768				
+FLGBHGLA_03220	CDS	804				hypothetical protein
+FLGBHGLA_03220	gene	804				
+FLGBHGLA_03230	CDS	957	trm5b	2.1.1.228	COG2520	tRNA (guanine(37)-N1)-methyltransferase Trm5b
+FLGBHGLA_03230	gene	957	trm5b			
+FLGBHGLA_03240	CDS	1044				hypothetical protein
+FLGBHGLA_03240	gene	1044				
+FLGBHGLA_03250	CDS	171				hypothetical protein
+FLGBHGLA_03250	gene	171				
+FLGBHGLA_03260	CDS	1068				hypothetical protein
+FLGBHGLA_03260	gene	1068				
+FLGBHGLA_03270	CDS	591		2.1.1.-	COG0500	Protein-lysine N-methyltransferase
+FLGBHGLA_03270	gene	591				
+FLGBHGLA_03280	CDS	1248	eif2g		COG5257	Translation initiation factor 2 subunit gamma
+FLGBHGLA_03280	gene	1248	eif2g			
+FLGBHGLA_03290	CDS	1029				hypothetical protein
+FLGBHGLA_03290	gene	1029				
+FLGBHGLA_03300	CDS	705				hypothetical protein
+FLGBHGLA_03300	gene	705				
+FLGBHGLA_03310	CDS	1572			COG1517	CRISPR-associated protein Csx1
+FLGBHGLA_03310	gene	1572				
+FLGBHGLA_03320	CDS	837	cmr4_1		COG1336	CRISPR system CMR subunit Cmr4
+FLGBHGLA_03320	gene	837	cmr4_1			
+FLGBHGLA_03330	CDS	3078	cmr2_1		COG1353	CRISPR system CMR subunit Cmr2
+FLGBHGLA_03330	gene	3078	cmr2_1			
+FLGBHGLA_03340	CDS	1065				hypothetical protein
+FLGBHGLA_03340	gene	1065				
+FLGBHGLA_03350	CDS	417				hypothetical protein
+FLGBHGLA_03350	gene	417				
+FLGBHGLA_03360	CDS	1500	pyrG	6.3.4.2	COG0504	CTP synthase
+FLGBHGLA_03360	gene	1500	pyrG			
+FLGBHGLA_03370	CDS	1047	queE_3	4.3.99.3		7-carboxy-7-deazaguanine synthase
+FLGBHGLA_03370	gene	1047	queE_3			
+FLGBHGLA_03380	CDS	345				hypothetical protein
+FLGBHGLA_03380	gene	345				
+FLGBHGLA_03390	CDS	417	purE	5.4.99.18	COG0041	N5-carboxyaminoimidazole ribonucleotide mutase
+FLGBHGLA_03390	gene	417	purE			
+FLGBHGLA_03400	CDS	603				hypothetical protein
+FLGBHGLA_03400	gene	603				
+FLGBHGLA_03410	CDS	519				hypothetical protein
+FLGBHGLA_03410	gene	519				
+FLGBHGLA_03420	CDS	636	nfi	3.1.21.7	COG1515	Endonuclease V
+FLGBHGLA_03420	gene	636	nfi			
+FLGBHGLA_03430	CDS	816	gdS-2	2.5.1.82	COG0142	Hexaprenyl pyrophosphate synthase
+FLGBHGLA_03430	gene	816	gdS-2			
+FLGBHGLA_03440	CDS	321				hypothetical protein
+FLGBHGLA_03440	gene	321				
+FLGBHGLA_03450	CDS	1155				hypothetical protein
+FLGBHGLA_03450	gene	1155				
+FLGBHGLA_03460	CDS	1467	ppcA	4.1.1.31	COG1892	Phosphoenolpyruvate carboxylase
+FLGBHGLA_03460	gene	1467	ppcA			
+FLGBHGLA_03470	CDS	1284		5.4.99.25	COG1258	tRNA pseudouridine synthase Pus10
+FLGBHGLA_03470	gene	1284				
+FLGBHGLA_03480	CDS	837	suhB	3.1.3.11	COG0483	Fructose-1,6-bisphosphatase/inositol-1-monophosphatase
+FLGBHGLA_03480	gene	837	suhB			
+FLGBHGLA_03490	CDS	660	pheT_1	6.1.1.20		Phenylalanine--tRNA ligase beta subunit
+FLGBHGLA_03490	gene	660	pheT_1			
+FLGBHGLA_03500	CDS	1398		1.18.1.2		Ferredoxin--NADP reductase
+FLGBHGLA_03500	gene	1398				
+FLGBHGLA_03510	CDS	1020	purA	6.3.4.4	COG0104	Adenylosuccinate synthetase
+FLGBHGLA_03510	gene	1020	purA			
+FLGBHGLA_03520	CDS	1137	tyrS	6.1.1.1	COG0162	Tyrosine--tRNA ligase
+FLGBHGLA_03520	gene	1137	tyrS			
+FLGBHGLA_03530	CDS	345	tatA			Sec-independent protein translocase protein TatA
+FLGBHGLA_03530	gene	345	tatA			
+FLGBHGLA_03540	CDS	681	prs_2	2.7.6.1	COG0462	Ribose-phosphate pyrophosphokinase
+FLGBHGLA_03540	gene	681	prs_2			
+FLGBHGLA_03550	CDS	528				hypothetical protein
+FLGBHGLA_03550	gene	528				
+FLGBHGLA_03560	CDS	717		2.4.2.1	COG2820	Purine nucleoside phosphorylase
+FLGBHGLA_03560	gene	717				
+FLGBHGLA_03570	CDS	606				hypothetical protein
+FLGBHGLA_03570	gene	606				
+FLGBHGLA_03580	CDS	564				hypothetical protein
+FLGBHGLA_03580	gene	564				
+FLGBHGLA_03590	CDS	729	sfsA		COG1489	Sugar fermentation stimulation protein 
+FLGBHGLA_03590	gene	729	sfsA			
+FLGBHGLA_03600	CDS	642	hypB		COG0378	putative hydrogenase maturation factor HypB
+FLGBHGLA_03600	gene	642	hypB			
+FLGBHGLA_03610	CDS	120				hypothetical protein
+FLGBHGLA_03610	gene	120				
+FLGBHGLA_03620	CDS	525				hypothetical protein
+FLGBHGLA_03620	gene	525				
+FLGBHGLA_03630	CDS	225				hypothetical protein
+FLGBHGLA_03630	gene	225				
+FLGBHGLA_03640	CDS	555				hypothetical protein
+FLGBHGLA_03640	gene	555				
+FLGBHGLA_03650	CDS	681				hypothetical protein
+FLGBHGLA_03650	gene	681				
+FLGBHGLA_03660	CDS	753				hypothetical protein
+FLGBHGLA_03660	gene	753				
+FLGBHGLA_03670	CDS	501				hypothetical protein
+FLGBHGLA_03670	gene	501				
+FLGBHGLA_03680	CDS	1437	proS	6.1.1.15	COG0442	Proline--tRNA ligase
+FLGBHGLA_03680	gene	1437	proS			
+FLGBHGLA_03690	CDS	1164	fbp	3.1.3.11	COG1980	Fructose-1,6-bisphosphate aldolase/phosphatase
+FLGBHGLA_03690	gene	1164	fbp			
+FLGBHGLA_03700	CDS	1587	smc_1			Chromosome partition protein Smc
+FLGBHGLA_03700	gene	1587	smc_1			
+FLGBHGLA_03710	CDS	657				hypothetical protein
+FLGBHGLA_03710	gene	657				
+FLGBHGLA_03720	CDS	270				hypothetical protein
+FLGBHGLA_03720	gene	270				
+FLGBHGLA_03730	CDS	300				hypothetical protein
+FLGBHGLA_03730	gene	300				
+FLGBHGLA_03740	CDS	1266	rimO_1	2.8.4.4		Ribosomal protein S12 methylthiotransferase RimO
+FLGBHGLA_03740	gene	1266	rimO_1			
+FLGBHGLA_03750	CDS	1158		2.7.1.78	COG1341	Polyribonucleotide 5'-hydroxyl-kinase
+FLGBHGLA_03750	gene	1158				
+FLGBHGLA_03760	CDS	4026				hypothetical protein
+FLGBHGLA_03760	gene	4026				
+FLGBHGLA_03770	CDS	573				hypothetical protein
+FLGBHGLA_03770	gene	573				
+FLGBHGLA_03780	CDS	501				hypothetical protein
+FLGBHGLA_03780	gene	501				
+FLGBHGLA_03790	CDS	609	sua5	2.7.7.87	COG0009	Threonylcarbamoyl-AMP synthase
+FLGBHGLA_03790	gene	609	sua5			
+FLGBHGLA_03800	CDS	936	tatC			Sec-independent protein translocase protein TatC
+FLGBHGLA_03800	gene	936	tatC			
+FLGBHGLA_03810	CDS	504		3.6.1.-		Non-canonical purine NTP phosphatase
+FLGBHGLA_03810	gene	504				
+FLGBHGLA_03820	CDS	1044	hmgB	2.3.3.10	COG3425	Hydroxymethylglutaryl-CoA synthase
+FLGBHGLA_03820	gene	1044	hmgB			
+FLGBHGLA_03830	CDS	1062				hypothetical protein
+FLGBHGLA_03830	gene	1062				
+FLGBHGLA_03840	CDS	396				hypothetical protein
+FLGBHGLA_03840	gene	396				
+FLGBHGLA_03850	CDS	1425		6.2.1.40	COG0318	4-hydroxybutyrate--CoA ligase 2
+FLGBHGLA_03850	gene	1425				
+FLGBHGLA_03860	CDS	378				hypothetical protein
+FLGBHGLA_03860	gene	378				
+FLGBHGLA_03870	CDS	858				putative transporter in sor 3'region
+FLGBHGLA_03870	gene	858				
+FLGBHGLA_03880	CDS	312				hypothetical protein
+FLGBHGLA_03880	gene	312				
+FLGBHGLA_03890	CDS	927	gyaR	1.1.1.26	COG1052	Glyoxylate reductase
+FLGBHGLA_03890	gene	927	gyaR			
+FLGBHGLA_03900	CDS	1179	hisD	1.1.1.23		Histidinol dehydrogenase
+FLGBHGLA_03900	gene	1179	hisD			
+FLGBHGLA_03910	CDS	552		6.2.1.13	COG1042	Acetate--CoA ligase [ADP-forming] I
+FLGBHGLA_03910	gene	552				
+FLGBHGLA_03920	CDS	1368		6.2.1.13	COG1042	Acetate--CoA ligase [ADP-forming] I
+FLGBHGLA_03920	gene	1368				
+FLGBHGLA_03930	CDS	234				hypothetical protein
+FLGBHGLA_03930	gene	234				
+FLGBHGLA_03940	CDS	102				hypothetical protein
+FLGBHGLA_03940	gene	102				
+FLGBHGLA_03950	CDS	594	ubiX	2.5.1.-		Flavin prenyltransferase UbiX
+FLGBHGLA_03950	gene	594	ubiX			
+FLGBHGLA_03960	CDS	882				hypothetical protein
+FLGBHGLA_03960	gene	882				
+FLGBHGLA_03970	CDS	1074				hypothetical protein
+FLGBHGLA_03970	gene	1074				
+FLGBHGLA_03980	CDS	1245	mdtD			Putative multidrug resistance protein MdtD
+FLGBHGLA_03980	gene	1245	mdtD			
+FLGBHGLA_03990	CDS	792	panB	2.1.2.11		3-methyl-2-oxobutanoate hydroxymethyltransferase
+FLGBHGLA_03990	gene	792	panB			
+FLGBHGLA_04000	CDS	1455	rtcB	6.5.1.-	COG1690	tRNA-splicing ligase RtcB
+FLGBHGLA_04000	gene	1455	rtcB			
+FLGBHGLA_04010	CDS	1473				hypothetical protein
+FLGBHGLA_04010	gene	1473				
+FLGBHGLA_04020	CDS	531		3.5.1.124	COG0693	Deglycase
+FLGBHGLA_04020	gene	531				
+FLGBHGLA_04030	CDS	408	thrS-ed		COG0441	Threonine--tRNA ligase editing subunit
+FLGBHGLA_04030	gene	408	thrS-ed			
+FLGBHGLA_04040	CDS	1182	pqqE_2			Coenzyme PQQ synthesis protein E
+FLGBHGLA_04040	gene	1182	pqqE_2			
+FLGBHGLA_04050	CDS	1140	hutI	3.5.2.7		Imidazolonepropionase
+FLGBHGLA_04050	gene	1140	hutI			
+FLGBHGLA_04060	CDS	837	glmU_1		COG1208	Bifunctional protein GlmU
+FLGBHGLA_04060	gene	837	glmU_1			
+FLGBHGLA_04070	CDS	1338	fumC_1	4.2.1.2	COG0114	Fumarate hydratase class II
+FLGBHGLA_04070	gene	1338	fumC_1			
+FLGBHGLA_04080	CDS	309	cutA		COG1324	Divalent-cation tolerance protein CutA
+FLGBHGLA_04080	gene	309	cutA			
+FLGBHGLA_04090	CDS	288	gatC	6.3.5.-		Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransferase subunit C
+FLGBHGLA_04090	gene	288	gatC			
+FLGBHGLA_04100	CDS	1101				hypothetical protein
+FLGBHGLA_04100	gene	1101				
+FLGBHGLA_04110	CDS	243				hypothetical protein
+FLGBHGLA_04110	gene	243				
+FLGBHGLA_04120	CDS	306				hypothetical protein
+FLGBHGLA_04120	gene	306				
+FLGBHGLA_04130	CDS	522				hypothetical protein
+FLGBHGLA_04130	gene	522				
+FLGBHGLA_04140	CDS	1122	aspC	2.6.1.1	COG0436	Aspartate aminotransferase
+FLGBHGLA_04140	gene	1122	aspC			
+FLGBHGLA_04150	CDS	891	glmS_2	2.6.1.16	COG0449	Glutamine--fructose-6-phosphate aminotransferase [isomerizing]
+FLGBHGLA_04150	gene	891	glmS_2			
+FLGBHGLA_04160	CDS	2154	fwdC	1.2.7.12	COG2218	Tungsten-containing formylmethanofuran dehydrogenase 2 subunit C
+FLGBHGLA_04160	gene	2154	fwdC			
+FLGBHGLA_04170	CDS	1038				hypothetical protein
+FLGBHGLA_04170	gene	1038				
+FLGBHGLA_04180	CDS	462				hypothetical protein
+FLGBHGLA_04180	gene	462				
+FLGBHGLA_04190	CDS	939			COG0491	Metallo-beta-lactamase fold-containing protein
+FLGBHGLA_04190	gene	939				
+FLGBHGLA_04200	CDS	804				hypothetical protein
+FLGBHGLA_04200	gene	804				
+FLGBHGLA_04210	CDS	561	thiI_1	2.8.1.4		tRNA sulfurtransferase
+FLGBHGLA_04210	gene	561	thiI_1			
+FLGBHGLA_04220	CDS	1137				hypothetical protein
+FLGBHGLA_04220	gene	1137				
+FLGBHGLA_04230	CDS	1077				hypothetical protein
+FLGBHGLA_04230	gene	1077				
+FLGBHGLA_04240	CDS	651	pgiA	5.3.1.9		Glucose-6-phosphate isomerase
+FLGBHGLA_04240	gene	651	pgiA			
+FLGBHGLA_04250	CDS	912	ubiA-2_1	2.5.1.42	COG0382	Digeranylgeranylglyceryl phosphate synthase
+FLGBHGLA_04250	gene	912	ubiA-2_1			
+FLGBHGLA_04260	CDS	264	albA2		COG1581	DNA/RNA-binding protein Alba 2
+FLGBHGLA_04260	gene	264	albA2			
+FLGBHGLA_04270	CDS	3264	rgy1		COG1110	Reverse gyrase 1
+FLGBHGLA_04270	gene	3264	rgy1			
+FLGBHGLA_04280	CDS	1563				hypothetical protein
+FLGBHGLA_04280	gene	1563				
+FLGBHGLA_04290	CDS	789	hdrB	1.8.98.1	COG2048	CoB--CoM heterodisulfide reductase subunit B
+FLGBHGLA_04290	gene	789	hdrB			
+FLGBHGLA_04300	CDS	675	ribB	4.1.99.12	COG0108	3,4-dihydroxy-2-butanone 4-phosphate synthase
+FLGBHGLA_04300	gene	675	ribB			
+FLGBHGLA_04310	CDS	279				hypothetical protein
+FLGBHGLA_04310	gene	279				
+FLGBHGLA_04320	CDS	663				hypothetical protein
+FLGBHGLA_04320	gene	663				
+FLGBHGLA_04330	CDS	1251	thiL_2	2.7.4.16		Thiamine-monophosphate kinase
+FLGBHGLA_04330	gene	1251	thiL_2			
+FLGBHGLA_04340	CDS	744		2.5.1.41	COG1646	Geranylgeranylglyceryl phosphate synthase
+FLGBHGLA_04340	gene	744				
+FLGBHGLA_04350	CDS	285				hypothetical protein
+FLGBHGLA_04350	gene	285				
+FLGBHGLA_04360	CDS	390				hypothetical protein
+FLGBHGLA_04360	gene	390				
+FLGBHGLA_04370	CDS	666	rpiA	5.3.1.6	COG0120	Ribose-5-phosphate isomerase A
+FLGBHGLA_04370	gene	666	rpiA			
+FLGBHGLA_04380	CDS	159				hypothetical protein
+FLGBHGLA_04380	gene	159				
+FLGBHGLA_04390	CDS	243				hypothetical protein
+FLGBHGLA_04390	gene	243				
+FLGBHGLA_04400	CDS	1749				hypothetical protein
+FLGBHGLA_04400	gene	1749				
+FLGBHGLA_04410	CDS	288				hypothetical protein
+FLGBHGLA_04410	gene	288				
+FLGBHGLA_04420	CDS	753	trpA	4.2.1.20	COG0159	Tryptophan synthase alpha chain
+FLGBHGLA_04420	gene	753	trpA			
+FLGBHGLA_04430	CDS	186				hypothetical protein
+FLGBHGLA_04430	gene	186				
+FLGBHGLA_04440	CDS	483				hypothetical protein
+FLGBHGLA_04440	gene	483				
+FLGBHGLA_04450	CDS	249				hypothetical protein
+FLGBHGLA_04450	gene	249				
+FLGBHGLA_04460	CDS	132				hypothetical protein
+FLGBHGLA_04460	gene	132				
+FLGBHGLA_04470	CDS	1011				hypothetical protein
+FLGBHGLA_04470	gene	1011				
+FLGBHGLA_04480	CDS	771				hypothetical protein
+FLGBHGLA_04480	gene	771				
+FLGBHGLA_04490	CDS	714	arnS	2.7.11.1	COG0515	Serine/threonine-protein kinase ArnS
+FLGBHGLA_04490	gene	714	arnS			
+FLGBHGLA_04500	CDS	660				hypothetical protein
+FLGBHGLA_04500	gene	660				
+FLGBHGLA_04510	CDS	528		3.2.2.-	COG2110	[Protein ADP-ribosylglutamate] hydrolase
+FLGBHGLA_04510	gene	528				
+FLGBHGLA_04520	CDS	708				hypothetical protein
+FLGBHGLA_04520	gene	708				
+FLGBHGLA_04530	CDS	1098	aglD	2.4.1.-	COG0392	Glycosyltransferase AglD
+FLGBHGLA_04530	gene	1098	aglD			
+FLGBHGLA_04540	CDS	930				hypothetical protein
+FLGBHGLA_04540	gene	930				
+FLGBHGLA_04550	CDS	1044	purP_1	6.3.4.23	COG1759	5-formaminoimidazole-4-carboxamide-1-(beta)-D-ribofuranosyl 5'-monophosphate synthetase
+FLGBHGLA_04550	gene	1044	purP_1			
+FLGBHGLA_04560	CDS	456				hypothetical protein
+FLGBHGLA_04560	gene	456				
+FLGBHGLA_04570	CDS	390	guaB_1	1.1.1.205		Inosine-5'-monophosphate dehydrogenase
+FLGBHGLA_04570	gene	390	guaB_1			
+FLGBHGLA_04580	CDS	960	tfrB	1.3.4.1	COG0247	Fumarate reductase (CoM/CoB) subunit B
+FLGBHGLA_04580	gene	960	tfrB			
+FLGBHGLA_04590	CDS	399				hypothetical protein
+FLGBHGLA_04590	gene	399				
+FLGBHGLA_04600	CDS	375				hypothetical protein
+FLGBHGLA_04600	gene	375				
+FLGBHGLA_04610	CDS	552				hypothetical protein
+FLGBHGLA_04610	gene	552				
+FLGBHGLA_04620	CDS	741				hypothetical protein
+FLGBHGLA_04620	gene	741				
+FLGBHGLA_04630	CDS	528				hypothetical protein
+FLGBHGLA_04630	gene	528				
+FLGBHGLA_04640	CDS	330				hypothetical protein
+FLGBHGLA_04640	gene	330				
+FLGBHGLA_04650	CDS	324			COG2058	50S ribosomal protein L12
+FLGBHGLA_04650	gene	324				
+FLGBHGLA_04660	CDS	750		6.3.2.36	COG1701	4-phosphopantoate--beta-alanine ligase
+FLGBHGLA_04660	gene	750				
+FLGBHGLA_04670	CDS	720	psmA	3.4.25.1	COG0638	Proteasome subunit alpha
+FLGBHGLA_04670	gene	720	psmA			
+FLGBHGLA_04680	CDS	1620	actP			Cation/acetate symporter ActP
+FLGBHGLA_04680	gene	1620	actP			
+FLGBHGLA_04690	CDS	210				hypothetical protein
+FLGBHGLA_04690	gene	210				
+FLGBHGLA_04700	CDS	423			COG0589	Universal stress protein
+FLGBHGLA_04700	gene	423				
+FLGBHGLA_04710	CDS	780	ubiA-2_2	2.5.1.42	COG0382	Digeranylgeranylglyceryl phosphate synthase
+FLGBHGLA_04710	gene	780	ubiA-2_2			
+FLGBHGLA_04720	CDS	726	queE_4	4.3.99.3		7-carboxy-7-deazaguanine synthase
+FLGBHGLA_04720	gene	726	queE_4			
+FLGBHGLA_04730	CDS	705		1.11.1.15	COG0450	Peroxiredoxin
+FLGBHGLA_04730	gene	705				
+FLGBHGLA_04740	CDS	831	cmr4_2	3.1.-.-	COG1336	CRISPR system Cmr endoribonuclease Cmr4
+FLGBHGLA_04740	gene	831	cmr4_2			
+FLGBHGLA_04750	CDS	609				hypothetical protein
+FLGBHGLA_04750	gene	609				
+FLGBHGLA_04760	CDS	912	cmr6		COG1604	CRISPR system CMR subunit Cmr6
+FLGBHGLA_04760	gene	912	cmr6			
+FLGBHGLA_04770	CDS	2952	cmr2_2		COG1353	CRISPR system CMR subunit Cmr2
+FLGBHGLA_04770	gene	2952	cmr2_2			
+FLGBHGLA_04780	CDS	975				hypothetical protein
+FLGBHGLA_04780	gene	975				
+FLGBHGLA_04790	CDS	1491	lysS	6.1.1.6	COG1384	Lysine--tRNA ligase
+FLGBHGLA_04790	gene	1491	lysS			
+	repeat_region	748				
+FLGBHGLA_04800	CDS	606	trpG	4.1.3.27	COG0512	Anthranilate synthase component 2
+FLGBHGLA_04800	gene	606	trpG			
+FLGBHGLA_04810	CDS	567				hypothetical protein
+FLGBHGLA_04810	gene	567				
+FLGBHGLA_04820	CDS	636				hypothetical protein
+FLGBHGLA_04820	gene	636				
+FLGBHGLA_04830	CDS	441				hypothetical protein
+FLGBHGLA_04830	gene	441				
+FLGBHGLA_04840	CDS	585	wtpC_2	3.6.3.-	COG3839	Molybdate/tungstate import ATP-binding protein WtpC
+FLGBHGLA_04840	gene	585	wtpC_2			
+FLGBHGLA_04850	CDS	666				hypothetical protein
+FLGBHGLA_04850	gene	666				
+FLGBHGLA_04860	CDS	864				hypothetical protein
+FLGBHGLA_04860	gene	864				
+FLGBHGLA_04870	CDS	1452				hypothetical protein
+FLGBHGLA_04870	gene	1452				
+FLGBHGLA_04880	CDS	756				hypothetical protein
+FLGBHGLA_04880	gene	756				
+FLGBHGLA_04890	CDS	1461				hypothetical protein
+FLGBHGLA_04890	gene	1461				
+FLGBHGLA_04900	CDS	1227	hmgA	1.1.1.34	COG1257	3-hydroxy-3-methylglutaryl-coenzyme A reductase
+FLGBHGLA_04900	gene	1227	hmgA			
+FLGBHGLA_04910	CDS	822				hypothetical protein
+FLGBHGLA_04910	gene	822				
+FLGBHGLA_04920	CDS	1533	tgtA_1	2.4.2.48	COG0343	tRNA-guanine(15) transglycosylase
+FLGBHGLA_04920	gene	1533	tgtA_1			
+FLGBHGLA_04930	CDS	1179				hypothetical protein
+FLGBHGLA_04930	gene	1179				
+FLGBHGLA_04940	CDS	2856				hypothetical protein
+FLGBHGLA_04940	gene	2856				
+FLGBHGLA_04950	CDS	588				hypothetical protein
+FLGBHGLA_04950	gene	588				
+FLGBHGLA_04960	CDS	1188				hypothetical protein
+FLGBHGLA_04960	gene	1188				
+FLGBHGLA_04970	CDS	720		1.3.1.76	COG1648	Precorrin-2 dehydrogenase
+FLGBHGLA_04970	gene	720				
+FLGBHGLA_04980	CDS	90				hypothetical protein
+FLGBHGLA_04980	gene	90				
+FLGBHGLA_04990	CDS	537	kptA	2.7.1.-	COG1859	putative RNA 2'-phosphotransferase
+FLGBHGLA_04990	gene	537	kptA			
+FLGBHGLA_05000	CDS	489				hypothetical protein
+FLGBHGLA_05000	gene	489				
+FLGBHGLA_05010	CDS	474				hypothetical protein
+FLGBHGLA_05010	gene	474				
+FLGBHGLA_05020	CDS	1473		2.1.1.-	COG1964	7,8-dihydro-6-hydroxymethylpterin dimethyltransferase
+FLGBHGLA_05020	gene	1473				
+FLGBHGLA_05030	CDS	1104				hypothetical protein
+FLGBHGLA_05030	gene	1104				
+FLGBHGLA_05040	CDS	555				hypothetical protein
+FLGBHGLA_05040	gene	555				
+FLGBHGLA_05050	CDS	1014	thiL_3	2.7.4.16		Thiamine-monophosphate kinase
+FLGBHGLA_05050	gene	1014	thiL_3			
+FLGBHGLA_05060	CDS	588				hypothetical protein
+FLGBHGLA_05060	gene	588				
+FLGBHGLA_05070	CDS	1581				hypothetical protein
+FLGBHGLA_05070	gene	1581				
+FLGBHGLA_05080	CDS	288				hypothetical protein
+FLGBHGLA_05080	gene	288				
+FLGBHGLA_05090	CDS	441	ptr1		COG1522	HTH-type transcriptional regulator Ptr1
+FLGBHGLA_05090	gene	441	ptr1			
+FLGBHGLA_05100	CDS	678	pyrE	2.4.2.10	COG0461	Orotate phosphoribosyltransferase
+FLGBHGLA_05100	gene	678	pyrE			
+FLGBHGLA_05110	CDS	984				hypothetical protein
+FLGBHGLA_05110	gene	984				
+FLGBHGLA_05120	CDS	786			COG0517	putative protein
+FLGBHGLA_05120	gene	786				
+FLGBHGLA_05130	CDS	567				hypothetical protein
+FLGBHGLA_05130	gene	567				
+FLGBHGLA_05140	CDS	444				hypothetical protein
+FLGBHGLA_05140	gene	444				
+FLGBHGLA_05150	CDS	579				hypothetical protein
+FLGBHGLA_05150	gene	579				
+FLGBHGLA_05160	CDS	213				hypothetical protein
+FLGBHGLA_05160	gene	213				
+FLGBHGLA_05170	CDS	213				hypothetical protein
+FLGBHGLA_05170	gene	213				
+FLGBHGLA_05180	CDS	432				hypothetical protein
+FLGBHGLA_05180	gene	432				
+FLGBHGLA_05190	CDS	543				hypothetical protein
+FLGBHGLA_05190	gene	543				
+FLGBHGLA_05200	CDS	249				hypothetical protein
+FLGBHGLA_05200	gene	249				
+FLGBHGLA_05210	CDS	915	ttuA_1	2.8.1.-	COG0037	tRNA-5-methyluridine(54) 2-sulfurtransferase
+FLGBHGLA_05210	gene	915	ttuA_1			
+FLGBHGLA_05220	CDS	522				hypothetical protein
+FLGBHGLA_05220	gene	522				
+FLGBHGLA_05230	CDS	195				hypothetical protein
+FLGBHGLA_05230	gene	195				
+FLGBHGLA_05240	CDS	276	ef1b		COG2092	Elongation factor 1-beta
+FLGBHGLA_05240	gene	276	ef1b			
+FLGBHGLA_05250	CDS	624				hypothetical protein
+FLGBHGLA_05250	gene	624				
+FLGBHGLA_05260	CDS	852				hypothetical protein
+FLGBHGLA_05260	gene	852				
+FLGBHGLA_05270	CDS	1326	hemA	1.2.1.70	COG0373	Glutamyl-tRNA reductase
+FLGBHGLA_05270	gene	1326	hemA			
+FLGBHGLA_05280	CDS	99				hypothetical protein
+FLGBHGLA_05280	gene	99				
+FLGBHGLA_05290	CDS	1830				hypothetical protein
+FLGBHGLA_05290	gene	1830				
+FLGBHGLA_05300	CDS	855				hypothetical protein
+FLGBHGLA_05300	gene	855				
+FLGBHGLA_05310	CDS	1047				hypothetical protein
+FLGBHGLA_05310	gene	1047				
+FLGBHGLA_05320	CDS	3780	rgy_2		COG1110	Reverse gyrase
+FLGBHGLA_05320	gene	3780	rgy_2			
+FLGBHGLA_05330	CDS	2820		3.6.4.12		ATP-dependent DNA helicase Hel308
+FLGBHGLA_05330	gene	2820				
+FLGBHGLA_05340	CDS	219				hypothetical protein
+FLGBHGLA_05340	gene	219				
+FLGBHGLA_05350	CDS	1056		5.3.1.23	COG0182	Putative methylthioribose-1-phosphate isomerase
+FLGBHGLA_05350	gene	1056				
+FLGBHGLA_05360	CDS	456				hypothetical protein
+FLGBHGLA_05360	gene	456				
+FLGBHGLA_05370	CDS	1158		3.-.-.-	COG0624	putative metallohydrolase
+FLGBHGLA_05370	gene	1158				
+FLGBHGLA_05380	CDS	243				hypothetical protein
+FLGBHGLA_05380	gene	243				
+FLGBHGLA_05390	CDS	498				hypothetical protein
+FLGBHGLA_05390	gene	498				
+FLGBHGLA_05400	CDS	480				hypothetical protein
+FLGBHGLA_05400	gene	480				
+FLGBHGLA_05410	CDS	789				hypothetical protein
+FLGBHGLA_05410	gene	789				
+FLGBHGLA_05420	CDS	1002				hypothetical protein
+FLGBHGLA_05420	gene	1002				
+FLGBHGLA_05430	CDS	399				hypothetical protein
+FLGBHGLA_05430	gene	399				
+FLGBHGLA_05440	CDS	1431	dmsC		COG5557	Putative dimethyl sulfoxide reductase membrane subunit C
+FLGBHGLA_05440	gene	1431	dmsC			
+FLGBHGLA_05450	CDS	1125	dmsB_1		COG0437	Putative dimethyl sulfoxide reductase iron-sulfur subunit B
+FLGBHGLA_05450	gene	1125	dmsB_1			
+FLGBHGLA_05460	CDS	621				hypothetical protein
+FLGBHGLA_05460	gene	621				
+FLGBHGLA_05470	CDS	1143	aroC	4.2.3.5		Chorismate synthase
+FLGBHGLA_05470	gene	1143	aroC			
+FLGBHGLA_05480	CDS	1062	rtcA	6.5.1.4	COG0430	RNA 3'-terminal phosphate cyclase
+FLGBHGLA_05480	gene	1062	rtcA			
+FLGBHGLA_05490	CDS	864				hypothetical protein
+FLGBHGLA_05490	gene	864				
+FLGBHGLA_05500	CDS	180				hypothetical protein
+FLGBHGLA_05500	gene	180				
+FLGBHGLA_05510	CDS	1410		3.4.21.-	COG1404	Tk-subtilisin
+FLGBHGLA_05510	gene	1410				
+FLGBHGLA_05520	CDS	2073				hypothetical protein
+FLGBHGLA_05520	gene	2073				
+FLGBHGLA_05530	CDS	768	nadK	2.7.1.23	COG0061	NAD kinase
+FLGBHGLA_05530	gene	768	nadK			
+FLGBHGLA_05540	CDS	348	cbiX	4.99.1.3	COG2138	Sirohydrochlorin cobaltochelatase
+FLGBHGLA_05540	gene	348	cbiX			
+FLGBHGLA_05550	CDS	393				hypothetical protein
+FLGBHGLA_05550	gene	393				
+FLGBHGLA_05560	CDS	1695				hypothetical protein
+FLGBHGLA_05560	gene	1695				
+FLGBHGLA_05570	CDS	804	aroK	2.7.1.71	COG1685	Shikimate kinase
+FLGBHGLA_05570	gene	804	aroK			
+FLGBHGLA_05580	CDS	1431				hypothetical protein
+FLGBHGLA_05580	gene	1431				
+FLGBHGLA_05590	CDS	1623	fpoD	1.12.98.3	COG0649	F(420)H(2) dehydrogenase subunit D
+FLGBHGLA_05590	gene	1623	fpoD			
+FLGBHGLA_05600	CDS	615	fpoB	1.12.98.3	COG0377	F(420)H(2) dehydrogenase subunit B
+FLGBHGLA_05600	gene	615	fpoB			
+FLGBHGLA_05610	CDS	369	ndhC	1.6.5.11		NAD(P)H-quinone oxidoreductase subunit 3, chloroplastic
+FLGBHGLA_05610	gene	369	ndhC			
+FLGBHGLA_05620	CDS	1491	fpoM	1.12.98.3	COG1008	F(420)H(2) dehydrogenase subunit M
+FLGBHGLA_05620	gene	1491	fpoM			
+FLGBHGLA_05630	CDS	2079	fpoL	1.12.98.3	COG1009	F(420)H(2) dehydrogenase subunit L
+FLGBHGLA_05630	gene	2079	fpoL			
+FLGBHGLA_05640	CDS	540	ribK	2.7.1.161	COG1339	Riboflavin kinase
+FLGBHGLA_05640	gene	540	ribK			
+FLGBHGLA_05650	CDS	192				hypothetical protein
+FLGBHGLA_05650	gene	192				
+FLGBHGLA_05660	CDS	171				hypothetical protein
+FLGBHGLA_05660	gene	171				
+FLGBHGLA_05670	CDS	315				hypothetical protein
+FLGBHGLA_05670	gene	315				
+FLGBHGLA_05680	CDS	588	malK_4	3.6.3.19		Trehalose/maltose import ATP-binding protein MalK
+FLGBHGLA_05680	gene	588	malK_4			
+FLGBHGLA_05690	CDS	1239		4.1.1.61		Phenolic acid decarboxylase subunit C
+FLGBHGLA_05690	gene	1239				
+FLGBHGLA_05700	CDS	561				hypothetical protein
+FLGBHGLA_05700	gene	561				
+FLGBHGLA_05710	CDS	519	ard1_1	2.3.1.255	COG0456	N-alpha-acetyltransferase
+FLGBHGLA_05710	gene	519	ard1_1			
+FLGBHGLA_05720	CDS	1203				hypothetical protein
+FLGBHGLA_05720	gene	1203				
+FLGBHGLA_05730	CDS	1095				hypothetical protein
+FLGBHGLA_05730	gene	1095				
+FLGBHGLA_05740	CDS	654				hypothetical protein
+FLGBHGLA_05740	gene	654				
+FLGBHGLA_05750	CDS	966				hypothetical protein
+FLGBHGLA_05750	gene	966				
+FLGBHGLA_05760	CDS	258				hypothetical protein
+FLGBHGLA_05760	gene	258				
+FLGBHGLA_05770	CDS	765			COG1058	Protein
+FLGBHGLA_05770	gene	765				
+FLGBHGLA_05780	CDS	798	thi4	4.-.-.-	COG1635	Thiamine thiazole synthase
+FLGBHGLA_05780	gene	798	thi4			
+FLGBHGLA_05790	CDS	1125				hypothetical protein
+FLGBHGLA_05790	gene	1125				
+FLGBHGLA_05800	CDS	387	hisI	3.5.4.19	COG0139	Phosphoribosyl-AMP cyclohydrolase
+FLGBHGLA_05800	gene	387	hisI			
+FLGBHGLA_05810	CDS	147				hypothetical protein
+FLGBHGLA_05810	gene	147				
+FLGBHGLA_05820	CDS	1092	queE_5	4.3.99.3		7-carboxy-7-deazaguanine synthase
+FLGBHGLA_05820	gene	1092	queE_5			
+FLGBHGLA_05830	CDS	444			COG0589	Universal stress protein
+FLGBHGLA_05830	gene	444				
+FLGBHGLA_05840	CDS	132				hypothetical protein
+FLGBHGLA_05840	gene	132				
+FLGBHGLA_05850	CDS	873				Iron-sulfur cluster carrier protein
+FLGBHGLA_05850	gene	873				
+FLGBHGLA_05860	CDS	711		2.7.4.26	COG1608	Isopentenyl phosphate kinase
+FLGBHGLA_05860	gene	711				
+FLGBHGLA_05870	CDS	1314				hypothetical protein
+FLGBHGLA_05870	gene	1314				
+FLGBHGLA_05880	CDS	1743	thrS_2	6.1.1.3	COG0441	Threonine--tRNA ligase
+FLGBHGLA_05880	gene	1743	thrS_2			
+FLGBHGLA_05890	CDS	189				hypothetical protein
+FLGBHGLA_05890	gene	189				
+FLGBHGLA_05900	CDS	1293				hypothetical protein
+FLGBHGLA_05900	gene	1293				
+FLGBHGLA_05910	CDS	1833	purF_1	2.4.2.14		Amidophosphoribosyltransferase
+FLGBHGLA_05910	gene	1833	purF_1			
+FLGBHGLA_05920	CDS	1470	ubiD	4.1.1.98		3-octaprenyl-4-hydroxybenzoate carboxy-lyase
+FLGBHGLA_05920	gene	1470	ubiD			
+FLGBHGLA_05930	CDS	255				hypothetical protein
+FLGBHGLA_05930	gene	255				
+FLGBHGLA_05940	CDS	1347			COG0531	putative protein
+FLGBHGLA_05940	gene	1347				
+FLGBHGLA_05950	CDS	258				hypothetical protein
+FLGBHGLA_05950	gene	258				
+FLGBHGLA_05960	CDS	288	rpoL	2.7.7.6	COG1761	DNA-directed RNA polymerase subunit L
+FLGBHGLA_05960	gene	288	rpoL			
+FLGBHGLA_05970	CDS	606				hypothetical protein
+FLGBHGLA_05970	gene	606				
+FLGBHGLA_05980	CDS	579	csl4		COG1096	Exosome complex component Csl4
+FLGBHGLA_05980	gene	579	csl4			
+FLGBHGLA_05990	CDS	444	ard1_2	2.3.1.255	COG0456	N-alpha-acetyltransferase
+FLGBHGLA_05990	gene	444	ard1_2			
+FLGBHGLA_06000	CDS	438				hypothetical protein
+FLGBHGLA_06000	gene	438				
+FLGBHGLA_06010	CDS	942	cysO	4.2.1.22	COG0031	Protein CysO
+FLGBHGLA_06010	gene	942	cysO			
+FLGBHGLA_06020	CDS	441				hypothetical protein
+FLGBHGLA_06020	gene	441				
+FLGBHGLA_06030	CDS	1158	obg	3.6.5.-		GTPase Obg
+FLGBHGLA_06030	gene	1158	obg			
+FLGBHGLA_06040	CDS	1086				hypothetical protein
+FLGBHGLA_06040	gene	1086				
+FLGBHGLA_06050	CDS	615				hypothetical protein
+FLGBHGLA_06050	gene	615				
+FLGBHGLA_06060	CDS	459	dut	3.6.1.23		Deoxyuridine 5'-triphosphate nucleotidohydrolase
+FLGBHGLA_06060	gene	459	dut			
+FLGBHGLA_06070	CDS	813	uppS	2.5.1.89	COG0020	Tritrans,polycis-undecaprenyl-diphosphate synthase (GGDP specific)
+FLGBHGLA_06070	gene	813	uppS			
+FLGBHGLA_06080	CDS	1203	pan		COG1222	Proteasome-activating nucleotidase
+FLGBHGLA_06080	gene	1203	pan			
+FLGBHGLA_06090	CDS	420			COG0185	30S ribosomal protein S19
+FLGBHGLA_06090	gene	420				
+FLGBHGLA_06100	CDS	480			COG0091	50S ribosomal protein L22
+FLGBHGLA_06100	gene	480				
+FLGBHGLA_06110	CDS	726	rps3		COG0092	30S ribosomal protein S3
+FLGBHGLA_06110	gene	726	rps3			
+FLGBHGLA_06120	CDS	219			COG0255	50S ribosomal protein L29
+FLGBHGLA_06120	gene	219				
+FLGBHGLA_06130	CDS	279	rnp1	3.1.26.5	COG1588	Ribonuclease P protein component 1
+FLGBHGLA_06130	gene	279	rnp1			
+FLGBHGLA_06140	CDS	408				hypothetical protein
+FLGBHGLA_06140	gene	408				
+FLGBHGLA_06150	CDS	561				hypothetical protein
+FLGBHGLA_06150	gene	561				
+FLGBHGLA_06160	CDS	1539				hypothetical protein
+FLGBHGLA_06160	gene	1539				
+FLGBHGLA_06170	CDS	1206	allB	3.5.2.5		Allantoinase
+FLGBHGLA_06170	gene	1206	allB			
+FLGBHGLA_06180	CDS	483				hypothetical protein
+FLGBHGLA_06180	gene	483				
+FLGBHGLA_06190	CDS	417			COG0517	putative protein
+FLGBHGLA_06190	gene	417				
+FLGBHGLA_06200	CDS	567				hypothetical protein
+FLGBHGLA_06200	gene	567				
+FLGBHGLA_06210	CDS	1275	purF_2	2.4.2.14		Amidophosphoribosyltransferase
+FLGBHGLA_06210	gene	1275	purF_2			
+FLGBHGLA_06220	CDS	1518	mvhB_1		COG1145	Polyferredoxin protein MvhB
+FLGBHGLA_06220	gene	1518	mvhB_1			
+FLGBHGLA_06230	CDS	726				hypothetical protein
+FLGBHGLA_06230	gene	726				
+FLGBHGLA_06240	CDS	375	nac		COG1308	Nascent polypeptide-associated complex protein
+FLGBHGLA_06240	gene	375	nac			
+FLGBHGLA_06250	CDS	1287	rnj_2	3.1.-.-		Ribonuclease J
+FLGBHGLA_06250	gene	1287	rnj_2			
+FLGBHGLA_06260	CDS	258				hypothetical protein
+FLGBHGLA_06260	gene	258				
+FLGBHGLA_06270	CDS	645			COG2078	Protein
+FLGBHGLA_06270	gene	645				
+FLGBHGLA_06280	CDS	633				hypothetical protein
+FLGBHGLA_06280	gene	633				
+FLGBHGLA_06290	CDS	990	ilvC_1	1.1.1.383	COG0059	Ketol-acid reductoisomerase (NAD(P)(+))
+FLGBHGLA_06290	gene	990	ilvC_1			
+FLGBHGLA_06300	CDS	108				hypothetical protein
+FLGBHGLA_06300	gene	108				
+FLGBHGLA_06310	CDS	1965				hypothetical protein
+FLGBHGLA_06310	gene	1965				
+FLGBHGLA_06320	CDS	747	pcn3		COG0592	DNA polymerase sliding clamp 3
+FLGBHGLA_06320	gene	747	pcn3			
+FLGBHGLA_06330	CDS	408	speH	4.1.1.50	COG1586	S-adenosylmethionine decarboxylase proenzyme
+FLGBHGLA_06330	gene	408	speH			
+FLGBHGLA_06340	CDS	681				hypothetical protein
+FLGBHGLA_06340	gene	681				
+FLGBHGLA_06350	CDS	252				hypothetical protein
+FLGBHGLA_06350	gene	252				
+FLGBHGLA_06360	CDS	1092				hypothetical protein
+FLGBHGLA_06360	gene	1092				
+FLGBHGLA_06370	CDS	1020				hypothetical protein
+FLGBHGLA_06370	gene	1020				
+FLGBHGLA_06380	CDS	597	psmB_1	3.4.25.1	COG0638	Proteasome subunit beta
+FLGBHGLA_06380	gene	597	psmB_1			
+FLGBHGLA_06390	CDS	918	sudA_1	1.8.1.19	COG0493	Sulfide dehydrogenase subunit alpha
+FLGBHGLA_06390	gene	918	sudA_1			
+FLGBHGLA_06400	CDS	846				hypothetical protein
+FLGBHGLA_06400	gene	846				
+FLGBHGLA_06410	CDS	939		2.1.1.213	COG1041	tRNA (guanine(10)-N2)-dimethyltransferase
+FLGBHGLA_06410	gene	939				
+FLGBHGLA_06420	CDS	708			COG0655	Iron-sulfur flavoprotein
+FLGBHGLA_06420	gene	708				
+FLGBHGLA_06430	CDS	795	lysZ	2.7.2.-	COG0548	[LysW]-aminoadipate/[LysW]-glutamate kinase
+FLGBHGLA_06430	gene	795	lysZ			
+FLGBHGLA_06440	CDS	1257		1.1.1.336	COG0677	UDP-N-acetyl-D-mannosamine dehydrogenase
+FLGBHGLA_06440	gene	1257				
+FLGBHGLA_06450	CDS	1086	wecB	5.1.3.14	COG0381	UDP-N-acetylglucosamine 2-epimerase
+FLGBHGLA_06450	gene	1086	wecB			
+FLGBHGLA_06460	CDS	261				hypothetical protein
+FLGBHGLA_06460	gene	261				
+FLGBHGLA_06470	CDS	306				hypothetical protein
+FLGBHGLA_06470	gene	306				
+FLGBHGLA_06480	CDS	1008				hypothetical protein
+FLGBHGLA_06480	gene	1008				
+FLGBHGLA_06490	CDS	951				hypothetical protein
+FLGBHGLA_06490	gene	951				
+FLGBHGLA_06500	CDS	1209				hypothetical protein
+FLGBHGLA_06500	gene	1209				
+FLGBHGLA_06510	CDS	2229	adh	1.1.1.1	COG1064	NAD-dependent alcohol dehydrogenase
+FLGBHGLA_06510	gene	2229	adh			
+FLGBHGLA_06520	CDS	294				hypothetical protein
+FLGBHGLA_06520	gene	294				
+FLGBHGLA_06530	CDS	1170		2.1.1.-	COG1964	7,8-dihydro-6-hydroxymethylpterin dimethyltransferase
+FLGBHGLA_06530	gene	1170				
+FLGBHGLA_06540	CDS	960	dys	2.5.1.46	COG1899	putative deoxyhypusine synthase
+FLGBHGLA_06540	gene	960	dys			
+FLGBHGLA_06550	CDS	561	folE	3.5.4.16		GTP cyclohydrolase 1
+FLGBHGLA_06550	gene	561	folE			
+FLGBHGLA_06560	CDS	927	speE_1	2.5.1.23	COG0421	Polyamine aminopropyltransferase
+FLGBHGLA_06560	gene	927	speE_1			
+FLGBHGLA_06570	CDS	924	apaH	3.6.1.41		Bis(5'-nucleosyl)-tetraphosphatase, symmetrical
+FLGBHGLA_06570	gene	924	apaH			
+FLGBHGLA_06580	CDS	1203	argG	6.3.4.5		Argininosuccinate synthase
+FLGBHGLA_06580	gene	1203	argG			
+FLGBHGLA_06590	CDS	774				hypothetical protein
+FLGBHGLA_06590	gene	774				
+FLGBHGLA_06600	CDS	1113	guaAB	6.3.5.2	COG0519	GMP synthase [glutamine-hydrolyzing] subunit B
+FLGBHGLA_06600	gene	1113	guaAB			
+FLGBHGLA_06610	CDS	843				hypothetical protein
+FLGBHGLA_06610	gene	843				
+FLGBHGLA_06620	CDS	1242				hypothetical protein
+FLGBHGLA_06620	gene	1242				
+FLGBHGLA_06630	CDS	999				hypothetical protein
+FLGBHGLA_06630	gene	999				
+FLGBHGLA_06640	CDS	921	nadA	2.5.1.72	COG0379	Quinolinate synthase A
+FLGBHGLA_06640	gene	921	nadA			
+FLGBHGLA_06650	CDS	564				hypothetical protein
+FLGBHGLA_06650	gene	564				
+FLGBHGLA_06660	CDS	972				hypothetical protein
+FLGBHGLA_06660	gene	972				
+FLGBHGLA_06670	CDS	408				hypothetical protein
+FLGBHGLA_06670	gene	408				
+FLGBHGLA_06680	CDS	1644	leuA_1	2.3.3.13	COG0119	2-isopropylmalate synthase
+FLGBHGLA_06680	gene	1644	leuA_1			
+FLGBHGLA_06690	CDS	918				hypothetical protein
+FLGBHGLA_06690	gene	918				
+FLGBHGLA_06700	CDS	1149				hypothetical protein
+FLGBHGLA_06700	gene	1149				
+FLGBHGLA_06710	CDS	858			COG0517	putative protein
+FLGBHGLA_06710	gene	858				
+FLGBHGLA_06720	CDS	729				hypothetical protein
+FLGBHGLA_06720	gene	729				
+FLGBHGLA_06730	CDS	291				hypothetical protein
+FLGBHGLA_06730	gene	291				
+FLGBHGLA_06740	CDS	3399	rpoB1	2.7.7.6		DNA-directed RNA polymerase subunit B'
+FLGBHGLA_06740	gene	3399	rpoB1			
+FLGBHGLA_06750	CDS	249	rpoH	2.7.7.6	COG2012	DNA-directed RNA polymerase subunit H
+FLGBHGLA_06750	gene	249	rpoH			
+FLGBHGLA_06760	CDS	984				hypothetical protein
+FLGBHGLA_06760	gene	984				
+FLGBHGLA_06770	CDS	606				hypothetical protein
+FLGBHGLA_06770	gene	606				
+FLGBHGLA_06780	CDS	396			COG0517	putative protein
+FLGBHGLA_06780	gene	396				
+FLGBHGLA_06790	CDS	102				hypothetical protein
+FLGBHGLA_06790	gene	102				
+FLGBHGLA_06800	CDS	723	dphB	2.1.1.98	COG1798	Diphthine synthase
+FLGBHGLA_06800	gene	723	dphB			
+FLGBHGLA_06810	CDS	177	nikR			Putative nickel-responsive regulator
+FLGBHGLA_06810	gene	177	nikR			
+FLGBHGLA_06820	CDS	738	ilvC_2	1.1.1.383	COG0059	Ketol-acid reductoisomerase (NAD(P)(+))
+FLGBHGLA_06820	gene	738	ilvC_2			
+FLGBHGLA_06830	CDS	168				hypothetical protein
+FLGBHGLA_06830	gene	168				
+FLGBHGLA_06840	CDS	501	nob1	3.1.-.-	COG1439	Endoribonuclease Nob1
+FLGBHGLA_06840	gene	501	nob1			
+FLGBHGLA_06850	CDS	555				hypothetical protein
+FLGBHGLA_06850	gene	555				
+FLGBHGLA_06860	CDS	426				hypothetical protein
+FLGBHGLA_06860	gene	426				
+FLGBHGLA_06870	CDS	1020	lysK	3.5.1.-	COG0624	[LysW]-lysine/[LysW]-ornithine hydrolase
+FLGBHGLA_06870	gene	1020	lysK			
+FLGBHGLA_06880	CDS	732				hypothetical protein
+FLGBHGLA_06880	gene	732				
+FLGBHGLA_06890	CDS	351				hypothetical protein
+FLGBHGLA_06890	gene	351				
+FLGBHGLA_06900	CDS	795				hypothetical protein
+FLGBHGLA_06900	gene	795				
+FLGBHGLA_06910	CDS	756				hypothetical protein
+FLGBHGLA_06910	gene	756				
+FLGBHGLA_06920	CDS	1647				hypothetical protein
+FLGBHGLA_06920	gene	1647				
+FLGBHGLA_06930	CDS	933				hypothetical protein
+FLGBHGLA_06930	gene	933				
+FLGBHGLA_06940	CDS	1335		1.8.1.14	COG0446	Coenzyme A disulfide reductase
+FLGBHGLA_06940	gene	1335				
+FLGBHGLA_06950	CDS	456				hypothetical protein
+FLGBHGLA_06950	gene	456				
+FLGBHGLA_06960	CDS	1158	sqr_1	1.8.5.4		Sulfide-quinone reductase
+FLGBHGLA_06960	gene	1158	sqr_1			
+FLGBHGLA_06970	CDS	2211	acyP	3.6.1.7	COG1254	Acylphosphatase
+FLGBHGLA_06970	gene	2211	acyP			
+FLGBHGLA_06980	CDS	948	rio1	2.7.11.1	COG1718	RIO-type serine/threonine-protein kinase Rio1
+FLGBHGLA_06980	gene	948	rio1			
+FLGBHGLA_06990	CDS	399	eIF1A		COG0361	Translation initiation factor 1A
+FLGBHGLA_06990	gene	399	eIF1A			
+FLGBHGLA_07000	CDS	678	rps6e		COG2125	30S ribosomal protein S6e
+FLGBHGLA_07000	gene	678	rps6e			
+FLGBHGLA_07010	CDS	1479		4.2.1.32	COG1838	Putative L(+)-tartrate dehydratase subunit beta
+FLGBHGLA_07010	gene	1479				
+FLGBHGLA_07020	CDS	1416	atpB		COG1156	V-type ATP synthase beta chain
+FLGBHGLA_07020	gene	1416	atpB			
+FLGBHGLA_07030	CDS	645	atpD		COG1394	V-type ATP synthase subunit D
+FLGBHGLA_07030	gene	645	atpD			
+FLGBHGLA_07040	CDS	165				hypothetical protein
+FLGBHGLA_07040	gene	165				
+FLGBHGLA_07050	CDS	342				hypothetical protein
+FLGBHGLA_07050	gene	342				
+FLGBHGLA_07060	CDS	1272	hemL	5.4.3.8	COG0001	Glutamate-1-semialdehyde 2,1-aminomutase
+FLGBHGLA_07060	gene	1272	hemL			
+FLGBHGLA_07070	CDS	915	hemC	2.5.1.61		Porphobilinogen deaminase
+FLGBHGLA_07070	gene	915	hemC			
+FLGBHGLA_07080	CDS	585				hypothetical protein
+FLGBHGLA_07080	gene	585				
+FLGBHGLA_07090	CDS	435		4.1.1.19	COG1586	Arginine decarboxylase proenzyme
+FLGBHGLA_07090	gene	435				
+FLGBHGLA_07100	CDS	633	mqnA	4.2.1.151		Chorismate dehydratase
+FLGBHGLA_07100	gene	633	mqnA			
+FLGBHGLA_07110	CDS	1107				hypothetical protein
+FLGBHGLA_07110	gene	1107				
+FLGBHGLA_07120	CDS	753				hypothetical protein
+FLGBHGLA_07120	gene	753				
+FLGBHGLA_07130	CDS	2745	dpo1	2.7.7.7	COG0417	DNA polymerase 1
+FLGBHGLA_07130	gene	2745	dpo1			
+FLGBHGLA_07140	CDS	1053	fen	3.1.-.-	COG0258	Flap endonuclease 1
+FLGBHGLA_07140	gene	1053	fen			
+FLGBHGLA_07150	CDS	288				hypothetical protein
+FLGBHGLA_07150	gene	288				
+FLGBHGLA_07160	CDS	2205	vat_1		COG0464	VCP-like ATPase
+FLGBHGLA_07160	gene	2205	vat_1			
+FLGBHGLA_07170	CDS	459				hypothetical protein
+FLGBHGLA_07170	gene	459				
+FLGBHGLA_07180	CDS	1146				hypothetical protein
+FLGBHGLA_07180	gene	1146				
+FLGBHGLA_07190	CDS	669	tpiA	5.3.1.1	COG0149	Triosephosphate isomerase
+FLGBHGLA_07190	gene	669	tpiA			
+FLGBHGLA_07200	CDS	696			COG1500	Ribosome maturation protein SDO1 
+FLGBHGLA_07200	gene	696				
+FLGBHGLA_07210	CDS	1059		2.1.1.-	COG1964	7,8-dihydro-6-hydroxymethylpterin dimethyltransferase
+FLGBHGLA_07210	gene	1059				
+FLGBHGLA_07220	CDS	468				hypothetical protein
+FLGBHGLA_07220	gene	468				
+FLGBHGLA_07230	CDS	372				hypothetical protein
+FLGBHGLA_07230	gene	372				
+FLGBHGLA_07240	CDS	822				hypothetical protein
+FLGBHGLA_07240	gene	822				
+FLGBHGLA_07250	CDS	378	mntR			Transcriptional regulator MntR
+FLGBHGLA_07250	gene	378	mntR			
+FLGBHGLA_07260	CDS	309				hypothetical protein
+FLGBHGLA_07260	gene	309				
+FLGBHGLA_07270	CDS	657	gpt_2	2.4.2.22		Xanthine phosphoribosyltransferase
+FLGBHGLA_07270	gene	657	gpt_2			
+FLGBHGLA_07280	CDS	1068		1.3.1.101	COG0644	Digeranylgeranylglycerophospholipid reductase
+FLGBHGLA_07280	gene	1068				
+FLGBHGLA_07290	CDS	465			COG1522	putative HTH-type transcriptional regulator
+FLGBHGLA_07290	gene	465				
+FLGBHGLA_07300	CDS	1152	ttuA_2	2.8.1.-	COG0037	tRNA-5-methyluridine(54) 2-sulfurtransferase
+FLGBHGLA_07300	gene	1152	ttuA_2			
+FLGBHGLA_07310	CDS	1527	rimO_2	2.8.4.4		Ribosomal protein S12 methylthiotransferase RimO
+FLGBHGLA_07310	gene	1527	rimO_2			
+FLGBHGLA_07320	CDS	276				hypothetical protein
+FLGBHGLA_07320	gene	276				
+FLGBHGLA_07330	CDS	441				hypothetical protein
+FLGBHGLA_07330	gene	441				
+FLGBHGLA_07340	CDS	663				hypothetical protein
+FLGBHGLA_07340	gene	663				
+FLGBHGLA_07350	CDS	2028				hypothetical protein
+FLGBHGLA_07350	gene	2028				
+FLGBHGLA_07360	CDS	771	pcn2		COG0592	DNA polymerase sliding clamp 2
+FLGBHGLA_07360	gene	771	pcn2			
+FLGBHGLA_07370	CDS	387				hypothetical protein
+FLGBHGLA_07370	gene	387				
+FLGBHGLA_07380	CDS	1389	cedB		COG0433	DNA import protein CedB
+FLGBHGLA_07380	gene	1389	cedB			
+FLGBHGLA_07390	CDS	1527	cedA			DNA import protein CedA
+FLGBHGLA_07390	gene	1527	cedA			
+FLGBHGLA_07400	CDS	1947	cysH_2	1.8.4.8		Phosphoadenosine phosphosulfate reductase
+FLGBHGLA_07400	gene	1947	cysH_2			
+FLGBHGLA_07410	CDS	264				hypothetical protein
+FLGBHGLA_07410	gene	264				
+FLGBHGLA_07420	CDS	567				hypothetical protein
+FLGBHGLA_07420	gene	567				
+FLGBHGLA_07430	CDS	360	pth	3.1.1.29	COG1990	Peptidyl-tRNA hydrolase
+FLGBHGLA_07430	gene	360	pth			
+FLGBHGLA_07440	CDS	1005		2.1.1.218	COG2419	tRNA (adenine(9)-N1)-methyltransferase
+FLGBHGLA_07440	gene	1005				
+FLGBHGLA_07450	CDS	879				Iron-sulfur cluster carrier protein
+FLGBHGLA_07450	gene	879				
+FLGBHGLA_07460	CDS	261			COG2053	30S ribosomal protein S28e
+FLGBHGLA_07460	gene	261				
+FLGBHGLA_07470	CDS	177			COG2075	50S ribosomal protein L24e
+FLGBHGLA_07470	gene	177				
+FLGBHGLA_07480	CDS	444	ndk	2.7.4.6	COG0105	Nucleoside diphosphate kinase
+FLGBHGLA_07480	gene	444	ndk			
+FLGBHGLA_07490	CDS	471				hypothetical protein
+FLGBHGLA_07490	gene	471				
+FLGBHGLA_07500	CDS	867				hypothetical protein
+FLGBHGLA_07500	gene	867				
+FLGBHGLA_07510	CDS	1071	lysY	1.2.1.-	COG0002	[LysW]-L-2-aminoadipate/[LysW]-L-glutamate phosphate reductase
+FLGBHGLA_07510	gene	1071	lysY			
+FLGBHGLA_07520	CDS	1314				hypothetical protein
+FLGBHGLA_07520	gene	1314				
+FLGBHGLA_07530	CDS	1029				hypothetical protein
+FLGBHGLA_07530	gene	1029				
+FLGBHGLA_07540	CDS	765	livG_1		COG0411	putative branched-chain amino acid transport ATP-binding protein LivG
+FLGBHGLA_07540	gene	765	livG_1			
+FLGBHGLA_07550	CDS	732	livG_2		COG0411	putative branched-chain amino acid transport ATP-binding protein LivG
+FLGBHGLA_07550	gene	732	livG_2			
+FLGBHGLA_07560	CDS	666	pyrH	2.7.4.22	COG0528	Uridylate kinase
+FLGBHGLA_07560	gene	666	pyrH			
+FLGBHGLA_07570	CDS	825				hypothetical protein
+FLGBHGLA_07570	gene	825				
+FLGBHGLA_07580	CDS	1758	herA_2	3.6.4.12	COG0433	DNA double-strand break repair helicase HerA
+FLGBHGLA_07580	gene	1758	herA_2			
+FLGBHGLA_07590	CDS	1029				hypothetical protein
+FLGBHGLA_07590	gene	1029				
+FLGBHGLA_07600	CDS	312				hypothetical protein
+FLGBHGLA_07600	gene	312				
+FLGBHGLA_07610	CDS	144				hypothetical protein
+FLGBHGLA_07610	gene	144				
+FLGBHGLA_07620	CDS	1362	pepA	3.4.11.10		cytosol aminopeptidase
+FLGBHGLA_07620	gene	1362	pepA			
+FLGBHGLA_07630	CDS	369				hypothetical protein
+FLGBHGLA_07630	gene	369				
+FLGBHGLA_07640	CDS	315				hypothetical protein
+FLGBHGLA_07640	gene	315				
+FLGBHGLA_07650	CDS	909				Iron-sulfur cluster carrier protein
+FLGBHGLA_07650	gene	909				
+FLGBHGLA_07660	CDS	600				hypothetical protein
+FLGBHGLA_07660	gene	600				
+FLGBHGLA_07670	CDS	639				hypothetical protein
+FLGBHGLA_07670	gene	639				
+FLGBHGLA_07680	CDS	735				hypothetical protein
+FLGBHGLA_07680	gene	735				
+FLGBHGLA_07690	CDS	456				hypothetical protein
+FLGBHGLA_07690	gene	456				
+FLGBHGLA_07700	CDS	663				hypothetical protein
+FLGBHGLA_07700	gene	663				
+FLGBHGLA_07710	CDS	1026	metE_1	2.1.1.-	COG0620	Methionine synthase
+FLGBHGLA_07710	gene	1026	metE_1			
+FLGBHGLA_07720	CDS	999	metE_2	2.1.1.14		5-methyltetrahydropteroyltriglutamate--homocysteine methyltransferase
+FLGBHGLA_07720	gene	999	metE_2			
+FLGBHGLA_07730	CDS	579	ubiE_2	2.1.1.163		Ubiquinone/menaquinone biosynthesis C-methyltransferase UbiE
+FLGBHGLA_07730	gene	579	ubiE_2			
+FLGBHGLA_07740	CDS	1212				hypothetical protein
+FLGBHGLA_07740	gene	1212				
+FLGBHGLA_07750	CDS	831				hypothetical protein
+FLGBHGLA_07750	gene	831				
+FLGBHGLA_07760	CDS	93				hypothetical protein
+FLGBHGLA_07760	gene	93				
+FLGBHGLA_07770	CDS	1080	asd	1.2.1.11	COG0136	Aspartate-semialdehyde dehydrogenase
+FLGBHGLA_07770	gene	1080	asd			
+FLGBHGLA_07780	CDS	627				hypothetical protein
+FLGBHGLA_07780	gene	627				
+FLGBHGLA_07790	CDS	852	hisG	2.4.2.17	COG0040	ATP phosphoribosyltransferase
+FLGBHGLA_07790	gene	852	hisG			
+FLGBHGLA_07800	CDS	855				hypothetical protein
+FLGBHGLA_07800	gene	855				
+FLGBHGLA_07810	CDS	471	cmk	2.7.4.25		Cytidylate kinase
+FLGBHGLA_07810	gene	471	cmk			
+FLGBHGLA_07820	CDS	855			COG0489	Iron-sulfur cluster carrier protein
+FLGBHGLA_07820	gene	855				
+FLGBHGLA_07830	CDS	966	mvk	2.7.1.36	COG1577	Mevalonate kinase
+FLGBHGLA_07830	gene	966	mvk			
+FLGBHGLA_07840	CDS	609				hypothetical protein
+FLGBHGLA_07840	gene	609				
+FLGBHGLA_07850	CDS	273				hypothetical protein
+FLGBHGLA_07850	gene	273				
+FLGBHGLA_07860	CDS	1410	aubA		COG1530	RNA-binding protein AU-1
+FLGBHGLA_07860	gene	1410	aubA			
+FLGBHGLA_07870	CDS	501				hypothetical protein
+FLGBHGLA_07870	gene	501				
+FLGBHGLA_07880	CDS	516	carS	2.7.7.67	COG0575	CDP-archaeol synthase
+FLGBHGLA_07880	gene	516	carS			
+FLGBHGLA_07890	CDS	195			COG2260	Ribosome biogenesis protein Nop10
+FLGBHGLA_07890	gene	195				
+FLGBHGLA_07900	CDS	798	eif2a		COG1093	Translation initiation factor 2 subunit alpha
+FLGBHGLA_07900	gene	798	eif2a			
+FLGBHGLA_07910	CDS	555				hypothetical protein
+FLGBHGLA_07910	gene	555				
+FLGBHGLA_07920	CDS	393	rps8e		COG2007	30S ribosomal protein S8e
+FLGBHGLA_07920	gene	393	rps8e			
+FLGBHGLA_07930	CDS	300			COG1400	Signal recognition particle 19 kDa protein
+FLGBHGLA_07930	gene	300				
+FLGBHGLA_07940	CDS	201				hypothetical protein
+FLGBHGLA_07940	gene	201				
+FLGBHGLA_07950	CDS	1074				hypothetical protein
+FLGBHGLA_07950	gene	1074				
+FLGBHGLA_07960	CDS	285				hypothetical protein
+FLGBHGLA_07960	gene	285				
+FLGBHGLA_07970	CDS	696				hypothetical protein
+FLGBHGLA_07970	gene	696				
+FLGBHGLA_07980	CDS	768	hisF_2	4.1.3.-	COG0107	Imidazole glycerol phosphate synthase subunit HisF
+FLGBHGLA_07980	gene	768	hisF_2			
+FLGBHGLA_07990	CDS	300				hypothetical protein
+FLGBHGLA_07990	gene	300				
+FLGBHGLA_08000	CDS	1005	mraY	2.7.8.13		Phospho-N-acetylmuramoyl-pentapeptide-transferase
+FLGBHGLA_08000	gene	1005	mraY			
+FLGBHGLA_08010	CDS	396				hypothetical protein
+FLGBHGLA_08010	gene	396				
+FLGBHGLA_08020	CDS	1086				hypothetical protein
+FLGBHGLA_08020	gene	1086				
+FLGBHGLA_08030	CDS	300			COG2139	50S ribosomal protein L21e
+FLGBHGLA_08030	gene	300				
+FLGBHGLA_08040	CDS	453				hypothetical protein
+FLGBHGLA_08040	gene	453				
+FLGBHGLA_08050	CDS	318				hypothetical protein
+FLGBHGLA_08050	gene	318				
+FLGBHGLA_08060	CDS	444				hypothetical protein
+FLGBHGLA_08060	gene	444				
+FLGBHGLA_08070	CDS	573				hypothetical protein
+FLGBHGLA_08070	gene	573				
+FLGBHGLA_08080	CDS	885				hypothetical protein
+FLGBHGLA_08080	gene	885				
+FLGBHGLA_08090	CDS	609				hypothetical protein
+FLGBHGLA_08090	gene	609				
+FLGBHGLA_08100	CDS	522				hypothetical protein
+FLGBHGLA_08100	gene	522				
+FLGBHGLA_08110	CDS	783	nadX_1	1.4.1.21		L-aspartate dehydrogenase
+FLGBHGLA_08110	gene	783	nadX_1			
+FLGBHGLA_08120	CDS	678				hypothetical protein
+FLGBHGLA_08120	gene	678				
+FLGBHGLA_08130	CDS	606			COG0794	putative protein
+FLGBHGLA_08130	gene	606				
+FLGBHGLA_08140	CDS	858				hypothetical protein
+FLGBHGLA_08140	gene	858				
+FLGBHGLA_08150	CDS	324				hypothetical protein
+FLGBHGLA_08150	gene	324				
+FLGBHGLA_08160	CDS	663	nep1_1	2.1.1.-	COG1756	Ribosomal RNA small subunit methyltransferase Nep1
+FLGBHGLA_08160	gene	663	nep1_1			
+FLGBHGLA_08170	CDS	450				hypothetical protein
+FLGBHGLA_08170	gene	450				
+FLGBHGLA_08180	CDS	264			COG1997	50S ribosomal protein L37Ae
+FLGBHGLA_08180	gene	264				
+FLGBHGLA_08190	CDS	543			COG2136	putative Brix domain-containing ribosomal biogenesis protein
+FLGBHGLA_08190	gene	543				
+FLGBHGLA_08200	CDS	240				hypothetical protein
+FLGBHGLA_08200	gene	240				
+FLGBHGLA_08210	CDS	765		3.6.5.-	COG1100	GPN-loop GTPase
+FLGBHGLA_08210	gene	765				
+FLGBHGLA_08220	CDS	1101				hypothetical protein
+FLGBHGLA_08220	gene	1101				
+FLGBHGLA_08230	CDS	180				hypothetical protein
+FLGBHGLA_08230	gene	180				
+FLGBHGLA_08240	CDS	1041	htpX	3.4.24.-		Protease HtpX
+FLGBHGLA_08240	gene	1041	htpX			
+FLGBHGLA_08250	CDS	1014				hypothetical protein
+FLGBHGLA_08250	gene	1014				
+FLGBHGLA_08260	CDS	660	dmsB_2		COG0437	Putative dimethyl sulfoxide reductase iron-sulfur subunit B
+FLGBHGLA_08260	gene	660	dmsB_2			
+FLGBHGLA_08270	CDS	2505	narG	1.7.99.4		Respiratory nitrate reductase subunit alpha
+FLGBHGLA_08270	gene	2505	narG			
+FLGBHGLA_08280	CDS	942				hypothetical protein
+FLGBHGLA_08280	gene	942				
+FLGBHGLA_08290	CDS	1083	fni	5.3.3.2		Isopentenyl-diphosphate delta-isomerase
+FLGBHGLA_08290	gene	1083	fni			
+FLGBHGLA_08300	CDS	570	hisB	4.2.1.19	COG0131	Imidazoleglycerol-phosphate dehydratase
+FLGBHGLA_08300	gene	570	hisB			
+FLGBHGLA_08310	CDS	126				hypothetical protein
+FLGBHGLA_08310	gene	126				
+FLGBHGLA_08320	CDS	1962				hypothetical protein
+FLGBHGLA_08320	gene	1962				
+FLGBHGLA_08330	CDS	141				hypothetical protein
+FLGBHGLA_08330	gene	141				
+FLGBHGLA_08340	CDS	996				hypothetical protein
+FLGBHGLA_08340	gene	996				
+FLGBHGLA_08350	CDS	873				hypothetical protein
+FLGBHGLA_08350	gene	873				
+FLGBHGLA_08360	CDS	345				hypothetical protein
+FLGBHGLA_08360	gene	345				
+FLGBHGLA_08370	CDS	234				Ferredoxin
+FLGBHGLA_08370	gene	234				
+FLGBHGLA_08380	CDS	360	pfdB		COG1382	Prefoldin subunit beta
+FLGBHGLA_08380	gene	360	pfdB			
+FLGBHGLA_08390	CDS	291				hypothetical protein
+FLGBHGLA_08390	gene	291				
+FLGBHGLA_08400	CDS	954				hypothetical protein
+FLGBHGLA_08400	gene	954				
+FLGBHGLA_08410	CDS	1242				hypothetical protein
+FLGBHGLA_08410	gene	1242				
+FLGBHGLA_08420	CDS	630				hypothetical protein
+FLGBHGLA_08420	gene	630				
+FLGBHGLA_08430	CDS	891				hypothetical protein
+FLGBHGLA_08430	gene	891				
+FLGBHGLA_08440	CDS	993		2.1.1.256	COG0116	tRNA (guanine(6)-N2)-methyltransferase
+FLGBHGLA_08440	gene	993				
+FLGBHGLA_08450	CDS	642				hypothetical protein
+FLGBHGLA_08450	gene	642				
+FLGBHGLA_08460	CDS	267	samp3			Small archaeal modifier protein 3
+FLGBHGLA_08460	gene	267	samp3			
+FLGBHGLA_08470	CDS	756				hypothetical protein
+FLGBHGLA_08470	gene	756				
+FLGBHGLA_08480	CDS	807				hypothetical protein
+FLGBHGLA_08480	gene	807				
+FLGBHGLA_08490	CDS	1278				hypothetical protein
+FLGBHGLA_08490	gene	1278				
+FLGBHGLA_08500	CDS	195				hypothetical protein
+FLGBHGLA_08500	gene	195				
+FLGBHGLA_08510	CDS	540				hypothetical protein
+FLGBHGLA_08510	gene	540				
+FLGBHGLA_08520	CDS	420	hypA		COG0375	Hydrogenase maturation factor HypA
+FLGBHGLA_08520	gene	420	hypA			
+FLGBHGLA_08530	CDS	1779		2.1.1.-	COG1964	7,8-dihydro-6-hydroxymethylpterin dimethyltransferase
+FLGBHGLA_08530	gene	1779				
+FLGBHGLA_08540	CDS	363				hypothetical protein
+FLGBHGLA_08540	gene	363				
+FLGBHGLA_08550	CDS	294				hypothetical protein
+FLGBHGLA_08550	gene	294				
+FLGBHGLA_08560	CDS	1263				hypothetical protein
+FLGBHGLA_08560	gene	1263				
+FLGBHGLA_08570	CDS	456				hypothetical protein
+FLGBHGLA_08570	gene	456				
+FLGBHGLA_08580	CDS	750				hypothetical protein
+FLGBHGLA_08580	gene	750				
+FLGBHGLA_08590	CDS	678				hypothetical protein
+FLGBHGLA_08590	gene	678				
+FLGBHGLA_08600	CDS	540				hypothetical protein
+FLGBHGLA_08600	gene	540				
+FLGBHGLA_08610	CDS	198				hypothetical protein
+FLGBHGLA_08610	gene	198				
+FLGBHGLA_08620	CDS	399				hypothetical protein
+FLGBHGLA_08620	gene	399				
+FLGBHGLA_08630	CDS	627				hypothetical protein
+FLGBHGLA_08630	gene	627				
+FLGBHGLA_08640	CDS	570				hypothetical protein
+FLGBHGLA_08640	gene	570				
+FLGBHGLA_08650	CDS	168			COG1552	50S ribosomal protein L40e
+FLGBHGLA_08650	gene	168				
+FLGBHGLA_08660	CDS	963				hypothetical protein
+FLGBHGLA_08660	gene	963				
+FLGBHGLA_08670	CDS	492				hypothetical protein
+FLGBHGLA_08670	gene	492				
+FLGBHGLA_08680	CDS	1206	nreA		COG1602	DNA repair protein NreA
+FLGBHGLA_08680	gene	1206	nreA			
+FLGBHGLA_08690	CDS	507				hypothetical protein
+FLGBHGLA_08690	gene	507				
+FLGBHGLA_08700	CDS	708	purC	6.3.2.6	COG0152	Phosphoribosylaminoimidazole-succinocarboxamide synthase
+FLGBHGLA_08700	gene	708	purC			
+FLGBHGLA_08710	CDS	273	purS	6.3.5.3		Phosphoribosylformylglycinamidine synthase subunit PurS
+FLGBHGLA_08710	gene	273	purS			
+FLGBHGLA_08720	CDS	660	purQ	3.5.1.2		Phosphoribosylformylglycinamidine synthase subunit PurQ
+FLGBHGLA_08720	gene	660	purQ			
+FLGBHGLA_08730	CDS	612				hypothetical protein
+FLGBHGLA_08730	gene	612				
+FLGBHGLA_08740	CDS	2919				hypothetical protein
+FLGBHGLA_08740	gene	2919				
+FLGBHGLA_08750	CDS	699				hypothetical protein
+FLGBHGLA_08750	gene	699				
+FLGBHGLA_08760	CDS	1311	cca	2.7.7.72		CCA-adding enzyme
+FLGBHGLA_08760	gene	1311	cca			
+FLGBHGLA_08770	CDS	558		3.1.4.-	COG1514	RNA 2',3'-cyclic phosphodiesterase
+FLGBHGLA_08770	gene	558				
+FLGBHGLA_08780	CDS	342	tfs			Transcription factor S
+FLGBHGLA_08780	gene	342	tfs			
+FLGBHGLA_08790	CDS	1383	thrS-cat	6.1.1.3	COG0441	Threonine--tRNA ligase catalytic subunit
+FLGBHGLA_08790	gene	1383	thrS-cat			
+FLGBHGLA_08800	CDS	738	pcn		COG0592	DNA polymerase sliding clamp
+FLGBHGLA_08800	gene	738	pcn			
+FLGBHGLA_08810	CDS	1077	priS	2.7.7.-	COG1467	DNA primase small subunit PriS
+FLGBHGLA_08810	gene	1077	priS			
+FLGBHGLA_08820	CDS	672				hypothetical protein
+FLGBHGLA_08820	gene	672				
+FLGBHGLA_08830	CDS	198				hypothetical protein
+FLGBHGLA_08830	gene	198				
+FLGBHGLA_08840	CDS	774		3.5.5.1	COG0388	Nitrilase
+FLGBHGLA_08840	gene	774				
+FLGBHGLA_08850	CDS	375				hypothetical protein
+FLGBHGLA_08850	gene	375				
+FLGBHGLA_08860	CDS	1215		2.6.1.57		Aromatic-amino-acid aminotransferase 1
+FLGBHGLA_08860	gene	1215				
+FLGBHGLA_08870	CDS	480			COG0184	30S ribosomal protein S15
+FLGBHGLA_08870	gene	480				
+FLGBHGLA_08880	CDS	1296				hypothetical protein
+FLGBHGLA_08880	gene	1296				
+FLGBHGLA_08890	CDS	237				hypothetical protein
+FLGBHGLA_08890	gene	237				
+FLGBHGLA_08900	CDS	639	rps3ae		COG1890	30S ribosomal protein S3Ae
+FLGBHGLA_08900	gene	639	rps3ae			
+FLGBHGLA_08910	CDS	639		3.2.2.-		G/T mismatches repair enzyme
+FLGBHGLA_08910	gene	639				
+FLGBHGLA_08920	CDS	429				hypothetical protein
+FLGBHGLA_08920	gene	429				
+FLGBHGLA_08930	CDS	231				hypothetical protein
+FLGBHGLA_08930	gene	231				
+FLGBHGLA_08940	CDS	783	queC	6.3.4.20		7-cyano-7-deazaguanine synthase
+FLGBHGLA_08940	gene	783	queC			
+FLGBHGLA_08950	CDS	1095	cofH_1	2.5.1.77	COG1060	FO synthase subunit 2
+FLGBHGLA_08950	gene	1095	cofH_1			
+FLGBHGLA_08960	CDS	1419				hypothetical protein
+FLGBHGLA_08960	gene	1419				
+FLGBHGLA_08970	CDS	1023				hypothetical protein
+FLGBHGLA_08970	gene	1023				
+FLGBHGLA_08980	CDS	1164				hypothetical protein
+FLGBHGLA_08980	gene	1164				
+FLGBHGLA_08990	CDS	1149				hypothetical protein
+FLGBHGLA_08990	gene	1149				
+FLGBHGLA_09000	CDS	1128	glmU_2		COG1208	Bifunctional protein GlmU
+FLGBHGLA_09000	gene	1128	glmU_2			
+FLGBHGLA_09010	CDS	1545				hypothetical protein
+FLGBHGLA_09010	gene	1545				
+FLGBHGLA_09020	CDS	816	mqnD	4.1.-.-		1,4-dihydroxy-6-naphtoate synthase
+FLGBHGLA_09020	gene	816	mqnD			
+FLGBHGLA_09030	CDS	1368				hypothetical protein
+FLGBHGLA_09030	gene	1368				
+FLGBHGLA_09040	CDS	636	pcm	2.1.1.77	COG2518	Protein-L-isoaspartate O-methyltransferase
+FLGBHGLA_09040	gene	636	pcm			
+FLGBHGLA_09050	CDS	360				hypothetical protein
+FLGBHGLA_09050	gene	360				
+FLGBHGLA_09060	CDS	1290	hisS	6.1.1.21	COG0124	Histidine--tRNA ligase
+FLGBHGLA_09060	gene	1290	hisS			
+FLGBHGLA_09070	CDS	564	ppa	3.6.1.1	COG0221	Inorganic pyrophosphatase
+FLGBHGLA_09070	gene	564	ppa			
+FLGBHGLA_09080	CDS	486				hypothetical protein
+FLGBHGLA_09080	gene	486				
+FLGBHGLA_09090	CDS	477				hypothetical protein
+FLGBHGLA_09090	gene	477				
+FLGBHGLA_09100	CDS	945				hypothetical protein
+FLGBHGLA_09100	gene	945				
+FLGBHGLA_09110	CDS	225				hypothetical protein
+FLGBHGLA_09110	gene	225				
+FLGBHGLA_09120	CDS	1371		5.4.2.2	COG1109	Phosphoglucomutase/phosphomannomutase
+FLGBHGLA_09120	gene	1371				
+FLGBHGLA_09130	CDS	1107	mthK		COG1226	Calcium-gated potassium channel MthK
+FLGBHGLA_09130	gene	1107	mthK			
+FLGBHGLA_09140	CDS	804				hypothetical protein
+FLGBHGLA_09140	gene	804				
+FLGBHGLA_09150	CDS	1278	thiDN		COG0351	Bifunctional thiamine biosynthesis protein ThiDN
+FLGBHGLA_09150	gene	1278	thiDN			
+FLGBHGLA_09160	CDS	1659	lon_1	3.4.21.-	COG1067	Archaeal Lon protease
+FLGBHGLA_09160	gene	1659	lon_1			
+FLGBHGLA_09170	CDS	693				hypothetical protein
+FLGBHGLA_09170	gene	693				
+FLGBHGLA_09180	CDS	939	dxs_1	2.2.1.7		1-deoxy-D-xylulose-5-phosphate synthase
+FLGBHGLA_09180	gene	939	dxs_1			
+FLGBHGLA_09190	CDS	1047	aroQ	5.4.99.5	COG1605	Chorismate mutase
+FLGBHGLA_09190	gene	1047	aroQ			
+FLGBHGLA_09200	CDS	96				hypothetical protein
+FLGBHGLA_09200	gene	96				
+FLGBHGLA_09210	CDS	150				hypothetical protein
+FLGBHGLA_09210	gene	150				
+FLGBHGLA_09220	CDS	105				hypothetical protein
+FLGBHGLA_09220	gene	105				
+FLGBHGLA_09230	CDS	501				hypothetical protein
+FLGBHGLA_09230	gene	501				
+FLGBHGLA_09240	CDS	402			COG1136	putative ABC transporter ATP-binding protein
+FLGBHGLA_09240	gene	402				
+FLGBHGLA_09250	CDS	291				hypothetical protein
+FLGBHGLA_09250	gene	291				
+FLGBHGLA_09260	CDS	1626	thsB		COG0459	Thermosome subunit beta
+FLGBHGLA_09260	gene	1626	thsB			
+FLGBHGLA_09270	CDS	783				hypothetical protein
+FLGBHGLA_09270	gene	783				
+FLGBHGLA_09280	CDS	1104	sqr_2	1.8.5.4		Sulfide-quinone reductase
+FLGBHGLA_09280	gene	1104	sqr_2			
+FLGBHGLA_09290	CDS	1158		2.1.1.-	COG0144	tRNA (cytosine(49)-C(5))-methyltransferase
+FLGBHGLA_09290	gene	1158				
+FLGBHGLA_09300	CDS	972				hypothetical protein
+FLGBHGLA_09300	gene	972				
+FLGBHGLA_09310	CDS	1299	glmS_3	2.6.1.16	COG0449	Glutamine--fructose-6-phosphate aminotransferase [isomerizing]
+FLGBHGLA_09310	gene	1299	glmS_3			
+FLGBHGLA_09320	CDS	546		3.1.4.-	COG0622	Phosphodiesterase
+FLGBHGLA_09320	gene	546				
+FLGBHGLA_09330	CDS	792	thiI_2	2.8.1.4		tRNA sulfurtransferase
+FLGBHGLA_09330	gene	792	thiI_2			
+FLGBHGLA_09340	CDS	357				hypothetical protein
+FLGBHGLA_09340	gene	357				
+FLGBHGLA_09350	CDS	711			COG0526	putative Thioredoxin
+FLGBHGLA_09350	gene	711				
+FLGBHGLA_09360	CDS	678			COG1632	50S ribosomal protein L15e
+FLGBHGLA_09360	gene	678				
+FLGBHGLA_09370	CDS	432				hypothetical protein
+FLGBHGLA_09370	gene	432				
+FLGBHGLA_09380	CDS	1356	tldD	3.4.-.-	COG0312	Zinc metalloprotease TldD 
+FLGBHGLA_09380	gene	1356	tldD			
+FLGBHGLA_09390	CDS	558	arfB	3.5.1.102	COG1402	2-amino-5-formylamino-6-ribosylaminopyrimidin-4(3H)-one 5'-monophosphate deformylase
+FLGBHGLA_09390	gene	558	arfB			
+FLGBHGLA_09400	CDS	987	sudA_2	1.8.1.19	COG0493	Sulfide dehydrogenase subunit alpha
+FLGBHGLA_09400	gene	987	sudA_2			
+FLGBHGLA_09410	CDS	663				hypothetical protein
+FLGBHGLA_09410	gene	663				
+FLGBHGLA_09420	CDS	921				hypothetical protein
+FLGBHGLA_09420	gene	921				
+FLGBHGLA_09430	CDS	834				hypothetical protein
+FLGBHGLA_09430	gene	834				
+FLGBHGLA_09440	CDS	426	nudF	3.6.1.13	COG1051	ADP-ribose pyrophosphatase
+FLGBHGLA_09440	gene	426	nudF			
+FLGBHGLA_09450	CDS	1338		3.5.1.4	COG0154	Amidase
+FLGBHGLA_09450	gene	1338				
+FLGBHGLA_09460	CDS	471				hypothetical protein
+FLGBHGLA_09460	gene	471				
+FLGBHGLA_09470	CDS	684				hypothetical protein
+FLGBHGLA_09470	gene	684				
+FLGBHGLA_09480	CDS	630	nep1_2	2.1.1.-	COG1756	Ribosomal RNA small subunit methyltransferase Nep1
+FLGBHGLA_09480	gene	630	nep1_2			
+FLGBHGLA_09490	CDS	426				hypothetical protein
+FLGBHGLA_09490	gene	426				
+FLGBHGLA_09500	CDS	372	crcB			Putative fluoride ion transporter CrcB
+FLGBHGLA_09500	gene	372	crcB			
+FLGBHGLA_09510	CDS	267				hypothetical protein
+FLGBHGLA_09510	gene	267				
+FLGBHGLA_09520	CDS	684				hypothetical protein
+FLGBHGLA_09520	gene	684				
+FLGBHGLA_09530	CDS	1050	truB	5.4.99.25	COG0130	putative tRNA pseudouridine synthase B
+FLGBHGLA_09530	gene	1050	truB			
+FLGBHGLA_09540	CDS	1236	trpE	4.1.3.27	COG0147	Anthranilate synthase component 1
+FLGBHGLA_09540	gene	1236	trpE			
+FLGBHGLA_09550	CDS	585	trpF	5.3.1.24	COG0135	N-(5'-phosphoribosyl)anthranilate isomerase
+FLGBHGLA_09550	gene	585	trpF			
+FLGBHGLA_09560	CDS	1176				hypothetical protein
+FLGBHGLA_09560	gene	1176				
+FLGBHGLA_09570	CDS	1869	argS	6.1.1.19	COG0018	Arginine--tRNA ligase
+FLGBHGLA_09570	gene	1869	argS			
+FLGBHGLA_09580	CDS	372				hypothetical protein
+FLGBHGLA_09580	gene	372				
+FLGBHGLA_09590	CDS	258				hypothetical protein
+FLGBHGLA_09590	gene	258				
+FLGBHGLA_09600	CDS	1260	leuC_1	4.2.1.33	COG0065	Isopropylmalate/citramalate isomerase large subunit
+FLGBHGLA_09600	gene	1260	leuC_1			
+FLGBHGLA_09610	CDS	681	dmrX	1.5.99.15	COG1036	Dihydromethanopterin reductase (acceptor)
+FLGBHGLA_09610	gene	681	dmrX			
+FLGBHGLA_09620	CDS	573				hypothetical protein
+FLGBHGLA_09620	gene	573				
+FLGBHGLA_09630	CDS	1497	vat_2		COG0464	VCP-like ATPase
+FLGBHGLA_09630	gene	1497	vat_2			
+FLGBHGLA_09640	CDS	216				hypothetical protein
+FLGBHGLA_09640	gene	216				
+FLGBHGLA_09650	CDS	420	ribH	2.5.1.78	COG0054	6,7-dimethyl-8-ribityllumazine synthase
+FLGBHGLA_09650	gene	420	ribH			
+FLGBHGLA_09660	CDS	543				hypothetical protein
+FLGBHGLA_09660	gene	543				
+FLGBHGLA_09670	CDS	2538	leuS_2	6.1.1.4	COG0495	Leucine--tRNA ligase
+FLGBHGLA_09670	gene	2538	leuS_2			
+FLGBHGLA_09680	CDS	375				hypothetical protein
+FLGBHGLA_09680	gene	375				
+FLGBHGLA_09690	CDS	843				hypothetical protein
+FLGBHGLA_09690	gene	843				
+FLGBHGLA_09700	CDS	903		2.1.1.-	COG2520	tRNA 4-demethylwyosine(37)-methyltransferase Taw21
+FLGBHGLA_09700	gene	903				
+FLGBHGLA_09710	CDS	1785	lig	6.5.1.7	COG1793	DNA ligase
+FLGBHGLA_09710	gene	1785	lig			
+FLGBHGLA_09720	CDS	1101	purP_2	6.3.4.23	COG1759	5-formaminoimidazole-4-carboxamide-1-(beta)-D-ribofuranosyl 5'-monophosphate synthetase
+FLGBHGLA_09720	gene	1101	purP_2			
+FLGBHGLA_09730	CDS	1161	lysJ	2.6.1.-	COG4992	[LysW]-aminoadipate semialdehyde/glutamate semialdehyde transaminase
+FLGBHGLA_09730	gene	1161	lysJ			
+FLGBHGLA_09740	CDS	426				hypothetical protein
+FLGBHGLA_09740	gene	426				
+FLGBHGLA_09750	CDS	1131	phnW	2.6.1.37		2-aminoethylphosphonate--pyruvate transaminase
+FLGBHGLA_09750	gene	1131	phnW			
+FLGBHGLA_09760	CDS	753		2.5.1.-	COG1912	Chlorinase
+FLGBHGLA_09760	gene	753				
+FLGBHGLA_09770	CDS	516		2.7.7.1	COG1056	Nicotinamide-nucleotide adenylyltransferase
+FLGBHGLA_09770	gene	516				
+FLGBHGLA_09780	CDS	414				hypothetical protein
+FLGBHGLA_09780	gene	414				
+FLGBHGLA_09790	CDS	288	cedA1			DNA import protein CedA1
+FLGBHGLA_09790	gene	288	cedA1			
+FLGBHGLA_09800	CDS	1191				hypothetical protein
+FLGBHGLA_09800	gene	1191				
+FLGBHGLA_09810	CDS	558				hypothetical protein
+FLGBHGLA_09810	gene	558				
+FLGBHGLA_09820	CDS	405	ssb		COG1599	Single-stranded DNA binding protein Ssb
+FLGBHGLA_09820	gene	405	ssb			
+FLGBHGLA_09830	CDS	312				hypothetical protein
+FLGBHGLA_09830	gene	312				
+FLGBHGLA_09840	CDS	1656				hypothetical protein
+FLGBHGLA_09840	gene	1656				
+FLGBHGLA_09850	CDS	666	arfC	1.1.1.302	COG1985	2,5-diamino-6-ribosylamino-4(3H)-pyrimidinone 5'-phosphate reductase
+FLGBHGLA_09850	gene	666	arfC			
+FLGBHGLA_09860	CDS	558				hypothetical protein
+FLGBHGLA_09860	gene	558				
+FLGBHGLA_09870	CDS	444				hypothetical protein
+FLGBHGLA_09870	gene	444				
+FLGBHGLA_09880	CDS	1506				hypothetical protein
+FLGBHGLA_09880	gene	1506				
+FLGBHGLA_09890	CDS	1359	hcp	1.7.99.1		Hydroxylamine reductase
+FLGBHGLA_09890	gene	1359	hcp			
+FLGBHGLA_09900	CDS	1659	ilvD	4.2.1.9		Dihydroxy-acid dehydratase
+FLGBHGLA_09900	gene	1659	ilvD			
+FLGBHGLA_09910	CDS	2595	mdtC			Multidrug resistance protein MdtC
+FLGBHGLA_09910	gene	2595	mdtC			
+FLGBHGLA_09920	CDS	1353	ruvB_2	3.6.4.12		Holliday junction ATP-dependent DNA helicase RuvB
+FLGBHGLA_09920	gene	1353	ruvB_2			
+FLGBHGLA_09930	CDS	1077	rpl3		COG0087	50S ribosomal protein L3
+FLGBHGLA_09930	gene	1077	rpl3			
+FLGBHGLA_09940	CDS	816	rpl4		COG0088	50S ribosomal protein L4
+FLGBHGLA_09940	gene	816	rpl4			
+FLGBHGLA_09950	CDS	264			COG0089	50S ribosomal protein L23
+FLGBHGLA_09950	gene	264				
+FLGBHGLA_09960	CDS	228				hypothetical protein
+FLGBHGLA_09960	gene	228				
+FLGBHGLA_09970	CDS	192				hypothetical protein
+FLGBHGLA_09970	gene	192				
+FLGBHGLA_09980	CDS	540	cysC	2.7.1.25	COG0529	putative adenylyl-sulfate kinase
+FLGBHGLA_09980	gene	540	cysC			
+FLGBHGLA_09990	CDS	1338				hypothetical protein
+FLGBHGLA_09990	gene	1338				
+FLGBHGLA_10000	CDS	1149	sat	2.7.7.4		Sulfate adenylyltransferase
+FLGBHGLA_10000	gene	1149	sat			
+FLGBHGLA_10010	CDS	213				hypothetical protein
+FLGBHGLA_10010	gene	213				
+FLGBHGLA_10020	CDS	714				hypothetical protein
+FLGBHGLA_10020	gene	714				
+FLGBHGLA_10030	CDS	1395				hypothetical protein
+FLGBHGLA_10030	gene	1395				
+FLGBHGLA_10040	CDS	393				hypothetical protein
+FLGBHGLA_10040	gene	393				
+FLGBHGLA_10050	CDS	1041				hypothetical protein
+FLGBHGLA_10050	gene	1041				
+FLGBHGLA_10060	CDS	669		2.5.1.105	COG1237	7,8-dihydropterin-6-methyl-4-(beta-D-ribofuranosyl)-aminobenzene-5'-phosphate synthase
+FLGBHGLA_10060	gene	669				
+FLGBHGLA_10070	CDS	2190		3.6.4.13	COG0513	putative ATP-dependent RNA helicase
+FLGBHGLA_10070	gene	2190				
+FLGBHGLA_10080	CDS	222			COG1958	Putative snRNP Sm-like protein
+FLGBHGLA_10080	gene	222				
+FLGBHGLA_10090	CDS	192			COG2126	50S ribosomal protein L37e
+FLGBHGLA_10090	gene	192				
+FLGBHGLA_10100	CDS	639	psmB_2	3.4.25.1	COG0638	Proteasome subunit beta
+FLGBHGLA_10100	gene	639	psmB_2			
+FLGBHGLA_10110	CDS	3156				hypothetical protein
+FLGBHGLA_10110	gene	3156				
+FLGBHGLA_10120	CDS	1032	leuB	1.1.1.85	COG0473	3-isopropylmalate dehydrogenase
+FLGBHGLA_10120	gene	1032	leuB			
+FLGBHGLA_10130	CDS	1200	leuA_2	2.3.3.13	COG0119	2-isopropylmalate synthase
+FLGBHGLA_10130	gene	1200	leuA_2			
+FLGBHGLA_10140	CDS	582				hypothetical protein
+FLGBHGLA_10140	gene	582				
+FLGBHGLA_10150	CDS	462				hypothetical protein
+FLGBHGLA_10150	gene	462				
+FLGBHGLA_10160	CDS	723				hypothetical protein
+FLGBHGLA_10160	gene	723				
+FLGBHGLA_10170	CDS	354				hypothetical protein
+FLGBHGLA_10170	gene	354				
+FLGBHGLA_10180	CDS	624	tbp			TATA-box-binding protein
+FLGBHGLA_10180	gene	624	tbp			
+FLGBHGLA_10190	CDS	1362	serS	6.1.1.11	COG0172	Serine--tRNA ligase
+FLGBHGLA_10190	gene	1362	serS			
+FLGBHGLA_10200	CDS	1395	cysS	6.1.1.16	COG0215	Cysteine--tRNA ligase
+FLGBHGLA_10200	gene	1395	cysS			
+FLGBHGLA_10210	CDS	858				hypothetical protein
+FLGBHGLA_10210	gene	858				
+FLGBHGLA_10220	CDS	882		1.1.1.376		L-arabinose 1-dehydrogenase (NAD(P)(+))
+FLGBHGLA_10220	gene	882				
+FLGBHGLA_10230	CDS	1101	cdvC		COG0464	Cell division protein C
+FLGBHGLA_10230	gene	1101	cdvC			
+FLGBHGLA_10240	CDS	756				hypothetical protein
+FLGBHGLA_10240	gene	756				
+FLGBHGLA_10250	CDS	678	cdvA			Cell division protein A
+FLGBHGLA_10250	gene	678	cdvA			
+FLGBHGLA_10260	CDS	339				hypothetical protein
+FLGBHGLA_10260	gene	339				
+FLGBHGLA_10270	CDS	933	dph2	2.5.1.108	COG1736	2-(3-amino-3-carboxypropyl)histidine synthase
+FLGBHGLA_10270	gene	933	dph2			
+FLGBHGLA_10280	CDS	522			COG0197	50S ribosomal protein L10e
+FLGBHGLA_10280	gene	522				
+FLGBHGLA_10290	CDS	597	taw3_1	2.1.1.282	COG1590	tRNA(Phe) 7-((3-amino-3-carboxypropyl)-4-demethylwyosine(37)-N(4))-methyltransferase
+FLGBHGLA_10290	gene	597	taw3_1			
+FLGBHGLA_10300	CDS	1059	gap	1.2.1.59	COG0057	Glyceraldehyde-3-phosphate dehydrogenase
+FLGBHGLA_10300	gene	1059	gap			
+FLGBHGLA_10310	CDS	2016			COG0370	Fe(2+) transporter FeoB
+FLGBHGLA_10310	gene	2016				
+FLGBHGLA_10320	CDS	192				hypothetical protein
+FLGBHGLA_10320	gene	192				
+FLGBHGLA_10330	CDS	210				hypothetical protein
+FLGBHGLA_10330	gene	210				
+FLGBHGLA_10340	CDS	318				hypothetical protein
+FLGBHGLA_10340	gene	318				
+FLGBHGLA_10350	CDS	1374				hypothetical protein
+FLGBHGLA_10350	gene	1374				
+FLGBHGLA_10360	CDS	975	radA		COG0468	DNA repair and recombination protein RadA
+FLGBHGLA_10360	gene	975	radA			
+FLGBHGLA_10370	CDS	1245	eno	4.2.1.11	COG0148	Enolase
+FLGBHGLA_10370	gene	1245	eno			
+FLGBHGLA_10380	CDS	1125	nanT			Putative sialic acid transporter
+FLGBHGLA_10380	gene	1125	nanT			
+FLGBHGLA_10390	CDS	1692			COG1372	putative protein
+FLGBHGLA_10390	gene	1692				
+FLGBHGLA_10400	CDS	981				hypothetical protein
+FLGBHGLA_10400	gene	981				
+FLGBHGLA_10410	CDS	936				hypothetical protein
+FLGBHGLA_10410	gene	936				
+FLGBHGLA_10420	CDS	1086				hypothetical protein
+FLGBHGLA_10420	gene	1086				
+FLGBHGLA_10430	CDS	159				hypothetical protein
+FLGBHGLA_10430	gene	159				
+FLGBHGLA_10440	CDS	357				hypothetical protein
+FLGBHGLA_10440	gene	357				
+FLGBHGLA_10450	CDS	270				hypothetical protein
+FLGBHGLA_10450	gene	270				
+FLGBHGLA_10460	CDS	180				hypothetical protein
+FLGBHGLA_10460	gene	180				
+FLGBHGLA_10470	CDS	3078	ileS_2	6.1.1.5	COG0060	Isoleucine--tRNA ligase
+FLGBHGLA_10470	gene	3078	ileS_2			
+FLGBHGLA_10480	CDS	522				hypothetical protein
+FLGBHGLA_10480	gene	522				
+FLGBHGLA_10490	CDS	693				hypothetical protein
+FLGBHGLA_10490	gene	693				
+FLGBHGLA_10500	CDS	780				hypothetical protein
+FLGBHGLA_10500	gene	780				
+FLGBHGLA_10510	CDS	1521				hypothetical protein
+FLGBHGLA_10510	gene	1521				
+FLGBHGLA_10520	CDS	294				hypothetical protein
+FLGBHGLA_10520	gene	294				
+FLGBHGLA_10530	CDS	348				hypothetical protein
+FLGBHGLA_10530	gene	348				
+FLGBHGLA_10540	CDS	222				hypothetical protein
+FLGBHGLA_10540	gene	222				
+FLGBHGLA_10550	CDS	234				hypothetical protein
+FLGBHGLA_10550	gene	234				
+FLGBHGLA_10560	CDS	186				hypothetical protein
+FLGBHGLA_10560	gene	186				
+FLGBHGLA_10570	CDS	228	lysM		COG1522	HTH-type transcriptional regulator LysM
+FLGBHGLA_10570	gene	228	lysM			
+FLGBHGLA_10580	CDS	873				hypothetical protein
+FLGBHGLA_10580	gene	873				
+	repeat_region	425				
+FLGBHGLA_10590	CDS	2184				hypothetical protein
+FLGBHGLA_10590	gene	2184				
+FLGBHGLA_10600	CDS	1563				hypothetical protein
+FLGBHGLA_10600	gene	1563				
+FLGBHGLA_10610	CDS	654				hypothetical protein
+FLGBHGLA_10610	gene	654				
+FLGBHGLA_10620	CDS	1854	aor_2	1.2.7.5	COG2414	Tungsten-containing aldehyde ferredoxin oxidoreductase
+FLGBHGLA_10620	gene	1854	aor_2			
+FLGBHGLA_10630	CDS	225				hypothetical protein
+FLGBHGLA_10630	gene	225				
+FLGBHGLA_10640	CDS	1227	thrC	4.2.3.1	COG0498	Threonine synthase
+FLGBHGLA_10640	gene	1227	thrC			
+FLGBHGLA_10650	CDS	567				hypothetical protein
+FLGBHGLA_10650	gene	567				
+FLGBHGLA_10660	CDS	786	rhaD	1.1.1.377	COG1028	L-rhamnose 1-dehydrogenase (NADP(+))
+FLGBHGLA_10660	gene	786	rhaD			
+FLGBHGLA_10670	CDS	903	rnz	3.1.26.11	COG1234	Ribonuclease Z
+FLGBHGLA_10670	gene	903	rnz			
+FLGBHGLA_10680	CDS	216				hypothetical protein
+FLGBHGLA_10680	gene	216				
+FLGBHGLA_10690	CDS	1530				hypothetical protein
+FLGBHGLA_10690	gene	1530				
+FLGBHGLA_10700	CDS	681	ribL	2.7.7.2	COG0615	FAD synthase
+FLGBHGLA_10700	gene	681	ribL			
+FLGBHGLA_10710	CDS	429				hypothetical protein
+FLGBHGLA_10710	gene	429				
+FLGBHGLA_10720	CDS	396				hypothetical protein
+FLGBHGLA_10720	gene	396				
+FLGBHGLA_10730	CDS	678				hypothetical protein
+FLGBHGLA_10730	gene	678				
+FLGBHGLA_10740	CDS	1329			COG0541	Signal recognition particle 54 kDa protein
+FLGBHGLA_10740	gene	1329				
+FLGBHGLA_10750	CDS	183				hypothetical protein
+FLGBHGLA_10750	gene	183				
+FLGBHGLA_10760	CDS	993	dadD_2	3.5.4.31		5'-deoxyadenosine deaminase
+FLGBHGLA_10760	gene	993	dadD_2			
+FLGBHGLA_10770	CDS	1026			COG0370	Fe(2+) transporter FeoB
+FLGBHGLA_10770	gene	1026				
+FLGBHGLA_10780	CDS	249				hypothetical protein
+FLGBHGLA_10780	gene	249				
+FLGBHGLA_10790	CDS	381				hypothetical protein
+FLGBHGLA_10790	gene	381				
+FLGBHGLA_10800	CDS	684	taw3_2	2.1.1.282	COG1590	tRNA(Phe) 7-((3-amino-3-carboxypropyl)-4-demethylwyosine(37)-N(4))-methyltransferase
+FLGBHGLA_10800	gene	684	taw3_2			
+FLGBHGLA_10810	CDS	141				hypothetical protein
+FLGBHGLA_10810	gene	141				
+FLGBHGLA_10820	CDS	336				hypothetical protein
+FLGBHGLA_10820	gene	336				
+FLGBHGLA_10830	CDS	678				hypothetical protein
+FLGBHGLA_10830	gene	678				
+FLGBHGLA_10840	CDS	1143	top6A	5.99.1.3		Type 2 DNA topoisomerase 6 subunit A
+FLGBHGLA_10840	gene	1143	top6A			
+FLGBHGLA_10850	CDS	432	trmY_2	2.1.1.-		tRNA (pseudouridine(54)-N(1))-methyltransferase
+FLGBHGLA_10850	gene	432	trmY_2			
+FLGBHGLA_10860	CDS	564				hypothetical protein
+FLGBHGLA_10860	gene	564				
+FLGBHGLA_10870	CDS	1386	thiM	2.7.1.50	COG2145	Hydroxyethylthiazole kinase
+FLGBHGLA_10870	gene	1386	thiM			
+FLGBHGLA_10880	CDS	1044				hypothetical protein
+FLGBHGLA_10880	gene	1044				
+FLGBHGLA_10890	CDS	1995		4.2.1.116	COG1024	3-hydroxypropionyl-coenzyme A dehydratase
+FLGBHGLA_10890	gene	1995				
+FLGBHGLA_10900	CDS	732	rsmA	2.1.1.-	COG0030	putative ribosomal RNA small subunit methyltransferase A
+FLGBHGLA_10900	gene	732	rsmA			
+FLGBHGLA_10910	CDS	630				hypothetical protein
+FLGBHGLA_10910	gene	630				
+FLGBHGLA_10920	CDS	177				hypothetical protein
+FLGBHGLA_10920	gene	177				
+FLGBHGLA_10930	CDS	702	xpf		COG1948	3'-flap repair endonuclease Xpf
+FLGBHGLA_10930	gene	702	xpf			
+FLGBHGLA_10940	CDS	300				hypothetical protein
+FLGBHGLA_10940	gene	300				
+FLGBHGLA_10950	CDS	1260	icd	1.1.1.42	COG0538	Isocitrate dehydrogenase [NADP]
+FLGBHGLA_10950	gene	1260	icd			
+FLGBHGLA_10960	CDS	789				hypothetical protein
+FLGBHGLA_10960	gene	789				
+FLGBHGLA_10970	CDS	516				hypothetical protein
+FLGBHGLA_10970	gene	516				
+FLGBHGLA_10980	CDS	192				hypothetical protein
+FLGBHGLA_10980	gene	192				
+FLGBHGLA_10990	CDS	228				hypothetical protein
+FLGBHGLA_10990	gene	228				
+FLGBHGLA_11000	CDS	294				hypothetical protein
+FLGBHGLA_11000	gene	294				
+	repeat_region	363				
+FLGBHGLA_11010	CDS	834				hypothetical protein
+FLGBHGLA_11010	gene	834				
+FLGBHGLA_11020	CDS	345				hypothetical protein
+FLGBHGLA_11020	gene	345				
+FLGBHGLA_11030	CDS	363				hypothetical protein
+FLGBHGLA_11030	gene	363				
+FLGBHGLA_11040	CDS	933	cas1-2_1	3.1.-.-	COG1518	CRISPR-associated endonuclease Cas1 2
+FLGBHGLA_11040	gene	933	cas1-2_1			
+	repeat_region	1456				
+FLGBHGLA_11050	CDS	1476				hypothetical protein
+FLGBHGLA_11050	gene	1476				
+FLGBHGLA_11060	CDS	249	rsxB_2			Electron transport complex subunit RsxB
+FLGBHGLA_11060	gene	249	rsxB_2			
+FLGBHGLA_11070	CDS	528	korC	1.2.7.3	COG1014	2-oxoglutarate synthase subunit KorC
+FLGBHGLA_11070	gene	528	korC			
+FLGBHGLA_11080	CDS	867	korB	1.2.7.3	COG1013	2-oxoglutarate synthase subunit KorB
+FLGBHGLA_11080	gene	867	korB			
+FLGBHGLA_11090	CDS	1134	korA	1.2.7.3	COG0674	2-oxoglutarate synthase subunit KorA
+FLGBHGLA_11090	gene	1134	korA			
+FLGBHGLA_11100	CDS	687	deoC	4.1.2.4	COG0274	Deoxyribose-phosphate aldolase
+FLGBHGLA_11100	gene	687	deoC			
+FLGBHGLA_11110	CDS	627	atpE			V-type proton ATPase subunit E
+FLGBHGLA_11110	gene	627	atpE			
+FLGBHGLA_11120	CDS	309	atpF			V-type ATP synthase subunit F
+FLGBHGLA_11120	gene	309	atpF			
+FLGBHGLA_11130	CDS	1395				hypothetical protein
+FLGBHGLA_11130	gene	1395				
+FLGBHGLA_11140	CDS	135				hypothetical protein
+FLGBHGLA_11140	gene	135				
+FLGBHGLA_11150	CDS	729				hypothetical protein
+FLGBHGLA_11150	gene	729				
+FLGBHGLA_11160	CDS	1350				hypothetical protein
+FLGBHGLA_11160	gene	1350				
+FLGBHGLA_11170	CDS	741	malK_5	3.6.3.19		Trehalose/maltose import ATP-binding protein MalK
+FLGBHGLA_11170	gene	741	malK_5			
+FLGBHGLA_11180	CDS	1056	cofH_2	2.5.1.77	COG1060	FO synthase subunit 2
+FLGBHGLA_11180	gene	1056	cofH_2			
+FLGBHGLA_11190	CDS	1290	leuC_2	4.2.1.33	COG0065	Isopropylmalate/citramalate isomerase large subunit
+FLGBHGLA_11190	gene	1290	leuC_2			
+FLGBHGLA_11200	CDS	249				hypothetical protein
+FLGBHGLA_11200	gene	249				
+FLGBHGLA_11210	CDS	489				hypothetical protein
+FLGBHGLA_11210	gene	489				
+FLGBHGLA_11220	CDS	1662	top6B	5.99.1.3		Type 2 DNA topoisomerase 6 subunit B
+FLGBHGLA_11220	gene	1662	top6B			
+FLGBHGLA_11230	CDS	1302	glyA	2.1.2.-	COG0112	Serine hydroxymethyltransferase
+FLGBHGLA_11230	gene	1302	glyA			
+FLGBHGLA_11240	CDS	852			COG1082	putative protein
+FLGBHGLA_11240	gene	852				
+FLGBHGLA_11250	CDS	252			COG2451	50S ribosomal protein L35Ae
+FLGBHGLA_11250	gene	252				
+FLGBHGLA_11260	CDS	444				hypothetical protein
+FLGBHGLA_11260	gene	444				
+FLGBHGLA_11270	CDS	432	metXA_1	2.3.1.31		Homoserine O-acetyltransferase
+FLGBHGLA_11270	gene	432	metXA_1			
+FLGBHGLA_11280	CDS	813				hypothetical protein
+FLGBHGLA_11280	gene	813				
+FLGBHGLA_11290	CDS	708				hypothetical protein
+FLGBHGLA_11290	gene	708				
+FLGBHGLA_11300	CDS	1734	iolD	3.7.1.22		3D-(3,5/4)-trihydroxycyclohexane-1,2-dione hydrolase
+FLGBHGLA_11300	gene	1734	iolD			
+FLGBHGLA_11310	CDS	291				hypothetical protein
+FLGBHGLA_11310	gene	291				
+FLGBHGLA_11320	CDS	414				hypothetical protein
+FLGBHGLA_11320	gene	414				
+FLGBHGLA_11330	CDS	1281	trpB2	4.2.1.20	COG1350	Tryptophan synthase beta chain 2
+FLGBHGLA_11330	gene	1281	trpB2			
+FLGBHGLA_11340	CDS	1695	fdhA	1.17.1.9		Formate dehydrogenase subunit alpha
+FLGBHGLA_11340	gene	1695	fdhA			
+FLGBHGLA_11350	CDS	1164				hypothetical protein
+FLGBHGLA_11350	gene	1164				
+FLGBHGLA_11360	CDS	819	mtnP	2.4.2.28	COG0005	S-methyl-5'-thioadenosine phosphorylase
+FLGBHGLA_11360	gene	819	mtnP			
+FLGBHGLA_11370	CDS	330				hypothetical protein
+FLGBHGLA_11370	gene	330				
+FLGBHGLA_11380	CDS	570				hypothetical protein
+FLGBHGLA_11380	gene	570				
+FLGBHGLA_11390	CDS	276			COG1631	50S ribosomal protein L44e
+FLGBHGLA_11390	gene	276				
+FLGBHGLA_11400	CDS	993	pqqE_3			Coenzyme PQQ synthesis protein E
+FLGBHGLA_11400	gene	993	pqqE_3			
+FLGBHGLA_11410	CDS	1335		1.3.7.11	COG0644	Digeranylgeranylglycerophospholipid reductase
+FLGBHGLA_11410	gene	1335				
+FLGBHGLA_11420	CDS	939				hypothetical protein
+FLGBHGLA_11420	gene	939				
+FLGBHGLA_11430	CDS	1689	gltX	6.1.1.17	COG0008	Glutamate--tRNA ligase
+FLGBHGLA_11430	gene	1689	gltX			
+FLGBHGLA_11440	CDS	339				hypothetical protein
+FLGBHGLA_11440	gene	339				
+FLGBHGLA_11450	CDS	540				hypothetical protein
+FLGBHGLA_11450	gene	540				
+FLGBHGLA_11460	CDS	2466	ppsA	2.7.9.2	COG0574	putative phosphoenolpyruvate synthase
+FLGBHGLA_11460	gene	2466	ppsA			
+FLGBHGLA_11470	CDS	675				hypothetical protein
+FLGBHGLA_11470	gene	675				
+FLGBHGLA_11480	CDS	534	ubiE_3	2.1.1.163		Ubiquinone/menaquinone biosynthesis C-methyltransferase UbiE
+FLGBHGLA_11480	gene	534	ubiE_3			
+FLGBHGLA_11490	CDS	1098				hypothetical protein
+FLGBHGLA_11490	gene	1098				
+FLGBHGLA_11500	CDS	1860	tmcA_2	2.3.1.193		tRNA(Met) cytidine acetyltransferase TmcA
+FLGBHGLA_11500	gene	1860	tmcA_2			
+FLGBHGLA_11510	CDS	240				hypothetical protein
+FLGBHGLA_11510	gene	240				
+FLGBHGLA_11520	CDS	264				hypothetical protein
+FLGBHGLA_11520	gene	264				
+FLGBHGLA_11530	CDS	981				hypothetical protein
+FLGBHGLA_11530	gene	981				
+FLGBHGLA_11540	CDS	807				hypothetical protein
+FLGBHGLA_11540	gene	807				
+FLGBHGLA_11550	CDS	381				hypothetical protein
+FLGBHGLA_11550	gene	381				
+FLGBHGLA_11560	CDS	657		2.1.1.206	COG1303	tRNA (cytidine(56)-2'-O)-methyltransferase
+FLGBHGLA_11560	gene	657				
+FLGBHGLA_11570	CDS	435	tfe		COG1675	Transcription factor E
+FLGBHGLA_11570	gene	435	tfe			
+FLGBHGLA_11580	CDS	948	mthTIM	2.1.1.37		Modification methylase MthTI
+FLGBHGLA_11580	gene	948	mthTIM			
+FLGBHGLA_11590	CDS	672				hypothetical protein
+FLGBHGLA_11590	gene	672				
+FLGBHGLA_11600	CDS	429	hjc	3.1.22.4	COG1591	Holliday junction resolvase Hjc
+FLGBHGLA_11600	gene	429	hjc			
+FLGBHGLA_11610	CDS	408	eif5a		COG0231	Translation initiation factor 5A
+FLGBHGLA_11610	gene	408	eif5a			
+FLGBHGLA_11620	CDS	1101				hypothetical protein
+FLGBHGLA_11620	gene	1101				
+FLGBHGLA_11630	CDS	99				hypothetical protein
+FLGBHGLA_11630	gene	99				
+FLGBHGLA_11640	CDS	1581				hypothetical protein
+FLGBHGLA_11640	gene	1581				
+	repeat_region	429				
+FLGBHGLA_11650	CDS	756	trmI	2.1.1.219	COG2519	tRNA (adenine(57)-N(1)/adenine(58)-N(1))-methyltransferase TrmI
+FLGBHGLA_11650	gene	756	trmI			
+FLGBHGLA_11660	CDS	750	csa1		COG4343	CRISPR-associated exonuclease Csa1
+FLGBHGLA_11660	gene	750	csa1			
+FLGBHGLA_11670	CDS	918	cas1-2_2	3.1.-.-	COG1518	CRISPR-associated endonuclease Cas1 2
+FLGBHGLA_11670	gene	918	cas1-2_2			
+FLGBHGLA_11680	CDS	249	cas2	3.1.-.-		CRISPR-associated endoribonuclease Cas2
+FLGBHGLA_11680	gene	249	cas2			
+FLGBHGLA_11690	CDS	519				hypothetical protein
+FLGBHGLA_11690	gene	519				
+FLGBHGLA_11700	CDS	786				hypothetical protein
+FLGBHGLA_11700	gene	786				
+FLGBHGLA_11710	CDS	1632	cas3	3.1.-.-	COG1203	CRISPR-associated nuclease/helicase Cas3
+FLGBHGLA_11710	gene	1632	cas3			
+FLGBHGLA_11720	CDS	1017				hypothetical protein
+FLGBHGLA_11720	gene	1017				
+FLGBHGLA_11730	CDS	882				hypothetical protein
+FLGBHGLA_11730	gene	882				
+FLGBHGLA_11740	CDS	1044	csa2b		COG1857	CRISPR-associated aCascade subunit Cas7/Csa2 2
+FLGBHGLA_11740	gene	1044	csa2b			
+FLGBHGLA_11750	CDS	447				hypothetical protein
+FLGBHGLA_11750	gene	447				
+FLGBHGLA_11760	CDS	573				hypothetical protein
+FLGBHGLA_11760	gene	573				
+FLGBHGLA_11770	CDS	1581	lon_2	3.4.21.53		Lon protease
+FLGBHGLA_11770	gene	1581	lon_2			
+FLGBHGLA_11780	CDS	1068	fpoH	1.12.98.3	COG1005	F(420)H(2) dehydrogenase subunit H
+FLGBHGLA_11780	gene	1068	fpoH			
+FLGBHGLA_11790	CDS	570	fpoI	1.12.98.3	COG1143	F(420)H(2) dehydrogenase subunit I
+FLGBHGLA_11790	gene	570	fpoI			
+FLGBHGLA_11800	CDS	483				hypothetical protein
+FLGBHGLA_11800	gene	483				
+FLGBHGLA_11810	CDS	309	ndhE	1.6.5.11		NAD(P)H-quinone oxidoreductase subunit 4L, chloroplastic
+FLGBHGLA_11810	gene	309	ndhE			
+FLGBHGLA_11820	CDS	1314	fpoN	1.12.98.3	COG1007	F(420)H(2) dehydrogenase subunit N
+FLGBHGLA_11820	gene	1314	fpoN			
+FLGBHGLA_11830	CDS	627				hypothetical protein
+FLGBHGLA_11830	gene	627				
+FLGBHGLA_11840	CDS	1329	tuf		COG5256	Elongation factor 1-alpha
+FLGBHGLA_11840	gene	1329	tuf			
+FLGBHGLA_11850	CDS	735				hypothetical protein
+FLGBHGLA_11850	gene	735				
+FLGBHGLA_11860	CDS	738	dtdA	3.1.1.96	COG1650	D-aminoacyl-tRNA deacylase
+FLGBHGLA_11860	gene	738	dtdA			
+FLGBHGLA_11870	CDS	195				hypothetical protein
+FLGBHGLA_11870	gene	195				
+FLGBHGLA_11880	CDS	492	rnhA	3.1.26.4	COG0328	Ribonuclease HI
+FLGBHGLA_11880	gene	492	rnhA			
+FLGBHGLA_11890	CDS	555				hypothetical protein
+FLGBHGLA_11890	gene	555				
+FLGBHGLA_11900	CDS	1686	metG_2	6.1.1.10	COG0073	Methionine--tRNA ligase
+FLGBHGLA_11900	gene	1686	metG_2			
+FLGBHGLA_11910	CDS	633	cdvB1		COG5491	Cell division protein B1
+FLGBHGLA_11910	gene	633	cdvB1			
+FLGBHGLA_11920	CDS	720				hypothetical protein
+FLGBHGLA_11920	gene	720				
+FLGBHGLA_11930	CDS	177				hypothetical protein
+FLGBHGLA_11930	gene	177				
+FLGBHGLA_11940	CDS	699	glmU_3		COG1208	Bifunctional protein GlmU
+FLGBHGLA_11940	gene	699	glmU_3			
+FLGBHGLA_11950	CDS	180				hypothetical protein
+FLGBHGLA_11950	gene	180				
+FLGBHGLA_11960	CDS	204				hypothetical protein
+FLGBHGLA_11960	gene	204				
+FLGBHGLA_11970	CDS	468	tgtA_2	2.4.2.48	COG0343	tRNA-guanine(15) transglycosylase
+FLGBHGLA_11970	gene	468	tgtA_2			
+FLGBHGLA_11980	CDS	735				hypothetical protein
+FLGBHGLA_11980	gene	735				
+FLGBHGLA_11990	CDS	546				hypothetical protein
+FLGBHGLA_11990	gene	546				
+FLGBHGLA_12000	CDS	333				hypothetical protein
+FLGBHGLA_12000	gene	333				
+FLGBHGLA_12010	CDS	954				hypothetical protein
+FLGBHGLA_12010	gene	954				
+FLGBHGLA_12020	CDS	486				hypothetical protein
+FLGBHGLA_12020	gene	486				
+FLGBHGLA_12030	CDS	984	gds	2.5.1.29	COG0142	Geranylgeranyl diphosphate synthase
+FLGBHGLA_12030	gene	984	gds			
+FLGBHGLA_12040	CDS	1200				hypothetical protein
+FLGBHGLA_12040	gene	1200				
+FLGBHGLA_12050	CDS	1806	herA_3	3.6.4.12	COG0433	DNA double-strand break repair helicase HerA
+FLGBHGLA_12050	gene	1806	herA_3			
+FLGBHGLA_12060	CDS	708	rbn	3.1.26.11		Ribonuclease BN
+FLGBHGLA_12060	gene	708	rbn			
+FLGBHGLA_12070	CDS	2649		3.6.4.12	COG1204	ATP-dependent DNA helicase Hel308
+FLGBHGLA_12070	gene	2649				
+FLGBHGLA_12080	CDS	1374				hypothetical protein
+FLGBHGLA_12080	gene	1374				
+FLGBHGLA_12090	CDS	1059	egsA	1.1.1.261	COG0371	Glycerol-1-phosphate dehydrogenase [NAD(P)+]
+FLGBHGLA_12090	gene	1059	egsA			
+FLGBHGLA_12100	CDS	315			COG2157	50S ribosomal protein L18Ae
+FLGBHGLA_12100	gene	315				
+FLGBHGLA_12110	CDS	462	pfdA_2			Prefoldin subunit alpha
+FLGBHGLA_12110	gene	462	pfdA_2			
+FLGBHGLA_12120	CDS	1023	ftsY		COG0552	Signal recognition particle receptor FtsY
+FLGBHGLA_12120	gene	1023	ftsY			
+FLGBHGLA_12130	CDS	195	secE		COG2443	Protein translocase subunit SecE
+FLGBHGLA_12130	gene	195	secE			
+FLGBHGLA_12140	CDS	438	spt5		COG0250	Transcription elongation factor Spt5
+FLGBHGLA_12140	gene	438	spt5			
+FLGBHGLA_12150	CDS	510			COG0080	50S ribosomal protein L11
+FLGBHGLA_12150	gene	510				
+FLGBHGLA_12160	CDS	648	rpl1			50S ribosomal protein L1
+FLGBHGLA_12160	gene	648	rpl1			
+FLGBHGLA_12170	CDS	1041			COG0244	50S ribosomal protein L10
+FLGBHGLA_12170	gene	1041				
+FLGBHGLA_12180	CDS	588				hypothetical protein
+FLGBHGLA_12180	gene	588				
+FLGBHGLA_12190	CDS	1161	trm1	2.1.1.216	COG1867	tRNA (guanine(26)-N(2))-dimethyltransferase
+FLGBHGLA_12190	gene	1161	trm1			
+FLGBHGLA_12200	CDS	549				hypothetical protein
+FLGBHGLA_12200	gene	549				
+FLGBHGLA_12210	CDS	1239	fprA	1.-.-.-	COG0426	Type A flavoprotein FprA
+FLGBHGLA_12210	gene	1239	fprA			
+FLGBHGLA_12220	CDS	789				hypothetical protein
+FLGBHGLA_12220	gene	789				
+FLGBHGLA_12230	CDS	189				hypothetical protein
+FLGBHGLA_12230	gene	189				
+FLGBHGLA_12240	CDS	168				hypothetical protein
+FLGBHGLA_12240	gene	168				
+FLGBHGLA_12250	CDS	90				hypothetical protein
+FLGBHGLA_12250	gene	90				
+FLGBHGLA_12260	CDS	447				hypothetical protein
+FLGBHGLA_12260	gene	447				
+FLGBHGLA_12270	CDS	1134	menC	4.2.1.113		o-succinylbenzoate synthase
+FLGBHGLA_12270	gene	1134	menC			
+FLGBHGLA_12280	CDS	1104				hypothetical protein
+FLGBHGLA_12280	gene	1104				
+FLGBHGLA_12290	CDS	681				hypothetical protein
+FLGBHGLA_12290	gene	681				
+FLGBHGLA_12300	CDS	318				hypothetical protein
+FLGBHGLA_12300	gene	318				
+FLGBHGLA_12310	CDS	570				hypothetical protein
+FLGBHGLA_12310	gene	570				
+FLGBHGLA_12320	CDS	792	ubiE_4	2.1.1.163		Ubiquinone/menaquinone biosynthesis C-methyltransferase UbiE
+FLGBHGLA_12320	gene	792	ubiE_4			
+FLGBHGLA_12330	CDS	498				hypothetical protein
+FLGBHGLA_12330	gene	498				
+FLGBHGLA_12340	CDS	219				hypothetical protein
+FLGBHGLA_12340	gene	219				
+FLGBHGLA_12350	CDS	276			COG2174	50S ribosomal protein L34e
+FLGBHGLA_12350	gene	276				
+FLGBHGLA_12360	CDS	609	adkA	2.7.4.3	COG2019	Adenylate kinase
+FLGBHGLA_12360	gene	609	adkA			
+FLGBHGLA_12370	CDS	1440	secY		COG0201	Protein translocase subunit SecY
+FLGBHGLA_12370	gene	1440	secY			
+FLGBHGLA_12380	CDS	1038				hypothetical protein
+FLGBHGLA_12380	gene	1038				
+FLGBHGLA_12390	CDS	2355				hypothetical protein
+FLGBHGLA_12390	gene	2355				
+FLGBHGLA_12400	CDS	453	moaC	4.6.1.17	COG0315	putative cyclic pyranopterin monophosphate synthase
+FLGBHGLA_12400	gene	453	moaC			
+FLGBHGLA_12410	CDS	849				hypothetical protein
+FLGBHGLA_12410	gene	849				
+FLGBHGLA_12420	CDS	921	btuF		COG0614	Cobalamin-binding protein
+FLGBHGLA_12420	gene	921	btuF			
+FLGBHGLA_12430	CDS	888				Iron-sulfur cluster carrier protein
+FLGBHGLA_12430	gene	888				
+FLGBHGLA_12440	CDS	339				hypothetical protein
+FLGBHGLA_12440	gene	339				
+FLGBHGLA_12450	CDS	552		3.-.-.-	COG1335	putative isochorismatase family protein
+FLGBHGLA_12450	gene	552				
+FLGBHGLA_12460	CDS	906	thrB	2.7.1.39	COG0083	Homoserine kinase
+FLGBHGLA_12460	gene	906	thrB			
+FLGBHGLA_12470	CDS	1113				hypothetical protein
+FLGBHGLA_12470	gene	1113				
+FLGBHGLA_12480	CDS	885	smc_2			Chromosome partition protein Smc
+FLGBHGLA_12480	gene	885	smc_2			
+FLGBHGLA_12490	CDS	780		3.6.5.-	COG1100	GPN-loop GTPase
+FLGBHGLA_12490	gene	780				
+FLGBHGLA_12500	CDS	984	metXA_2	2.3.1.31	COG0517	Homoserine O-acetyltransferase
+FLGBHGLA_12500	gene	984	metXA_2			
+FLGBHGLA_12510	CDS	423				hypothetical protein
+FLGBHGLA_12510	gene	423				
+FLGBHGLA_12520	CDS	1026	atpC			V-type ATP synthase subunit C
+FLGBHGLA_12520	gene	1026	atpC			
+FLGBHGLA_12530	CDS	342				hypothetical protein
+FLGBHGLA_12530	gene	342				
+FLGBHGLA_12540	CDS	651				hypothetical protein
+FLGBHGLA_12540	gene	651				
+FLGBHGLA_12550	CDS	300				hypothetical protein
+FLGBHGLA_12550	gene	300				
+FLGBHGLA_12560	CDS	726				hypothetical protein
+FLGBHGLA_12560	gene	726				
+FLGBHGLA_12570	CDS	720	livG_3		COG0411	putative branched-chain amino acid transport ATP-binding protein LivG
+FLGBHGLA_12570	gene	720	livG_3			
+FLGBHGLA_12580	CDS	1317				hypothetical protein
+FLGBHGLA_12580	gene	1317				
+FLGBHGLA_12590	CDS	375				hypothetical protein
+FLGBHGLA_12590	gene	375				
+FLGBHGLA_12600	CDS	1704			COG0517	putative protein
+FLGBHGLA_12600	gene	1704				
+FLGBHGLA_12610	CDS	108				hypothetical protein
+FLGBHGLA_12610	gene	108				
+FLGBHGLA_12620	CDS	165				hypothetical protein
+FLGBHGLA_12620	gene	165				
+FLGBHGLA_12630	CDS	234				hypothetical protein
+FLGBHGLA_12630	gene	234				
+FLGBHGLA_12640	CDS	513				hypothetical protein
+FLGBHGLA_12640	gene	513				
+FLGBHGLA_12650	CDS	1590	pheT_2	6.1.1.20	COG0072	Phenylalanine--tRNA ligase beta subunit
+FLGBHGLA_12650	gene	1590	pheT_2			
+FLGBHGLA_12660	CDS	1437	pheS	6.1.1.20	COG0016	Phenylalanine--tRNA ligase alpha subunit
+FLGBHGLA_12660	gene	1437	pheS			
+FLGBHGLA_12670	CDS	1494	glnA	6.3.1.2	COG0174	Glutamine synthetase
+FLGBHGLA_12670	gene	1494	glnA			
+FLGBHGLA_12680	CDS	228				hypothetical protein
+FLGBHGLA_12680	gene	228				
+FLGBHGLA_12690	CDS	291				hypothetical protein
+FLGBHGLA_12690	gene	291				
+FLGBHGLA_12700	CDS	423				hypothetical protein
+FLGBHGLA_12700	gene	423				
+FLGBHGLA_12710	CDS	792				hypothetical protein
+FLGBHGLA_12710	gene	792				
+FLGBHGLA_12720	CDS	447				hypothetical protein
+FLGBHGLA_12720	gene	447				
+FLGBHGLA_12730	CDS	363				hypothetical protein
+FLGBHGLA_12730	gene	363				
+FLGBHGLA_12740	CDS	534			COG1853	putative protein
+FLGBHGLA_12740	gene	534				
+FLGBHGLA_12750	CDS	552	fucA	4.1.2.17	COG0235	L-fuculose phosphate aldolase
+FLGBHGLA_12750	gene	552	fucA			
+FLGBHGLA_12760	CDS	417				hypothetical protein
+FLGBHGLA_12760	gene	417				
+FLGBHGLA_12770	CDS	219	mvhB_2		COG1145	Polyferredoxin protein MvhB
+FLGBHGLA_12770	gene	219	mvhB_2			
+FLGBHGLA_12780	CDS	459				hypothetical protein
+FLGBHGLA_12780	gene	459				
+FLGBHGLA_12790	CDS	804				hypothetical protein
+FLGBHGLA_12790	gene	804				
+FLGBHGLA_12800	CDS	537				hypothetical protein
+FLGBHGLA_12800	gene	537				
+FLGBHGLA_12810	CDS	189				hypothetical protein
+FLGBHGLA_12810	gene	189				
+FLGBHGLA_12820	CDS	549				hypothetical protein
+FLGBHGLA_12820	gene	549				
+FLGBHGLA_12830	CDS	735				hypothetical protein
+FLGBHGLA_12830	gene	735				
+FLGBHGLA_12840	CDS	1515			COG1855	putative KH and PIN-domain containing protein
+FLGBHGLA_12840	gene	1515				
+FLGBHGLA_12850	CDS	1152				hypothetical protein
+FLGBHGLA_12850	gene	1152				
+FLGBHGLA_12860	CDS	849	tdh	1.1.1.103		L-threonine 3-dehydrogenase
+FLGBHGLA_12860	gene	849	tdh			
+FLGBHGLA_12870	CDS	528	leuD_2	4.2.1.33	COG0066	Isopropylmalate/citramalate isomerase small subunit
+FLGBHGLA_12870	gene	528	leuD_2			
+FLGBHGLA_12880	CDS	1434	cimA_2	2.3.1.182	COG0119	(R)-citramalate synthase CimA
+FLGBHGLA_12880	gene	1434	cimA_2			
+FLGBHGLA_12890	CDS	624				hypothetical protein
+FLGBHGLA_12890	gene	624				
+FLGBHGLA_12900	CDS	1068				hypothetical protein
+FLGBHGLA_12900	gene	1068				
+FLGBHGLA_12910	CDS	2142	purL	6.3.5.3		Phosphoribosylformylglycinamidine synthase subunit PurL
+FLGBHGLA_12910	gene	2142	purL			
+FLGBHGLA_12920	CDS	846				hypothetical protein
+FLGBHGLA_12920	gene	846				
+FLGBHGLA_12930	CDS	702				hypothetical protein
+FLGBHGLA_12930	gene	702				
+FLGBHGLA_12940	CDS	3837				hypothetical protein
+FLGBHGLA_12940	gene	3837				
+FLGBHGLA_12950	CDS	555	porG			Pyruvate/ketoisovalerate oxidoreductases common subunit gamma
+FLGBHGLA_12950	gene	555	porG			
+FLGBHGLA_12960	CDS	309	porD_2		COG1144	Pyruvate synthase subunit PorD
+FLGBHGLA_12960	gene	309	porD_2			
+FLGBHGLA_12970	CDS	1182	porA	1.2.7.1	COG0674	Pyruvate synthase subunit PorA
+FLGBHGLA_12970	gene	1182	porA			
+FLGBHGLA_12980	CDS	969	porB	1.2.7.1	COG1013	Pyruvate synthase subunit PorB
+FLGBHGLA_12980	gene	969	porB			
+FLGBHGLA_12990	CDS	1038	truD	5.4.99.27	COG0585	putative tRNA pseudouridine synthase D
+FLGBHGLA_12990	gene	1038	truD			
+FLGBHGLA_13000	CDS	312			COG2163	50S ribosomal protein L14e
+FLGBHGLA_13000	gene	312				
+FLGBHGLA_13010	CDS	1086				hypothetical protein
+FLGBHGLA_13010	gene	1086				
+FLGBHGLA_13020	CDS	936	mdh	1.1.1.37	COG0039	Malate dehydrogenase
+FLGBHGLA_13020	gene	936	mdh			
+FLGBHGLA_13030	CDS	735				hypothetical protein
+FLGBHGLA_13030	gene	735				
+FLGBHGLA_13040	CDS	1116	rlmI_2	2.1.1.191		Ribosomal RNA large subunit methyltransferase I
+FLGBHGLA_13040	gene	1116	rlmI_2			
+FLGBHGLA_13050	CDS	258	ihomp1			Major outer membrane protein 1
+FLGBHGLA_13050	gene	258	ihomp1			
+FLGBHGLA_13060	CDS	840	dxs_2	2.2.1.7		1-deoxy-D-xylulose-5-phosphate synthase
+FLGBHGLA_13060	gene	840	dxs_2			
+FLGBHGLA_13070	CDS	393	eif2b		COG1601	Translation initiation factor 2 subunit beta
+FLGBHGLA_13070	gene	393	eif2b			
+FLGBHGLA_13080	CDS	192				hypothetical protein
+FLGBHGLA_13080	gene	192				
+FLGBHGLA_13090	CDS	2310				hypothetical protein
+FLGBHGLA_13090	gene	2310				
+FLGBHGLA_13100	CDS	672			COG1136	putative ABC transporter ATP-binding protein
+FLGBHGLA_13100	gene	672				
+FLGBHGLA_13110	CDS	864				hypothetical protein
+FLGBHGLA_13110	gene	864				
+FLGBHGLA_13120	CDS	498				hypothetical protein
+FLGBHGLA_13120	gene	498				
+FLGBHGLA_13130	CDS	522				hypothetical protein
+FLGBHGLA_13130	gene	522				
+FLGBHGLA_13140	CDS	447			COG0200	50S ribosomal protein L15
+FLGBHGLA_13140	gene	447				
+FLGBHGLA_13150	CDS	480			COG1841	50S ribosomal protein L30
+FLGBHGLA_13150	gene	480				
+FLGBHGLA_13160	CDS	636	rps5		COG0098	30S ribosomal protein S5
+FLGBHGLA_13160	gene	636	rps5			
+FLGBHGLA_13170	CDS	615			COG0256	50S ribosomal protein L18
+FLGBHGLA_13170	gene	615				
+FLGBHGLA_13180	CDS	453			COG2147	50S ribosomal protein L19e
+FLGBHGLA_13180	gene	453				
+FLGBHGLA_13190	CDS	447			COG1717	50S ribosomal protein L32e
+FLGBHGLA_13190	gene	447				
+FLGBHGLA_13200	CDS	561	rpl6		COG0097	50S ribosomal protein L6
+FLGBHGLA_13200	gene	561	rpl6			
+FLGBHGLA_13210	CDS	315			COG0023	Protein translation factor SUI1 
+FLGBHGLA_13210	gene	315				
+FLGBHGLA_13220	CDS	171	rpoP	2.7.7.6	COG1996	DNA-directed RNA polymerase subunit P
+FLGBHGLA_13220	gene	171	rpoP			
+FLGBHGLA_13230	CDS	582				hypothetical protein
+FLGBHGLA_13230	gene	582				
+FLGBHGLA_13240	CDS	747		3.1.3.18	COG0561	Phosphoglycolate phosphatase
+FLGBHGLA_13240	gene	747				
+FLGBHGLA_13250	CDS	525				hypothetical protein
+FLGBHGLA_13250	gene	525				
+FLGBHGLA_13260	CDS	516				hypothetical protein
+FLGBHGLA_13260	gene	516				
+FLGBHGLA_13270	CDS	2097		3.6.4.12	COG1204	ATP-dependent DNA helicase Hel308
+FLGBHGLA_13270	gene	2097				
+FLGBHGLA_13280	CDS	1281	aroA	2.5.1.19		3-phosphoshikimate 1-carboxyvinyltransferase
+FLGBHGLA_13280	gene	1281	aroA			
+FLGBHGLA_13290	CDS	453				hypothetical protein
+FLGBHGLA_13290	gene	453				
+FLGBHGLA_13300	CDS	627				hypothetical protein
+FLGBHGLA_13300	gene	627				
+FLGBHGLA_13310	CDS	234				hypothetical protein
+FLGBHGLA_13310	gene	234				
+FLGBHGLA_13320	CDS	123				hypothetical protein
+FLGBHGLA_13320	gene	123				
+FLGBHGLA_13330	CDS	1224			COG0004	Putative ammonium transporter
+FLGBHGLA_13330	gene	1224				
+FLGBHGLA_13340	CDS	351			COG0347	putative nitrogen regulatory PII-like protein
+FLGBHGLA_13340	gene	351				
+FLGBHGLA_13350	CDS	228				hypothetical protein
+FLGBHGLA_13350	gene	228				
+FLGBHGLA_13360	CDS	1275	cdc6-2		COG1474	ORC1-type DNA replication protein 2
+FLGBHGLA_13360	gene	1275	cdc6-2			
+FLGBHGLA_13370	CDS	225				hypothetical protein
+FLGBHGLA_13370	gene	225				
+FLGBHGLA_13380	CDS	2070	MCM	3.6.4.12	COG1241	Minichromosome maintenance protein MCM
+FLGBHGLA_13380	gene	2070	MCM			
+FLGBHGLA_13390	CDS	573				hypothetical protein
+FLGBHGLA_13390	gene	573				
+FLGBHGLA_13400	CDS	990	rfcS		COG0470	Replication factor C small subunit
+FLGBHGLA_13400	gene	990	rfcS			
+FLGBHGLA_13410	CDS	1431	rfcL		COG0470	Replication factor C large subunit
+FLGBHGLA_13410	gene	1431	rfcL			
+FLGBHGLA_13420	CDS	1140	trpS	6.1.1.2	COG0180	Tryptophan--tRNA ligase
+FLGBHGLA_13420	gene	1140	trpS			
+FLGBHGLA_13430	CDS	327				hypothetical protein
+FLGBHGLA_13430	gene	327				
+FLGBHGLA_13440	CDS	153				hypothetical protein
+FLGBHGLA_13440	gene	153				
+FLGBHGLA_13450	CDS	222				hypothetical protein
+FLGBHGLA_13450	gene	222				
+FLGBHGLA_13460	CDS	1311				hypothetical protein
+FLGBHGLA_13460	gene	1311				
+FLGBHGLA_13470	CDS	1791	atpA	3.6.3.14	COG1155	V-type ATP synthase alpha chain
+FLGBHGLA_13470	gene	1791	atpA			
+FLGBHGLA_13480	CDS	216				hypothetical protein
+FLGBHGLA_13480	gene	216				
+FLGBHGLA_13490	CDS	1047				hypothetical protein
+FLGBHGLA_13490	gene	1047				
+FLGBHGLA_13500	CDS	837	speE_2	2.5.1.16		Polyamine aminopropyltransferase
+FLGBHGLA_13500	gene	837	speE_2			
+FLGBHGLA_13510	CDS	918				hypothetical protein
+FLGBHGLA_13510	gene	918				
+FLGBHGLA_13520	CDS	492				hypothetical protein
+FLGBHGLA_13520	gene	492				
+FLGBHGLA_13530	CDS	879				hypothetical protein
+FLGBHGLA_13530	gene	879				
+FLGBHGLA_13540	CDS	564				hypothetical protein
+FLGBHGLA_13540	gene	564				
+FLGBHGLA_13550	CDS	843				hypothetical protein
+FLGBHGLA_13550	gene	843				
+FLGBHGLA_13560	CDS	537				hypothetical protein
+FLGBHGLA_13560	gene	537				
+FLGBHGLA_13570	CDS	747				hypothetical protein
+FLGBHGLA_13570	gene	747				
+FLGBHGLA_13580	CDS	1077				hypothetical protein
+FLGBHGLA_13580	gene	1077				
+FLGBHGLA_13590	CDS	819				hypothetical protein
+FLGBHGLA_13590	gene	819				
+FLGBHGLA_13600	CDS	660	metG_3	6.1.1.10	COG0073	Methionine--tRNA ligase
+FLGBHGLA_13600	gene	660	metG_3			
+FLGBHGLA_13610	CDS	519				hypothetical protein
+FLGBHGLA_13610	gene	519				
+FLGBHGLA_13620	CDS	951	guaB_2	1.1.1.205		Inosine-5'-monophosphate dehydrogenase
+FLGBHGLA_13620	gene	951	guaB_2			
+FLGBHGLA_13630	CDS	714				hypothetical protein
+FLGBHGLA_13630	gene	714				
+FLGBHGLA_13640	CDS	549				hypothetical protein
+FLGBHGLA_13640	gene	549				
+FLGBHGLA_13650	CDS	285				hypothetical protein
+FLGBHGLA_13650	gene	285				
+FLGBHGLA_13660	CDS	279				hypothetical protein
+FLGBHGLA_13660	gene	279				
+FLGBHGLA_13670	CDS	1785				hypothetical protein
+FLGBHGLA_13670	gene	1785				
+FLGBHGLA_13680	CDS	261				hypothetical protein
+FLGBHGLA_13680	gene	261				
+FLGBHGLA_13690	CDS	921		3.6.3.16	COG0003	Putative arsenical pump-driving ATPase
+FLGBHGLA_13690	gene	921				
+FLGBHGLA_13700	CDS	597				hypothetical protein
+FLGBHGLA_13700	gene	597				
+FLGBHGLA_13710	CDS	162				hypothetical protein
+FLGBHGLA_13710	gene	162				
+FLGBHGLA_13720	CDS	510		2.1.1.-	COG0500	Protein-lysine N-methyltransferase
+FLGBHGLA_13720	gene	510				
+FLGBHGLA_13730	CDS	540				hypothetical protein
+FLGBHGLA_13730	gene	540				
+FLGBHGLA_13740	CDS	765	trpC	4.1.1.48	COG0134	Indole-3-glycerol phosphate synthase
+FLGBHGLA_13740	gene	765	trpC			
+FLGBHGLA_13750	CDS	1056			COG1136	putative ABC transporter ATP-binding protein
+FLGBHGLA_13750	gene	1056				
+FLGBHGLA_13760	CDS	1182	trm4_2	2.1.1.-	COG0144	tRNA (cytosine(48)-C(5))-methyltransferase
+FLGBHGLA_13760	gene	1182	trm4_2			
+FLGBHGLA_13770	CDS	495				hypothetical protein
+FLGBHGLA_13770	gene	495				
+FLGBHGLA_13780	CDS	1068	mfnC	2.6.1.108	COG0436	(5-formylfuran-3-yl)methyl phosphate transaminase
+FLGBHGLA_13780	gene	1068	mfnC			
+FLGBHGLA_13790	CDS	462	ribC	2.5.1.9	COG1731	Riboflavin synthase
+FLGBHGLA_13790	gene	462	ribC			
+FLGBHGLA_13800	CDS	1119	thiI_3	2.8.1.4		tRNA sulfurtransferase
+FLGBHGLA_13800	gene	1119	thiI_3			
+FLGBHGLA_13810	CDS	1158				hypothetical protein
+FLGBHGLA_13810	gene	1158				
+FLGBHGLA_13820	CDS	1323				hypothetical protein
+FLGBHGLA_13820	gene	1323				
+FLGBHGLA_13830	CDS	966			COG1136	putative ABC transporter ATP-binding protein
+FLGBHGLA_13830	gene	966				
+FLGBHGLA_13840	CDS	603	malK_6	3.6.3.19		Trehalose/maltose import ATP-binding protein MalK
+FLGBHGLA_13840	gene	603	malK_6			
+FLGBHGLA_13850	CDS	741	wtpB		COG0555	Molybdate/tungstate transport system permease protein WtpB
+FLGBHGLA_13850	gene	741	wtpB			
+FLGBHGLA_13860	CDS	780				hypothetical protein
+FLGBHGLA_13860	gene	780				
+FLGBHGLA_13870	CDS	471	tfx		COG1356	DNA-binding protein Tfx
+FLGBHGLA_13870	gene	471	tfx			
+FLGBHGLA_13880	CDS	684				hypothetical protein
+FLGBHGLA_13880	gene	684				
+FLGBHGLA_13890	CDS	1092	prf1		COG1503	Peptide chain release factor subunit 1
+FLGBHGLA_13890	gene	1092	prf1			
+FLGBHGLA_13900	CDS	567	guaAA_1	6.3.5.2	COG0518	GMP synthase [glutamine-hydrolyzing] subunit A
+FLGBHGLA_13900	gene	567	guaAA_1			
+FLGBHGLA_13910	CDS	756	rpl2		COG0090	50S ribosomal protein L2
+FLGBHGLA_13910	gene	756	rpl2			
+FLGBHGLA_13920	CDS	189				hypothetical protein
+FLGBHGLA_13920	gene	189				
+FLGBHGLA_13930	CDS	2685		3.6.4.13	COG0513	putative ATP-dependent RNA helicase
+FLGBHGLA_13930	gene	2685				
+FLGBHGLA_13940	CDS	375	sorA	1.15.1.2	COG2033	Superoxide reductase
+FLGBHGLA_13940	gene	375	sorA			
+FLGBHGLA_13950	CDS	756	nadX_2	1.4.1.21	COG1712	putative L-aspartate dehydrogenase
+FLGBHGLA_13950	gene	756	nadX_2			
+FLGBHGLA_13960	CDS	846				hypothetical protein
+FLGBHGLA_13960	gene	846				
+FLGBHGLA_13970	CDS	3540				hypothetical protein
+FLGBHGLA_13970	gene	3540				
+FLGBHGLA_13980	CDS	645				hypothetical protein
+FLGBHGLA_13980	gene	645				
+FLGBHGLA_13990	CDS	183				hypothetical protein
+FLGBHGLA_13990	gene	183				
+FLGBHGLA_14000	CDS	1359				hypothetical protein
+FLGBHGLA_14000	gene	1359				
+FLGBHGLA_14010	CDS	684				hypothetical protein
+FLGBHGLA_14010	gene	684				
+FLGBHGLA_14020	CDS	327				hypothetical protein
+FLGBHGLA_14020	gene	327				
+FLGBHGLA_14030	CDS	1257				hypothetical protein
+FLGBHGLA_14030	gene	1257				
+FLGBHGLA_14040	CDS	645				hypothetical protein
+FLGBHGLA_14040	gene	645				
+FLGBHGLA_14050	CDS	636	pyrF	4.1.1.23	COG0284	Orotidine 5'-phosphate decarboxylase
+FLGBHGLA_14050	gene	636	pyrF			
+FLGBHGLA_14060	CDS	1917				hypothetical protein
+FLGBHGLA_14060	gene	1917				
+FLGBHGLA_14070	CDS	1941	cysH_3	1.8.4.8		Phosphoadenosine phosphosulfate reductase
+FLGBHGLA_14070	gene	1941	cysH_3			
+FLGBHGLA_14080	CDS	912	nanK	2.7.1.60		N-acetylmannosamine kinase
+FLGBHGLA_14080	gene	912	nanK			
+FLGBHGLA_14090	CDS	408				hypothetical protein
+FLGBHGLA_14090	gene	408				
+FLGBHGLA_14100	CDS	537			COG0071	Small heat shock protein HSP16.5
+FLGBHGLA_14100	gene	537				
+FLGBHGLA_14110	CDS	546	betI			HTH-type transcriptional regulator BetI
+FLGBHGLA_14110	gene	546	betI			
+FLGBHGLA_14120	CDS	1206	ychF			Ribosome-binding ATPase YchF
+FLGBHGLA_14120	gene	1206	ychF			
+FLGBHGLA_14130	CDS	1269				hypothetical protein
+FLGBHGLA_14130	gene	1269				
+FLGBHGLA_14140	CDS	1995	mvhA	1.12.99.-	COG3259	F420-non-reducing hydrogenase subunit A
+FLGBHGLA_14140	gene	1995	mvhA			
+FLGBHGLA_14150	CDS	825				hypothetical protein
+FLGBHGLA_14150	gene	825				
+FLGBHGLA_14160	CDS	1440	hdrD	1.8.98.1	COG0247	CoB--CoM heterodisulfide reductase iron-sulfur subunit D
+FLGBHGLA_14160	gene	1440	hdrD			
+FLGBHGLA_14170	CDS	540	amzA	3.4.-.-	COG1913	Archaemetzincin
+FLGBHGLA_14170	gene	540	amzA			
+FLGBHGLA_14180	CDS	846		3.5.3.24	COG0010	N(1)-aminopropylagmatine ureohydrolase
+FLGBHGLA_14180	gene	846				
+FLGBHGLA_14190	CDS	951	tfb		COG1405	Transcription initiation factor IIB
+FLGBHGLA_14190	gene	951	tfb			
+FLGBHGLA_14200	CDS	792		3.2.2.-	COG4047	N-glycosylase/DNA lyase
+FLGBHGLA_14200	gene	792				
+FLGBHGLA_14210	CDS	1236	apgM1	5.4.2.12	COG3635	2,3-bisphosphoglycerate-independent phosphoglycerate mutase 1
+FLGBHGLA_14210	gene	1236	apgM1			
+FLGBHGLA_14220	CDS	822				hypothetical protein
+FLGBHGLA_14220	gene	822				
+FLGBHGLA_14230	CDS	402				hypothetical protein
+FLGBHGLA_14230	gene	402				
+FLGBHGLA_14240	CDS	966	ndhI_1	1.6.5.11		NAD(P)H-quinone oxidoreductase subunit I, chloroplastic
+FLGBHGLA_14240	gene	966	ndhI_1			
+FLGBHGLA_14250	CDS	963	ndhI_2	1.6.5.11		NAD(P)H-quinone oxidoreductase subunit I, chloroplastic
+FLGBHGLA_14250	gene	963	ndhI_2			
+FLGBHGLA_14260	CDS	3750	nasA	1.7.7.2		Assimilatory nitrate reductase
+FLGBHGLA_14260	gene	3750	nasA			
+FLGBHGLA_14270	CDS	342				hypothetical protein
+FLGBHGLA_14270	gene	342				
+FLGBHGLA_14280	CDS	642				hypothetical protein
+FLGBHGLA_14280	gene	642				
+FLGBHGLA_14290	CDS	1866	ablA	5.4.3.2	COG1509	L-lysine 2,3-aminomutase
+FLGBHGLA_14290	gene	1866	ablA			
+FLGBHGLA_14300	CDS	2223	fusA		COG0480	Elongation factor 2
+FLGBHGLA_14300	gene	2223	fusA			
+FLGBHGLA_14310	CDS	858				hypothetical protein
+FLGBHGLA_14310	gene	858				
+FLGBHGLA_14320	CDS	2637			COG0419	DNA double-strand break repair Rad50 ATPase
+FLGBHGLA_14320	gene	2637				
+FLGBHGLA_14330	CDS	552				hypothetical protein
+FLGBHGLA_14330	gene	552				
+FLGBHGLA_14340	CDS	936	argF	2.1.3.3	COG0078	Ornithine carbamoyltransferase, anabolic
+FLGBHGLA_14340	gene	936	argF			
+FLGBHGLA_14350	CDS	798				hypothetical protein
+FLGBHGLA_14350	gene	798				
+FLGBHGLA_14360	CDS	471				hypothetical protein
+FLGBHGLA_14360	gene	471				
+FLGBHGLA_14370	CDS	1209				hypothetical protein
+FLGBHGLA_14370	gene	1209				
+FLGBHGLA_14380	CDS	822	nadE	6.3.1.5	COG0171	NH(3)-dependent NAD(+) synthetase
+FLGBHGLA_14380	gene	822	nadE			
+FLGBHGLA_14390	CDS	1986				hypothetical protein
+FLGBHGLA_14390	gene	1986				
+FLGBHGLA_14400	CDS	792	rio2	2.7.11.1	COG0478	RIO-type serine/threonine-protein kinase Rio2
+FLGBHGLA_14400	gene	792	rio2			
+FLGBHGLA_14410	CDS	915				hypothetical protein
+FLGBHGLA_14410	gene	915				
+FLGBHGLA_14420	CDS	447				hypothetical protein
+FLGBHGLA_14420	gene	447				
+FLGBHGLA_14430	CDS	357				hypothetical protein
+FLGBHGLA_14430	gene	357				
+FLGBHGLA_14440	CDS	345				hypothetical protein
+FLGBHGLA_14440	gene	345				
+FLGBHGLA_14450	CDS	603				hypothetical protein
+FLGBHGLA_14450	gene	603				
+FLGBHGLA_14460	CDS	3144	pycA	6.4.1.1	COG0439	Pyruvate carboxylase subunit A
+FLGBHGLA_14460	gene	3144	pycA			
+FLGBHGLA_14470	CDS	1122	guaAA_2	6.3.5.2	COG0518	GMP synthase [glutamine-hydrolyzing] subunit A
+FLGBHGLA_14470	gene	1122	guaAA_2			
+FLGBHGLA_14480	CDS	1191	fadA	2.3.1.16		3-ketoacyl-CoA thiolase
+FLGBHGLA_14480	gene	1191	fadA			
+FLGBHGLA_14490	CDS	171	lysW			Alpha-aminoadipate/glutamate carrier protein LysW
+FLGBHGLA_14490	gene	171	lysW			
+FLGBHGLA_14500	CDS	858	argX	6.3.2.-	COG0189	Glutamate--LysW ligase ArgX
+FLGBHGLA_14500	gene	858	argX			
+FLGBHGLA_14510	CDS	495				hypothetical protein
+FLGBHGLA_14510	gene	495				
+FLGBHGLA_14520	CDS	792	flaK	3.4.23.52	COG1989	Preflagellin peptidase
+FLGBHGLA_14520	gene	792	flaK			
+FLGBHGLA_14530	CDS	1170				hypothetical protein
+FLGBHGLA_14530	gene	1170				
+FLGBHGLA_14540	CDS	354			COG0186	30S ribosomal protein S17
+FLGBHGLA_14540	gene	354				
+FLGBHGLA_14550	CDS	414			COG0093	50S ribosomal protein L14
+FLGBHGLA_14550	gene	414				
+FLGBHGLA_14560	CDS	378			COG0198	50S ribosomal protein L24
+FLGBHGLA_14560	gene	378				
+FLGBHGLA_14570	CDS	768	rps4e		COG1471	30S ribosomal protein S4e
+FLGBHGLA_14570	gene	768	rps4e			
+FLGBHGLA_14580	CDS	591	rpl5		COG0094	50S ribosomal protein L5
+FLGBHGLA_14580	gene	591	rpl5			
+FLGBHGLA_14590	CDS	165			COG0199	30S ribosomal protein S14 type Z
+FLGBHGLA_14590	gene	165				
+FLGBHGLA_14600	CDS	402	rps8		COG0096	30S ribosomal protein S8
+FLGBHGLA_14600	gene	402	rps8			
+FLGBHGLA_14610	CDS	384			COG0517	putative protein
+FLGBHGLA_14610	gene	384				
+FLGBHGLA_14620	CDS	1935				hypothetical protein
+FLGBHGLA_14620	gene	1935				
+FLGBHGLA_14630	CDS	1209	purT	2.1.2.-	COG0027	Formate-dependent phosphoribosylglycinamide formyltransferase
+FLGBHGLA_14630	gene	1209	purT			
+FLGBHGLA_14640	CDS	720	flpA	2.1.1.-	COG1889	Fibrillarin-like rRNA/tRNA 2'-O-methyltransferase
+FLGBHGLA_14640	gene	720	flpA			
+FLGBHGLA_14650	CDS	1122				hypothetical protein
+FLGBHGLA_14650	gene	1122				
+FLGBHGLA_14660	CDS	1272	miaB	2.8.4.3		tRNA-2-methylthio-N(6)-dimethylallyladenosine synthase
+FLGBHGLA_14660	gene	1272	miaB			
+FLGBHGLA_14670	CDS	516				hypothetical protein
+FLGBHGLA_14670	gene	516				
+FLGBHGLA_14680	CDS	1050				hypothetical protein
+FLGBHGLA_14680	gene	1050				
+FLGBHGLA_14690	CDS	807	thyX	2.1.1.148	COG1351	Flavin-dependent thymidylate synthase
+FLGBHGLA_14690	gene	807	thyX			
+FLGBHGLA_14700	CDS	234				hypothetical protein
+FLGBHGLA_14700	gene	234				
+FLGBHGLA_14710	CDS	309				hypothetical protein
+FLGBHGLA_14710	gene	309				
+FLGBHGLA_14720	CDS	456	rnp2	3.1.26.5	COG1369	Ribonuclease P protein component 2
+FLGBHGLA_14720	gene	456	rnp2			
+FLGBHGLA_14730	CDS	354				hypothetical protein
+FLGBHGLA_14730	gene	354				
+FLGBHGLA_14740	CDS	630				hypothetical protein
+FLGBHGLA_14740	gene	630				
+FLGBHGLA_14750	CDS	1002				hypothetical protein
+FLGBHGLA_14750	gene	1002				
+FLGBHGLA_14760	CDS	261				hypothetical protein
+FLGBHGLA_14760	gene	261				
+FLGBHGLA_14770	CDS	1359	fumC_2	4.2.1.2	COG0114	Fumarate hydratase class II
+FLGBHGLA_14770	gene	1359	fumC_2			
+FLGBHGLA_14780	CDS	2166	vat_3		COG0464	VCP-like ATPase
+FLGBHGLA_14780	gene	2166	vat_3			
+FLGBHGLA_14790	CDS	375				hypothetical protein
+FLGBHGLA_14790	gene	375				
+FLGBHGLA_14800	CDS	1038	taw1	4.1.3.44	COG0731	S-adenosyl-L-methionine-dependent tRNA 4-demethylwyosine synthase
+FLGBHGLA_14800	gene	1038	taw1			
+FLGBHGLA_14810	CDS	975				hypothetical protein
+FLGBHGLA_14810	gene	975				
+FLGBHGLA_14820	CDS	1362	aspS	6.1.1.23	COG0017	Aspartate--tRNA(Asp/Asn) ligase
+FLGBHGLA_14820	gene	1362	aspS			
+FLGBHGLA_14830	CDS	1008	kdsA	2.5.1.55		2-dehydro-3-deoxyphosphooctonate aldolase
+FLGBHGLA_14830	gene	1008	kdsA			
+FLGBHGLA_14840	CDS	639	rnhB	3.1.26.4	COG0164	Ribonuclease HII
+FLGBHGLA_14840	gene	639	rnhB			
+FLGBHGLA_14850	CDS	414				hypothetical protein
+FLGBHGLA_14850	gene	414				
+FLGBHGLA_14860	CDS	456				hypothetical protein
+FLGBHGLA_14860	gene	456				
+FLGBHGLA_14870	CDS	408				hypothetical protein
+FLGBHGLA_14870	gene	408				
+FLGBHGLA_14880	CDS	927		2.4.2.54	COG1907	Beta-ribofuranosylaminobenzene 5'-phosphate synthase
+FLGBHGLA_14880	gene	927				
+FLGBHGLA_14890	CDS	1020	trpD	2.4.2.18	COG0547	Anthranilate phosphoribosyltransferase
+FLGBHGLA_14890	gene	1020	trpD			
