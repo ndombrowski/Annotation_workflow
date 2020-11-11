@@ -10,7 +10,7 @@
 
 <meta name="author" content="Nina Dombrowski" />
 
-<meta name="date" content="2020-11-10" />
+<meta name="date" content="2020-11-11" />
 
 <title>Annotation pipeline for microbial genomes</title>
 
@@ -1650,7 +1650,7 @@ $(document).ready(function () {
     
     <div id="postamble" data-toggle="wy-nav-shift" class="status">
               <p class="author"><span class="glyphicon glyphicon-user"></span> Nina Dombrowski</p>
-                  <p class="date"><span class="glyphicon glyphicon-calendar"></span> 2020-11-10</p>
+                  <p class="date"><span class="glyphicon glyphicon-calendar"></span> 2020-11-11</p>
         </div>
 </div>
 
@@ -2042,7 +2042,7 @@ $(document).ready(function () {
 <span id="cb9-4"><a href="#cb9-4"></a><span class="fu">mkdir</span> merge</span>
 <span id="cb9-5"><a href="#cb9-5"></a></span>
 <span id="cb9-6"><a href="#cb9-6"></a><span class="co">#2. run hmmsearch against all pfams = nr of CPUs here --&gt; 20</span></span>
-<span id="cb9-7"><a href="#cb9-7"></a><span class="ex">~/../spang_team/Scripts/Hmmer/hmmsearchTable</span> faa/Prokka/All_Genomes_clean.faa /export/data01/databases/cogs/hmms/NCBI_COGs_Oct2020.hmm 20 -E 1e-5 <span class="op">&gt;</span> NCBI_COGs/All_NCBI_COGs.txt</span>
+<span id="cb9-7"><a href="#cb9-7"></a><span class="ex">/export/data01/tools/scripts/bash/hmmsearchTable</span> faa/Prokka/All_Genomes_clean.faa /export/data01/databases/cogs/hmms/NCBI_COGs_Oct2020.hmm 20 -E 1e-5 <span class="op">&gt;</span> NCBI_COGs/All_NCBI_COGs.txt</span>
 <span id="cb9-8"><a href="#cb9-8"></a></span>
 <span id="cb9-9"><a href="#cb9-9"></a><span class="co">#separate header with eggnog and ID</span></span>
 <span id="cb9-10"><a href="#cb9-10"></a><span class="fu">awk</span> -F<span class="st">&#39;\t&#39;</span> -v OFS=<span class="st">&#39;\t&#39;</span> <span class="st">&#39;{split($3,a,&quot;.&quot;); print $1, a[1], $5,$6}&#39;</span> NCBI_COGs/All_NCBI_COGs.txt <span class="kw">|</span> <span class="va">LC_ALL=</span>C <span class="fu">sort</span> <span class="op">&gt;</span> NCBI_COGs/temp</span>
@@ -2078,7 +2078,7 @@ $(document).ready(function () {
 <span id="cb10-3"><a href="#cb10-3"></a><span class="fu">mkdir</span> arcogs</span>
 <span id="cb10-4"><a href="#cb10-4"></a></span>
 <span id="cb10-5"><a href="#cb10-5"></a><span class="co">#run arcog search -&gt; 20 = number of CPUs used</span></span>
-<span id="cb10-6"><a href="#cb10-6"></a><span class="ex">~/../spang_team/Scripts/Hmmer/hmmsearchTable</span> faa/Prokka/All_Genomes_clean.faa /export/data01/databases/arCOG/arCOGs2019/All_Arcogs_2018.hmm 20 -E 1e-5 <span class="op">&gt;</span> arcogs/All_arcogs_hmm.txt</span>
+<span id="cb10-6"><a href="#cb10-6"></a><span class="ex">/export/data01/tools/scripts/bash/hmmsearchTable</span> faa/Prokka/All_Genomes_clean.faa /export/data01/databases/arCOG/arCOGs2019/All_Arcogs_2018.hmm 20 -E 1e-5 <span class="op">&gt;</span> arcogs/All_arcogs_hmm.txt</span>
 <span id="cb10-7"><a href="#cb10-7"></a></span>
 <span id="cb10-8"><a href="#cb10-8"></a><span class="co">#separate header with arcog and ID</span></span>
 <span id="cb10-9"><a href="#cb10-9"></a><span class="fu">awk</span> -F<span class="st">&#39;\t&#39;</span> -v OFS=<span class="st">&#39;\t&#39;</span> <span class="st">&#39;{split($3,a,&quot;.&quot;); print $1, a[1], $5,$6}&#39;</span> arcogs/All_arcogs_hmm.txt <span class="kw">|</span> <span class="va">LC_ALL=</span>C <span class="fu">sort</span> <span class="op">&gt;</span> arcogs/temp3</span>
@@ -2112,7 +2112,7 @@ $(document).ready(function () {
 <span id="cb11-2"><a href="#cb11-2"></a><span class="fu">mkdir</span> KO_hmm</span>
 <span id="cb11-3"><a href="#cb11-3"></a></span>
 <span id="cb11-4"><a href="#cb11-4"></a><span class="co">#2. run hmmsearch against all pfams --&gt; 20 --&gt; number of CPUS used</span></span>
-<span id="cb11-5"><a href="#cb11-5"></a><span class="ex">~/../spang_team/Scripts/Hmmer/hmmsearchTable</span> faa/Prokka/All_Genomes_clean.faa  /export/data01/databases/ko/All_KO/combined_hmms/All_KOs.hmm 20 -E 1e-5 <span class="op">&gt;</span> KO_hmm/All_KO_hmm.txt</span>
+<span id="cb11-5"><a href="#cb11-5"></a><span class="ex">/export/data01/tools/scripts/bash/hmmsearchTable</span> faa/Prokka/All_Genomes_clean.faa  /export/data01/databases/ko/combined_hmms/All_KOs.hmm 20 -E 1e-5 <span class="op">&gt;</span> KO_hmm/All_KO_hmm.txt</span>
 <span id="cb11-6"><a href="#cb11-6"></a></span>
 <span id="cb11-7"><a href="#cb11-7"></a><span class="co">#merge with protein list</span></span>
 <span id="cb11-8"><a href="#cb11-8"></a><span class="va">LC_ALL=</span>C <span class="fu">join</span> -a1 -t <span class="st">$&#39;</span><span class="dt">\t</span><span class="st">&#39;</span> -j1 -o 0,2.3,2.5,2.6 <span class="op">&lt;(</span><span class="va">LC_ALL=</span>C <span class="fu">sort</span> FileLists/1_Bins_to_protein_list.txt<span class="op">)</span> <span class="op">&lt;(</span><span class="va">LC_ALL=</span>C <span class="fu">sort</span> KO_hmm/All_KO_hmm.txt<span class="op">)</span> <span class="kw">|</span> <span class="fu">sort</span> -u -k1 <span class="op">&gt;</span> KO_hmm/temp</span>
@@ -2152,7 +2152,7 @@ $(document).ready(function () {
 <span id="cb12-2"><a href="#cb12-2"></a><span class="fu">mkdir</span> pfam</span>
 <span id="cb12-3"><a href="#cb12-3"></a></span>
 <span id="cb12-4"><a href="#cb12-4"></a><span class="co">#2. run hmmsearch against all pfams --&gt; 20 = number of CPUs used</span></span>
-<span id="cb12-5"><a href="#cb12-5"></a><span class="ex">~/../spang_team/Scripts/Hmmer/hmmsearchTable</span> faa/Prokka/All_Genomes_clean.faa  /export/data01/databases/pfam/Pfam-A.hmm 20 -E 1e-5 <span class="op">&gt;</span> pfam/All_pfam.txt</span>
+<span id="cb12-5"><a href="#cb12-5"></a><span class="ex">/export/data01/tools/scripts/bash/hmmsearchTable</span> faa/Prokka/All_Genomes_clean.faa  /export/data01/databases/pfam/Pfam-A.hmm 20 -E 1e-5 <span class="op">&gt;</span> pfam/All_pfam.txt</span>
 <span id="cb12-6"><a href="#cb12-6"></a></span>
 <span id="cb12-7"><a href="#cb12-7"></a><span class="co">#remove header to avoid issues with join</span></span>
 <span id="cb12-8"><a href="#cb12-8"></a><span class="fu">sed</span> <span class="st">&#39;1d&#39;</span> pfam/All_pfam.txt <span class="op">&gt;</span> pfam/temp</span>
@@ -2195,7 +2195,7 @@ $(document).ready(function () {
 <span id="cb13-2"><a href="#cb13-2"></a><span class="fu">mkdir</span> TIGRs</span>
 <span id="cb13-3"><a href="#cb13-3"></a></span>
 <span id="cb13-4"><a href="#cb13-4"></a><span class="co">#2. run hmmsearch --&gt; 20 = number of CPUs used</span></span>
-<span id="cb13-5"><a href="#cb13-5"></a><span class="ex">~/../spang_team/Scripts/Hmmer/hmmsearchTable</span> faa/Prokka/All_Genomes_clean.faa  /export/data01/databases/tigr/TIGRFAMs_15.0_HMM.LIB 20 -E 1e-5 <span class="op">&gt;</span> TIGRs/All_TIGR.txt</span>
+<span id="cb13-5"><a href="#cb13-5"></a><span class="ex">/export/data01/tools/scripts/bash/hmmsearchTable</span> faa/Prokka/All_Genomes_clean.faa  /export/data01/databases/tigr/TIGRFAMs_15.0_HMM.LIB 20 -E 1e-5 <span class="op">&gt;</span> TIGRs/All_TIGR.txt</span>
 <span id="cb13-6"><a href="#cb13-6"></a></span>
 <span id="cb13-7"><a href="#cb13-7"></a><span class="co">#merge with protein list</span></span>
 <span id="cb13-8"><a href="#cb13-8"></a><span class="va">LC_ALL=</span>C <span class="fu">join</span> -a1 -t <span class="st">$&#39;</span><span class="dt">\t</span><span class="st">&#39;</span> -j1 -o 0,1.2,2.3,2.5 <span class="op">&lt;(</span><span class="va">LC_ALL=</span>C <span class="fu">sort</span> FileLists/1_Bins_to_protein_list.txt<span class="op">)</span> <span class="op">&lt;(</span><span class="va">LC_ALL=</span>C <span class="fu">sort</span> TIGRs/All_TIGR.txt<span class="op">)</span> <span class="kw">|</span> <span class="fu">sort</span> -u -k1 <span class="op">&gt;</span> TIGRs/temp</span>
@@ -2228,38 +2228,35 @@ $(document).ready(function () {
 <li>number of CPUs (default = 20)</li>
 <li>e-value threshold (default = 1e-5)</li>
 </ul>
-<div class="sourceCode" id="cb14"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1"></a><span class="co">#modify mapping file</span></span>
-<span id="cb14-2"><a href="#cb14-2"></a><span class="co">#sed &#39;s/ /_/g&#39; CAZY_mapping.txt &gt; CAZY_mapping.txt</span></span>
+<div class="sourceCode" id="cb14"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1"></a><span class="co">#make folder</span></span>
+<span id="cb14-2"><a href="#cb14-2"></a><span class="fu">mkdir</span> CAZYmes</span>
 <span id="cb14-3"><a href="#cb14-3"></a></span>
-<span id="cb14-4"><a href="#cb14-4"></a><span class="co">#make folder</span></span>
-<span id="cb14-5"><a href="#cb14-5"></a><span class="fu">mkdir</span> CAZYmes</span>
+<span id="cb14-4"><a href="#cb14-4"></a><span class="co">#2. run hmmsearch against all pfams --&gt; 20 = number of CPUs used</span></span>
+<span id="cb14-5"><a href="#cb14-5"></a><span class="ex">/export/data01/tools/scripts/bash/hmmsearchTable</span> faa/Prokka/All_Genomes_clean.faa /export/data01/databases/cazy_spt/dbCAN-HMMdb-V7.txt 20 -E 1e-20 <span class="op">&gt;</span> CAZYmes/All_vs_CAZYmes.txt</span>
 <span id="cb14-6"><a href="#cb14-6"></a></span>
-<span id="cb14-7"><a href="#cb14-7"></a><span class="co">#2. run hmmsearch against all pfams --&gt; 20 = number of CPUs used</span></span>
-<span id="cb14-8"><a href="#cb14-8"></a><span class="ex">~/../spang_team/Scripts/Hmmer/hmmsearchTable</span> faa/Prokka/All_Genomes_clean.faa /export/data01/databases/cazy_spt/dbCAN-HMMdb-V7.txt 20 -E 1e-20 <span class="op">&gt;</span> CAZYmes/All_vs_CAZYmes.txt</span>
+<span id="cb14-7"><a href="#cb14-7"></a><span class="co">#remove .hmm</span></span>
+<span id="cb14-8"><a href="#cb14-8"></a><span class="fu">sed</span> s<span class="st">&#39;/\.hmm//g&#39;</span>  CAZYmes/All_vs_CAZYmes.txt <span class="op">&gt;</span> CAZYmes/temp</span>
 <span id="cb14-9"><a href="#cb14-9"></a></span>
-<span id="cb14-10"><a href="#cb14-10"></a><span class="co">#remove .hmm</span></span>
-<span id="cb14-11"><a href="#cb14-11"></a><span class="fu">sed</span> s<span class="st">&#39;/\.hmm//g&#39;</span>  CAZYmes/All_vs_CAZYmes.txt <span class="op">&gt;</span> CAZYmes/temp</span>
+<span id="cb14-10"><a href="#cb14-10"></a><span class="co">#remove header to avoid issues with join</span></span>
+<span id="cb14-11"><a href="#cb14-11"></a><span class="fu">sed</span> <span class="st">&#39;1d&#39;</span> CAZYmes/temp <span class="op">&gt;</span> CAZYmes/temp2</span>
 <span id="cb14-12"><a href="#cb14-12"></a></span>
-<span id="cb14-13"><a href="#cb14-13"></a><span class="co">#remove header to avoid issues with join</span></span>
-<span id="cb14-14"><a href="#cb14-14"></a><span class="fu">sed</span> <span class="st">&#39;1d&#39;</span> CAZYmes/temp <span class="op">&gt;</span> CAZYmes/temp2</span>
+<span id="cb14-13"><a href="#cb14-13"></a><span class="co">#merge with contig list</span></span>
+<span id="cb14-14"><a href="#cb14-14"></a><span class="va">LC_ALL=</span>C <span class="fu">join</span> -a1  -j1 -e<span class="st">&#39;-&#39;</span> -t <span class="st">$&#39;</span><span class="dt">\t</span><span class="st">&#39;</span> -o 0,2.3,2.5 <span class="op">&lt;(</span><span class="va">LC_ALL=</span>C <span class="fu">sort</span> FileLists/1_Bins_to_protein_list.txt<span class="op">)</span> <span class="op">&lt;(</span><span class="va">LC_ALL=</span>C <span class="fu">sort</span> CAZYmes/temp2<span class="op">)</span>  <span class="kw">|</span> <span class="va">LC_ALL=</span>C <span class="fu">sort</span>  <span class="op">&gt;</span> CAZYmes/temp3</span>
 <span id="cb14-15"><a href="#cb14-15"></a></span>
-<span id="cb14-16"><a href="#cb14-16"></a><span class="co">#merge with contig list</span></span>
-<span id="cb14-17"><a href="#cb14-17"></a><span class="va">LC_ALL=</span>C <span class="fu">join</span> -a1  -j1 -e<span class="st">&#39;-&#39;</span> -t <span class="st">$&#39;</span><span class="dt">\t</span><span class="st">&#39;</span> -o 0,2.3,2.5 <span class="op">&lt;(</span><span class="va">LC_ALL=</span>C <span class="fu">sort</span> FileLists/1_Bins_to_protein_list.txt<span class="op">)</span> <span class="op">&lt;(</span><span class="va">LC_ALL=</span>C <span class="fu">sort</span> CAZYmes/temp2<span class="op">)</span>  <span class="kw">|</span> <span class="va">LC_ALL=</span>C <span class="fu">sort</span>  <span class="op">&gt;</span> CAZYmes/temp3</span>
+<span id="cb14-16"><a href="#cb14-16"></a><span class="co">#merge with mapping file</span></span>
+<span id="cb14-17"><a href="#cb14-17"></a><span class="va">LC_ALL=</span>C <span class="fu">join</span> -a1  -1 2 -2 1 -e<span class="st">&#39;-&#39;</span> -t <span class="st">$&#39;</span><span class="dt">\t</span><span class="st">&#39;</span> -o 1.1,1.2,1.3,2.2 <span class="op">&lt;(</span><span class="va">LC_ALL=</span>C <span class="fu">sort</span> -k2 CAZYmes/temp3<span class="op">)</span> <span class="op">&lt;(</span><span class="va">LC_ALL=</span>C <span class="fu">sort</span> /export/data01/databases/cazy_spt/CAZY_mapping_2.txt<span class="op">)</span> <span class="kw">|</span> <span class="va">LC_ALL=</span>C <span class="fu">sort</span>  <span class="op">&gt;</span> CAZYmes/temp4</span>
 <span id="cb14-18"><a href="#cb14-18"></a></span>
-<span id="cb14-19"><a href="#cb14-19"></a><span class="co">#merge with mapping file</span></span>
-<span id="cb14-20"><a href="#cb14-20"></a><span class="va">LC_ALL=</span>C <span class="fu">join</span> -a1  -1 2 -2 1 -e<span class="st">&#39;-&#39;</span> -t <span class="st">$&#39;</span><span class="dt">\t</span><span class="st">&#39;</span> -o 1.1,1.2,1.3,2.2 <span class="op">&lt;(</span><span class="va">LC_ALL=</span>C <span class="fu">sort</span> -k2 CAZYmes/temp3<span class="op">)</span> <span class="op">&lt;(</span><span class="va">LC_ALL=</span>C <span class="fu">sort</span> /export/data01/databases/cazy_spt/CAZY_mapping_2.txt<span class="op">)</span> <span class="kw">|</span> <span class="va">LC_ALL=</span>C <span class="fu">sort</span>  <span class="op">&gt;</span> CAZYmes/temp4</span>
+<span id="cb14-19"><a href="#cb14-19"></a><span class="co">#add in headers</span></span>
+<span id="cb14-20"><a href="#cb14-20"></a><span class="bu">echo</span> -e <span class="st">&quot;accession\tCAZy\tCAZy_evalue\tDescription&quot;</span> <span class="kw">|</span> <span class="fu">cat</span> - CAZYmes/temp4 <span class="op">&gt;</span> CAZYmes/G_CAZy.tsv</span>
 <span id="cb14-21"><a href="#cb14-21"></a></span>
-<span id="cb14-22"><a href="#cb14-22"></a><span class="co">#add in headers</span></span>
-<span id="cb14-23"><a href="#cb14-23"></a><span class="bu">echo</span> -e <span class="st">&quot;accession\tCAZy\tCAZy_evalue\tDescription&quot;</span> <span class="kw">|</span> <span class="fu">cat</span> - CAZYmes/temp4 <span class="op">&gt;</span> CAZYmes/G_CAZy.tsv</span>
+<span id="cb14-22"><a href="#cb14-22"></a><span class="co">#combine with previous dataframe</span></span>
+<span id="cb14-23"><a href="#cb14-23"></a><span class="fu">awk</span> <span class="st">&#39;BEGIN{FS=&quot;\t&quot;;OFS=&quot;\t&quot;}FNR==NR{a[$1]=$0;next}{print $0,a[$1]}&#39;</span> CAZYmes/G_CAZy.tsv merge/temp_BCMEF.tsv <span class="op">&gt;</span> merge/temp_BCMEFG.tsv</span>
 <span id="cb14-24"><a href="#cb14-24"></a></span>
-<span id="cb14-25"><a href="#cb14-25"></a><span class="co">#combine with previous dataframe</span></span>
-<span id="cb14-26"><a href="#cb14-26"></a><span class="fu">awk</span> <span class="st">&#39;BEGIN{FS=&quot;\t&quot;;OFS=&quot;\t&quot;}FNR==NR{a[$1]=$0;next}{print $0,a[$1]}&#39;</span> CAZYmes/G_CAZy.tsv merge/temp_BCMEF.tsv <span class="op">&gt;</span> merge/temp_BCMEFG.tsv</span>
+<span id="cb14-25"><a href="#cb14-25"></a><span class="co">#control lines</span></span>
+<span id="cb14-26"><a href="#cb14-26"></a><span class="fu">wc</span> -l merge/*</span>
 <span id="cb14-27"><a href="#cb14-27"></a></span>
-<span id="cb14-28"><a href="#cb14-28"></a><span class="co">#control lines</span></span>
-<span id="cb14-29"><a href="#cb14-29"></a><span class="fu">wc</span> -l merge/*</span>
-<span id="cb14-30"><a href="#cb14-30"></a></span>
-<span id="cb14-31"><a href="#cb14-31"></a><span class="co">#clean up</span></span>
-<span id="cb14-32"><a href="#cb14-32"></a><span class="fu">rm</span> CAZYmes/temp*</span></code></pre></div>
+<span id="cb14-28"><a href="#cb14-28"></a><span class="co">#clean up</span></span>
+<span id="cb14-29"><a href="#cb14-29"></a><span class="fu">rm</span> CAZYmes/temp*</span></code></pre></div>
 </div>
 </div>
 <div id="transporter-db-search" class="section level2">
@@ -2287,23 +2284,26 @@ $(document).ready(function () {
 <span id="cb15-13"><a href="#cb15-13"></a><span class="st">Best only # records = 104</span></span>
 <span id="cb15-14"><a href="#cb15-14"></a><span class="st">&#39;&#39;&#39;</span></span>
 <span id="cb15-15"><a href="#cb15-15"></a></span>
-<span id="cb15-16"><a href="#cb15-16"></a><span class="co">#split ids</span></span>
+<span id="cb15-16"><a href="#cb15-16"></a><span class="co">#split ids, GCA_000008085-CALJACFG_00140</span></span>
 <span id="cb15-17"><a href="#cb15-17"></a><span class="fu">awk</span> -F<span class="st">&#39;\t&#39;</span> -v OFS=<span class="st">&#39;\t&#39;</span> <span class="st">&#39;{split($2,a,&quot;|&quot;); print $1, a[1], a[2], $11}&#39;</span> TransporterDB/temp<span class="kw">|</span> <span class="va">LC_ALL=</span>C <span class="fu">sort</span> <span class="op">&gt;</span> TransporterDB/temp2</span>
 <span id="cb15-18"><a href="#cb15-18"></a></span>
 <span id="cb15-19"><a href="#cb15-19"></a><span class="co">#merge with contig list</span></span>
 <span id="cb15-20"><a href="#cb15-20"></a><span class="va">LC_ALL=</span>C <span class="fu">join</span> -a1  -j1 -e<span class="st">&#39;-&#39;</span> -t <span class="st">$&#39;</span><span class="dt">\t</span><span class="st">&#39;</span> -o 0,2.3,2.4 <span class="op">&lt;(</span><span class="va">LC_ALL=</span>C <span class="fu">sort</span> FileLists/1_Bins_to_protein_list.txt<span class="op">)</span> <span class="op">&lt;(</span><span class="va">LC_ALL=</span>C <span class="fu">sort</span> TransporterDB/temp2<span class="op">)</span>  <span class="kw">|</span> <span class="va">LC_ALL=</span>C <span class="fu">sort</span>  <span class="op">&gt;</span> TransporterDB/temp3</span>
 <span id="cb15-21"><a href="#cb15-21"></a></span>
-<span id="cb15-22"><a href="#cb15-22"></a><span class="co">#add in headers</span></span>
-<span id="cb15-23"><a href="#cb15-23"></a><span class="bu">echo</span> -e <span class="st">&quot;accession\tTDBD_ID\tTPDB_evalue&quot;</span> <span class="kw">|</span> <span class="fu">cat</span> - TransporterDB/temp3 <span class="op">&gt;</span> TransporterDB/I_TPDB.tsv</span>
+<span id="cb15-22"><a href="#cb15-22"></a><span class="co">#merge with mapping file</span></span>
+<span id="cb15-23"><a href="#cb15-23"></a><span class="va">LC_ALL=</span>C <span class="fu">join</span> -a1  -1 2 -2 2 -e<span class="st">&#39;-&#39;</span> -t <span class="st">$&#39;</span><span class="dt">\t</span><span class="st">&#39;</span> -o 1.1,1.2,1.3,2.3 <span class="op">&lt;(</span><span class="va">LC_ALL=</span>C <span class="fu">sort</span> -k2 TransporterDB/temp3<span class="op">)</span> <span class="op">&lt;(</span><span class="va">LC_ALL=</span>C <span class="fu">sort</span> -k2 /export/data01/databases/tcdb/TransporterDB/TCDB_Desc_final.txt<span class="op">)</span> <span class="kw">|</span> <span class="va">LC_ALL=</span>C <span class="fu">sort</span>  <span class="op">&gt;</span> TransporterDB/temp4</span>
 <span id="cb15-24"><a href="#cb15-24"></a></span>
-<span id="cb15-25"><a href="#cb15-25"></a><span class="co">#combine with previous dataframe</span></span>
-<span id="cb15-26"><a href="#cb15-26"></a><span class="fu">awk</span> <span class="st">&#39;BEGIN{FS=&quot;\t&quot;;OFS=&quot;\t&quot;}FNR==NR{a[$1]=$0;next}{print $0,a[$1]}&#39;</span> TransporterDB/I_TPDB.tsv merge/temp_BCMEFG.tsv <span class="op">&gt;</span> merge/temp_BCMEFGHI.tsv</span>
+<span id="cb15-25"><a href="#cb15-25"></a><span class="co">#add in headers</span></span>
+<span id="cb15-26"><a href="#cb15-26"></a><span class="bu">echo</span> -e <span class="st">&quot;accession\tTCBD_ID\tTCBD_evalue\tTCBD_description&quot;</span> <span class="kw">|</span> <span class="fu">cat</span> - TransporterDB/temp4 <span class="op">&gt;</span> TransporterDB/I_TPDB.tsv</span>
 <span id="cb15-27"><a href="#cb15-27"></a></span>
-<span id="cb15-28"><a href="#cb15-28"></a><span class="co">#control lines</span></span>
-<span id="cb15-29"><a href="#cb15-29"></a><span class="fu">wc</span> -l merge/*</span>
+<span id="cb15-28"><a href="#cb15-28"></a><span class="co">#combine with previous dataframe</span></span>
+<span id="cb15-29"><a href="#cb15-29"></a><span class="fu">awk</span> <span class="st">&#39;BEGIN{FS=&quot;\t&quot;;OFS=&quot;\t&quot;}FNR==NR{a[$1]=$0;next}{print $0,a[$1]}&#39;</span> TransporterDB/I_TPDB.tsv merge/temp_BCMEFG.tsv <span class="op">&gt;</span> merge/temp_BCMEFGHI.tsv</span>
 <span id="cb15-30"><a href="#cb15-30"></a></span>
-<span id="cb15-31"><a href="#cb15-31"></a><span class="co">#clean up</span></span>
-<span id="cb15-32"><a href="#cb15-32"></a><span class="fu">rm</span> TransporterDB/temp*</span></code></pre></div>
+<span id="cb15-31"><a href="#cb15-31"></a><span class="co">#control lines</span></span>
+<span id="cb15-32"><a href="#cb15-32"></a><span class="fu">wc</span> -l merge/*</span>
+<span id="cb15-33"><a href="#cb15-33"></a></span>
+<span id="cb15-34"><a href="#cb15-34"></a><span class="co">#clean up</span></span>
+<span id="cb15-35"><a href="#cb15-35"></a><span class="fu">rm</span> TransporterDB/temp*</span></code></pre></div>
 </div>
 </div>
 <div id="hyddb-search" class="section level2">
@@ -2323,7 +2323,7 @@ $(document).ready(function () {
 <span id="cb16-6"><a href="#cb16-6"></a><span class="ex">blastp</span> -num_threads 20 -outfmt 6 -query faa/Prokka/All_Genomes_clean.faa -db /export/data01/databases/HydDB/HydDB_uniq -out HydDB/All_vs_HydDB.tsv -evalue 1e-20</span>
 <span id="cb16-7"><a href="#cb16-7"></a></span>
 <span id="cb16-8"><a href="#cb16-8"></a><span class="co">#find best hit</span></span>
-<span id="cb16-9"><a href="#cb16-9"></a><span class="fu">perl</span> ~/../spang_team/Scripts/Others/best_blast.pl HydDB/All_vs_HydDB.tsv HydDB/temp</span>
+<span id="cb16-9"><a href="#cb16-9"></a><span class="fu">perl</span> /export/data01/tools/scripts/perl/best_blast.pl HydDB/All_vs_HydDB.tsv HydDB/temp</span>
 <span id="cb16-10"><a href="#cb16-10"></a></span>
 <span id="cb16-11"><a href="#cb16-11"></a><span class="st">&#39;&#39;&#39;</span></span>
 <span id="cb16-12"><a href="#cb16-12"></a><span class="st">Total # records = 708</span></span>
@@ -2376,7 +2376,7 @@ $(document).ready(function () {
 <div class="sourceCode" id="cb18"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1"></a><span class="fu">mkdir</span> IPRscan</span>
 <span id="cb18-2"><a href="#cb18-2"></a></span>
 <span id="cb18-3"><a href="#cb18-3"></a><span class="co">#split files</span></span>
-<span id="cb18-4"><a href="#cb18-4"></a><span class="ex">python</span> ~/../spang_team/Scripts/Others/Split_Multifasta.py -m faa/Prokka/All_Genomes_clean_interproscan.faa -n 1000</span>
+<span id="cb18-4"><a href="#cb18-4"></a><span class="ex">python</span> /export/data01/tools/scripts/python/Split_Multifasta.py -m faa/Prokka/All_Genomes_clean_interproscan.faa -n 1000</span>
 <span id="cb18-5"><a href="#cb18-5"></a><span class="co">#2069 split into 3 files</span></span>
 <span id="cb18-6"><a href="#cb18-6"></a></span>
 <span id="cb18-7"><a href="#cb18-7"></a><span class="co">#move files into a better location</span></span>
@@ -2404,7 +2404,7 @@ $(document).ready(function () {
 <span id="cb18-29"><a href="#cb18-29"></a><span class="bu">cd</span> ..</span>
 <span id="cb18-30"><a href="#cb18-30"></a></span>
 <span id="cb18-31"><a href="#cb18-31"></a><span class="co">#clean up fasta header so that it is exactly the same as the accession ID in the interproscan results</span></span>
-<span id="cb18-32"><a href="#cb18-32"></a><span class="ex">python</span> ~/../spang_team/Scripts/Others/parse_IPRdomains_vs2_GO_2.py -s faa/Prokka/All_Genomes_clean.faa -i IPRscan/Concat_results/All_bins_bins_iprscan-results.tsv -o IPRscan/All_bins_bins_iprscan-results_parsed.tsv</span>
+<span id="cb18-32"><a href="#cb18-32"></a><span class="ex">python</span> /export/data01/tools/scripts/python/parse_IPRdomains_vs2_GO_2.py -s faa/Prokka/All_Genomes_clean.faa -i IPRscan/Concat_results/All_bins_bins_iprscan-results.tsv -o IPRscan/All_bins_bins_iprscan-results_parsed.tsv</span>
 <span id="cb18-33"><a href="#cb18-33"></a></span>
 <span id="cb18-34"><a href="#cb18-34"></a><span class="co">#remove issue with spaces</span></span>
 <span id="cb18-35"><a href="#cb18-35"></a><span class="fu">sed</span> <span class="st">&#39;s/ /_/g&#39;</span> IPRscan/All_bins_bins_iprscan-results_parsed.tsv <span class="kw">|</span> <span class="va">LC_ALL=</span>C  <span class="fu">sort</span> <span class="op">&gt;</span> IPRscan/temp.txt</span>
@@ -2445,7 +2445,7 @@ $(document).ready(function () {
 <span id="cb19-8"><a href="#cb19-8"></a><span class="fu">awk</span> -F<span class="st">&#39;\t&#39;</span> -v OFS=<span class="st">&quot;\t&quot;</span> <span class="st">&#39;{ print $1, $5, $6, $11, $12, $14, $15 }&#39;</span>  NCBI_NR/All_NCBInr.tsv <span class="op">&gt;</span> NCBI_NR/temp</span>
 <span id="cb19-9"><a href="#cb19-9"></a></span>
 <span id="cb19-10"><a href="#cb19-10"></a><span class="co">#Parse Diamnond Results</span></span>
-<span id="cb19-11"><a href="#cb19-11"></a><span class="ex">python</span> ~/../spang_team/Scripts/Others/parse_diamond_blast_results_id_taxid.py -i FileLists/AllProteins_list.txt -d NCBI_NR/temp -o NCBI_NR/temp2</span>
+<span id="cb19-11"><a href="#cb19-11"></a><span class="ex">python</span> /export/data01/tools/scripts/python/parse_diamond_blast_results_id_taxid.py -i FileLists/AllProteins_list.txt -d NCBI_NR/temp -o NCBI_NR/temp2</span>
 <span id="cb19-12"><a href="#cb19-12"></a></span>
 <span id="cb19-13"><a href="#cb19-13"></a><span class="co">#rm header</span></span>
 <span id="cb19-14"><a href="#cb19-14"></a><span class="fu">sed</span> 1d NCBI_NR/temp2 <span class="op">&gt;</span> NCBI_NR/temp3</span>
@@ -2686,7 +2686,7 @@ $(document).ready(function () {
 <p>I.e. if we would search for <code>taxonomy:bacteria &quot;pyruvate dehydrogenase e1&quot;</code> we should get:</p>
 <ul>
 <li>A list of all proteins classified as E1 subunuit of the pyruvate dehydrogenase in bacteria</li>
-<li>some of these sequences are reviewed (i.e. might have some more supporting info) and unreviewed (annotation only based on sequence similarity)</li>
+<li>some of these sequences are reviewed (i.e. might have some more supporting info) and others are unreviewed (annotation only based on sequence similarity)</li>
 <li>a list of taxa that have this protein (under view by click on taxonomy) and then we can see in exactly what bacteria these enzyme is found</li>
 </ul>
 <p>If we click on an indiv. example, i.e. from E.coli, we get:</p>
