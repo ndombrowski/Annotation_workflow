@@ -12,5 +12,6 @@ This repository provides:
 - example files generated during this workflow
 - custom scripts that might be needed to run this workflow
 
-All databases are avail. on ada and most of the used databases have been uploaded with a previous publication and can be found on Zenodo. 
-If you use this work please cite: Dombrowski, N. et al. Undinarchaeota illuminate DPANN phylogeny and the impact of gene transfer on archaeal evolution. Nature Communications 11, 3939 (2020).
+Example output files for all steps can be downloaded from [here](https://github.com/ndombrowski/Annotation_workflow/tree/main/Output_example).
+
+All databases and custom scripts are available on ada. If you use this work please cite: Dombrowski, N. et al. Undinarchaeota illuminate DPANN phylogeny and the impact of gene transfer on archaeal evolution. Nature Communications 11, 3939 (2020).
