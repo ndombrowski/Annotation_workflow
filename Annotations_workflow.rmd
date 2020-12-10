@@ -98,7 +98,7 @@ cd Annotations
 
 ## Get genomes of interest
 
-First, we will download two archaeal genomes from NCBI and rename them a bit.
+First, we will download two archaeal genomes from NCBI and rename them a bit. (If want to work with, lets say all archaeal genomes on ncbi, have a look at the steps following this section).
 
 Generally, something to watch out for when naming files is:
 
@@ -140,6 +140,101 @@ for i in *fna; do awk '/>/{sub(">","&"FILENAME"-");sub(/\.fna/,x)}1' $i > rename
 rm *fna
 cd ..
 rm *fna
+
+```
+
+### The steps above work fine but what if we have hundreds of genomes?
+
+For the tutorial we will continue at (this part is just for general information):
+- **## Make a filelist for all genomes of interest** 
+
+```bash
+
+#get a list of all avail. archaeal genomes
+wget ftp://ftp.ncbi.nlm.nih.gov/genomes/genbank/archaea/assembly_summary.txt
+
+#clean up the file by removing the first row and any `#` and move the tax id to the front
+sed 1d assembly_summary.txt | sed 's/# //g' | awk -F"\t" -v OFS="\t" '{print $6, $0} ' | sed 's/ /_/g' > assembly_summary_archaea_Dec20.txt
+
+#replace empty rows with a "none" and remove the header
+awk 'BEGIN { FS = OFS = "\t" } { for(i=1; i<=NF; i++) if($i ~ /^ *$/) $i="none"}; 1' assembly_summary_archaea_Dec20.txt | sed '1d' > temp1
+
+#add in the tax string (to be able to better select genomes)
+#merge assembly info with tax string
+LC_ALL=C join -a1  -j1 -e'-' -o 0,1.2,1.3,1.4,1.5,1.6,1.7,1.8,1.9,1.10,1.12,1.15,1.16,1.17,1.18,1.20,2.2 <(LC_ALL=C sort temp1) <(LC_ALL=C sort  /export/lv1/user/spang_team/Databases/NCBI_taxonomy/Dec2020/lineages-2020-12-10.csv) -t $'\t' > temp2
+
+#add in headers
+
+echo -e "taxid\taccession\tbioproject\tbiosample\twgs\trefseq_category\tspeciesID\torganism\tintraspecific_name\tisolate\tassembly\trel_date\tasm\tsubmitter\tgcf_name\tftp_path\ttax" | cat -  temp2 >  assembly_summary_archaea_Sep19_tax.txt
+
+```      
+
+In this file you can just look for the genomes you are interested in. You might run CheckM as well to select them based on their genome stats.
+
+Once you have your genomes copy the ftp_links into a text document an run this:
+
+```bash
+
+
+# extend path to be able to download the genomes
+sed -r 's|(ftp://ftp.ncbi.nlm.nih.gov/genomes/all/)(GCA/)([0-9]{3}/)([0-9]{3}/)([0-9]{3}/)(GCA_.+)|\1\2\3\4\5\6/\6_genomic.fna.gz|' get_genomes.txt  > get_genomes_v2.txt
+
+# download genomes
+for next in $(cat get_genomes_v2.txt); do wget  "$next"; done
+
+```
+
+Once you have the genomes, you can clean the names as suggested above and continue with the steps below.
+
+In case you want to update the taxID to taxstring file, this is the workflow:
+
+```bash
+
+#We already have a taxonomy file in the path mentioned below
+#the date of the newest version is found in the file name (updated 30Jul2019)
+#if you want a newer one, run the steps below
+#
+cd /export/lv1/user/spang_team/Scripts/NCBI_taxdump/ncbitax2lin
+
+#start bashrc that allows to run conda
+source ~/.bashrc.conda2
+
+#setup virtual environment (see more instructions here: https://github.com/zyxue/ncbitax2lin)
+#virtualenv venv/
+
+#re-do taxonomy mapping file
+make
+
+#unzip file
+gzip -d  lineages-2020-12-10.csv.gz
+
+#close virtual environment
+#source deactivate venv/
+
+#make a new directory for the most current tax
+mkdir /export/lv1/user/spang_team/Databases/NCBI_taxonomy/Dec2020
+
+#change dir
+cd /export/lv1/user/spang_team/Databases/NCBI_taxonomy/Dec2020
+
+#replace space with underscore
+sed 's/ /_/g'  ~/../spang_team/Scripts/NCBI_taxdump/ncbitax2lin/lineages-2020-12-10.csv  > temp1
+
+#only print the levels until species
+awk -F',' -v OFS="\t" '{print $1,$2,$3,$4,$5,$6,$7,$8}' temp1 > temp2
+
+#add in “none” whenever a tax level is emtpy
+awk 'BEGIN { FS = OFS = "\t" } { for(i=1; i<=NF; i++) if($i ~ /^ *$/) $i="none"}; 1' temp2 > temp3
+
+#merge columns 2-8
+awk ' BEGIN { FS = OFS = "\t" } {print $1,$2","$3","$4","$5","$6","$7","$8}' temp3 > temp4
+
+#remove header
+sed '1d' temp4 > lineages-2020-12-10.csv
+
+#clean up
+rm temp*
+
 
 ```
 
