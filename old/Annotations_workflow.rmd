@@ -1,0 +1,1283 @@
+---
+title: "Annotation pipeline for microbial genomes"
+author: "Nina Dombrowski"
+affiliation: "NIOZ"
+date: "`r Sys.Date()`"
+knit: (function(input_file, encoding) {   out_dir <- 'docs';   rmarkdown::render(input_file,  encoding=encoding,  output_file=file.path(dirname(input_file), out_dir, 'Annotations_workflow.html'))})
+output:
+  rmdformats::readthedown:
+    highlight: kate
+editor_options: 
+  chunk_output_type: console
+---
+
+
+<p align="left">
+  <img width="50" height="50" src="/Users/ninadombrowski/Desktop/WorkingDir/General/Pictures_general/text4236.png">
+</p>
+
+In this workflow, we will:
+
+- download two genomes from NCBI and 
+- annotate them using several databases such as the COGs, arCOGS, KOs, PFAM, ...
+- combine the results into one comprehensive table.
+
+If you already have proteins, simply continue with the Annotation part. 
+The only thing you might want to generate is a file that lists all the proteins you are working with.
+
+General comments:
+
+- Most programs we run in loops to speed things up. While this might not make so much sense if we only have to work with two genomes, if you work with thousands of files this gets really useful.
+
+- For most annotation steps we can make use of several CPUs. Typically, this workflow uses 10-20 CPUS, but this can be adjusted according to the avail. resources. More on how to check resources can be found in the [Unix tutorial](https://github.com/ndombrowski/Unix_tutorial)
+- Also you will notice, that this script uses a lot of AWK for parsing tables. If you want to have a collection of AWK commands check our [AWK tutorial](https://github.com/ndombrowski/AWK_tutorial)
+- Once you have the annotation table, we do have an [R tutorial](https://github.com/ndombrowski/R_tutorial) that gives an example how to summarize the data. This can get memory extensive the more genomes we analyse and we will add a python tutorial for this analysis at a later point.
+
+
+###################################################################################
+###################################################################################
+# General
+###################################################################################
+###################################################################################
+
+Below you find a list of the used programs. If you want to run this pipeline, please install the listed tools.
+Additionally, custom scripts can be found in the Scripts folder.
+
+## Version programs
+##################################
+
+1. prokka 1.14-dev
+2. Python 2.7.5
+3. perl v5.16.3
+4. HMMER 3.1b2
+5. blastp (Protein-Protein BLAST 2.7.1+)
+6. diamond 0.9.22..123
+7. interproscan: InterProScan-5.29-68.0
+
+
+
+## Version databases
+##################################
+
+1. KOhmms: downloaded 90419 from [here](https://www.genome.jp/tools/kofamkoala/)
+2. TIGRFAMs_15.0_HMM.LIB: downloaded Sept 2018
+3. PFams: RELEASE 31.0, downloaded Sept 2018
+4. CAZymes: dbCAN-HMMdb-V7, dbCAN v2 on 21 Sept 2018
+5. Merops: downloaded from Merops server in Nov18
+6. HydDB: downloaded form HydDB webserver in Nov18
+7. COGs: downloaded from NCBI Oct20 from  [here](ftp://ftp.ncbi.nlm.nih.gov/pub/COG/COG2020/)
+8. TransporterDB: downloaded from TCDB Nov 18. [wget files from here](http://www.tcdb.org)
+9. ncbi_nr (maintained by Alejandro): files from 2019
+10. ArCOGs. [link to ftp](ftp://ftp.ncbi.nih.gov/pub/wolf/COGs/arCOG/zip.aliar14.tgz) (update date: 2018)
+
+
+###################################################################################
+###################################################################################
+# Setup of genomes
+###################################################################################
+###################################################################################
+
+##  Set working directory
+##################################
+
+Change username to your personal username. If you do not have access to ada yet, contact [Hans Malschaert](hans.malschaert@nioz.nl).
+
+```bash
+
+#log into ada
+ssh -XY username@ada.nioz.nl
+
+#go to your home directory, or to wherever you want to work
+cd /export/lv1/user/username
+
+#set and go into working directory
+mkdir Annotations
+cd Annotations
+
+```
+
+## Get genomes of interest
+
+First, we will download two archaeal genomes from NCBI and rename them a bit. (If want to work with, lets say all archaeal genomes on ncbi, have a look at the steps following this section).
+
+Generally, something to watch out for when naming files is:
+
+- Have short but descriptive headers. I.e. in this case you will see the header is rather long, so we want to shorten it
+- Avoid extra symbols (space, comma, semicolon) as these can easily result in unwanted behaviour. Personally, I like to only use
+
+  - underscores for everything where I normally would use a space
+  - minus symbol for key information that we might want to separate later (i.e. genome name and protein ID)
+
+- When dealing with fasta files, the fasta headers should also be short and informative. Generally, what I would recommend doing:
+
+  - Add the genome name into the fasta header and use a unique delimiter to separate it from the contig id. That way you can concatenate your genomes.
+  - Shorten the header by cutting text after a space
+
+```bash
+
+#make folder for genomes
+mkdir fna
+mkdir fna/renamed
+
+#download genomes
+wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/008/085/GCA_000008085.1_ASM808v1/GCA_000008085.1_ASM808v1_genomic.fna.gz
+wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/017/945/GCA_000017945.1_ASM1794v1/GCA_000017945.1_ASM1794v1_genomic.fna.gz
+
+#unzip genomes
+gzip -d *gz
+
+#shorten filename by cutting after the dot
+for f in *.fna; do mv $f "${f/.*}".fna; done
+
+#cut the contig name after the space
+for f in *.fna; do cut -d " " -f1  $f > fna/${f}; done
+
+#add the genome name into the header
+cd fna
+for i in *fna; do awk '/>/{sub(">","&"FILENAME"-");sub(/\.fna/,x)}1' $i > renamed/$i; done
+
+#cleanup
+rm *fna
+cd ..
+rm *fna
+
+```
+
+### The steps above work fine but what if we have hundreds of genomes?
+
+For the tutorial we will continue at (this part is just for general information):
+- **## Make a filelist for all genomes of interest** 
+
+```bash
+
+#get a list of all avail. archaeal genomes
+wget ftp://ftp.ncbi.nlm.nih.gov/genomes/genbank/archaea/assembly_summary.txt
+
+#clean up the file by removing the first row and any `#` and move the tax id to the front
+sed 1d assembly_summary.txt | sed 's/# //g' | awk -F"\t" -v OFS="\t" '{print $6, $0} ' | sed 's/ /_/g' > assembly_summary_archaea_Dec20.txt
+
+#replace empty rows with a "none" and remove the header
+awk 'BEGIN { FS = OFS = "\t" } { for(i=1; i<=NF; i++) if($i ~ /^ *$/) $i="none"}; 1' assembly_summary_archaea_Dec20.txt | sed '1d' > temp1
+
+#add in the tax string (to be able to better select genomes)
+#merge assembly info with tax string
+LC_ALL=C join -a1  -j1 -e'-' -o 0,1.2,1.3,1.4,1.5,1.6,1.8,1.9,1.10,1.11,1.13,1.16,1.17,1.18,1.19,1.21,2.2 <(LC_ALL=C sort temp1) <(LC_ALL=C sort  /export/lv1/user/spang_team/Databases/NCBI_taxonomy/Dec2020/lineages-2020-12-10.csv) -t $'\t' > temp2
+
+#add in headers
+
+echo -e "taxid\taccession\tbioproject\tbiosample\twgs\trefseq_category\tspeciesID\torganism\tintraspecific_name\tisolate\tassembly\trel_date\tasm\tsubmitter\tgcf_name\tftp_path\ttax" | cat -  temp2 >  assembly_summary_archaea_Dec2020_tax.txt
+
+```      
+
+In this file you can just look for the genomes you are interested in. You might run CheckM as well to select them based on their genome stats.
+
+Once you have your genomes copy the ftp_links into a text document an run this:
+
+```bash
+
+
+# extend path to be able to download the genomes
+sed -r 's|(ftp://ftp.ncbi.nlm.nih.gov/genomes/all/)(GCA/)([0-9]{3}/)([0-9]{3}/)([0-9]{3}/)(GCA_.+)|\1\2\3\4\5\6/\6_genomic.fna.gz|' get_genomes.txt  > get_genomes_v2.txt
+
+# download genomes
+for next in $(cat get_genomes_v2.txt); do wget  "$next"; done
+
+```
+
+Once you have the genomes, you can clean the names as suggested above and continue with the steps below.
+
+In case you want to update the taxID to taxstring file, this is the workflow:
+
+```bash
+
+#We already have a taxonomy file in the path mentioned below
+#the date of the newest version is found in the file name (updated 30Jul2019)
+#if you want a newer one, run the steps below
+#
+cd /export/lv1/user/spang_team/Scripts/NCBI_taxdump/ncbitax2lin
+
+#start bashrc that allows to run conda
+source ~/.bashrc.conda2
+
+#setup virtual environment (see more instructions here: https://github.com/zyxue/ncbitax2lin)
+#virtualenv venv/
+
+#re-do taxonomy mapping file
+make
+
+#unzip file
+gzip -d  lineages-2020-12-10.csv.gz
+
+#close virtual environment
+#source deactivate venv/
+
+#make a new directory for the most current tax
+mkdir /export/lv1/user/spang_team/Databases/NCBI_taxonomy/Dec2020
+
+#change dir
+cd /export/lv1/user/spang_team/Databases/NCBI_taxonomy/Dec2020
+
+#replace space with underscore
+sed 's/ /_/g'  ~/../spang_team/Scripts/NCBI_taxdump/ncbitax2lin/lineages-2020-12-10.csv  > temp1
+
+#only print the levels until species
+awk -F',' -v OFS="\t" '{print $1,$2,$3,$4,$5,$6,$7,$8}' temp1 > temp2
+
+#add in “none” whenever a tax level is emtpy
+awk 'BEGIN { FS = OFS = "\t" } { for(i=1; i<=NF; i++) if($i ~ /^ *$/) $i="none"}; 1' temp2 > temp3
+
+#merge columns 2-8
+awk ' BEGIN { FS = OFS = "\t" } {print $1,$2","$3","$4","$5","$6","$7","$8}' temp3 > temp4
+
+#remove header
+sed '1d' temp4 > lineages-2020-12-10.csv
+
+#clean up
+rm temp*
+
+
+```
+
+
+## Make a filelist for all genomes of interest
+
+Make a file that lists all the genomes we are working with.
+Such a file list is useful when working with loops
+
+```bash
+
+mkdir FileLists
+
+#list our genomes of interest
+ls fna/* | sed 's/\.fna//g' | sed 's/fna\///g' > FileLists/GenomeList
+
+```
+
+
+
+
+## Call proteins with prokka and clean files
+
+
+Now that we have the genomes organized, lets call the proteins with prokka.
+One can also run prodigal, but we use some outputs from prokka to summarize contig stats. If you use prokka, simply continue with the Annotation section.
+
+Notice:
+
+For prokka we have some specific setups that are needed for prokka to run on the NIOZ servers. If you are on your own system adjust accordingly.
+
+### Run prokka
+
+```bash
+mkdir faa
+mkdir faa/Prokka
+
+#run prokka for archaea
+export PERL5LIB=/export/lv1/public_perl/perl5/lib/perl5
+
+#add libraries so that tbl2asn works
+export PATH=$PATH:/opt/biolinux/prokka/binaries/linux/
+
+#run prokka
+for sample in `cat FileLists/GenomeList`; do prokka fna/renamed/${sample}.fna --outdir faa/Prokka/${sample} --prefix $sample --kingdom Archaea --addgenes --force --increment 10 --compliant --centre UU --cpus 20 --norrna --notrna ; done
+
+#control number of Genomes
+ll faa/Prokka/*/*faa | wc -l
+
+```
+
+We have 2 Genomes, as we would expect. So we can proceed to the next step.
+
+
+### Concatenate genomes
+
+If we look at the fasta headers of the newly generated files, we see that the header is not very descriptive.
+I.e. we have something like this: ``>HHJGDELG_00010 putative translation initiation factor IF-2``
+
+Since for the following workfow we want to concatenate the two genomes, i.e. merge the two files into one, 
+it is useful to add the genome name into the fasta header before merging the files. 
+
+This is optional, but it is useful to use a special delimiter to later separate the genomee from the protein name.
+Therefore we add the file name and separate it with the old sequence header with a '-'
+
+We do this like this:
+
+```bash
+#make folder
+cd faa/Prokka/
+
+#add bin name into fasta header and copy the new files into a new folder
+mkdir renamed
+cp GCA*/*faa .
+
+#add the filename into the fasta header
+for i in *faa; do awk '/>/{sub(">","&"FILENAME"-");sub(/\.faa/,x)}1' $i > renamed/$i; done
+
+#cleanup temp files
+rm *faa
+
+#concatenate files
+cat renamed/*faa > All_Genomes.faa
+
+#clean the header/shorten it by removing everything after the space
+cut -f1 -d " "  All_Genomes.faa > All_Genomes_clean.faa
+
+#go back to the wdir
+cd ../..
+
+#make db out of concat genomes (we need this whenever we want to run blast)
+makeblastdb -in faa/Prokka/All_Genomes_clean.faa  -out faa/All_Genomes_clean   -dbtype prot -parse_seqids
+
+
+```
+
+
+
+###################################################################################
+###################################################################################
+# Make a mapping file with all relevant genome info
+###################################################################################
+###################################################################################
+
+
+Now that our files are ready we first want to make a table with the basic stats (i.e. contig length, contig gc, protein length, ...).
+
+
+
+## Get contig stats
+##################################
+
+Prokka has the habit to rename the fasta header. I.e. the original contig name is getting renamed.
+Therefore, it is hard to link from what contig the proteins originally came from. The workflow below generates a mapping file that links the original contig name with the prokka contig name.
+
+The goal is to generate a file with this information:
+
+- old contig name, binID, contig GC, contig length
+
+**Notice**
+
+This part depends a lot on the files having short naming schemes and no extra symbols. So make sure that the final file, has the 4 columns we would expect.
+
+```bash
+#make folder
+mkdir contig_mapping
+
+#get contig length for controlling whether the merging of information works ok
+for sample in `cat FileLists/GenomeList`; do perl ~/../spang_team/Scripts/Others/length+GC.pl fna/renamed/${sample}.fna > contig_mapping/${sample}_temp1; done
+
+#add number of contigs as separate column
+for sample in `cat FileLists/GenomeList`; do awk '$1=(FNR FS $1 FILENAME)' contig_mapping/${sample}_temp1 > contig_mapping/${sample}_temp2; done
+
+#add in binIDs, so we ahve: binID, contig nr, contig gc and contig length
+for sample in `cat FileLists/GenomeList`; do awk 'BEGIN{OFS="\t"}{split($2,a,"-"); print a[2],$1,$3,$4}' contig_mapping/${sample}_temp2  > contig_mapping/${sample}_temp3; done
+
+for sample in `cat FileLists/GenomeList`; do awk 'BEGIN{OFS="\t"}{split($1,a,"/"); print a[1],a[2], $2,$3,$4}' contig_mapping/${sample}_temp3 | sed 's/contig_mapping//g' | sed 's/_temp1//g'  > contig_mapping/${sample}_temp4; done
+
+#combine results
+cat contig_mapping/*temp4 > contig_mapping/Contig_Old_mapping.txt
+
+#cleanup temp files
+rm contig_mapping/*temp*
+
+#create file for merging with prokka contigIDs. Here, we add the binID with the contig number together to recreate the prokka contig name
+awk 'BEGIN{OFS="\t"}{print $2"_contig_"$3,$0}' contig_mapping/Contig_Old_mapping.txt > contig_mapping/Contig_Old_mapping_for_merging.txt
+
+```
+
+
+
+## Prepare list that links proteins with binIDs
+##################################
+
+Now, we want to generate a file that lists all proteins we are working and a second column with the bin ID. 
+So we want two columns: proteinID (accession), binID. 
+
+```bash
+#get list of protein accession nrs
+grep "^>" faa/Prokka/All_Genomes_clean.faa  > temp
+
+
+#remove the prokka annotations
+cut -f1 -d " " temp > temp2
+
+#remove the ``>``
+sed 's/>//g' temp2 > FileLists/AllProteins_list.txt
+
+#remove temp files
+rm temp*
+
+#Modify protein list to add in a column with binID
+awk -F'\t' -v OFS='\t' '{split($1,a,"-"); print $1, a[1]}' FileLists/AllProteins_list.txt | LC_ALL=C sort > FileLists/1_Bins_to_protein_list.txt
+
+#check with how many proteins we work
+wc -l FileLists/1_Bins_to_protein_list.txt
+
+```
+
+We have 2,069 proteins
+
+Throughout the workflow (or whenever generating your own pipeline), check that the nr. of protein stays consistents.
+It is always good to check the files we generate to get a better feeling on:
+
+- what is happening at specific points in the script
+- Find potential bugs
+
+The final file we generate should look something like this:
+
+<p>
+  <img width=600, height=600, src="/Users/ninadombrowski/Desktop/WorkingDir/Notebooks/Pictures/annotations1.png">
+</p>
+
+
+## Prepare a file with prokka annotations $ Lengths $ other genome info
+##################################
+
+Now, we want to generate a file that links the contig info and all the protein info.
+
+```bash
+
+#compress gbk files (generated by prokka)
+gzip faa/Prokka/*/*gbk
+
+#make list for looping
+for f in faa/Prokka/*/*gbk.gz; do echo $f >> FileLists/list_of_gzips; done
+
+#control that the nr of files we have is correct
+wc -l FileLists/list_of_gzips
+
+'''
+We deal with 2 genomes
+'''
+
+#create a summary file based on the gbk file
+#lists the binname, contig name, contig length, proteinID, prokka annotation
+python ~/../spang_team/Scripts/Others/Parse_prokka_for_MAGs_from_gbk-file.py -i FileLists/list_of_gzips -t FileLists/Contig_Protein_list.txt
+
+#make prokka to binId mapping file
+awk 'BEGIN{OFS="\t"}{split($1,a,"-"); print a[2],$2}' FileLists/1_Bins_to_protein_list.txt | sed 's/_[0-9]*\t/\t/g' | sort | uniq > FileLists/Prokka_to_BinID.txt
+
+#link old to new binIDs
+awk 'BEGIN{FS="\t";OFS="\t"}FNR==NR{a[$1]=$0;next}{print $0,a[$1]}' FileLists/Prokka_to_BinID.txt FileLists/Contig_Protein_list.txt | awk 'BEGIN{FS="\t";OFS="\t"}{print $1,$7,$2,$2,$3,$4,$5}'  > temp_Bin_Contig_Protein_list.txt
+
+#add in extra column for contig nr
+awk -F'\t' -v OFS='\t'   'gsub("[A-Za-z0-9]*_","",$4)' temp_Bin_Contig_Protein_list.txt | awk -F'\t' -v OFS='\t' '{print $2"_contig_"$4,$1,$2,$3,$4,$5,$6,$7}' > FileLists/Bin_Contig_Protein_list.txt
+
+#merge with old contig IDs
+#headers: accession, BinID, newContigID, oldContigID, mergeContigID,ContigLengthNew, LengthContigOld, GC,ProteinID, prokka
+awk 'BEGIN{FS="\t";OFS="\t"}FNR==NR{a[$1]=$0;next}{print $0,a[$1]}' contig_mapping/Contig_Old_mapping_for_merging.txt FileLists/Bin_Contig_Protein_list.txt | awk 'BEGIN{FS="\t";OFS="\t"}{print $3"-"$7,$3,$4,$10,$1,$6,$14,$13,$7,$8}' >  FileLists/Bin_Contig_Protein_list_merged.txt
+
+#prepare a file with protein length and gc to add protein length into our file
+perl ~/../spang_team/Scripts/Others/length+GC.pl faa/Prokka/All_Genomes_clean.faa > temp
+
+#merge with contig/protein info
+awk 'BEGIN{FS="\t";OFS="\t"}FNR==NR{a[$1]=$0;next}{print $0,a[$1]}' temp FileLists/Bin_Contig_Protein_list_merged.txt | awk 'BEGIN{FS="\t";OFS="\t"}{print $1,$2,$3,$4,$5,$6,$7,$8,$9,$12,$13,$10}' > temp2
+
+#add a header
+echo -e "accession\tBinID\\tNewContigID\tOldContigId\tContigIdMerge\tContigNewLength\tContigOldLength\tGC\tProteinID\tProteinGC\tProteinLength\tProkka" | cat - temp2 > FileLists/B_GenomeInfo.txt
+
+#control that all is ok
+wc -l FileLists/B_GenomeInfo.txt
+#2070
+
+#remove temp files
+rm temp*
+```
+
+
+
+###################################################################################
+###################################################################################
+# Do the annotations
+###################################################################################
+###################################################################################
+
+Whenever possible, I will outline how the input databases were generated (or I will try to add this information at a later point).
+You do not need to run this yourself, just start at the search section.
+
+All searches work with a similar workflow:
+
+- Do the search (with hmmer, diamond, blast, etc.)
+- For each protein, make sure we have just one unique hit (usually we select the best hit by the best e-value or bitscore)
+- Clean up the output from the search
+- Merge the output with our protein list (that way we make sure we always have the same nr. of rows in all the files we generate)
+- add in metadata, i.e. when we do the search against the COGs we only have the COG IDs, but we want to add a gene description here
+- add an informative header
+
+For all the searches, we keep the original input table and the final output table.
+
+Once we have run the search, we merge all the results in a step-wise manner (using the protein IDs)
+and then in the final step clean the final dataframe by removing redundant information.
+
+
+## COG search
+##################################
+
+Possible settings to change:
+
+- number of CPUs (default = 20)
+- e-value threshold (default = 1e-5)
+
+
+```bash 
+
+#1. Setup directories
+mkdir NCBI_COGs
+mkdir merge
+
+#2. run hmmsearch against all pfams = nr of CPUs here --> 20
+/export/data01/tools/scripts/bash/hmmsearchTable faa/Prokka/All_Genomes_clean.faa /export/data01/databases/cogs/hmms/NCBI_COGs_Oct2020.hmm 20 -E 1e-5 > NCBI_COGs/All_NCBI_COGs.txt
+
+#separate header with eggnog and ID
+awk -F'\t' -v OFS='\t' '{split($3,a,"."); print $1, a[1], $5,$6}' NCBI_COGs/All_NCBI_COGs.txt | LC_ALL=C sort > NCBI_COGs/temp
+
+#merge with contig list
+LC_ALL=C join -a1  -j1 -e'-' -t $'\t' -o 0,2.2,2.3 <(LC_ALL=C sort FileLists/1_Bins_to_protein_list.txt) <(LC_ALL=C sort NCBI_COGs/temp) | LC_ALL=C sort  > NCBI_COGs/temp4
+
+#merge with eggnog names
+LC_ALL=C join -a1 -1 2 -2 1 -e'-' -t $'\t' -o1.1,0,2.3,2.2,2.5,1.3 <(LC_ALL=C sort -k2 NCBI_COGs/temp4) <(LC_ALL=C sort -k1 /export/data01/databases/cogs/hmms/cog_mapping.txt ) | LC_ALL=C  sort > NCBI_COGs/temp5
+
+#add in headers
+echo -e "accession\tNCBI_COG\tNCBI_COG_Description\tPathwayID\tPathway\tNCBI_COG_evalue" | cat - NCBI_COGs/temp5 > NCBI_COGs/A_NCBI_COGs.tsv
+
+#combine with previous dataframe
+awk 'BEGIN{FS="\t";OFS="\t"}FNR==NR{a[$1]=$0;next}{print $0,a[$1]}' NCBI_COGs/A_NCBI_COGs.tsv  FileLists/B_GenomeInfo.txt > merge/temp_A.tsv
+
+#clean-up
+rm NCBI_COGs/temp*
+
+````
+
+
+
+## ArCOGs search
+##################################
+
+The arCOGs are specific to archaea, but can still be included when working with bacteria.
+
+Possible settings to change:
+
+- number of CPUs (default = 20)
+- e-value threshold (default = 1e-5)
+
+
+```bash
+
+#prepare folders
+mkdir arcogs
+
+#run arcog search -> 20 = number of CPUs used
+hmmsearch --tblout arcogs/sequence_results.txt -o arcogs/results_all.txt --domtblout arcogs/domain_results.txt --notextw --cpu 10 /export/data01/databases/arCOG/arCOGs2019/All_Arcogs_2018.hmm faa/Prokka/All_Genomes_clean.faa
+
+#format the table and only select sequences above a certain evalue
+sed 's/ \+ /\t/g' arcogs/sequence_results.txt | sed '/^#/d'| sed 's/ /\t/g'| awk -F'\t' -v OFS='\t' '{print $1, $20,$21, $4,$14,$13, $3}' | awk -F'\t' -v OFS='\t' '($6 + 0) <= 1E-5'  > arcogs/sequence_results_red_e_cutoff.txt
+
+#get best hit based on bit score, and then evalue
+sort -t$'\t' -k5,5gr -k6,6g arcogs/domain_results_red_e_cutoff.txt | sort -t$'\t' --stable -u -k1,1  | sort -t$'\t' -k5,5gr -k6,6g >  arcogs/All_arcogs_hmm.txt
+
+#separate header with arcog and ID
+awk -F'\t' -v OFS='\t' '{split($3,a,"."); print $1, a[1], $5,$6}' arcogs/All_arcogs_hmm.txt | LC_ALL=C sort > arcogs/temp3
+
+#merge with contig list
+LC_ALL=C join -a1  -j1 -e'-' -t $'\t' -o 0,2.2,2.3 <(LC_ALL=C sort FileLists/1_Bins_to_protein_list.txt) <(LC_ALL=C sort arcogs/temp3) | LC_ALL=C sort  > arcogs/temp4
+
+#merge with arcog names
+LC_ALL=C join -a1 -1 2 -2 1 -e'-' -t $'\t' -o1.1,0,2.3,2.4,2.2,1.3 <(LC_ALL=C sort -k2 arcogs/temp4) <(LC_ALL=C sort -k1 /export/data01/databases/arCOG/arCOGs2019/ar14.arCOGdef18.tab) | LC_ALL=C  sort > arcogs/temp5
+
+#add in headers
+echo -e "accession\tarcogs\tarcogs_geneID\tarcogs_Description\tPathway\tarcogs_evalue" | cat - arcogs/temp5 > arcogs/C_arcogs.tsv
+
+#combine with previous dataframe
+awk 'BEGIN{FS="\t";OFS="\t"}FNR==NR{a[$1]=$0;next}{print $0,a[$1]}' arcogs/C_arcogs.tsv merge/temp_A.tsv > merge/temp_BC.tsv
+
+#clean-up
+rm arcogs/temp*
+
+```
+
+
+
+
+
+
+
+
+
+## KO search using Hmm's
+##################################
+
+Possible settings to change:
+
+- number of CPUs (default = 20)
+- e-value threshold (default = 1e-5)
+
+
+```bash
+#1. Setup directories
+mkdir KO_hmm
+
+#2. run hmmsearch against all pfams --> 20 --> number of CPUS used
+/export/data01/tools/scripts/bash/hmmsearchTable faa/Prokka/All_Genomes_clean.faa  /export/data01/databases/ko/combined_hmms/All_KOs.hmm 20 -E 1e-5 > KO_hmm/All_KO_hmm.txt
+
+#merge with protein list
+LC_ALL=C join -a1 -t $'\t' -j1 -o 0,2.3,2.5,2.6 <(LC_ALL=C sort FileLists/1_Bins_to_protein_list.txt) <(LC_ALL=C sort KO_hmm/All_KO_hmm.txt) | sort -u -k1 > KO_hmm/temp
+
+#get rid of empty space
+awk 'BEGIN {FS = OFS = "\t"} {for(i=1; i<=NF; i++) if($i ~ /^ *$/) $i = "-" }; 1' KO_hmm/temp > KO_hmm/temp2
+
+#merge with KO_hmm names
+LC_ALL=C join -a1 -1 2 -2 1 -e'-' -t $'\t' -o1.1,1.2,1.3,1.4,2.2,2.12  <(LC_ALL=C sort -k2 KO_hmm/temp2) <(LC_ALL=C sort -k1 /export/data01/databases/ko/ko_list_for_mapping) | LC_ALL=C  sort > KO_hmm/temp3
+
+#add in an extra column that lists whether hits have a high confidence score
+awk  -v OFS='\t' '{ if ($4 > $5){ $7="high_score" }else{ $7="-" } print } ' KO_hmm/temp3 > KO_hmm/temp4
+
+#add header
+echo -e "accession\tKO_hmm\te_value\tbit_score\tbit_score_cutoff\tDefinition\tconfidence" | cat - KO_hmm/temp4 > KO_hmm/M_KO_hmm.tsv
+
+#combine with previous dataframe
+awk 'BEGIN{FS="\t";OFS="\t"}FNR==NR{a[$1]=$0;next}{print $0,a[$1]}' KO_hmm/M_KO_hmm.tsv merge/temp_BC.tsv > merge/temp_BCM.tsv
+
+#control lines
+wc -l merge/*
+
+#clean up
+rm KO_hmm/temp*
+
+```
+
+
+
+
+
+
+
+## Pfam search
+##################################
+
+Possible settings to change:
+
+- number of CPUs (default = 20)
+- e-value threshold (default = 1e-5)
+
+
+```bash
+#1. Setup directories
+mkdir pfam
+
+#2. run hmmsearch against all pfams --> 20 = number of CPUs used
+/export/data01/tools/scripts/bash/hmmsearchTable faa/Prokka/All_Genomes_clean.faa  /export/data01/databases/pfam/Pfam-A.hmm 20 -E 1e-5 > pfam/All_pfam.txt
+
+#remove header to avoid issues with join
+sed '1d' pfam/All_pfam.txt > pfam/temp
+
+#cp 4th column into first and remove everything after the dot.
+awk -F "\t" -v OFS="\t" '{gsub(/\./, "\t", $4); print}'  pfam/temp > pfam/temp2
+
+#merge with protein list
+LC_ALL=C join -a1 -t $'\t' -j1 -o 0,1.2,2.6,2.4 <(LC_ALL=C sort FileLists/1_Bins_to_protein_list.txt) <(LC_ALL=C sort pfam/temp2) | sort -u -k1 > pfam/temp3
+
+#get rid of empty space
+awk 'BEGIN {FS = OFS = "\t"} {for(i=1; i<=NF; i++) if($i ~ /^ *$/) $i = "-" }; 1' pfam/temp3  > pfam/temp4
+
+#merge with pfam names
+LC_ALL=C join -a1 -1 4 -2 1 -t $'\t' -e'-' -o1.1,0,2.5,1.3 <(LC_ALL=C sort -k4 pfam/temp4) <(LC_ALL=C sort -k1 /export/data01/databases/pfam/Pfam-A.clans.cleaned.tsv) | LC_ALL=C sort > pfam/temp5
+
+#add in header
+echo -e "accession\tPFAM_hmm\tPFAM_description\tPfam_Evalue" | cat - pfam/temp5 > pfam/E_Pfam.tsv
+
+#combine with previous dataframe
+awk 'BEGIN{FS="\t";OFS="\t"}FNR==NR{a[$1]=$0;next}{print $0,a[$1]}' pfam/E_Pfam.tsv merge/temp_BCM.tsv > merge/temp_BCME.tsv
+
+#control lines
+wc -l merge/*
+
+#clean up
+rm pfam/temp*
+
+```
+
+
+
+
+
+
+## TIGR search
+##################################
+
+Possible settings to change:
+
+- number of CPUs (default = 20)
+- e-value threshold (default = 1e-5)
+
+
+```bash
+#1. Setup directories
+mkdir TIGRs
+
+#2. run hmmsearch --> 20 = number of CPUs used
+/export/data01/tools/scripts/bash/hmmsearchTable faa/Prokka/All_Genomes_clean.faa  /export/data01/databases/tigr/TIGRFAMs_15.0_HMM.LIB 20 -E 1e-5 > TIGRs/All_TIGR.txt
+
+#merge with protein list
+LC_ALL=C join -a1 -t $'\t' -j1 -o 0,1.2,2.3,2.5 <(LC_ALL=C sort FileLists/1_Bins_to_protein_list.txt) <(LC_ALL=C sort TIGRs/All_TIGR.txt) | sort -u -k1 > TIGRs/temp
+
+#get rid of empty space
+awk 'BEGIN {FS = OFS = "\t"} {for(i=1; i<=NF; i++) if($i ~ /^ *$/) $i = "-" }; 1' TIGRs/temp > TIGRs/temp2
+
+#merge with pfam names
+LC_ALL=C join -a1 -1 3 -2 1 -e'-' -t $'\t' -o1.1,0,2.3,2.4,1.4  <(LC_ALL=C sort -k3 TIGRs/temp2) <(LC_ALL=C sort -k1 /export/data01/databases/tigr/TIGR_Info_clean2.txt)| LC_ALL=C  sort > TIGRs/temp3
+
+#add header
+echo -e "accession\tTIRGR\tTIGR_description\tEC\tTIGR_Evalue" | cat - TIGRs/temp3 > TIGRs/F_TIGR.tsv
+
+#combine with previous dataframe
+awk 'BEGIN{FS="\t";OFS="\t"}FNR==NR{a[$1]=$0;next}{print $0,a[$1]}' TIGRs/F_TIGR.tsv merge/temp_BCME.tsv > merge/temp_BCMEF.tsv
+
+#control lines
+wc -l merge/*
+
+#clean up
+rm TIGRs/temp*
+
+```
+
+
+
+
+
+
+## CazyDB search
+##################################
+
+Possible settings to change:
+
+- number of CPUs (default = 20)
+- e-value threshold (default = 1e-5)
+
+
+```bash
+#make folder
+mkdir CAZYmes
+
+#2. run hmmsearch against all pfams --> 20 = number of CPUs used
+/export/data01/tools/scripts/bash/hmmsearchTable faa/Prokka/All_Genomes_clean.faa /export/data01/databases/cazy_spt/dbCAN-HMMdb-V7.txt 20 -E 1e-20 > CAZYmes/All_vs_CAZYmes.txt
+
+#remove .hmm
+sed s'/\.hmm//g'  CAZYmes/All_vs_CAZYmes.txt > CAZYmes/temp
+
+#remove header to avoid issues with join
+sed '1d' CAZYmes/temp > CAZYmes/temp2
+
+#merge with contig list
+LC_ALL=C join -a1  -j1 -e'-' -t $'\t' -o 0,2.3,2.5 <(LC_ALL=C sort FileLists/1_Bins_to_protein_list.txt) <(LC_ALL=C sort CAZYmes/temp2)  | LC_ALL=C sort  > CAZYmes/temp3
+
+#merge with mapping file
+LC_ALL=C join -a1  -1 2 -2 1 -e'-' -t $'\t' -o 1.1,1.2,1.3,2.2 <(LC_ALL=C sort -k2 CAZYmes/temp3) <(LC_ALL=C sort /export/data01/databases/cazy_spt/CAZY_mapping_2.txt) | LC_ALL=C sort  > CAZYmes/temp4
+
+#add in headers
+echo -e "accession\tCAZy\tCAZy_evalue\tDescription" | cat - CAZYmes/temp4 > CAZYmes/G_CAZy.tsv
+
+#combine with previous dataframe
+awk 'BEGIN{FS="\t";OFS="\t"}FNR==NR{a[$1]=$0;next}{print $0,a[$1]}' CAZYmes/G_CAZy.tsv merge/temp_BCMEF.tsv > merge/temp_BCMEFG.tsv
+
+#control lines
+wc -l merge/*
+
+#clean up
+rm CAZYmes/temp*
+
+```
+
+
+
+
+## Transporter DB search
+##################################
+
+#still need to integrate mapping file: /export/data01/databases/tcdb/TransporterDB/TCDB_Desc_final.txt
+
+Possible settings to change:
+
+- number of CPUs (default setting for -num_threads = 20)
+- e-value threshold (default setting for -evalue = 1e-20)
+
+
+```bash
+
+#make folder
+mkdir TransporterDB
+
+#2. run blast against all MeropsDB
+blastp -num_threads 20 -outfmt 6 -query faa/Prokka/All_Genomes_clean.faa -db /export/data01/databases/tcdb/TransporterDB/tcdb_renamed_short -out TransporterDB/All_vs_TPDB.tsv -evalue 1e-20
+
+#find best hit
+perl ~/../spang_team/Scripts/Others/best_blast.pl TransporterDB/All_vs_TPDB.tsv TransporterDB/temp
+
+'''
+Total # records = 4020
+Best only # records = 104
+'''
+
+#split ids, GCA_000008085-CALJACFG_00140
+awk -F'\t' -v OFS='\t' '{split($2,a,"|"); print $1, a[1], a[2], $11}' TransporterDB/temp| LC_ALL=C sort > TransporterDB/temp2
+
+#merge with contig list
+LC_ALL=C join -a1  -j1 -e'-' -t $'\t' -o 0,2.3,2.4 <(LC_ALL=C sort FileLists/1_Bins_to_protein_list.txt) <(LC_ALL=C sort TransporterDB/temp2)  | LC_ALL=C sort  > TransporterDB/temp3
+
+#merge with mapping file
+LC_ALL=C join -a1  -1 2 -2 2 -e'-' -t $'\t' -o 1.1,1.2,1.3,2.3 <(LC_ALL=C sort -k2 TransporterDB/temp3) <(LC_ALL=C sort -k2 /export/data01/databases/tcdb/TransporterDB/TCDB_Desc_final.txt) | LC_ALL=C sort  > TransporterDB/temp4
+
+#add in headers
+echo -e "accession\tTCBD_ID\tTCBD_evalue\tTCBD_description" | cat - TransporterDB/temp4 > TransporterDB/I_TPDB.tsv
+
+#combine with previous dataframe
+awk 'BEGIN{FS="\t";OFS="\t"}FNR==NR{a[$1]=$0;next}{print $0,a[$1]}' TransporterDB/I_TPDB.tsv merge/temp_BCMEFG.tsv > merge/temp_BCMEFGHI.tsv
+
+#control lines
+wc -l merge/*
+
+#clean up
+rm TransporterDB/temp*
+
+```
+
+
+
+
+
+## HydDB search 
+##################################
+
+Possible settings to change:
+
+- number of CPUs (default setting for -num_threads = 20)
+- e-value threshold (default setting for -evalue = 1e-20)
+
+
+```bash
+
+#make folder
+mkdir HydDB
+
+#run search
+blastp -num_threads 20 -outfmt 6 -query faa/Prokka/All_Genomes_clean.faa -db /export/data01/databases/HydDB/HydDB_uniq -out HydDB/All_vs_HydDB.tsv -evalue 1e-20
+
+#find best hit
+perl /export/data01/tools/scripts/perl/best_blast.pl HydDB/All_vs_HydDB.tsv HydDB/temp
+
+'''
+Total # records = 708
+Best only # records = 2
+'''
+
+#merge with contig list
+LC_ALL=C join -a1  -j1 -e'-'  -t $'\t' -o 0,2.2,2.3,2.11,2.12 <(LC_ALL=C sort FileLists/1_Bins_to_protein_list.txt) <(LC_ALL=C sort HydDB/temp) | LC_ALL=C sort  > HydDB/temp2
+
+#merge with HydDB names
+LC_ALL=C join -a1 -1 2 -2 1 -e'-' -t $'\t' -o1.1,0,2.2,1.4  <(LC_ALL=C sort -k2  HydDB/temp2) <(LC_ALL=C sort -k1 /export/data01/databases/HydDB/HydDB_mapping)  | LC_ALL=C  sort > HydDB/temp3
+
+#add in headers
+echo -e "accession\tHydDB\tDescription\tHydDB_evalue" | cat - HydDB/temp3 > HydDB/J_HydDB.tsv
+
+#combine with previous dataframe
+awk 'BEGIN{FS="\t";OFS="\t"}FNR==NR{a[$1]=$0;next}{print $0,a[$1]}' HydDB/J_HydDB.tsv merge/temp_BCMEFGHI.tsv > merge/temp_BCMEFGHIJ.tsv
+
+#control lines
+wc -l merge/*
+
+#clean up
+rm HydDB/temp*
+
+```
+
+
+
+## IPRscan --> done
+##################################
+
+Possible settings to change:
+
+- Number of files we split the concatenated fasta file into via Split_Multifasta.py (default of -n = each split file will contain 1000 sequences)
+- number of parallel jobs to run via parallel (default setting for -j= 4)
+- e-value threshold (default setting for -evalue = 1e-20)
+
+
+### genome cleanup
+
+IPRscan does not like to deal with ``*`` in the protein files. Prokka marks partial sequences with a ``*``, which is why we should remove this symbol first
+
+```bash 
+
+#interproscan does not like if we have stars in our protein files, so we need to remove them
+cd faa/Prokka
+sed 's/*//g' All_Genomes_clean.faa >  All_Genomes_clean_interproscan.faa 
+cd ../..
+
+```
+
+Before running IPRscan, we can split our big concatenated file into several smaller files.
+Then we can use parallel GNU to speed things up. 
+
+We set the number of processes to run with ``-j``. Always make sure that you adjust this depending on the avail resources. 
+
+### run iprscan
+
+```bash
+mkdir IPRscan
+
+#split files
+python /export/data01/tools/scripts/python/Split_Multifasta.py -m faa/Prokka/All_Genomes_clean_interproscan.faa -n 1000
+#2069 split into 3 files
+
+#move files into a better location
+mkdir split_faa
+mv File*.faa split_faa
+
+#iprscan: (interproscan-5.31-70.0)
+#"cite:Tange (2011): GNU Parallel - The Command-Line Power Tool, ;login: The USENIX Magazine, February 2011:42-47."
+
+parallel -j4 'i={}; interproscan.sh -i $i -d IPRscan/ -T IPRscan/temp --iprlookup --goterms' ::: split_faa/File*.faa
+
+#Concat result files
+cd IPRscan
+mkdir single_files
+mv File* single_files
+mkdir Concat_results/
+
+cat single_files/File*.faa.xml > Concat_results/All_bins_iprscan-results.xml
+cat single_files/File*.faa.gff3 > Concat_results/All_bins_bins_iprscan-results.gff3
+cat single_files/File*.faa.tsv > Concat_results/All_bins_bins_iprscan-results.tsv
+
+#cleanup
+rm single_files/File*
+
+cd ..
+
+#clean up fasta header so that it is exactly the same as the accession ID in the interproscan results
+python /export/data01/tools/scripts/python/parse_IPRdomains_vs2_GO_2.py -s faa/Prokka/All_Genomes_clean.faa -i IPRscan/Concat_results/All_bins_bins_iprscan-results.tsv -o IPRscan/All_bins_bins_iprscan-results_parsed.tsv
+
+#remove issue with spaces
+sed 's/ /_/g' IPRscan/All_bins_bins_iprscan-results_parsed.tsv | LC_ALL=C  sort > IPRscan/temp.txt
+
+#print only columns of interest
+awk -F'\t' -v OFS="\t"  '{print $1, $2,$3,$4, $5}' IPRscan/temp.txt > IPRscan/temp2
+
+#add header
+echo -e "accession\tIPR\tIPRMdescription\tIPR_PFAM\tIPR_PFAMdescription" | cat - IPRscan/temp2 > IPRscan/K_IPR.tsv
+
+#combine with previous dataframe
+awk 'BEGIN{FS="\t";OFS="\t"}FNR==NR{a[$1]=$0;next}{print $0,a[$1]}' IPRscan/K_IPR.tsv merge/temp_BCMEFGHIJ.tsv > merge/temp_BCMEFGHIJK.tsv
+
+#control lines
+wc -l merge/*
+
+#clean up
+rm IPRscan/temp*
+
+```
+
+
+
+
+
+## Diamond against NCBI NR
+##################################
+
+Possible settings to change:
+
+- number of CPUs (default setting for --threads = 20)
+- e-value threshold (default setting for --evalue = 1e-5)
+- Sequence numbers to display (default for --seq = 50d)
+
+
+```bash
+#make folder
+mkdir NCBI_NR
+
+#run diamond against NR database
+diamond blastp -q faa/Prokka/All_Genomes_clean.faa --more-sensitive --evalue 1e-5 --threads 20 --seq 50 --no-self-hits --db /export/data01/databases/ncbi_nr/diamond/nr.dmnd --taxonmap /export/data01/databases/taxmapfiles/ncbi_nr/prot.accession2taxid.gz --outfmt 6 qseqid qtitle qlen sseqid salltitles slen qstart qend sstart send evalue bitscore length pident staxids -o NCBI_NR/All_NCBInr.tsv
+
+#Select columns of interest in diamond output file
+awk -F'\t' -v OFS="\t" '{ print $1, $5, $6, $11, $12, $14, $15 }'  NCBI_NR/All_NCBInr.tsv > NCBI_NR/temp
+
+#Parse Diamnond Results
+python /export/data01/tools/scripts/python/parse_diamond_blast_results_id_taxid.py -i FileLists/AllProteins_list.txt -d NCBI_NR/temp -o NCBI_NR/temp2
+
+#rm header
+sed 1d NCBI_NR/temp2 > NCBI_NR/temp3
+
+#add an '-' into empty columns
+awk -F"\t" '{for(i=2;i<=NF;i+=2)gsub(/[[:blank:]]/,"_",$i)}1' OFS="\t" NCBI_NR/temp3 > NCBI_NR/temp4
+
+#the python script above sometimes leaves an empty 7th column, this gets rid of that issue
+awk -F'\t' -v OFS="\t"  '{if (!$7) {print $1,$2, $4 , $6, "-"} else {print $1, $2, $4, $6, $7}}' NCBI_NR/temp4 | LC_ALL=C sort > NCBI_NR/temp5
+
+#split columns with two tax ids
+awk -F'\t' -v OFS='\t' '{split($5,a,";"); print $1, $2, $3, $4, a[1]}' NCBI_NR/temp5 > NCBI_NR/temp6
+
+#in column 2 remove everything after < (otherwise the name can get too long)
+awk -F'\t' -v OFS='\t' '{split($2,a,"<"); print $1, a[1], $3, $4, $5}' NCBI_NR/temp6 > NCBI_NR/temp6a
+
+#merge with tax names
+LC_ALL=C join -a1 -1 5 -2 1 -e'-' -t $'\t'  -o1.1,1.2,1.3,1.4,1.5,2.2  <(LC_ALL=C sort -k5  NCBI_NR/temp6a) <(LC_ALL=C sort -k1 ~/../spang_team/Databases/NCBI_taxonomy/Jul2019/taxonomy5.txt ) | LC_ALL=C  sort > NCBI_NR/temp7
+
+#add in header
+echo -e "accession\tTopHit\tE_value\tPecID\tTaxID\tTaxString" | cat - NCBI_NR/temp7 > NCBI_NR/L_Diamond.tsv
+
+#combine with previous dataframe
+awk 'BEGIN{FS="\t";OFS="\t"}FNR==NR{a[$1]=$0;next}{print $0,a[$1]}' NCBI_NR/L_Diamond.tsv merge/temp_BCMEFGHIJK.tsv > merge/temp_BCMEFGHIJKL.tsv
+
+#control lines
+wc -l merge/*
+
+#clean up
+rm NCBI_NR/temp*
+```
+
+
+
+
+
+
+
+
+###################################################################################
+###################################################################################
+# Modify final dataframe
+###################################################################################
+###################################################################################
+
+Now, lets cleanup the final dataframe and then we made it!
+
+```bash
+#duplicate column and add new header
+awk 'BEGIN{FS="\t";OFS="\t"}{print $1,$0}' merge/temp_BCMEFGHIJKL.tsv | sed '1s/accession/for_merge/' > merge/temp_0.tsv
+
+#rm redundant headers and reconstruct accession ID
+awk 'BEGIN{FS="\t";OFS="\t"}NR==1{for(x=1;x<=NF;x++)if($x!="accession")l[x]++;}{for(i=1;i<=NF;i++)if(i in l)printf (i==NF)?$i"":$i"\t";printf "\n"}' merge/temp_0.tsv > merge/temp_1.tsv
+
+#change column name
+awk 'BEGIN{FS="\t";FS="\t"; OFS="\t"}{if(NR==1) $1="accession"} {print $0 }' merge/temp_1.tsv > merge/Annotations.txt
+
+#control first 50 columns
+head -50 merge/Annotations.txt > merge/temp_2.tsv
+
+#clean up
+rm merge/temp_[0-9].tsv
+gzip merge/*tsv
+```
+
+
+
+
+###################################################################################
+###################################################################################
+# Background info
+###################################################################################
+###################################################################################
+
+Here, you will some background info on the used approaches, databases and tools.
+The idea is to provide links to the manuals and some other information that might (or might not) be useful.
+
+Note, this is an on-going part of this document, so it might change over time.
+
+
+## Gene predictions
+
+There are several tools to identify genes in our genomes
+
+- [prodigal](https://github.com/hyattpd/Prodigal)
+- [prokka](https://github.com/tseemann/prokka), which is based on prodigal but does some basic genome annotations.
+
+Something important to keep in mind is that gene predicition generally is easier in archaea and bacteria. 
+If one would be interested in eukaryotic genomes, things like splicing and alternative reading frames need to keep in mind.
+
+
+## Information on the different search tools
+##################################
+
+### Blast
+
+BLAST = Basic Local Alignment Search Tool finds regions of local similarity between protein or nucleotide sequences. 
+NCBI provides a [quick tutorial](https://www.ncbi.nlm.nih.gov/books/NBK1734/) explaning its general usage.
+
+There are different versions of blast you can use depending on what comparisons you want to make.
+
+- blastn = nucleotide blast searches with a nucleotide “query” against a database of nucleotide “subject” sequences.
+- blastp = protein blast searches with a protein “query” against a database of protein “subject” sequences.
+- translated blasts searches use a genetic code to translate either the “query,” database “subjects,” or both, into protein sequences, which are then aligned as in “blastp.”
+  - tblastn (a protein sequence query is compared to the six-frame translations of the sequences in a nucleotide database)
+  - blastx (a nucleotide sequence query is translated in six reading frames, and the resulting six-protein sequences are compared, in turn, to those in a protein sequence database.)
+  - tblastx (both the “query” and database “subject” nucleotide sequences are translated in six reading frames, after which 36 (6 × 6) protein “blastp” comparisons are made.)
+
+Additionally, we can also work with alignments using psi-blast = protein sequence profile search method that builds off the alignments generated by a run of the BLASTp program.
+Some more info into this algorithm can be found [here](https://www.ncbi.nlm.nih.gov/books/NBK2590/#:~:text=PSI-BLAST%20(Position-Specific,threshold%20using%20protein–protein%20BLAST.)
+
+
+
+### Diamond
+
+Diamond is an alterative to blast for protein and translated DNA searches. If you check their [website](http://www.diamondsearch.org/index.php) you will find that some advantages over blast are listed:
+
+- Pairwise alignment of proteins and translated DNA at 100x-20,000x speed of BLAST.
+- Frameshift alignments for long read analysis.
+- Low resource requirements and suitable for running on standard desktops or laptops.
+- Various output formats, including BLAST pairwise, tabular and XML, as well as taxonomic classification.
+
+In principle diamond works very similar than blast and uses similar input files
+
+### HMMER
+
+We also use HMMER for searching databases and we can use it to make alignments (but generally we prefer to use mafft-linsi ourselves).
+The approach taken by mafft is quite different from blast and diamond as HMMER implements methods using probabilistic models called profile hidden Markobv models (profile HMMs).
+If you look at some HMM databases used in this tutorial, you will see that the files look very different compared to what we use as input for blast and diamond. One of the biggest differences that the profiles are build form alignments.
+
+For more information you can check the [HMMER website](http://hmmer.org)
+
+
+## Information on the different databases
+##################################
+
+## COGs
+
+COG = Clusters of Orthologous Groups.
+The COG protein database was generated by comparing predicted and known proteins in all completely sequenced microbial genomes to infer sets of orthologs. Each COG consists of a group of proteins found to be orthologous across at least three lineages.
+
+The different COGs are characterized into different pathway and the pathway description can be found [here](http://clovr.org/docs/clusters-of-orthologous-groups-cogs/)
+
+Some papers you might want to check if you want to know more:
+
+- [The NCBI website](https://www.ncbi.nlm.nih.gov/research/cog-project/)
+- [The COG approach](https://pubmed.ncbi.nlm.nih.gov/28968633/)
+- [The Original COG paper ](https://pubmed.ncbi.nlm.nih.gov/9381173/)
+
+
+## arCOGs
+
+arCOG = Archaeal Clusters of Orthologous Genes.
+Similar to the COGs, just with a focus on archaeal genomes.
+
+Some papers you might want to check if you want to know more:
+
+- [The NCBI website](https://www.ncbi.nlm.nih.gov/research/cog-project/)
+- [The first description of the arCOGs](https://pubmed.ncbi.nlm.nih.gov/25764277/)
+
+
+## KOs and KEGG
+
+KO = KEGG ORTHOLOGY
+The KO (KEGG Orthology) database is a database of molecular functions represented in terms of functional orthologs. 
+By using the HMMs we assign K numbers to ours sequence data by HMMER/HMMSEARCH against KOfam
+
+Details on how the HMMs and cutoffs were generated can be found [here](https://academic.oup.com/bioinformatics/article/36/7/2251/5631907)
+
+Something useful to know is that all KOs, ie. K00161, are linked to metabolic maps that have quite good descriptions. 
+For example, if you would google K00161 you will come across this [website](https://www.genome.jp/dbget-bin/www_bget?ko:K00161) that gives:
+
+- a detailed description of what gene we have
+- if applicable the enzyme number (EC number)
+- The pathways this gene can be involved in. If you click on the pathway you see its exact positon in a pathway
+- A paper that first describes the gene
+
+If you click on the enzyme number (EC 1.2.4.1) you will get other useful information
+
+- alternative names
+- the "chemical" class it belongs to
+- the chemical reaction 
+- useful comments about the reaction and whether it is part of an enzyme complex
+- if it is an enzyme complex, we get the KOs for the other subunits
+
+## Biocyc: Alternative to KEGG to see how a gene is linked to a pathway
+
+If you want to find out more about a gene, you can check metacyc.
+I.e. if we search for ``"pyruvate dehydrogenase" biocycG``in goggle we should land [here](https://biocyc.org/META/NEW-IMAGE?type=ENZYME&object=CPLX-2022)
+
+Similar as with KEGG, we get some basic information about this enzyme, such as:
+
+- the different subunits
+- a basic description of what that enzyme does
+- the reaction, incl. the direction
+- Functions of the other subunits
+- some paper references
+
+
+## PFAM
+
+[PFAM](https://pfam.xfam.org) is a database is a large collection of protein families, each represented by multiple sequence alignments and hidden Markov models (HMMs).
+
+
+##TIGRFAMs
+
+[TIGRFAMs](http://tigrfams.jcvi.org/cgi-bin/index.cgi) is a resource consisting of curated multiple sequence alignments, Hidden Markov Models (HMMs) for protein sequence classification, and associated information designed to support automated annotation of (mostly prokaryotic) proteins.
+
+## CAZy
+
+CAZy = Carbohydrate-Active enZYmes
+A  database dedicated to the display and analysis of genomic, structural and biochemical information on Carbohydrate-Active Enzymes (CAZymes).
+
+Resources""
+
+- [Here](http://www.cazy.org) we have a database with more information on indiv. CAZymes and potential substrates
+- [dbCAN](dbCAN2 meta server) is a webserver for CAZYme annotation. We also get the sequences we use for our workflow from this website.
+
+
+## Transporter DB
+
+[This](http://www.tcdb.org) is the website that gives more information about potential transporters found in our search.
+
+
+## HydDB
+
+HydDB = Hydrogenase database
+
+Resources:
+
+- [The original paper](https://www.nature.com/articles/srep34212)
+- The [website](https://services.birc.au.dk/hyddb/) we originally got the sequences from. Also provides more detailed information on the different hydrogenase subcategories.
+
+
+## IPRscan
+
+Short for InterProScan
+Interpro allows for the classification of protein families and predicting domains and important sites.
+
+If we see an ID like this ``IPR000013``, this is a so called interpro domain that might be found on your protein. Notice, a protein can have more than one domain. 
+
+Resources:
+
+- The [website](https://www.ebi.ac.uk/interpro/search/sequence/) from which to download all information
+- [The original paper](https://academic.oup.com/nar/article/47/D1/D351/5162469), which provides also an overview of the different databases integrated with InterPro.
+
+
+## NCBI-nr
+
+As we have seen above, NCBI (the National Center for Biotechnology Information) provides a lot of tools, such as blast, and databases, such as the COGs and arCOGs. 
+Additionally, it is one of the largest repositories of sequences from metagenomes, amplicon libraries and genomes. 
+
+The nr database (here: ncbi_nr) is compiled by the NCBI as a protein database for Blast searches.It contains non-identical sequences from GenBank CDS translations, PDB, Swiss-Prot, PIR, and PRF and is frequently updated. However, it is a quite large database making searches more time consuming.
+
+
+
+## Uniprot - checking your results
+
+Another good database, next to KEGG and metacyc, to check proteins is [Uniprot](https://www.uniprot.org).
+The mission of UniProt is to provide the scientific community with a comprehensive, high-quality and freely accessible resource of protein sequence and functional information.
+
+We can search for:
+
+- protein names, i.e. "pyruvate dehydrogenase"
+- proteins from certain taxa using the taxonomy option, i.e. ``taxonomy:bacteria pyruvate dehydrogenase``
+- KOs, arCOGs, etc ...
+
+I.e. if we would search for `` taxonomy:bacteria "pyruvate dehydrogenase e1" `` we should get:
+
+- A list of all proteins classified as E1 subunuit of the pyruvate dehydrogenase in bacteria
+- some of these sequences are reviewed (i.e. might have some more supporting info) and others are unreviewed (annotation only based on sequence similarity)
+- a list of taxa that have this protein (under view by click on taxonomy) and then we can see in exactly what bacteria these enzyme is found
+
+If we click on an indiv. example, i.e. from E.coli, we get:
+
+- Details on the reaction
+- Publications about this specific enzyme in E.coli
+- Cofactors
+- Information about potential functions and biological processes
+- a reference to MetaCyc
+- The links to several databases (i.e. protein databases, KEGG, IPR domains, etc.)
