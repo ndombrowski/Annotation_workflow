@@ -1,4 +1,4 @@
-An HTML discussing the full workflow can be found under the **docs** folder.
+An HTML discussing the full workflow can be found under [HERE](https://ndombrowski.github.io/Annotation_workflow/).
 
 This workflow provides a step-by-step tutorial on how to:
 
