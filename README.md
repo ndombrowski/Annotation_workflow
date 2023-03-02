@@ -1,3 +1,5 @@
+## `Description` 
+
 An HTML discussing the full workflow can be found under [HERE](https://ndombrowski.github.io/Annotation_workflow/).
 
 This workflow provides a step-by-step tutorial on how to:
@@ -17,7 +19,7 @@ Example output files for all steps can be downloaded from [here](https://github.
 All databases and custom scripts are available on ada. If you use this work please cite: Dombrowski, N. et al. Undinarchaeota illuminate DPANN phylogeny and the impact of gene transfer on archaeal evolution. Nature Communications 11, 3939 (2020).
 
 
-**Cite**
+## `Cite`
 
 If you found this tutorial useful, please cite the following study as we used this study to shape the tutorial:
 
