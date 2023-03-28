@@ -1,5 +1,7 @@
 ## `Description` 
 
+[![DOI](https://zenodo.org/badge/309945174.svg)](https://zenodo.org/badge/latestdoi/309945174)
+
 An HTML discussing the full workflow can be found under [HERE](https://ndombrowski.github.io/Annotation_workflow/).
 
 This workflow provides a step-by-step tutorial on how to:
