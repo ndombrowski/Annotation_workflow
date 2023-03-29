@@ -4,3 +4,4 @@
 .Ruserdata
 *.*
 for_zenodo
+!Annotations_workflow_current.qmd

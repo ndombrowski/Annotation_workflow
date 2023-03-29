@@ -53,7 +53,6 @@ You can show the code by pressing on \<Click me to see an answer\>.
 :::
 
 
-
 # General
 
 Below you find a list of the used programs. If you want to run this pipeline, please install the listed Custom scripts and databases can be found in a [Zenodo repository](https://zenodo.org/deposit/6489670).
@@ -91,11 +90,13 @@ Databases (and mapping files) used in the current version can be downloaded from
 4. CAZymes: dbCAN-HMMdb-V9 downloaded on 21 April 2020 from [here](https://bcb.unl.edu/dbCAN2/download/)
 5. Merops: downloaded from Merops server in November 2018 from [here](https://www.ebi.ac.uk/merops/download_list.shtml)
 6. HydDB: downloaded form HydDB webserver in July 2020 from [here](https://services.birc.au.dk/hyddb/browser/)
-7. COGs: downloaded from NCBI Octover 2020 from  [here](ftp://ftp.ncbi.nlm.nih.gov/pub/COG/COG2020/)
+7. COGs: downloaded from NCBI October 2020 from  [here](ftp://ftp.ncbi.nlm.nih.gov/pub/COG/COG2020/)
 8. TransporterDB: downloaded from TCDB April 2021 [here](http://www.tcdb.org)
 9. ncbi_nr (maintained and downloaded by Alejandro Abdala Asbun). Last update was done on August 2021
 10. ArCOGs: downloaded in 2019 and available [here](https://ftp.ncbi.nih.gov/pub/wolf/COGs/arCOG/) (update date: 2018)
 
+
+Note to self: Dates need to be updated!
 
 
 ## External scripts needed
@@ -114,12 +115,9 @@ Custom scripts used in the current version can be downloaded from [here] (https:
 - parse_diamond_blast_results_id_taxid.py
 
 
-
-
-
 # Setup working environment
 
-##  Define variables
+## Define variables
 
 
 Notice: If you have done the assembly and binning tutorials, you can see that we do things a bit differently here. Since for the annotations we work with a lot of different databases, there are two ways how to deal with a lot of files in different locations: 
@@ -134,22 +132,25 @@ Especially if you work with collaborators it often is easier to use the second o
 - Change the first variable, the wdir, to the path were you want to work from and change the paths for the databases according to where you downloaded the databases.
 - The two last lines of code are needed for the software prokka and are specific for the system the script was written on. Adjust according to how prokka is setup in your system.
 
+For people following the tutorial outside of the NIOZ bioinfo workshop on their own servers. The necessary databases and scripts can be downloaded from [zenodo](https://zenodo.org/record/6489670#.ZCQaB9BBxD8).
+
 
 ```{bash} 
-#set the path to our working directory
-wdir="/export/lv1/user/ndombrowski/Mai_testing"
+#set variable for the base directory and personal user directory
+user_name="ndombrowski"
+base_dir="/export/lv3/scratch/bioinformatics_workshop/Users/"
+wdir=${base_dir}/${user_name}
 
 #nr of cpus we generally want to use
 cpus=5
 
 #location of some custom python and perl scripts
-python_scripts="/export/lv1/user/spang_team/Scripts/Others/"
-perl_scripts="/export/lv1/user/spang_team/Scripts/Others/"
+export script_folder="/export/lv3/scratch/bioinformatics_workshop/S12_annotations/scripts/"
 
-#locations of the indiv. databases
+#locations of the individual databases
 cog_db="/export/data01/databases/cogs/hmms/NCBI_COGs_Oct2020.hmm"
 arcog_db="/export/data01/databases/arCOG/arCOGs2019/All_Arcogs_2018.hmm"
-ko_db="/export/data01/databases/ko/combined_hmms/All_KOs.hmm"
+ko_db="/export/data01/databases/ko/All_KO"
 pfam_db="/export/data01/databases/pfam/Pfam-A.hmm"
 tigr_db="/export/data01/databases/PGAP_ProtFam/hmm_PGAP.lib"
 cazy_db="/export/data01/databases/cazy_spt/dbCAN-HMMdb-V7.txt"
@@ -157,23 +158,22 @@ transporter_db="/export/data01/databases/tcdb/tcdb"
 hyd_db="/export/data01/databases/HydDB/HydDB_uniq"
 ncbi_nr_db="/export/data01/databases/ncbi_nr/diamond/nr.dmnd"
 
-#locations of the mapping files for the indiv. databases (links the database ID to a more useful description)
+#locations of the mapping files for the indiv. databases 
+#these files link the database ID, ie KO0001 to a more useful description
 cog_mapping="/export/data01/databases/cogs/hmms/cog_mapping.txt"
-arcog_mapping="/export/lv1/user/spang_team/Databases/arCOGs2019/ar14.arCOGdef18.final.tab"
 ko_mapping="/export/data01/databases/ko/ko_list_for_mapping_clean"
 pfam_mapping="/export/data01/databases/pfam/Pfam-A.clans.cleaned.tsv"
-tigr_mapping="/export/lv1/user/spang_team/Databases/PGAP/hmm_PGAP_edited.tsv"
 cazy_mapping="/export/data01/databases/cazy_spt/CAZY_mapping_2.txt"
-transporter_mapping="/export/lv1/user/spang_team/Databases/TransporterDB/tcdb_definition_2021.tsv"
 hyd_mapping="/export/data01/databases/HydDB/HydDB_mapping"
 taxon_db="/export/data01/databases/taxmapfiles/ncbi_nr/prot.accession2taxid.gz"
+arcog_mapping="/export/data01/databases/arCOG/arCOGs2019/ar14.arCOGdef18.nina.tab"
+transporter_mapping="/export/data01/databases/tcdb/tcdb_definition.tsv"
+tigr_mapping="/export/data01/databases/tigr/hmm_PGAP_clean.tsv"
 
-#set environment to work for prokka
+#Fix PERL5LIB PATH (required for using prokka on the NIOZ servers)
 export PERL5LIB=/export/lv1/public_perl/perl5/lib/perl5
-
-#add libraries so that tbl2asn works
-export PATH=$PATH:/opt/biolinux/prokka/binaries/linux/
 ```
+
 
 
 
@@ -182,11 +182,16 @@ export PATH=$PATH:/opt/biolinux/prokka/binaries/linux/
 
 Let's first go to our working directory and make a new folder for the Annotation tutorial.
 
-```{bash}
-#check that we set the variable to our working directory correctly
-echo $wdir
+:::{.callout-note}
 
-#change the directory to your home directory
+Below you see how we use our variables, i.e. we use the path stored in the $wdir variable to go to our working folder. If you want to use the code but are on another server or want to use a different folder, you don't have to change anything in the code below.
+
+Therefore, environmental variables can make it easier to adapt our workflow to changing circumstances. For example, if we need to change the location of our input data, we can update the environmental variable for the input data path rather than having to update each script individually.
+
+:::
+
+```{bash}
+#go to your working directory
 cd $wdir
 
 #make a folder for the Annotations and move into this directory
@@ -227,20 +232,21 @@ mkdir fna/renamed
 wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/008/085/GCA_000008085.1_ASM808v1/GCA_000008085.1_ASM808v1_genomic.fna.gz
 wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/017/945/GCA_000017945.1_ASM1794v1/GCA_000017945.1_ASM1794v1_genomic.fna.gz
 
-#unzip files and check the file names
+#unzip files and check that we downloaded 2 files
 gzip -d *gz
 ls -l *.fna
 
 #shorten the file name by cutting everything away after the dot
 for f in *.fna; do mv $f "${f/.*}".fna; done
 
-#check the file name again
+#check the file name again to see if the previous command worked
 ls -l *.fna
 
 #check how the header looks --> we have a long name and a lot of symbols we do not want, lets remove these
 head GCA_000008085.fna 
 
 #shorten the fasta headers by removing everything after the space
+#we move the file with the changed header into the fna folder
 for f in *.fna; do cut -d " " -f1  $f > fna/${f}; done
 head fna/GCA_000008085.fna 
 
@@ -250,33 +256,39 @@ for i in *fna; do awk '/>/{sub(">","&"FILENAME"-");sub(/\.fna/,x)}1' $i > rename
 head renamed/GCA_000008085.fna 
 
 #remove intermediate files
-rm *fna
+rm -f *fna
 cd ..
-rm *fna
+rm -f *fna
 ```
 
-The cleaned up files and file names should look something like this afterwards:
+The cleaned up files can be found in `fna/renamed` and file names should look something like this afterwards:
 
 ![](C:/Users/ndmic/WorkingDir/Notebooks/Pictures/Annotations2b.png){width=100% fig-align="left"}
 
 
-
-### The steps above work fine but what if we have hundreds of genomes from NCBI?
+### The steps above work fine but what if we have hundreds of genomes that we want to download from NCBI?
 
 :::{.callout-warning}
 
-For the tutorial we will NOT run the code below but continue at the step: **Make a filelist for all genomes of interest**. </br></br>
+Below we have some hidden, alternative code.
 
-However, if you deal a lot with genomes from NCBI and you want to have a file that links a ncbi tax id to a tax string, this still might be useful to know. I.e. if you work with a genome of interest, such as E.coli, you might want to include several closely related genomes as reference in your analysis and NCBI is an excellent resource providing you with a multitude of genomes as well as metadata.
+If you deal a lot with genomes from NCBI and you want to have a file that links a ncbi taxonomy id to a tax string. This information can be useful if you work with a genome of interest, such as E.coli, you might want to include several closely related genomes as reference in your analysis and NCBI is an excellent resource providing you with a multitude of genomes as well as metadata.
+
+The code is not yet fully implemented for people working outside the NIOZ but the code below should give you enough information to get you started.
+
+To explore the code, click on `Click me to look at the code` to see the code.
 :::
 
+
+<details>
+    <summary>Click me to look at the code</summary>
 
 Notice: 
 
 - The file that links the taxonomy ID with the taxa string (lineages-2020-12-10.csv) was generated with ncbitax2lin (instructions added below)
 - this part of the workflow was set up to run at servers at the NIOZ and the paths need to be adjusted to work on your system
 
-The first part of this workflow is to get a list of all available archaeal (or bacterial) genomes from ncbi and add a taxa string into the file we downloaded. 
+The first part of this workflow is to get a list of all available archaeal (or bacterial) genomes from NCBI and add a taxa string into the file we downloaded. 
 
 
 ```{bash}
@@ -288,7 +300,7 @@ cd ncbi_genomes
 wget https://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_genbank.txt
 ```
 
-This file includes a list of all (archaeal in this case) genomes available at NCBI and relevant metadata such as the project ID, taxonomy ID, species name, download link for individual genome files etc.
+This file includes a list of all (archaeal and bacterial) genomes available at NCBI and relevant metadata such as the project ID, taxonomy ID, species name, download link for individual genome files etc.
 
 Next, we will clean the file a bit and since the species name might not be informative enough (i.e. we might want to know to what phylum a species belongs), we want to add the full taxonomy string in.
 
@@ -368,14 +380,16 @@ sed '1d' temp4 > lineages-2020-12-10.csv
 
 #clean up
 rm temp*
-
-
 ```
+
+</details>
+
+
 
 
 ## Make a filelist for all genomes of interest
 
-Make a file that lists all the genomes we are working with. Such a file list is useful when working with for loops.
+Let us start by making a file that lists all the genomes we are working with. Such a file list is useful when working with for loops.
 
 ```{bash}
 #make a folder for all the secondary files we need
@@ -395,7 +409,6 @@ The last command should print something like this:
 
 
 ## Call proteins with prokka and clean files
-
 
 Now that we have the genomes organized, lets identify the coding regions and call the proteins with Prokka. Another common tool you might encounter for this step is prodigal. Prokka basically uses prodigal but is doing some extra annotations, which we also want to look at.
 
@@ -419,10 +432,11 @@ mkdir faa/Prokka
 #run prokka
 for sample in `cat FileLists/GenomeList`; do prokka fna/renamed/${sample}.fna --outdir faa/Prokka/${sample} --prefix $sample --kingdom Archaea --addgenes --force --increment 10 --compliant --centre UU --cpus 2 --norrna --notrna ; done
 
-#control number of Genomes
+#control number of faa files generated: 2
+#this should be the same as the original number of genomes
 ll faa/Prokka/*/*faa | wc -l
 
-#check how the genome header looks like
+#check how the faa header looks like
 head faa/Prokka/GCA_000008085/GCA_000008085.faa
 ```
 
@@ -432,16 +446,16 @@ We have 2 genomes and the header of the first file should look something like th
 
 We can see that prokka gives a unique protein ID and adds an annotation to the file header.
 
-Additionally, Prokka generates several output files, these include:
+Other than the protein faa file, Prokka generates several additional output files. These include:
 
 ![](C:/Users/ndmic/WorkingDir/Notebooks/Pictures/prokka.png){width=100% fig-align="left"}
-Additonally, prokka does not only call proteins but also identifies tRNAs, does protein anntations, etc.
+Additonally, prokka does not only call proteins but also identifies tRNAs and tries to annotate proteins protein. The whole workflow is summarized in the image below:
 
 ![](C:/Users/ndmic/WorkingDir/Notebooks/Pictures/prokka2.png){width=100% fig-align="left"}
 
 
 
-### Concatenate genomes
+### Clean faa header and combine genomes
 
 If we look at the fasta headers of the newly generated files, we see that the header is not very descriptive. I.e. we have something like this:   
 ``>CALJACFG_00010 ATP-dependent DNA helicase Hel308``.<br/><br/>
@@ -463,20 +477,23 @@ cp GCA*/*faa .
 #add the filename into the fasta header
 for i in *faa; do awk '/>/{sub(">","&"FILENAME"-");sub(/\.faa/,x)}1' $i > renamed/$i; done
 
+#control if this worked 
+head renamed/*faa
+
 #cleanup temp files
-rm *faa
+rm -f *faa
 
 #concatenate files
 cat renamed/*faa > All_Genomes.faa
 
-#clean the header/shorten it by removing everything after the space
+#clean the header/shorten it by removing everything after the first space
 cut -f1 -d " "  All_Genomes.faa > All_Genomes_clean.faa
+
+#check if that worked 
+head All_Genomes_clean.faa
 
 #go back to the wdir
 cd ../..
-
-#check the fasta header
-head faa/Prokka/All_Genomes_clean.faa 
 
 #make a blast db out of concat genomes (we need this whenever we want to run blast)
 makeblastdb -in faa/Prokka/All_Genomes_clean.faa  -out faa/All_Genomes_clean   -dbtype prot -parse_seqids
@@ -491,9 +508,8 @@ Now our file header should look something like this:
 # If you work with your own genomes
 
 - Ideally have not only the protein ID but also the genome ID sequence header
-- make sure the file header is concise and does not have ANY spaces and that ideally uses a '-' to separate the binID from the protein ID
-- If you have a concise header + the bin ID in the header, first concatenate the protein sequences of your genomes in one file.
-
+- Make sure the file header is concise and does not have ANY spaces and that ideally uses a '-' (or any other unique delimiter) to separate the binID from the protein ID
+- If you have a concise header + the bin ID in the header, it is easy to concatenate the protein sequences of your genomes into one single file and still easily know from what genome the sequence originally came from
 
 More specifically you want to:
 
@@ -509,8 +525,6 @@ More specifically you want to:
 
 
 
-
-
 # Make a mapping file with all relevant genome info
 
 Now that our files are ready we first want to make a table with the basic stats (i.e. contig length, contig gc, protein length, ...).
@@ -518,8 +532,9 @@ Now that our files are ready we first want to make a table with the basic stats 
 
 ## Get contig stats
 
-Prokka has the habit to rename the fasta header. I.e. the original contig name is renamed.
-Therefore, it is hard to link from what contig the proteins originally came from. The workflow below generates a mapping file that links the original contig name with the prokka contig name.
+Prokka has the habit to rename the fasta header. I.e. the original contig name is renamed. I.e. in our example a header of the fna might look like this `>GCA_000008085-AE017199.1` while a protein on that contig might be named like this `GCA_000008085-CALJACFG_00010` in the faa file. Therefore, it is hard to link from what contig the proteins originally came from. 
+
+The following workflow below generates a mapping file that links the original contig name with the prokka contig name. Beware the workflow is a bit convulted since the original contig ID `AE017199` is stored nowhere in the prokka output files.
 
 The goal is to generate a file with this information:
 
@@ -536,32 +551,31 @@ The goal is to generate a file with this information:
 
 If working with your own genomes, esp. step 4 can be problematic. This step will ONLY work if your fasta header includes the binID and the contig ID that are separated with a `-`. If you do not have both pieces of info, have extra symbols symbol or if that symbol is somewhere else in the filename/header this part of the workflow will very likely not work (without needing adjustments). 
 <br/><br/>
-In this case  it will be easiest skip this step and do the following:<br/><br/>
+
+If your file headers look different, it will be easiest skip this step and do the following:<br/><br/>
 (A) generate the file FileLists/1_Bins_to_protein_list.txt in the section **Prepare list that links proteins with binIDs** <br/><br/>
 (B) continue with the step **Do the annotations**.  <br/><br/>
 (C) During the first annotation step with the COG database, ignore the step #combine with previous data frame and do `cp NCBI_COGs/A_NCBI_COGs.tsv merge/temp_A.tsv` to generate the first table.
 :::
 
 
+for i in `ls fna/v2/*fna`; do python  ~/../spang_team/Scripts/Others/fasta_length_gc.py ${i}; done > temp1
+
+#make a separate column for the binID and proteinID and give a numbering to the contigs
+awk '{split($1,a,"-"); print a[1], a[2], $2, $3, ++count[a[1]]}' temp1 > temp2
+
+
 ```{bash}
 #make folder
 mkdir contig_mapping
 
-#for each contig list the gc and contig length (we use this later to control whether the merging of information works ok)
-for sample in `cat FileLists/GenomeList`; do perl $perl_scripts/length+GC.pl fna/renamed/${sample}.fna > contig_mapping/${sample}_temp1; done
+#calculate the length and gc for each contig
+for i in `cat FileLists/GenomeList`; do  python $script_folder/fasta_length_gc.py fna/renamed/${i}.fna; done > contig_mapping/temp1
 
-#add number of contigs as separate column
-for sample in `cat FileLists/GenomeList`; do awk '$1=(FNR FS $1 FILENAME)' contig_mapping/${sample}_temp1 > contig_mapping/${sample}_temp2; done
+#make a separate column for the binID and proteinID and give a numbering to the contigs
+awk 'BEGIN{OFS="\t"}{split($1,a,"-"); print a[2], a[1], ++count[a[1]], $2, $3}' contig_mapping/temp1 > contig_mapping/Contig_Old_mapping.txt
 
-#cleanup file: add in binIDs, so we have: contig id, binID, contig nr, contig gc and contig length
-for sample in `cat FileLists/GenomeList`; do awk 'BEGIN{OFS="\t"}{split($2,a,"-"); print a[2],$1,$3,$4}' contig_mapping/${sample}_temp2  > contig_mapping/${sample}_temp3; done
-
-for sample in `cat FileLists/GenomeList`; do awk 'BEGIN{OFS="\t"}{split($1,a,"/"); print a[1],a[2], $2,$3,$4}' contig_mapping/${sample}_temp3 | sed 's/contig_mapping//g' | sed 's/_temp1//g'  > contig_mapping/${sample}_temp4; done
-
-#combine results
-cat contig_mapping/*temp4 > contig_mapping/Contig_Old_mapping.txt
-
-#check file. heder should have --> contigID, binID, contig NR, GC, contig length
+#check file. header should have --> contigID, binID, contig NR, GC, contig length
 head contig_mapping/Contig_Old_mapping.txt
 
 #cleanup temp files
@@ -572,7 +586,6 @@ awk 'BEGIN{OFS="\t"}{print $2"_contig_"$3,$0}' contig_mapping/Contig_Old_mapping
 
 #check file: prokka contig name, prokka binID, binID, contig NR, GC, contig length
 head contig_mapping/Contig_Old_mapping_for_merging.txt
-
 ```
 
 In the file we see the contig name, contig GC and contig length. Since the two genomes are complete genomes we only work with two contigs in total. If you work with MAGs this table will get much longer.
@@ -609,7 +622,7 @@ awk -F'\t' -v OFS='\t' '{split($1,a,"-"); print $1, a[1]}' FileLists/AllProteins
 #check file content: we now have the accession and the binID
 head FileLists/1_Bins_to_protein_list.txt
 
-#check with how many proteins we work
+#check with how many proteins we work: 2069
 wc -l FileLists/1_Bins_to_protein_list.txt
 ```
 
@@ -627,7 +640,6 @@ Additionally, while running things for the first time it is always good to check
 
 
 ## Prepare a file with prokka annotations & Lengths & other genome info
-
 
 Now, we want to generate a file that links the contig info and all the protein info.
 
@@ -647,7 +659,7 @@ We deal with 2 genomes
 
 #create a summary file based on the gbk file
 #lists the binname, contig name, contig length, proteinID, prokka annotation
-python $python_scripts/Parse_prokka_for_MAGs_from_gbk-file_v2.py -i FileLists/list_of_gzips -t FileLists/Contig_Protein_list.txt
+python $script_folder/Parse_prokka_for_MAGs_from_gbk-file_v2.py -i FileLists/list_of_gzips -t FileLists/Contig_Protein_list.txt
 
 #check output of the script: Prokka binID, Prokka contig ID, contig length, gene start, gene stop, strand, accession, prokka annotation
 head FileLists/Contig_Protein_list.txt
@@ -669,6 +681,7 @@ head FileLists/Prokka_to_BinID.txt
 
 ![](C:/Users/ndmic/WorkingDir/Notebooks/Pictures/Annotations13.png){width=80% fig-align="left"}
 
+
 Finally, we can merge everything together.
 
 ```{bash}
@@ -676,7 +689,7 @@ Finally, we can merge everything together.
 awk 'BEGIN{FS="\t";OFS="\t"}FNR==NR{a[$1]=$0;next}{print $0,a[$1]}' FileLists/Prokka_to_BinID.txt FileLists/Contig_Protein_list.txt | awk 'BEGIN{FS="\t";OFS="\t"}{print $1,$10,$2,$2,$3,$4,$5,$6,$7,$8}'  > temp_Bin_Contig_Protein_list.txt
 
 #add in extra column for contig nr
-awk -F'\t' -v OFS='\t'   'gsub("[A-Za-z0-9]*_","",$4)' temp_Bin_Contig_Protein_list.txt | awk -F'\t' -v OFS='\t' '{print $2"_contig_"$4,$1,$2,$3,$4,$5,$6,$7,$8,$9,$10}' > FileLists/Bin_Contig_Protein_list.txt
+awk -F'\t' -v OFS='\t' 'gsub("[A-Za-z0-9]*_","",$4)' temp_Bin_Contig_Protein_list.txt | awk -F'\t' -v OFS='\t' '{print $2"_contig_"$4,$1,$2,$3,$4,$5,$6,$7,$8,$9,$10}' > FileLists/Bin_Contig_Protein_list.txt
 
 #check file
 head FileLists/Bin_Contig_Protein_list.txt
@@ -685,11 +698,12 @@ head FileLists/Bin_Contig_Protein_list.txt
 #headers: accession, BinID, newContigID, oldContigID, mergeContigID,ContigLengthNew, LengthContigOld, GC,ProteinID, protein start, protein end, protein strand, prokka annotation
 awk 'BEGIN{FS="\t";OFS="\t"}FNR==NR{a[$1]=$0;next}{print $0,a[$1]}' contig_mapping/Contig_Old_mapping_for_merging.txt FileLists/Bin_Contig_Protein_list.txt | awk 'BEGIN{FS="\t";OFS="\t"}{print $3"-"$7,$3,$4,$13,$1,$6,$17,$16,$7,$8,$9,$10,$11 }' >  FileLists/Bin_Contig_Protein_list_merged.txt
 
-#check file
+#check file and number of proteins in file
 head FileLists/Bin_Contig_Protein_list_merged.txt
+wc -l FileLists/Bin_Contig_Protein_list_merged.txt
 
 #prepare a file with protein length and gc to add protein length into our file
-perl $perl_scripts/length+GC.pl faa/Prokka/All_Genomes_clean.faa > temp
+perl $script_folder//fasta_length_gc.py faa/Prokka/All_Genomes_clean.faa > temp
 
 #merge with contig/protein info
 awk 'BEGIN{FS="\t";OFS="\t"}FNR==NR{a[$1]=$0;next}{print $0,a[$1]}' temp FileLists/Bin_Contig_Protein_list_merged.txt | awk 'BEGIN{FS="\t";OFS="\t"}{print $1,$2,$3,$4,$6,$7,$8,$9,$10,$11,$12,$16,$13}' > temp2
@@ -700,9 +714,9 @@ echo -e "accession\tBinID\\tNewContigID\tOldContigId\tContigNewLength\tContigOld
 #check file
 less -S FileLists/B_GenomeInfo.txt
 
-#control that all is ok
+#control that all is ok and has the expected number of rows: 2070
+#notice, we have one row extra since we count the header
 wc -l FileLists/B_GenomeInfo.txt
-#2070
 
 #remove temp files
 rm temp*
@@ -744,6 +758,13 @@ Possible settings to change:
 - number of CPUs 
 - e-value threshold 
 
+:::{.callout-note}
+Depending on the size of your dataset this might take a while to run. 
+
+Therefore, adjust the number of CPUs accordingly and depending on what system you run this on consider submitting it as a batch job or inside a screen in case your server connection gets disrupted.
+
+:::
+
 ```{bash} 
 #1. Setup directories
 mkdir NCBI_COGs
@@ -765,15 +786,13 @@ LC_ALL=C join -a1  -j1 -e'-' -t $'\t' -o 0,2.2,2.4 <(LC_ALL=C sort FileLists/1_B
 LC_ALL=C join -a1 -1 2 -2 1 -e'-' -t $'\t' -o1.1,0,2.3,2.2,2.5,1.3 <(LC_ALL=C sort -k2 NCBI_COGs/temp4) <(LC_ALL=C sort -k1 $cog_mapping) | LC_ALL=C  sort > NCBI_COGs/temp5
 
 #add headers
-echo -e "accession\tNCBI_COG\tNCBI_COG_Description\tPathwayID\tPathway\tNCBI_COG_evalue" | cat - NCBI_COGs/temp5 > NCBI_COGs/A_NCBI_COGs.tsv
-
-#combine with previous data frame
-awk 'BEGIN{FS="\t";OFS="\t"}FNR==NR{a[$1]=$0;next}{print $0,a[$1]}' NCBI_COGs/A_NCBI_COGs.tsv  FileLists/B_GenomeInfo.txt > merge/temp_A.tsv
+echo -e "accession\tCOG\tCOG_Description\tCOG_PathwayID\tCOG_Pathway\tCOG_evalue" | cat - NCBI_COGs/temp5 > NCBI_COGs/A_NCBI_COGs.tsv
 
 #check file
-less -S merge/temp_A.tsv
+less -S NCBI_COGs/A_NCBI_COGs.tsv
+wc -l NCBI_COGs/A_NCBI_COGs.tsv
 
-#clean-up
+#cleanup
 rm NCBI_COGs/temp*
 ```
 
@@ -841,13 +860,11 @@ LC_ALL=C join -a1  -j1 -e'-' -t $'\t' -o 0,2.2,2.4 <(LC_ALL=C sort FileLists/1_B
 LC_ALL=C join -a1 -1 2 -2 1 -e'-' -t $'\t' -o1.1,0,2.3,2.4,2.2,1.3 <(LC_ALL=C sort -k2 arcogs/temp4) <(LC_ALL=C sort -k1 $arcog_mapping) | LC_ALL=C  sort > arcogs/temp5
 
 #add in headers
-echo -e "accession\tarcogs\tarcogs_geneID\tarcogs_Description\tPathway\tarcogs_evalue" | cat - arcogs/temp5 > arcogs/C_arcogs.tsv
-
-#combine with previous dataframe
-awk 'BEGIN{FS="\t";OFS="\t"}FNR==NR{a[$1]=$0;next}{print $0,a[$1]}' arcogs/C_arcogs.tsv merge/temp_A.tsv > merge/temp_BC.tsv
+echo -e "accession\tarcogs\tarcogs_geneID\tarcogs_Description\tarcogs_Pathway\tarcogs_evalue" | cat - arcogs/temp5 > arcogs/B_arcogs.tsv
 
 #check what happened
-less -S merge/temp_BC.tsv 
+wc -l arcogs/B_arcogs.tsv
+less -S arcogs/B_arcogs.tsv
 
 #clean-up
 rm arcogs/temp*
@@ -873,9 +890,6 @@ Since the prokka generates different BinIDs for each run, I can not give you the
 [CALJACFG_00260 hits to sulfide-quinone reductase with prokka and to a NADH_dehydrogenase with the arcogs and the COGs. Generally, the e-values are pretty good with the last two databases, while prokka by default does not give us any score to judge the confidence of this hit. We therefore should be skeptical about the annotation as sulfide quinone reductase.
 
 </details>
-
-
-
 
 
 
@@ -911,13 +925,10 @@ LC_ALL=C join -a1 -1 2 -2 1 -e'-' -t $'\t' -o 1.1,1.2,1.4,1.3,2.2,2.12  <(LC_ALL
 awk  -v OFS='\t' '{ if ($4 > $5){ $7="high_score" }else{ $7="-" } print } ' KO_hmm/temp3 > KO_hmm/temp4
 
 #add header
-echo -e "accession\tKO_hmm\te_value\tbit_score\tbit_score_cutoff\tDefinition\tconfidence" | cat - KO_hmm/temp4 > KO_hmm/M_KO_hmm.tsv
-
-#combine with previous data frame
-awk 'BEGIN{FS="\t";OFS="\t"}FNR==NR{a[$1]=$0;next}{print $0,a[$1]}' KO_hmm/M_KO_hmm.tsv merge/temp_BC.tsv > merge/temp_BCM.tsv
+echo -e "accession\tKO_hmm\tKO_e_value\tKO_bit_score\tKO_bit_score_cutoff\tKO_Definition\tKO_confidence" | cat - KO_hmm/temp4 > KO_hmm/C_KO_hmm.tsv
 
 #control lines
-wc -l merge/*
+wc -l KO_hmm/C_KO_hmm.tsv
 
 #clean up
 rm KO_hmm/temp*
@@ -957,13 +968,10 @@ LC_ALL=C join -e'-' -a1 -t $'\t' -j1 -o 0,2.2,2.3,2.4 <(LC_ALL=C sort FileLists/
 LC_ALL=C join -a1 -1 2 -2 1 -t $'\t' -e'-' -o1.1,0,2.5,1.4 <(LC_ALL=C sort -k2 pfam/temp3) <(LC_ALL=C sort -k1 $pfam_mapping) | LC_ALL=C sort > pfam/temp5
 
 #add in header
-echo -e "accession\tPFAM_hmm\tPFAM_description\tPfam_Evalue" | cat - pfam/temp5 > pfam/E_Pfam.tsv
-
-#combine with previous dataframe
-awk 'BEGIN{FS="\t";OFS="\t"}FNR==NR{a[$1]=$0;next}{print $0,a[$1]}' pfam/E_Pfam.tsv merge/temp_BCM.tsv > merge/temp_BCME.tsv
+echo -e "accession\tPFAM_hmm\tPFAM_description\tPfam_Evalue" | cat - pfam/temp5 > pfam/D_Pfam.tsv
 
 #control lines
-wc -l merge/*
+wc -l pfam/D_Pfam.tsv
 
 #clean up
 rm pfam/temp*
@@ -1001,13 +1009,10 @@ LC_ALL=C join -a1 -e'-' -t $'\t' -j1 -o 0,1.2,2.2,2.4 <(LC_ALL=C sort FileLists/
 LC_ALL=C join -a1 -1 3 -2 1 -e'-' -t $'\t' -o1.1,0,2.11,2.13,1.4  <(LC_ALL=C sort -k3 TIGRs/temp) <(LC_ALL=C sort -k1 $tigr_mapping)| LC_ALL=C  sort > TIGRs/temp3
 
 #add header
-echo -e "accession\tTIRGR\tTIGR_description\tEC\tTIGR_Evalue" | cat - TIGRs/temp3 > TIGRs/F_TIGR.tsv
-
-#combine with previous data frame
-awk 'BEGIN{FS="\t";OFS="\t"}FNR==NR{a[$1]=$0;next}{print $0,a[$1]}' TIGRs/F_TIGR.tsv merge/temp_BCME.tsv > merge/temp_BCMEF.tsv
+echo -e "accession\tTIRGR\tTIGR_description\tTIGR_EC\tTIGR_Evalue" | cat - TIGRs/temp3 > TIGRs/E_TIGR.tsv
 
 #control lines
-wc -l merge/*
+wc -l TIGRs/E_TIGR.tsv
 
 #clean up
 rm TIGRs/temp*
@@ -1047,13 +1052,10 @@ LC_ALL=C join -a1  -j1 -e'-' -t $'\t' -o 0,2.2,2.4 <(LC_ALL=C sort FileLists/1_B
 LC_ALL=C join -a1  -1 2 -2 1 -e'-' -t $'\t' -o 1.1,1.2,1.3,2.2 <(LC_ALL=C sort -k2 CAZYmes/temp3) <(LC_ALL=C sort $cazy_mapping) | LC_ALL=C sort  > CAZYmes/temp4
 
 #add in headers
-echo -e "accession\tCAZy\tCAZy_evalue\tDescription" | cat - CAZYmes/temp4 > CAZYmes/G_CAZy.tsv
-
-#combine with previous dataframe
-awk 'BEGIN{FS="\t";OFS="\t"}FNR==NR{a[$1]=$0;next}{print $0,a[$1]}' CAZYmes/G_CAZy.tsv merge/temp_BCMEF.tsv > merge/temp_BCMEFG.tsv
+echo -e "accession\tCAZy\tCAZy_evalue\tCAZy_Description" | cat - CAZYmes/temp4 > CAZYmes/F_CAZy.tsv
 
 #control lines
-wc -l merge/*
+wc -l CAZYmes/F_CAZy.tsv
 
 #clean up
 rm CAZYmes/temp*
@@ -1085,19 +1087,18 @@ sort -t$'\t' -k12,12gr -k11,11g TransporterDB/All_vs_TPDB.tsv | sort -t$'\t' --s
 LC_ALL=C join -a1  -j1 -e'-' -t $'\t' -o 0,2.2,2.11 <(LC_ALL=C sort FileLists/1_Bins_to_protein_list.txt) <(LC_ALL=C sort TransporterDB/temp)  | LC_ALL=C sort  > TransporterDB/temp3
 
 #merge with mapping file
-LC_ALL=C join -a1  -1 2 -2 1 -e'-' -t $'\t' -o 1.1,1.2,1.3,2.3 <(LC_ALL=C sort -k2 TransporterDB/temp3) <(LC_ALL=C sort -k1 $transporter_mapping) | LC_ALL=C sort  > TransporterDB/temp4
+#no good mapping file existing yet, so we won't run this
+#LC_ALL=C join -a1  -1 2 -2 1 -e'-' -t $'\t' -o 1.1,1.2,1.3,2.2 <(LC_ALL=C sort -k2 TransporterDB/temp3) <(LC_ALL=C sort -k1 $transporter_mapping |  uniq -u) | LC_ALL=C sort  > TransporterDB/temp4
 
 #add in headers
-echo -e "accession\tTCBD_ID\tTCBD_evalue\tTCBD_description" | cat - TransporterDB/temp4 > TransporterDB/I_TPDB.tsv
-
-#combine with previous dataframe
-awk 'BEGIN{FS="\t";OFS="\t"}FNR==NR{a[$1]=$0;next}{print $0,a[$1]}' TransporterDB/I_TPDB.tsv merge/temp_BCMEFG.tsv > merge/temp_BCMEFGHI.tsv
+echo -e "accession\tTCBD_ID\tTCBD_evalue\tTCBD_description" | cat - TransporterDB/temp3 > TransporterDB/G_TPDB.tsv
 
 #control lines
-wc -l merge/*
+wc -l TransporterDB/G_TPDB.tsv
 
 #clean up
 rm TransporterDB/temp*
+
 ```
 
 
@@ -1128,13 +1129,10 @@ LC_ALL=C join -a1  -j1 -e'-'  -t $'\t' -o 0,2.2,2.3,2.11,2.12 <(LC_ALL=C sort Fi
 LC_ALL=C join -a1 -1 2 -2 1 -e'-' -t $'\t' -o1.1,0,2.2,1.4  <(LC_ALL=C sort -k2  HydDB/temp2) <(LC_ALL=C sort -k1 $hyd_mapping)  | LC_ALL=C  sort > HydDB/temp3
 
 #add in headers
-echo -e "accession\tHydDB\tDescription\tHydDB_evalue" | cat - HydDB/temp3 > HydDB/J_HydDB.tsv
-
-#combine with previous dataframe
-awk 'BEGIN{FS="\t";OFS="\t"}FNR==NR{a[$1]=$0;next}{print $0,a[$1]}' HydDB/J_HydDB.tsv merge/temp_BCMEFGHI.tsv > merge/temp_BCMEFGHIJ.tsv
+echo -e "accession\tHydDB\tDescription\tHydDB_evalue" | cat - HydDB/temp3 > HydDB/H_HydDB.tsv
 
 #control lines
-wc -l merge/*
+wc -l HydDB/H_HydDB.tsv
 
 #clean up
 rm HydDB/temp*
@@ -1142,19 +1140,19 @@ rm HydDB/temp*
 
 
 
-## IPRscan --> done
+## IPRscan
 
 InterPro provides functional analysis of proteins by classifying them into families and predicting domains and important sites, such as transmembrane motives (TMs) or signal proteins.
 
 :::{.callout-note}
 
-Both IPRscan and the Diamonds search against NCBI_nr will take quite some time. While you are waiting for this: <br/><br/>
+Both IPRscan and the Diamonds search against NCBI_nr will take quite some time and are best run on laplace. Therefore, don't run this during the workshop but feel free to try this on your own.
 
-Continue with the step **Modify final dataframe** and instead of using merge/temp_BCMEFGHIJKL.tsv  use the file merge/temp_BCMEFGHIJ.tsv in the first step. Follow through this section, download the table and have a look at what you got. 
+An example batch script can be found in the script folder, the name is `interproscan.sh`.
 :::
 
 
-### genome cleanup
+### Genome cleanup
 
 IPRscan does not like to deal with ``*`` in the protein files, which is used for stop codons. If we work with programs that don't recognize ``*``, we should remove this symbol first.
 
@@ -1183,7 +1181,7 @@ Possible settings to change:
 mkdir IPRscan
 
 #split files --> 2069 proteins were split into 3 files
-python $python_scripts/Split_Multifasta.py -m faa/Prokka/All_Genomes_clean_interproscan.faa -n 1000
+python $script_folder/Split_Multifasta.py -m faa/Prokka/All_Genomes_clean_interproscan.faa -n 1000
 
 #move files into a better location
 mkdir split_faa
@@ -1213,7 +1211,7 @@ rm single_files/File*
 cd ..
 
 #clean up fasta header so that it is exactly the same as the accession ID in the interproscan results
-python $python_scripts/parse_IPRdomains_vs2_GO_2_ts_sigP.py -s faa/Prokka/All_Genomes_clean.faa -i IPRscan/Concat_results/All_bins_bins_iprscan-results.tsv -o IPRscan/All_bins_bins_iprscan-results_parsed.tsv
+python $script_folder/parse_IPRdomains_vs2_GO_2_ts_sigP.py -s faa/Prokka/All_Genomes_clean.faa -i IPRscan/Concat_results/All_bins_bins_iprscan-results.tsv -o IPRscan/All_bins_bins_iprscan-results_parsed.tsv
 
 #remove issue with spaces
 sed 's/ /_/g' IPRscan/All_bins_bins_iprscan-results_parsed.tsv | LC_ALL=C  sort > IPRscan/temp.txt
@@ -1222,13 +1220,10 @@ sed 's/ /_/g' IPRscan/All_bins_bins_iprscan-results_parsed.tsv | LC_ALL=C  sort 
 awk -F'\t' -v OFS="\t"  '{print $1, $2,$3,$4, $5, $8, $9}' IPRscan/temp.txt > IPRscan/temp2
 
 #add header
-echo -e "accession\tIPR\tIPRdescription\tIPR_PFAM\tIPR_PFAMdescription\tTMHMM\tSignalP" | cat - IPRscan/temp2 > IPRscan/K_IPR.tsv
-
-#combine with previous data frame
-awk 'BEGIN{FS="\t";OFS="\t"}FNR==NR{a[$1]=$0;next}{print $0,a[$1]}' IPRscan/K_IPR.tsv merge/temp_BCMEFGHIJ.tsv > merge/temp_BCMEFGHIJK.tsv
+echo -e "accession\tIPR\tIPRdescription\tIPR_PFAM\tIPR_PFAMdescription\tTMHMM\tSignalP" | cat - IPRscan/temp2 > IPRscan/I_IPR.tsv
 
 #control lines
-wc -l merge/*
+wc -l IPRscan/I_IPR.tsv
 
 #clean up
 rm IPRscan/temp*
@@ -1262,7 +1257,7 @@ diamond blastp -q faa/Prokka/All_Genomes_clean.faa --more-sensitive --evalue 1e-
 awk -F'\t' -v OFS="\t" '{ print $1, $5, $6, $11, $12, $14, $15 }'  NCBI_NR/All_NCBInr.tsv | sed 's/ /_/g' > NCBI_NR/temp
 
 #Parse Diamnond Results
-python $python_scripts/parse_diamond_blast_results_id_taxid.py -i FileLists/AllProteins_list.txt -d NCBI_NR/temp -o NCBI_NR/temp2
+python $script_folder/parse_diamond_blast_results_id_taxid.py -i FileLists/AllProteins_list.txt -d NCBI_NR/temp -o NCBI_NR/temp2
 
 #rm header
 sed 1d NCBI_NR/temp2 > NCBI_NR/temp3
@@ -1283,56 +1278,25 @@ awk -F'\t' -v OFS='\t' '{split($2,a,"<"); print $1, a[1], $3, $4, $5}' NCBI_NR/t
 LC_ALL=C join -a1 -1 5 -2 1 -e'-' -t $'\t'  -o1.1,1.2,1.3,1.4,1.5,2.2  <(LC_ALL=C sort -k5  NCBI_NR/temp6a) <(LC_ALL=C sort -k1 ~/../spang_team/Databases/NCBI_taxonomy/Jul2019/taxonomy5.txt ) | LC_ALL=C  sort > NCBI_NR/temp7
 
 #add in header
-echo -e "accession\tTopHit\tE_value\tPecID\tTaxID\tTaxString" | cat - NCBI_NR/temp7 > NCBI_NR/L_Diamond.tsv
-
-#combine with previous dataframe
-awk 'BEGIN{FS="\t";OFS="\t"}FNR==NR{a[$1]=$0;next}{print $0,a[$1]}' NCBI_NR/L_Diamond.tsv merge/temp_BCMEFGHIJK.tsv > merge/temp_BCMEFGHIJKL.tsv
+echo -e "accession\tTopHit\tE_value\tPecID\tTaxID\tTaxString" | cat - NCBI_NR/temp7 > NCBI_NR/J_Diamond.tsv
 
 #control lines
-wc -l merge/*
+wc -l NCBI_NR/J_Diamond.tsv
 
 #clean up
 rm NCBI_NR/temp*
 ```
 
 
-
-# Sidenote
-
-The step-by-step addition of the individual dataframes can get rather tedious esp. if you need to run things over again.
-We will not do this in this tutorial but there are other means to merge several files with a common column, which you might want to explore and for which we could write a small python script later on.
-
-```{python}
-from functools import reduce
-reduce(lambda x,y: pd.merge(x,y, on='Col1', how='outer'), [df1, df2, df3])
-```
-
-
-
-
-
-# Modify final dataframe
+# Combine the individual dataframes
 
 Now, lets cleanup the final dataframe and then we made it!
 
-Basically, we do several cosmetic steps. I.e. for each database search we get a column with the accessionID, in the second step, we remove the duplicated columns to slim the data down.
-
 ```{bash}
-#duplicate first column and add new header for this column
-awk 'BEGIN{FS="\t";OFS="\t"}{print $1,$0}' merge/temp_BCMEFGHIJKL.tsv | sed '1s/accession/for_merge/' > merge/temp_0.tsv
+python3 $script_folder/merge_df.py */[A-Z]_*tsv accession Annotations.txt
 
-#rm redundant headers and reconstruct accession ID
-awk 'BEGIN{FS="\t";OFS="\t"}NR==1{for(x=1;x<=NF;x++)if($x!="accession")l[x]++;}{for(i=1;i<=NF;i++)if(i in l)printf (i==NF)?$i"":$i"\t";printf "\n"}' merge/temp_0.tsv > merge/temp_1.tsv
-
-#change column name
-awk 'BEGIN{FS="\t";FS="\t"; OFS="\t"}{if(NR==1) $1="accession"} {print $0 }' merge/temp_1.tsv > merge/Annotations.txt
-
-#control first 50 columns
-head -50 merge/Annotations.txt > merge/temp_2.tsv
-
-#clean up
-rm merge/temp_[0-9].tsv
-gzip merge/*tsv
+#control that the number of rows is correct: 2070
+wc -l Annotations.txt
 ```
 
 
