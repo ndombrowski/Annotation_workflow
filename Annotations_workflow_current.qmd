@@ -30,22 +30,21 @@ engine: knitr
 
 # Introduction
 
-The goal of this tutorial is to teach students how to annotate proteins from genomes. Therefore, we will:
+The goal of this tutorial is to teach students how to annotate proteins from genomes and is part of the NIOZ bioinformatic workshop. However, if you are interested in the topic feel free to check out the code as well as all required tools and databases are referenced.
+
+Specifically, we will:
 
 - download two genomes from NCBI  
 - annotate these genomes using several databases such as the COGs, arCOGS, KOs, PFAM, ...
 - combine the results into one comprehensive table
 
-If you already have proteins for your genome of interest, you do not need to do the first steps. You can either start with the mapping file part (which runs prokka for gene calling and includes some bash steps to add summary statistics, such as the bin id, contig name, contig length to the protein files) or if you already have protein files you can start at the step 'do the annotations'. The only thing you might want to generate is a file that lists all the proteins you are working with.
-
 **General comments**
 
 - A lot of programs in this workflow use for loops or GNU parallel to speed things up. While this might not make so much sense for only two genomes, if you work with thousands of files this becomes very useful. 
-- For most annotation steps we can use of several CPUs. For this tutorial we only use few CPUs but this should be adjusted according to the available resources you have available. More on how to check resources can be found in the [Unix tutorial](https://github.com/ndombrowski/Unix_tutorial)
+- For most annotation steps we can use of several CPUs. For this tutorial we only use few CPUs but this can be adjusted according to the available resources you have available. More on how to check resources can be found in the [Unix tutorial](https://github.com/ndombrowski/Unix_tutorial)
 - This script uses a lot of AWK for parsing. If you want to have some more insights into how to use AWK we also have a [AWK tutorial](https://github.com/ndombrowski/AWK_tutorial) available.
 - Once you have the annotation table, we provide an [R tutorial here](https://github.com/ndombrowski/R_tutorial) that gives an example how to summarize the data.
-- The individual database searches might take a bit (esp. the interproscan and the diamond search against the NCBI database). 
-- We will provide all intermediate data for you in a repository so you can have a look at what kind of data is generated.
+- The individual database searches might take a while to run (esp. the interproscan and the diamond search against the NCBI database) so if you run the full workflow have patience
 
 :::{.callout-note}
 Whenever we ask a question the code solution will be hidden.  
@@ -55,13 +54,13 @@ You can show the code by pressing on \<Click me to see an answer\>.
 
 # General
 
-Below you find a list of the used programs. If you want to run this pipeline, please install the listed Custom scripts and databases can be found in a [Zenodo repository](https://zenodo.org/deposit/6489670).
+Below you find a list of the used programs. If you want to run this pipeline outside of the bioinformatics workshop on your own servers, please install the necessary tools and download any Custom scripts and databases from the [Zenodo repository](https://zenodo.org/deposit/6489670).
 
 **General notice for people interested in eukaryotic genomes:**
 
-This tutorial is designed specifically with prokaryotic genomes in mind but can be used for for eukaryotic proteins as well. This especially is easy if you already have proteins for your genomes of interest. If you do not have such files beware that the tool we use for protein-calling, prokka, is specific for prokaryotic genomes. Tools for identifying eukaryotic proteins are, among others, [Augustus](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1160219/) for single genomes or [MetaEuk](https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-020-00808-x) for metagenomes.
+This tutorial is designed specifically with prokaryotic genomes in mind but can be used for eukaryotic proteins as well. This especially is easy if you already have proteins for your genomes of interest. If you do not have such files beware that the tool we use for protein-calling, prokka, is specific for prokaryotic genomes. Tools for identifying eukaryotic proteins are, among others, [Augustus](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1160219/) for single genomes or [MetaEuk](https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-020-00808-x) for metagenomes.
 
-Something to keep in mind with the used databases is that these were often generated using only archaeal and/or bacterial genomes. Only of a few of the databases used here, such as the KOhmms, also including eukaryotic genomes. A good alternative to add are the [KOGs](https://pubmed.ncbi.nlm.nih.gov/14759257/) that are specifically designed for eukaryotes. The most recent profiles provided by EggNOG can be found [here](http://eggnog5.embl.de/#/app/downloads). 
+Something to keep in mind with the used databases is that these were often generated using only archaeal and/or bacterial genomes. Only a few of the databases used here, such as the KO database, also includes eukaryotic genomes. A good alternative to check out are the [KOGs](https://pubmed.ncbi.nlm.nih.gov/14759257/) that are specifically designed for eukaryotes. The most recent profiles provided by EggNOG can be found [here](http://eggnog5.embl.de/#/app/downloads). 
 
 
 
@@ -92,16 +91,15 @@ Databases (and mapping files) used in the current version can be downloaded from
 6. HydDB: downloaded form HydDB webserver in July 2020 from [here](https://services.birc.au.dk/hyddb/browser/)
 7. COGs: downloaded from NCBI October 2020 from  [here](ftp://ftp.ncbi.nlm.nih.gov/pub/COG/COG2020/)
 8. TransporterDB: downloaded from TCDB April 2021 [here](http://www.tcdb.org)
-9. ncbi_nr (maintained and downloaded by Alejandro Abdala Asbun). Last update was done on August 2021
+9. ncbi_nr (maintained and downloaded by Alejandro Abdala Asbun). The last update was done on August 2021. For more details on downloading the data on your own check out [this resource](https://www.ncbi.nlm.nih.gov/books/NBK569850/). Additionally, `prot.accession2taxid.gz` was downloaded from [here](https://ftp.ncbi.nih.gov/pub/taxonomy/accession2taxid/). Additionally, since the nr database was converted into a diamond database with `blastdbcmd -entry all -db nr/nr -out all.nr.masqued.fasta  -line_length 10000000 -ctrl_a` followed by `diamond makedb --in all.nr.masqued.fasta  --db diamond/nr --taxonmap prot.accession2taxid.gz` 
 10. ArCOGs: downloaded in 2019 and available [here](https://ftp.ncbi.nih.gov/pub/wolf/COGs/arCOG/) (update date: 2018)
 
 
-Note to self: Dates need to be updated!
 
 
 ## External scripts needed
 
-Custom scripts used in the current version can be downloaded from [Zenodo] (https://zenodo.org/deposit/6489670) and or [Github](https://github.com/ndombrowski/Annotation_workflow).
+Custom scripts used in the current version can be downloaded from [Zenodo] (https://zenodo.org/deposit/6489670) and [Github](https://github.com/ndombrowski/Annotation_workflow).
 
 **python**
 
@@ -118,19 +116,19 @@ Custom scripts used in the current version can be downloaded from [Zenodo] (http
 
 ## Define variables
 
-Notice: If you have done the assembly and binning tutorials, you can see that we do things a bit differently here. Since for the annotations we work with a lot of different databases, there are two ways how to deal with a lot of files in different locations: 
+Notice: If you have done the assembly and binning tutorials that we provide as well, you can see that we do things a bit differently here. When annotating genomes, we use a lot of different databases and there are two ways how to deal with a lot of files that might be found in different locations: 
 
 (a) we can add the path for each database into the code itself  
-(b) we can define variables and store the file paths inside these variables
+(b) we can define variables that store the paths at the beginning of our workflow
 
 Especially if you work with collaborators it often is easier to use the second option, as you just have to adjust the paths in one spot.
 
-***Instructions:***
+**Instructions:**
 
-- Change the first variable, the wdir, to the path were you want to work from and change the paths for the databases according to where you downloaded the databases.
+- Change the first variable, the wdir, to the path were you want to work from and change the paths for the databases according to where you downloaded the databases and mapping files.
 - The two last lines of code are needed for the software prokka and are specific for the system the script was written on. Adjust according to how prokka is setup in your system.
 
-For people following the tutorial outside of the NIOZ bioinfo workshop on their own servers. The necessary databases and scripts can be downloaded from [zenodo](https://zenodo.org/record/6489670#.ZCQaB9BBxD8).
+For people following the tutorial outside of the NIOZ bioinformatics workshop on their own servers. The necessary databases and scripts can be downloaded from [zenodo](https://zenodo.org/record/7784978#.ZCVtc9BBxD8).
 
 
 ```{bash} 
@@ -182,9 +180,9 @@ export PERL5LIB=/export/lv1/public_perl/perl5/lib/perl5
 Let's first go to our working directory and make a new folder for the Annotation tutorial.
 
 :::{.callout-note}
-Below you see how we use our variables, i.e. we use the path stored in the $wdir variable to go to our working folder. If you want to use the code but are on another server or want to use a different folder, you don't have to change anything in the code below.
+Below you see how we use our variables, i.e. we use the path stored in the `wdir` variable to go to our working folder. If you want to use the code but are on another server or want to use a different folder, you don't have to change anything in the code below. Instead there is only a single section were another user has to adapt the code keeping the rest of the code more stable.
 
-Therefore, environmental variables can make it easier to adapt our workflow to changing circumstances. For example, if we need to change the location of our input data, we can update the environmental variable for the input data path rather than having to update each script individually.
+Therefore, environmental variables can make it easier to adapt our workflow to changing circumstances. For example, if we need to change the location of our input data, we can update the environmental variable for the input data path rather than having to update the path at different spots in the workflow individually.
 :::
 
 
@@ -197,11 +195,14 @@ mkdir Annotations
 cd Annotations
 ```
 
+
 # Prepare genomes of interest
 
 In this workflow we will work with 2 genomes that we download from NCBI but the steps can easily be adjusted for your own genomes. You could also work with the bins we have assembled and binned in the previous workflows, if you feel comfortable with the command line feel free to use those instead.
 
-First, we will download two archaeal genomes from NCBI and rename them a bit to avoid issues with the workflow. The bins from the previous workflows (inside `../Binning/4_FinalBins/renamed`) already have a good header and should be ready to use in case you want to repeat the workflow with those genomes.
+First, we will download two archaeal genomes from NCBI and rename them to avoid issues with the workflow. The bins from the previous workflows (inside `../Binning/4_FinalBins/renamed`) already have a good header and should be ready to use in case you want to repeat the workflow with those genomes.
+
+**First a word on the importance of good file names and sequence headers**
 
 After we have downloaded the 2 genomes from NCBI the file name and file header should look something like this:
 
@@ -209,42 +210,45 @@ After we have downloaded the 2 genomes from NCBI the file name and file header s
 
 We can see that both the file name and file header are long and has a lot of symbols UNIX might have trouble with (brackets, spaces, dots...) and generally, something to watch out for when naming files is:
 
-- Have short but descriptive file names and file headers. I.e. if we look at the header of the NCBI genomes you will see the header is rather long, so it is useful to condense it.  
+- Have short but descriptive file names and file headers. I.e. if we look at the header of the NCBI genomes you will see the header is rather long and has unneccessary information for our purposes (i.e. genomic). Therefore we want to make it shorter.  
 
-- Avoid extra symbols (space, comma, semicolon, quotes, brackets) as these can easily result in unwanted behavior. I.e. a very simple naming could only include two symbols:
+- Avoid extra symbols (especially avoid using spaces, commas, semicolons, quotes or brackets) as these can easily result in unwanted behavior. I.e. a very simple naming could only include two symbols:
 
   - underscores, `_` , for everything where we normally would use a space
   - minus symbol  `-`  for key information that we might want to separate later (i.e. genome name and protein ID)  
 
 Another useful thing is to add information into the headers that allow us to concatenate multiple genomes and afterwards still know from what genome a sequence came from. Therefore, we recommend to:
 
-  - Add the genome name into the fasta header and use a unique delimiter to separate it from the contig id. That way you can concatenate your genomes and afterwards still know from what genome a contig came from
+- Add the genome name into the fasta header and use a unique delimiter to separate it from the contig id. That way you can concatenate your genomes and afterwards still know from what genome a contig came from
 - have a consistent way to separate the genome and protein ID across different analyses. In phylogenies its very common to concatenate several genes/proteins from individual genomes and for this it is useful to remove the proteinID from the fasta header.
 
 ```{bash}
-#make folders in which we store the genomes
+#make folders to store our genomes in
 mkdir fna
 mkdir fna/renamed
 
-#download genomes from NCBI using wget
+#download genomes from NCBI
 wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/008/085/GCA_000008085.1_ASM808v1/GCA_000008085.1_ASM808v1_genomic.fna.gz
 wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/017/945/GCA_000017945.1_ASM1794v1/GCA_000017945.1_ASM1794v1_genomic.fna.gz
 
-#unzip files and check that we downloaded 2 files
+#unzip files
 gzip -d *gz
+
+#confirm that we have as many files as we expect: 2
 ls -l *.fna
 
 #shorten the file name by cutting everything away after the dot
 for f in *.fna; do mv $f "${f/.*}".fna; done
 
-#check the file name again to see if the previous command worked
+#check the file name and see if it changed
 ls -l *.fna
 
-#check how the header looks --> we have a long name and a lot of symbols we do not want, lets remove these
+#check how the header looks 
+#--> we see that we have a long name and a lot of symbols that we do not want, lets remove these 
 head GCA_000008085.fna 
 
 #shorten the fasta headers by removing everything after the space
-#we move the file with the changed header into the fna folder
+#we also move the file with the changed header into the fna folder
 for f in *.fna; do cut -d " " -f1  $f > fna/${f}; done
 head fna/GCA_000008085.fna 
 
@@ -267,10 +271,11 @@ The cleaned up files can be found in `fna/renamed` and file names should look so
 ### The steps above work fine but what if we have hundreds of genomes that we want to download from NCBI?
 
 :::{.callout-warning}
-
 Below we have some hidden, alternative code.
 
-If you deal a lot with genomes from NCBI and you want to have a file that links a ncbi taxonomy id to a tax string. This information can be useful if you work with a genome of interest, such as E.coli, you might want to include several closely related genomes as reference in your analysis and NCBI is an excellent resource providing you with a multitude of genomes as well as metadata.
+If you deal a lot with genomes from NCBI and you want to have a file that links a NCBI taxonomy id to a tax string. For example the NCBI taxonomy ID 7 is connected to this taxonomic information: `Bacteria,Proteobacteria,Alphaproteobacteria,Rhizobiales,Xanthobacteraceae,Azorhizobium,Azorhizobium_caulinodans` . The names between brackets refer to different taxonomic ranks: Domain, Phylum, Class, Order, Family, Genus and Species.
+
+This information can be useful if you work with a genome of interest, such as E.coli, and if you might want to include several closely related genomes as reference in your analysis and NCBI is an excellent resource providing you with a multitude of genomes as well as metadata. The taxonomy string in this example can help you to more easily find related genomes
 
 The code is not yet fully implemented for people working outside the NIOZ but the code below should give you enough information to get you started.
 
@@ -283,22 +288,21 @@ To explore the code, click on `Click me to look at the code` to see the code.
 
 Notice: 
 
-- The file that links the taxonomy ID with the taxa string (lineages-2020-12-10.csv) was generated with ncbitax2lin (instructions added below)
+- The file that links the taxonomy ID with the taxa string (lineages-2020-12-10.csv) was generated with [ncbitax2lin](https://github.com/zyxue/ncbitax2lin) (instructions added below)
 - this part of the workflow was set up to run at servers at the NIOZ and the paths need to be adjusted to work on your system
 
-The first part of this workflow is to get a list of all available archaeal (or bacterial) genomes from NCBI and add a taxa string into the file we downloaded. 
-
+The first part of this workflow is to get a list of all available archaeal and bacterial genomes from NCBI and add a taxonomic string into the file we downloaded. 
 
 ```{bash}
 #prepare some folders
 mkdir ncbi_genomes
 cd ncbi_genomes
 
-#get a list of all avail. archaeal genomes
+#get a list of all avail. microbial genomes
 wget https://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_genbank.txt
 ```
 
-This file includes a list of all (archaeal and bacterial) genomes available at NCBI and relevant metadata such as the project ID, taxonomy ID, species name, download link for individual genome files etc.
+This file includes a list of all genomes available at NCBI and relevant metadata such as the project ID, taxonomy ID, species name, download link for individual genome files etc.
 
 Next, we will clean the file a bit and since the species name might not be informative enough (i.e. we might want to know to what phylum a species belongs), we want to add the full taxonomy string in.
 
@@ -320,9 +324,9 @@ echo -e "taxid\taccession\tbioproject\tbiosample\twgs\trefseq_category\tspeciesI
 cd ..
 ```      
 
-In this file you can just look for the genomes you are interested in. You can subset for lineages of interest by selection specific groups via their taxonomy and you might run CheckM as well to select them based on their genome stats.
+In `assembly_summary_archaea_Dec2020_tax.txt` you can easily search for the genomes you are interested in. For example, you can subset for lineages of interest by selection specific groups via their taxonomy and you might run CheckM as well to select them based on their genome stats.
 
-Once you have your genomes selected that you are interested in you then can copy the ftp_links into a document called `get_genomes.txt` via nano and then do some small changes to the file with sed. Afterwards you can download all the genomes from NCBI.
+Once you have your genomes selected that you are interested in you then can copy the ftp_links into a document called `get_genomes.txt` via nano and then do some small changes to the file with sed. Afterwards you can download all the genomes from NCBI using wget.
 
 ```{bash}
 # extend path to be able to download the genomes
@@ -334,7 +338,7 @@ for next in $(cat get_genomes_v2.txt); do wget  "$next"; done
 
 Once you have the genomes, you can clean the names as suggested above and continue with the steps below.
 
-In case you want to generate the csv file that links the ncbi taxID to taxstring, which includes the phylum, class, order, etc information, this is the workflow (you will need to download [ncbitax2lin](https://github.com/zyxue/ncbitax2lin)):
+In case you want to generate the csv file that links the NCBI taxID to a taxonomic string, which includes the phylum, class, order, etc information, this is the workflow (you will need to download [ncbitax2lin](https://github.com/zyxue/ncbitax2lin)):
 
 ```{bash}
 #change to the directory in which we installed ncbitax2lin
@@ -412,15 +416,16 @@ Now that we have the genomes organized, lets identify the coding regions and cal
 
 Notice:
 
-- For Prokka we have some specific setups that are needed for Prokka to run on the servers this workflow was written for. If you are on your own system adjust accordingly.(the export functions are part of the start of the script, were we define all the additional environmental variables).
-- Our genomes are archaeal, if you have other genomes change the **--kingdom Archaea** part below. This setting has no major differences for calling proteins but the Prokka annotations might slightly change.
-- Prokka is not designed to work with eukaryotic genomes, an alternative to look into for eukaryotes is for example Augustus.
+- Our genomes are from archaea, if you have other genomes change the **--kingdom Archaea** part below. This setting generates no major differences when calling proteins but the Prokka annotations might slightly change.
+- Prokka is not designed to work with eukaryotic genomes, if you work with eukaryotic genomes an alternative tool to look into is for example Augustus.
 - Prokka does very quick and dirty annotations, these are good for a first glimpse into what you have but in our experience there can be several issues, so use them with caution.
+- Similarly, no database for annotating proteins is perfect. This is why we use mutliple databases in our workflow and compare results to be able to spot miss-annotated proteins more easily (more on that in later last section)
 
 
 ### Run prokka
 
-[Prokka](https://github.com/tseemann/prokka): a tool for rapid prokaryotic genome annotation [(Seeman et al., 2014)](https://pubmed.ncbi.nlm.nih.gov/24642063/).
+[Prokka](https://github.com/tseemann/prokka) is a tool for rapid prokaryotic genome annotation [(Seeman et al., 2014)](https://pubmed.ncbi.nlm.nih.gov/24642063/).
+
 
 ```{bash}
 #prepare new directories to store our data
@@ -446,17 +451,37 @@ We can see that prokka gives a unique protein ID and adds an annotation to the f
 
 Other than the protein faa file, Prokka generates several additional output files. These include:
 
-![](C:/Users/ndmic/WorkingDir/Notebooks/Pictures/prokka.png){width=100% fig-align="left"}
-Additonally, prokka does not only call proteins but also identifies tRNAs and tries to annotate proteins protein. The whole workflow is summarized in the image below:
+![](C:/Users/ndmic/WorkingDir/Notebooks/Pictures/prokka.png){width=80% fig-align="left"}
+Additionally, prokka does not only call proteins but also identifies tRNAs and tries to annotate proteins. The whole workflow is summarized in the image below:
 
 ![](C:/Users/ndmic/WorkingDir/Notebooks/Pictures/prokka2.png){width=100% fig-align="left"}
 
+:::{.callout-note}
+
+**A small piece of advice for running things more efficiently**
+
+As you have seen above and in the following code we often use for loops to automatically run a tool multiple times on the same input files. Depending on the analysis done this can take a lot of time. If your system permits, a great alternative is GNU parallel.
+
+More specifically, instead of running the two prokka runs after each other with:
+
+```{bash}
+for sample in `cat FileLists/GenomeList`; do prokka fna/renamed/${sample}.fna --outdir faa/Prokka/${sample} --prefix $sample --kingdom Archaea --addgenes --force --increment 10 --compliant --centre UU --cpus 2 --norrna --notrna ; done
+```
+
+Instead, we could run 2 prokka runs in parallel with GNU parallel.
+
+```{bash}
+parallel -j2 'i={}; prokka fna/renamed/${i}.fna --outdir fna/renamed/${i} --prefix ${i} --kingdom Archaea --addgenes --force --increment 10 --compliant --centre UU --cpus 2 --norrna --notrna' ::: `cat FileLists/GenomeList`
+```
+
+:::
 
 
 ### Clean faa header and combine genomes
 
-If we look at the fasta headers of the newly generated files, we see that the header is not very descriptive. I.e. we have something like this:   
-``>CALJACFG_00010 ATP-dependent DNA helicase Hel308``.<br/><br/>
+If we look again at the protein sequences headers of the newly generated files, we see that the header is not ideal yet. For example, the header should look something like this:   
+``>CALJACFG_00010 ATP-dependent DNA helicase Hel308``.  
+
 This header is very long and uses a lot of extra symbols (a space, and a minus symbol, which we already use for other purposes). Therefore, we first want to clean things up a bit.
 
 Additionally, since for the following workflow we want to concatenate the two genomes, i.e. merge the two files into one, it is useful to add the genome name into the fasta header before merging the files. 
@@ -467,23 +492,25 @@ This is optional, but it is useful to use a special delimiter to later separate 
 #go into the prokka folder
 cd faa/Prokka/
 
-#organize files
+#make a new folder in which we want to store our renamed gneomes
 mkdir renamed
+
+#organize our original files
 cp GCA*/*faa .
 
-#add the filename into the fasta header
+#add the filename into the fasta header and store them in our new folder
 for i in *faa; do awk '/>/{sub(">","&"FILENAME"-");sub(/\.faa/,x)}1' $i > renamed/$i; done
 
 #control if this worked 
 head renamed/*faa
 
-#cleanup temp files
+#remove old files
 rm -f *faa
 
 #concatenate files
 cat renamed/*faa > All_Genomes.faa
 
-#clean the header/shorten it by removing everything after the first space
+#clean the header and shorten it by removing everything after the first space
 cut -f1 -d " "  All_Genomes.faa > All_Genomes_clean.faa
 
 #check if that worked 
@@ -492,7 +519,7 @@ head All_Genomes_clean.faa
 #go back to the wdir
 cd ../..
 
-#make a blast db out of concat genomes (we need this whenever we want to run blast)
+#make a blast db out of concatenated genomes (we need this whenever we want to run blast)
 makeblastdb -in faa/Prokka/All_Genomes_clean.faa  -out faa/All_Genomes_clean   -dbtype prot -parse_seqids
 ```
 
@@ -504,8 +531,10 @@ Now our file header should look something like this:
 
 # If you work with your own genomes
 
+This is a short reminder for people who already have their own protein files and want to start with the annotations right away:
+
 - Ideally have not only the protein ID but also the genome ID sequence header
-- Make sure the file header is concise and does not have ANY spaces and that ideally uses a '-' (or any other unique delimiter) to separate the binID from the protein ID
+- Make sure the file header is concise and does not have ANY spaces and that ideally uses a '-' (or any other unique delimiter) to separate the genome ID from the protein ID
 - If you have a concise header + the bin ID in the header, it is easy to concatenate the protein sequences of your genomes into one single file and still easily know from what genome the sequence originally came from
 
 More specifically you want to:
@@ -521,16 +550,16 @@ More specifically you want to:
 
 
 
-# Make a mapping file with all relevant genome info
+# Make a mapping file with all relevant genome info {#sec-mapping_file}
 
 Now that our files are ready we first want to make a table with the basic stats (i.e. contig length, contig gc, protein length, ...).
 
 
 ## Get contig stats
 
-Prokka has the habit to rename the fasta header. I.e. the original contig name is renamed. I.e. in our example a header of the fna might look like this `>GCA_000008085-AE017199.1` while a protein on that contig might be named like this `GCA_000008085-CALJACFG_00010` in the faa file. Therefore, it is hard to link from what contig the proteins originally came from. 
+Prokka has the habit to rename the fasta header. Therefore, it is not straightforward to say from what contig the protein originally came from. For example a header from the contigs (i.e. the fna file) might look like this `>GCA_000008085-AE017199.1` while a protein on that contig might be named like this `GCA_000008085-CALJACFG_00010` in the faa file. 
 
-The following workflow below generates a mapping file that links the original contig name with the prokka contig name. Beware the workflow is a bit convulted since the original contig ID `AE017199` is stored nowhere in the prokka output files.
+The following workflow below generates a mapping file that links the original contig name with the prokka contig name. Beware the workflow is a bit convoluted since the original contig ID `AE017199` is stored nowhere in the prokka output files and we need it to improvise a bit to generate the information.
 
 The goal is to generate a file with this information:
 
@@ -545,7 +574,7 @@ The goal is to generate a file with this information:
 
 **Comment if working with your own genomes:**  
 
-If working with your own genomes, esp. step 4 can be problematic. This step will ONLY work if your fasta header includes the binID and the contig ID that are separated with a `-`. If you do not have both pieces of info, have extra symbols symbol or if that symbol is somewhere else in the filename/header this part of the workflow will very likely not work (without needing adjustments).  
+If working with your own genomes this will only apply to you if you called proteins with prokka. Additionally, this workflow depends on a consistent naming of the sequence headers.Specifically, this step will ONLY work if your fasta header includes the binID and the contig ID separated with a `-`. If you do not have both pieces of info, have extra symbols symbol or if that symbol is somewhere else in the filename/header this part of the workflow will very likely not work (without needing adjustments).  
 
 If your file headers look different, it will be easiest skip this step and do the following:  
 (A) generate the file FileLists/1_Bins_to_protein_list.txt in the section **Prepare list that links proteins with binIDs**  
@@ -561,19 +590,19 @@ mkdir contig_mapping
 #calculate the length and gc for each contig
 for i in `cat FileLists/GenomeList`; do  python $script_folder/fasta_length_gc.py fna/renamed/${i}.fna; done > contig_mapping/temp1
 
-#make a separate column for the binID and proteinID and give a numbering to the contigs
+#make a separate column for the genome ID and proteinID and give a numbering to the contigs
 awk 'BEGIN{OFS="\t"}{split($1,a,"-"); print a[2], a[1], ++count[a[1]], $2, $3}' contig_mapping/temp1 > contig_mapping/Contig_Old_mapping.txt
 
-#check file. header should have --> contigID, binID, contig NR, GC, contig length
+#check file: the header should have --> contigID, binID, contig NR, GC, contig length
 head contig_mapping/Contig_Old_mapping.txt
 
 #cleanup temp files
 rm contig_mapping/*temp*
 
-#create file for merging with prokka contigIDs. Here, we add the binID with the contig number together to recreate the prokka contig name
+#create file for merging with prokka contigIDs. Here, we add the genome ID with the contig number together to recreate the prokka contig name
 awk 'BEGIN{OFS="\t"}{print $2"_contig_"$3,$0}' contig_mapping/Contig_Old_mapping.txt > contig_mapping/Contig_Old_mapping_for_merging.txt
 
-#check file: prokka contig name, prokka binID, binID, contig NR, GC, contig length
+#check file: prokka contig name, prokka genome ID, genome ID, contig NR, GC, contig length
 head contig_mapping/Contig_Old_mapping_for_merging.txt
 ```
 
@@ -582,10 +611,9 @@ In the file we see the contig name, contig GC and contig length. Since the two g
 ![](C:/Users/ndmic/WorkingDir/Notebooks/Pictures/Annotations10.png){width=100% fig-align="left"}
 
 
-## Prepare list that links proteins with binIDs
+## Prepare list that links proteins with binIDs {#sec-protein_list}
 
-Now, we want to generate a file that lists all proteins we are working and a second column with the bin ID. 
-So we want two columns: proteinID (accession), binID. 
+Now, we want to generate a file that lists all proteins we are working and a second column with the bin ID. So we want two generate with two columns: proteinID (i.e. accession), genome ID 
 
 ```{bash}
 #get list of protein accession numbers
@@ -603,7 +631,7 @@ head FileLists/AllProteins_list.txt
 #remove temp files
 rm temp*
 
-#Modify protein list to add in a column with binID
+#Modify protein list to add in a column with genome ID
 awk -F'\t' -v OFS='\t' '{split($1,a,"-"); print $1, a[1]}' FileLists/AllProteins_list.txt | LC_ALL=C sort > FileLists/1_Bins_to_protein_list.txt
 
 #check file content: we now have the accession and the binID
@@ -613,17 +641,19 @@ head FileLists/1_Bins_to_protein_list.txt
 wc -l FileLists/1_Bins_to_protein_list.txt
 ```
 
-We now have a list with 2,069 proteins and the respective genome each protein belongs to. The first few lines of the file should look something like this:
+We now have a small table that lists all our 2,069 proteins and the respective genome each protein belongs to. The first few lines of the file should look something like this:
 
 ![](C:/Users/ndmic/WorkingDir/Notebooks/Pictures/Annotations11.png){width=80% fig-align="left"}
+:::{.callout-note}
 
-Throughout the workflow (or whenever generating your own pipeline), check that the number of protein stays consistent.
+Throughout the workflow (or whenever generating your own pipeline), check that the number of protein stays consistent this is a useful sanity check to ensure that the code does what you expect it to.
 
-Additionally, while running things for the first time it is always good to check the files we generate to get a better feeling on:
+Additionally, while running things for the first time it is always good to check the file content that was generated with `nano` or `less` to get a better grasp on:
 
-- what is happening at specific points in the script
+- What is happening at specific points in the script
 - Find potential bugs
 
+:::
 
 
 ## Prepare a file with prokka annotations & Lengths & other genome info
@@ -641,7 +671,7 @@ for f in faa/Prokka/*/*gbk.gz; do echo $f >> FileLists/list_of_gzips; done
 wc -l FileLists/list_of_gzips
 
 #create a summary file based on the gbk file
-#lists the binname, contig name, contig length, proteinID, prokka annotation
+#lists the genome ID, contig name, contig length, proteinID, prokka annotation
 python $script_folder/Parse_prokka_for_MAGs_from_gbk-file_v2.py -i FileLists/list_of_gzips -t FileLists/Contig_Protein_list.txt
 
 #check output of the script: Prokka binID, Prokka contig ID, contig length, gene start, gene stop, strand, accession, prokka annotation
@@ -655,7 +685,7 @@ The output should look something like this
 Next, we want to have a list that assigns the new ID prokka gives to a genome to the old genome name we got from NCBI:
 
 ```{bash}
-#make prokka to binId mapping file
+#make prokka to genome I mapping file
 awk 'BEGIN{OFS="\t"}{split($1,a,"-"); print a[2],$2}' FileLists/1_Bins_to_protein_list.txt | sed 's/_[0-9]*\t/\t/g' | sort | uniq > FileLists/Prokka_to_BinID.txt
 
 #check file: Prokka bin ID, old bin ID
@@ -667,7 +697,7 @@ head FileLists/Prokka_to_BinID.txt
 Finally, we can merge everything together.
 
 ```{bash}
-#link old to new binIDs
+#link old to new genome ID
 awk 'BEGIN{FS="\t";OFS="\t"}FNR==NR{a[$1]=$0;next}{print $0,a[$1]}' FileLists/Prokka_to_BinID.txt FileLists/Contig_Protein_list.txt | awk 'BEGIN{FS="\t";OFS="\t"}{print $1,$10,$2,$2,$3,$4,$5,$6,$7,$8}'  > temp_Bin_Contig_Protein_list.txt
 
 #add in extra column for contig nr
@@ -677,7 +707,7 @@ awk -F'\t' -v OFS='\t' 'gsub("[A-Za-z0-9]*_","",$4)' temp_Bin_Contig_Protein_lis
 head FileLists/Bin_Contig_Protein_list.txt
 
 #merge with old contig IDs
-#headers: accession, BinID, newContigID, oldContigID, mergeContigID,ContigLengthNew, LengthContigOld, GC,ProteinID, protein start, protein end, protein strand, prokka annotation
+#headers: accession, genome ID, new ContigID, old ContigID, merged ContigID,new Contig Length, old Contig Length, GC,ProteinID, protein start, protein end, protein strand, prokka annotation
 awk 'BEGIN{FS="\t";OFS="\t"}FNR==NR{a[$1]=$0;next}{print $0,a[$1]}' contig_mapping/Contig_Old_mapping_for_merging.txt FileLists/Bin_Contig_Protein_list.txt | awk 'BEGIN{FS="\t";OFS="\t"}{print $3"-"$7,$3,$4,$13,$1,$6,$17,$16,$7,$8,$9,$10,$11 }' >  FileLists/Bin_Contig_Protein_list_merged.txt
 
 #check file and number of proteins in file
@@ -712,9 +742,9 @@ The file stored in `FileLists/B_GenomeInfo.txt` should look something like this:
 
 
 
-# Do the annotations
+# Do the annotations {#sec-start_annotations}
 
-All searches work have a similar workflow:
+All searches that follow below have a similar workflow:
 
 - Run the search (with hmmer, diamond, blast, etc.)
 - For each protein, make sure we have just one unique hit (usually we select the best hit for each protein using the best e-value or bitscore). I.e. a single protein might be similar to several dehydrogenases and we only keep the best hit.
@@ -729,7 +759,11 @@ Once we have run our searches against several different databases, we merge all 
 
 We will add basic information on the different databases and search algorithms in the last section of this tutorial, so if you want more details check there.
 
+:::{.callout-note}
+Depending on the size of your dataset (and the database) these searches might take a while to run. 
 
+Therefore, when you run this on your own genomes adjust the number of CPUs accordingly and depending on what system you run this on consider submitting it as a batch job or inside a screen in case your server connection gets disrupted.
+:::
 
 ## COG search
 
@@ -740,18 +774,12 @@ Possible settings to change:
 - number of CPUs 
 - e-value threshold 
 
-:::{.callout-note}
-Depending on the size of your dataset this might take a while to run. 
-
-Therefore, adjust the number of CPUs accordingly and depending on what system you run this on consider submitting it as a batch job or inside a screen in case your server connection gets disrupted.
-:::
-
 ```{bash} 
-#1. Setup directories
+#Setup directories
 mkdir NCBI_COGs
 mkdir merge
 
-#2. run hmmsearch against all COGs 
+#run hmmsearch against all COGs 
 hmmsearch --tblout NCBI_COGs/sequence_results.txt -o NCBI_COGs/results_all.txt --domtblout NCBI_COGs/domain_results.txt --notextw --cpu $cpus $cog_db faa/Prokka/All_Genomes_clean.faa
 
 #format the full table and only select hits above a certain e-value
@@ -777,11 +805,11 @@ wc -l NCBI_COGs/A_NCBI_COGs.tsv
 rm NCBI_COGs/temp*
 ```
 
-In step 2, hmmsearch will generate multiple outputs (for details on the individual data found in these tables [see chaper 5, page 45](http://eddylab.org/software/hmmer3/3.1b2/Userguide.pdf)) of the HMMER manual:
+In step 2, hmmsearch will generate multiple outputs (for details on the individual data found in these tables [see chaper 5, page 45](http://eddylab.org/software/hmmer3/3.1b2/Userguide.pdf) of the HMMER manual):
 
 1. The --tblout output option produces the target hits table. The target hits table consists of one line for each different query/target comparison that met the reporting thresholds, ranked by decreasing statistical significance (increasing E-value).
 2. The --domtblout option produces the domain hits table. There is one line for each domain. There may be more than one domain per sequence. T
-3. A table with the raw output, including alignments (-o option). Notice: This file can get rather large and if you have space issues, its not essential and can be deleted.
+3. A table with the raw output, including alignments (-o option). Notice: This file can get rather large and if you have space issues, its not essential and can be deleted or you don't even have to use the `-o` option.
 
 After parsing our table that is stored in `NCBI_COGs/A_NCBI_COGs.tsv` contains the protein accession, COG ID, COG description and e-value. If other relevant data is available, in the case of the COGs individual COGs are sorted into individual pathways, this information is added as well:
 
@@ -799,10 +827,14 @@ The commands to check this are:
 
 ```{bash}
 head NCBI_COGs/sequence_results.txt
-head NCBI_COGs/sequence_results_red_e_cutoff.txt 
+head NCBI_COGs/sequence_results_red_e_cutoff.txt
+
+#we can also check the row numbers
+#we see that we go from 17888 to 11066 rows
+wc -l NCBI_COGs/sequence_results*
 ```
 
-We can see that we removed some columns from the second table and that we excluded any rows starting with a `#`
+Additionally, we can see that we removed some columns from the second table and that we excluded any rows starting with a `#`
 
 </details>
 
@@ -850,19 +882,18 @@ less -S arcogs/B_arcogs.tsv
 rm arcogs/temp*
 ```
 
-Now, we have in our full table not only the information for the COGs but also the arCOGs. This way we can go to every individual protein and check whether they hit to the same protein.
+Now, we we have a second table with information for the arCOGs. If we would merge the two tables already here, we could check whether each protein is assigned to the same annotation when using different databases.
 
 ![](C:/Users/ndmic/WorkingDir/Notebooks/Pictures/Annotations16.png){width=100% fig-align="left"}
+Again, it is useful to use more then one database to analyse your genome since no database is perfect and having several databases to compare the results allows us to judge how confident we are with a certain annotation.
 
-In general it is useful to use more then one database to analyse your genome since no database is perfect and having several databases to compare the results allows us to judge how confident we are with a certain annotation.
-
-Unfortunately, they is no consistent naming convention. I.e. in the table above you can see for CALJACFG_00080 that the COG link this protein to a tRNA_A37_methylthiotransferase and the arCOG links this protein to a 2-methylthioadenine_synthetase but despite the different names both names actually are for the same enzyme.
+Unfortunately, you also see that there is no consistent naming convention. I.e. in the table above you can see for CALJACFG_00080 that the COG links this protein to a tRNA_A37_methylthiotransferase and the arCOG links this protein to a 2-methylthioadenine_synthetase but despite the different names both refer to the same enzyme.
 
 **Question**
 
 We now have 3 annotations for each protein from prokka, the arcogs and the COGs. This is a good time to look at whether or not we get consistent annotations across all these annotation results.  
 
-As an exercise look at the gene with ID 00260 for the genome GCA_000008085 and check if all 3 databases give consistent annotations. If not, which annotation do you trust most? Since the prokka generates different BinIDs for each run, I can not give you the exact accession, but using grep to search for the genome and protein ID should be enough for you to find the protein.
+As an exercise look at the gene with ID 00260 for the genome GCA_000008085 and check if all 3 databases give consistent annotations. If not, which annotation do you trust most? Since the prokka generates different genome IDs for each run, I can not give you the exact accession, but using grep to search for the genome and protein ID should be enough for you to find the protein.
 
 <details>
     <summary>Click me to see an answer</summary>
@@ -873,7 +904,7 @@ You can search for the term as follows:
 #find the prokka annotation
 grep 'GCA_000008085-.*00260'  FileLists/B_GenomeInfo.txt
 
-#find the hit in our tables
+#find the hit in our arcog and cog annotations
 grep 'GCA_000008085-.*00260' */[A-Z]_*.tsv
 ```
 
@@ -1138,10 +1169,10 @@ rm HydDB/temp*
 
 ## IPRscan
 
-InterPro provides functional analysis of proteins by classifying them into families and predicting domains and important sites, such as transmembrane motives (TMs) or signal proteins.
+InterPro provides a functional analysis of proteins by classifying them into families and predicting domains and important sites, such as transmembrane motives (TMs) or signal proteins.
 
 :::{.callout-note}
-Both IPRscan and the Diamonds search against NCBI_nr will take quite some time and are best run on laplace. Therefore, don't run this during the workshop but feel free to try this on your own.
+Both IPRscan and the Diamonds search against NCBI_nr will take quite some time and are best run on the HPC (i.e. laplace). Therefore, we won't run the two following analyses during the workshop but feel free to try this on your own.
 
 An example batch script can be found in the script folder, the name is `interproscan.sh`.
 :::
@@ -1161,10 +1192,10 @@ cd ../..
 Before running IPRscan, we can split our big concatenated file into several smaller files.
 Then we can use parallel GNU to speed things up. 
 
-We set the number of processes to run with ``-j``. Always make sure that you adjust this depending on the avail resources. 
+We set the number of processes to run with ``-j``. Always make sure that you adjust this depending on the available resources. 
 
 
-### run iprscan
+### run IPRscan
 
 Possible settings to change:
 
@@ -1234,7 +1265,9 @@ rm -f IPRscan/temp*
 
 
 
-## Diamond against NCBI NR
+## Diamond search against NCBI NR
+
+The NCBI nr database is a protein sequence database maintained by the National Center for Biotechnology Information (NCBI). nr stands for non-redundant and means that it contains unique protein sequences that have been compiled from various sources, including GenBank, RefSeq, PDB, and Swiss-Prot.
 
 Possible settings to change:
 
@@ -1245,7 +1278,7 @@ Possible settings to change:
 Notice:
 
 - This step can take quite some time.
-- the NCBI nr database is constantly updated (and very large), which is why we are not providing the database with the other files. For information on how to download ncbi_nr check out the information [here](https://www.ncbi.nlm.nih.gov/books/NBK569856/).
+- the NCBI nr database is constantly updated (and very large), which is why we are not providing the database with the other files in our repository. For information on how to download ncbi_nr check out the information [here](https://www.ncbi.nlm.nih.gov/books/NBK569856/).
 
 ```{bash}
 #make folder
@@ -1302,6 +1335,9 @@ python3 $script_folder/merge_df.py */[A-Z]_*tsv accession Annotations.txt
 
 #control that the number of rows is correct: 2070
 wc -l Annotations.txt
+
+#close to conda environment
+conda deactivate
 ```
 
 
