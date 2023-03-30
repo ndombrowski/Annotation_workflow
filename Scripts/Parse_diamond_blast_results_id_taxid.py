@@ -30,7 +30,7 @@ import argparse
 #ARGPARSE; Open and read files
 ##########################################################################################
 
-parser = argparse.ArgumentParser(description='Create file with one gene per line listing top hits')
+parser = argparse.ArgumentParser(description='Create file with one gene per line listing all corresponding IPR domains, pfam domains and EC-numbers, (information extracted from IPR-result file')
 parser.add_argument('-i','--input', metavar='TXT', required = True, help='Protein accessions of query sequences')
 parser.add_argument('-d','--input2', metavar='tsv', required = True, help='Blast results using diamond')
 parser.add_argument('-t','--input3', metavar='txt', required = False, help='if applicable: Taxa to be excluded, one taxon per line')

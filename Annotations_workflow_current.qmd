@@ -33,8 +33,8 @@ engine: knitr
 The goal of this tutorial is to teach students how to annotate proteins from genomes. Therefore, we will:
 
 - download two genomes from NCBI  
-- annotate them using several databases such as the COGs, arCOGS, KOs, PFAM, ...
-- combine the results into one comprehensive table.
+- annotate these genomes using several databases such as the COGs, arCOGS, KOs, PFAM, ...
+- combine the results into one comprehensive table
 
 If you already have proteins for your genome of interest, you do not need to do the first steps. You can either start with the mapping file part (which runs prokka for gene calling and includes some bash steps to add summary statistics, such as the bin id, contig name, contig length to the protein files) or if you already have protein files you can start at the step 'do the annotations'. The only thing you might want to generate is a file that lists all the proteins you are working with.
 
@@ -101,24 +101,22 @@ Note to self: Dates need to be updated!
 
 ## External scripts needed
 
-Custom scripts used in the current version can be downloaded from [here] (https://zenodo.org/deposit/6489670).
-
-**perl**
-
-- length+GC.pl
+Custom scripts used in the current version can be downloaded from [Zenodo] (https://zenodo.org/deposit/6489670) and or [Github](https://github.com/ndombrowski/Annotation_workflow).
 
 **python**
 
+- fasta_length_gc.py
 - Parse_prokka_for_MAGs_from_gbk-file.py
 - Split_Multifasta.py
 - parse_IPRdomains_vs2_GO_2_ts_sigP.py
 - parse_diamond_blast_results_id_taxid.py
+- merge_df.py
+
 
 
 # Setup working environment
 
 ## Define variables
-
 
 Notice: If you have done the assembly and binning tutorials, you can see that we do things a bit differently here. Since for the annotations we work with a lot of different databases, there are two ways how to deal with a lot of files in different locations: 
 
@@ -170,11 +168,12 @@ arcog_mapping="/export/data01/databases/arCOG/arCOGs2019/ar14.arCOGdef18.nina.ta
 transporter_mapping="/export/data01/databases/tcdb/tcdb_definition.tsv"
 tigr_mapping="/export/data01/databases/tigr/hmm_PGAP_clean.tsv"
 
+#mapping file for ncbi taxonomy
+ncbi_tax_mapping="/export/lv3/scratch/bioinformatics_workshop/S12_annotations/databases/taxonomy5.txt"
+
 #Fix PERL5LIB PATH (required for using prokka on the NIOZ servers)
 export PERL5LIB=/export/lv1/public_perl/perl5/lib/perl5
 ```
-
-
 
 
 
@@ -183,12 +182,11 @@ export PERL5LIB=/export/lv1/public_perl/perl5/lib/perl5
 Let's first go to our working directory and make a new folder for the Annotation tutorial.
 
 :::{.callout-note}
-
 Below you see how we use our variables, i.e. we use the path stored in the $wdir variable to go to our working folder. If you want to use the code but are on another server or want to use a different folder, you don't have to change anything in the code below.
 
 Therefore, environmental variables can make it easier to adapt our workflow to changing circumstances. For example, if we need to change the location of our input data, we can update the environmental variable for the input data path rather than having to update each script individually.
-
 :::
+
 
 ```{bash}
 #go to your working directory
@@ -203,20 +201,20 @@ cd Annotations
 
 In this workflow we will work with 2 genomes that we download from NCBI but the steps can easily be adjusted for your own genomes. You could also work with the bins we have assembled and binned in the previous workflows, if you feel comfortable with the command line feel free to use those instead.
 
-First, we will download two archaeal genomes from NCBI and rename them a bit to avoid issues with the workflow. The bins from the previous workflows (inside ../Binning/4_FinalBins/renamed) already have a good header and should be ready to use in case you want to repeat the workflow with those genomes.
+First, we will download two archaeal genomes from NCBI and rename them a bit to avoid issues with the workflow. The bins from the previous workflows (inside `../Binning/4_FinalBins/renamed`) already have a good header and should be ready to use in case you want to repeat the workflow with those genomes.
 
 After we have downloaded the 2 genomes from NCBI the file name and file header should look something like this:
 
-![](C:/Users/ndmic/WorkingDir/Notebooks/Pictures/Annotations1b.png){width=100% fig-align="left"}
+![](C:/Users/ndmic/WorkingDir/Notebooks/Pictures/Annotations1b.png){width=80% fig-align="left"}
 
 We can see that both the file name and file header are long and has a lot of symbols UNIX might have trouble with (brackets, spaces, dots...) and generally, something to watch out for when naming files is:
 
-- Have short but descriptive file names and file headers. I.e. if we look at the header of the NCBI genomes you will see the header is rather long, so it is useful to condense it. <br/><br/>
+- Have short but descriptive file names and file headers. I.e. if we look at the header of the NCBI genomes you will see the header is rather long, so it is useful to condense it.  
 
 - Avoid extra symbols (space, comma, semicolon, quotes, brackets) as these can easily result in unwanted behavior. I.e. a very simple naming could only include two symbols:
 
   - underscores, `_` , for everything where we normally would use a space
-  - minus symbol  `-`  for key information that we might want to separate later (i.e. genome name and protein ID)<br/><br/>
+  - minus symbol  `-`  for key information that we might want to separate later (i.e. genome name and protein ID)  
 
 Another useful thing is to add information into the headers that allow us to concatenate multiple genomes and afterwards still know from what genome a sequence came from. Therefore, we recommend to:
 
@@ -465,7 +463,6 @@ Additionally, since for the following workflow we want to concatenate the two ge
 
 This is optional, but it is useful to use a special delimiter to later separate the genome from the protein name. Therefore we add the file name and separate it with the old sequence header with a `-`.
 
-
 ```{bash}
 #go into the prokka folder
 cd faa/Prokka/
@@ -517,7 +514,6 @@ More specifically you want to:
   - generate a folder named `fna/renamed`
   - add the individual genomes in there
 
-
 (b) for the faa files:
   - generate the file in the folder `faa/Prokka`
   - concatenate the proteins from all your genomes of interest and name the file `All_Genomes_clean.faa`
@@ -547,22 +543,15 @@ The goal is to generate a file with this information:
 
 :::{.callout-note}
 
-**Comment if working with your own genomes:**<br/><br/>
+**Comment if working with your own genomes:**  
 
-If working with your own genomes, esp. step 4 can be problematic. This step will ONLY work if your fasta header includes the binID and the contig ID that are separated with a `-`. If you do not have both pieces of info, have extra symbols symbol or if that symbol is somewhere else in the filename/header this part of the workflow will very likely not work (without needing adjustments). 
-<br/><br/>
+If working with your own genomes, esp. step 4 can be problematic. This step will ONLY work if your fasta header includes the binID and the contig ID that are separated with a `-`. If you do not have both pieces of info, have extra symbols symbol or if that symbol is somewhere else in the filename/header this part of the workflow will very likely not work (without needing adjustments).  
 
-If your file headers look different, it will be easiest skip this step and do the following:<br/><br/>
-(A) generate the file FileLists/1_Bins_to_protein_list.txt in the section **Prepare list that links proteins with binIDs** <br/><br/>
-(B) continue with the step **Do the annotations**.  <br/><br/>
+If your file headers look different, it will be easiest skip this step and do the following:  
+(A) generate the file FileLists/1_Bins_to_protein_list.txt in the section **Prepare list that links proteins with binIDs**  
+(B) continue with the step **Do the annotations**.  
 (C) During the first annotation step with the COG database, ignore the step #combine with previous data frame and do `cp NCBI_COGs/A_NCBI_COGs.tsv merge/temp_A.tsv` to generate the first table.
 :::
-
-
-for i in `ls fna/v2/*fna`; do python  ~/../spang_team/Scripts/Others/fasta_length_gc.py ${i}; done > temp1
-
-#make a separate column for the binID and proteinID and give a numbering to the contigs
-awk '{split($1,a,"-"); print a[1], a[2], $2, $3, ++count[a[1]]}' temp1 > temp2
 
 
 ```{bash}
@@ -591,8 +580,6 @@ head contig_mapping/Contig_Old_mapping_for_merging.txt
 In the file we see the contig name, contig GC and contig length. Since the two genomes are complete genomes we only work with two contigs in total. If you work with MAGs this table will get much longer.
 
 ![](C:/Users/ndmic/WorkingDir/Notebooks/Pictures/Annotations10.png){width=100% fig-align="left"}
-
-
 
 
 ## Prepare list that links proteins with binIDs
@@ -628,7 +615,7 @@ wc -l FileLists/1_Bins_to_protein_list.txt
 
 We now have a list with 2,069 proteins and the respective genome each protein belongs to. The first few lines of the file should look something like this:
 
-![](C:/Users/ndmic/WorkingDir/Notebooks/Pictures/Annotations11.png){width=100% fig-align="left"}
+![](C:/Users/ndmic/WorkingDir/Notebooks/Pictures/Annotations11.png){width=80% fig-align="left"}
 
 Throughout the workflow (or whenever generating your own pipeline), check that the number of protein stays consistent.
 
@@ -650,12 +637,8 @@ gzip faa/Prokka/*/*gbk
 #make list for looping
 for f in faa/Prokka/*/*gbk.gz; do echo $f >> FileLists/list_of_gzips; done
 
-#control that the nr of files we have is correct
+#control that the nr of files we have is correct: 2
 wc -l FileLists/list_of_gzips
-
-'''
-We deal with 2 genomes
-'''
 
 #create a summary file based on the gbk file
 #lists the binname, contig name, contig length, proteinID, prokka annotation
@@ -680,7 +663,6 @@ head FileLists/Prokka_to_BinID.txt
 ```
 
 ![](C:/Users/ndmic/WorkingDir/Notebooks/Pictures/Annotations13.png){width=80% fig-align="left"}
-
 
 Finally, we can merge everything together.
 
@@ -762,7 +744,6 @@ Possible settings to change:
 Depending on the size of your dataset this might take a while to run. 
 
 Therefore, adjust the number of CPUs accordingly and depending on what system you run this on consider submitting it as a batch job or inside a screen in case your server connection gets disrupted.
-
 :::
 
 ```{bash} 
@@ -836,7 +817,6 @@ Possible settings to change:
 - number of CPUs (default = 2)
 - e-value threshold (default = 1e-3)
 
-
 ```{bash}
 #prepare folders
 mkdir arcogs
@@ -880,12 +860,28 @@ Unfortunately, they is no consistent naming convention. I.e. in the table above 
 
 **Question**
 
-We now have 3 annotations for each protein from prokka, the arcogs and the COGs.  
-Look at the gene with ID 00260 for the genome GCA_000008085 and check if all 3 databases give consistent annotations. If not, which annotation do you trust most?   
-Since the prokka generates different BinIDs for each run, I can not give you the exact accession, but using grep to search for the genome and protein ID should be enough for you to find the protein.
+We now have 3 annotations for each protein from prokka, the arcogs and the COGs. This is a good time to look at whether or not we get consistent annotations across all these annotation results.  
+
+As an exercise look at the gene with ID 00260 for the genome GCA_000008085 and check if all 3 databases give consistent annotations. If not, which annotation do you trust most? Since the prokka generates different BinIDs for each run, I can not give you the exact accession, but using grep to search for the genome and protein ID should be enough for you to find the protein.
 
 <details>
     <summary>Click me to see an answer</summary>
+
+You can search for the term as follows:
+
+```{bash}
+#find the prokka annotation
+grep 'GCA_000008085-.*00260'  FileLists/B_GenomeInfo.txt
+
+#find the hit in our tables
+grep 'GCA_000008085-.*00260' */[A-Z]_*.tsv
+```
+
+This should give you the following results:
+
+- Prokka: GCA_000008085-CALJACFG_00260 Sulfide-quinone reductase
+- A_NCBI_COGs.tsv:GCA_000008085-CALJACFG_00260  COG1252 NADH_dehydrogenase,_FAD-containing_subunit
+- GCA_000008085-CALJACFG_00260        arCOG01065      HcaD    NAD(FAD)-dependent_dehydrogenase
 
 [CALJACFG_00260 hits to sulfide-quinone reductase with prokka and to a NADH_dehydrogenase with the arcogs and the COGs. Generally, the e-values are pretty good with the last two databases, while prokka by default does not give us any score to judge the confidence of this hit. We therefore should be skeptical about the annotation as sulfide quinone reductase.
 
@@ -1145,7 +1141,6 @@ rm HydDB/temp*
 InterPro provides functional analysis of proteins by classifying them into families and predicting domains and important sites, such as transmembrane motives (TMs) or signal proteins.
 
 :::{.callout-note}
-
 Both IPRscan and the Diamonds search against NCBI_nr will take quite some time and are best run on laplace. Therefore, don't run this during the workshop but feel free to try this on your own.
 
 An example batch script can be found in the script folder, the name is `interproscan.sh`.
@@ -1187,13 +1182,20 @@ python $script_folder/Split_Multifasta.py -m faa/Prokka/All_Genomes_clean_interp
 mkdir split_faa
 mv File*.faa split_faa
 
-#iprscan: (interproscan-5.31-70.0)
-#"cite:Tange (2011): GNU Parallel - The Command-Line Power Tool, ;login: The USENIX Magazine, February 2011:42-47."
+#cp the batch script for running this job on an hpc
+#specifically adjust:
+#interproscan only works on no83-no89, so choose any of those
+##SBATCH --ntasks-per-node=30: Adjust this to the total nr of CPUs you need
+#-j3 : Adjust this according to how many jobs you want to run in parallel
+cp $script_folder/interproscan_run .
 
+#start job
+sbatch interproscan_run.sh
+
+#content of the script
+'''
 parallel -j3 'i={}; interproscan.sh -i $i -d IPRscan/ -appl TIGRFAM,SFLD,SUPERFAMILY,Gene3D,Hamap,Coils,ProSiteProfiles,SMART,CDD,PRINTS,ProSitePatterns,Pfam,ProDom,MobiDBLite,PIRSF,TMHMM -T IPRscan/temp --iprlookup --goterms -cpu 5' ::: split_faa/File*.faa
-
-#if parallel is not avail on your system, use a for-loop
-#for sample in split_faa/File*.faa; do  interproscan.sh -i $sample -d IPRscan/ -appl TIGRFAM,SFLD,SUPERFAMILY,Gene3D,Hamap,Coils,ProSiteProfiles,SMART,CDD,PRINTS,ProSitePatterns,Pfam,ProDom,MobiDBLite,PIRSF,TMHMM -T IPRscan/temp --iprlookup --goterms -cpu 5; done
+'''
 
 #Concat result files
 cd IPRscan
@@ -1206,7 +1208,7 @@ cat single_files/File*.faa.gff3 > Concat_results/All_bins_bins_iprscan-results.g
 cat single_files/File*.faa.tsv > Concat_results/All_bins_bins_iprscan-results.tsv
 
 #cleanup
-rm single_files/File*
+rm -f single_files/File*
 
 cd ..
 
@@ -1220,14 +1222,13 @@ sed 's/ /_/g' IPRscan/All_bins_bins_iprscan-results_parsed.tsv | LC_ALL=C  sort 
 awk -F'\t' -v OFS="\t"  '{print $1, $2,$3,$4, $5, $8, $9}' IPRscan/temp.txt > IPRscan/temp2
 
 #add header
-echo -e "accession\tIPR\tIPRdescription\tIPR_PFAM\tIPR_PFAMdescription\tTMHMM\tSignalP" | cat - IPRscan/temp2 > IPRscan/I_IPR.tsv
+echo -e "accession\tIPR\tIPRdescription\tIPR_PFAM\tIPR_PFAMdescription\tIPR_TMHMM\tIPR_SignalP" | cat - IPRscan/temp2 > IPRscan/I_IPR.tsv
 
-#control lines
+#control lines: 2070
 wc -l IPRscan/I_IPR.tsv
 
 #clean up
-rm IPRscan/temp*
-
+rm -f IPRscan/temp*
 ```
 
 
@@ -1256,7 +1257,7 @@ diamond blastp -q faa/Prokka/All_Genomes_clean.faa --more-sensitive --evalue 1e-
 #Select columns of interest in diamond output file
 awk -F'\t' -v OFS="\t" '{ print $1, $5, $6, $11, $12, $14, $15 }'  NCBI_NR/All_NCBInr.tsv | sed 's/ /_/g' > NCBI_NR/temp
 
-#Parse Diamnond Results
+#Parse Diamond Results
 python $script_folder/parse_diamond_blast_results_id_taxid.py -i FileLists/AllProteins_list.txt -d NCBI_NR/temp -o NCBI_NR/temp2
 
 #rm header
@@ -1275,7 +1276,7 @@ awk -F'\t' -v OFS='\t' '{split($5,a,";"); print $1, $2, $3, $4, a[1]}' NCBI_NR/t
 awk -F'\t' -v OFS='\t' '{split($2,a,"<"); print $1, a[1], $3, $4, $5}' NCBI_NR/temp6 > NCBI_NR/temp6a
 
 #merge with tax names
-LC_ALL=C join -a1 -1 5 -2 1 -e'-' -t $'\t'  -o1.1,1.2,1.3,1.4,1.5,2.2  <(LC_ALL=C sort -k5  NCBI_NR/temp6a) <(LC_ALL=C sort -k1 ~/../spang_team/Databases/NCBI_taxonomy/Jul2019/taxonomy5.txt ) | LC_ALL=C  sort > NCBI_NR/temp7
+LC_ALL=C join -a1 -1 5 -2 1 -e'-' -t $'\t'  -o1.1,1.2,1.3,1.4,1.5,2.2  <(LC_ALL=C sort -k5  NCBI_NR/temp6a) <(LC_ALL=C sort -k1 $ncbi_tax_mapping) | LC_ALL=C  sort > NCBI_NR/temp7
 
 #add in header
 echo -e "accession\tTopHit\tE_value\tPecID\tTaxID\tTaxString" | cat - NCBI_NR/temp7 > NCBI_NR/J_Diamond.tsv
@@ -1284,7 +1285,7 @@ echo -e "accession\tTopHit\tE_value\tPecID\tTaxID\tTaxString" | cat - NCBI_NR/te
 wc -l NCBI_NR/J_Diamond.tsv
 
 #clean up
-rm NCBI_NR/temp*
+rm -f NCBI_NR/temp*
 ```
 
 
@@ -1293,6 +1294,10 @@ rm NCBI_NR/temp*
 Now, lets cleanup the final dataframe and then we made it!
 
 ```{bash}
+#activate conda environment to run py3
+source ~/.bashrc.conda3
+
+#combine tables
 python3 $script_folder/merge_df.py */[A-Z]_*tsv accession Annotations.txt
 
 #control that the number of rows is correct: 2070
