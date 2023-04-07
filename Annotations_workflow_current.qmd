@@ -138,7 +138,7 @@ base_dir="/export/lv3/scratch/bioinformatics_workshop/Users/"
 wdir=${base_dir}/${user_name}
 
 #nr of cpus we generally want to use
-cpus=5
+cpus=2
 
 #location of some custom python and perl scripts
 export script_folder="/export/lv3/scratch/bioinformatics_workshop/S12_annotations/scripts/"
@@ -222,10 +222,32 @@ Another useful thing is to add information into the headers that allow us to con
 - Add the genome name into the fasta header and use a unique delimiter to separate it from the contig id. That way you can concatenate your genomes and afterwards still know from what genome a contig came from
 - have a consistent way to separate the genome and protein ID across different analyses. In phylogenies its very common to concatenate several genes/proteins from individual genomes and for this it is useful to remove the proteinID from the fasta header.
 
+
+:::{.callout-note}
+If you want to work with the files from the binning tutorial:
+
+Your files already have a header that is good to go, so you can simply move them from the Binning tutorial to the `fna/renamed` folder.
+
+```{bash}
+mkdir -p fna/renamed
+
+#create symbolic link
+ln -sf $(pwd)/../Binning/4_FinalBins/renamed/NIOZ1* fna/renamed
+
+#control that all bins are available
+ll fna/renamed/* | wc -l
+
+#control that the sequence header has the format: BinID-contigID
+head $(ls -1 fna/renamed//*fna | head -1)
+```
+:::
+
+
+## Download genomes from NCBI and cleanup
+
 ```{bash}
 #make folders to store our genomes in
-mkdir fna
-mkdir fna/renamed
+mkdir -p fna/renamed
 
 #download genomes from NCBI
 wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/008/085/GCA_000008085.1_ASM808v1/GCA_000008085.1_ASM808v1_genomic.fna.gz
@@ -245,17 +267,17 @@ ls -l *.fna
 
 #check how the header looks 
 #--> we see that we have a long name and a lot of symbols that we do not want, lets remove these 
-head GCA_000008085.fna 
+head $(ls -1 *fna | head -1)
 
 #shorten the fasta headers by removing everything after the space
 #we also move the file with the changed header into the fna folder
 for f in *.fna; do cut -d " " -f1  $f > fna/${f}; done
-head fna/GCA_000008085.fna 
+head $(ls -1 fna/*fna | head -1)
 
 #add the genome name into the header (this is useful if we want to concatenate a lot of genomes into one file)
 cd fna
 for i in *fna; do awk '/>/{sub(">","&"FILENAME"-");sub(/\.fna/,x)}1' $i > renamed/$i; done
-head renamed/GCA_000008085.fna 
+head $(ls -1 renamed/*fna | head -1)
 
 #remove intermediate files
 rm -f *fna
@@ -398,7 +420,7 @@ Let us start by making a file that lists all the genomes we are working with. Su
 mkdir FileLists
 
 #list our genomes of interest
-ls fna/* | sed 's/\.fna//g' | sed 's/fna\///g' > FileLists/GenomeList
+ls fna/renamed/* | sed 's/\.fna//g' | sed 's/fna\/renamed\///g' > FileLists/GenomeList
 
 #check content of file
 head FileLists/GenomeList
@@ -426,21 +448,20 @@ Notice:
 
 [Prokka](https://github.com/tseemann/prokka) is a tool for rapid prokaryotic genome annotation [(Seeman et al., 2014)](https://pubmed.ncbi.nlm.nih.gov/24642063/).
 
-
 ```{bash}
 #prepare new directories to store our data
 mkdir faa
 mkdir faa/Prokka
 
 #run prokka
-for sample in `cat FileLists/GenomeList`; do prokka fna/renamed/${sample}.fna --outdir faa/Prokka/${sample} --prefix $sample --kingdom Archaea --addgenes --force --increment 10 --compliant --centre UU --cpus 2 --norrna --notrna ; done
+for sample in `cat FileLists/GenomeList`; do prokka fna/renamed/${sample}.fna --outdir faa/Prokka/${sample} --prefix $sample --kingdom Archaea --addgenes --force --increment 10 --compliant --centre UU --cpus $cpus --norrna --notrna ; done
 
 #control number of faa files generated: 2
 #this should be the same as the original number of genomes
 ll faa/Prokka/*/*faa | wc -l
 
 #check how the faa header looks like
-head faa/Prokka/GCA_000008085/GCA_000008085.faa
+head $(ls -1 faa/Prokka/*/*faa | head -1)
 ```
 
 We have 2 genomes and the header of the first file should look something like this:
@@ -468,7 +489,7 @@ More specifically, instead of running the two prokka runs after each other with:
 for sample in `cat FileLists/GenomeList`; do prokka fna/renamed/${sample}.fna --outdir faa/Prokka/${sample} --prefix $sample --kingdom Archaea --addgenes --force --increment 10 --compliant --centre UU --cpus 2 --norrna --notrna ; done
 ```
 
-Instead, we could run 2 prokka runs in parallel with GNU parallel.
+Instead, we could run 2 prokka runs in parallel with GNU parallel. If we would have 1000 genomes and you could run 40 analyses in parallel that would make things even more efficient.
 
 ```{bash}
 parallel -j2 'i={}; prokka fna/renamed/${i}.fna --outdir fna/renamed/${i} --prefix ${i} --kingdom Archaea --addgenes --force --increment 10 --compliant --centre UU --cpus 2 --norrna --notrna' ::: `cat FileLists/GenomeList`
@@ -496,13 +517,13 @@ cd faa/Prokka/
 mkdir renamed
 
 #organize our original files
-cp GCA*/*faa .
+cp */*faa .
 
 #add the filename into the fasta header and store them in our new folder
 for i in *faa; do awk '/>/{sub(">","&"FILENAME"-");sub(/\.faa/,x)}1' $i > renamed/$i; done
 
 #control if this worked 
-head renamed/*faa
+head $(ls -1 renamed/*faa | head -1)
 
 #remove old files
 rm -f *faa
@@ -629,7 +650,7 @@ sed 's/>//g' temp2 > FileLists/AllProteins_list.txt
 head FileLists/AllProteins_list.txt 
 
 #remove temp files
-rm temp*
+rm -f temp*
 
 #Modify protein list to add in a column with genome ID
 awk -F'\t' -v OFS='\t' '{split($1,a,"-"); print $1, a[1]}' FileLists/AllProteins_list.txt | LC_ALL=C sort > FileLists/1_Bins_to_protein_list.txt
@@ -731,7 +752,7 @@ less -S FileLists/B_GenomeInfo.txt
 wc -l FileLists/B_GenomeInfo.txt
 
 #remove temp files
-rm temp*
+rm -f temp*
 
 ```
 
@@ -798,11 +819,14 @@ LC_ALL=C join -a1 -1 2 -2 1 -e'-' -t $'\t' -o1.1,0,2.3,2.2,2.5,1.3 <(LC_ALL=C so
 echo -e "accession\tCOG\tCOG_Description\tCOG_PathwayID\tCOG_Pathway\tCOG_evalue" | cat - NCBI_COGs/temp5 > NCBI_COGs/A_NCBI_COGs.tsv
 
 #check file
-less -S NCBI_COGs/A_NCBI_COGs.tsv
+head NCBI_COGs/A_NCBI_COGs.tsv
+
+#count the number of lines we have
+#this should be our number of proteins + 1 row for the header
 wc -l NCBI_COGs/A_NCBI_COGs.tsv
 
 #cleanup
-rm NCBI_COGs/temp*
+rm -f NCBI_COGs/temp*
 ```
 
 In step 2, hmmsearch will generate multiple outputs (for details on the individual data found in these tables [see chaper 5, page 45](http://eddylab.org/software/hmmer3/3.1b2/Userguide.pdf) of the HMMER manual):
@@ -874,12 +898,14 @@ LC_ALL=C join -a1 -1 2 -2 1 -e'-' -t $'\t' -o1.1,0,2.3,2.4,2.2,1.3 <(LC_ALL=C so
 #add in headers
 echo -e "accession\tarcogs\tarcogs_geneID\tarcogs_Description\tarcogs_Pathway\tarcogs_evalue" | cat - arcogs/temp5 > arcogs/B_arcogs.tsv
 
-#check what happened
+#control counts
 wc -l arcogs/B_arcogs.tsv
-less -S arcogs/B_arcogs.tsv
+
+#check what happened
+head arcogs/B_arcogs.tsv
 
 #clean-up
-rm arcogs/temp*
+rm -f arcogs/temp*
 ```
 
 Now, we we have a second table with information for the arCOGs. If we would merge the two tables already here, we could check whether each protein is assigned to the same annotation when using different databases.
@@ -954,11 +980,12 @@ awk  -v OFS='\t' '{ if ($4 > $5){ $7="high_score" }else{ $7="-" } print } ' KO_h
 #add header
 echo -e "accession\tKO_hmm\tKO_e_value\tKO_bit_score\tKO_bit_score_cutoff\tKO_Definition\tKO_confidence" | cat - KO_hmm/temp4 > KO_hmm/C_KO_hmm.tsv
 
-#control lines
+#control lines and content 
 wc -l KO_hmm/C_KO_hmm.tsv
+head KO_hmm/C_KO_hmm.tsv
 
 #clean up
-rm KO_hmm/temp*
+rm -f KO_hmm/temp*
 ```
 
 
@@ -997,11 +1024,12 @@ LC_ALL=C join -a1 -1 2 -2 1 -t $'\t' -e'-' -o1.1,0,2.5,1.4 <(LC_ALL=C sort -k2 p
 #add in header
 echo -e "accession\tPFAM_hmm\tPFAM_description\tPfam_Evalue" | cat - pfam/temp5 > pfam/D_Pfam.tsv
 
-#control lines
+#control lines and content
 wc -l pfam/D_Pfam.tsv
+head pfam/D_Pfam.tsv
 
 #clean up
-rm pfam/temp*
+rm -f pfam/temp*
 ```
 
 
@@ -1038,11 +1066,12 @@ LC_ALL=C join -a1 -1 3 -2 1 -e'-' -t $'\t' -o1.1,0,2.11,2.13,1.4  <(LC_ALL=C sor
 #add header
 echo -e "accession\tTIRGR\tTIGR_description\tTIGR_EC\tTIGR_Evalue" | cat - TIGRs/temp3 > TIGRs/E_TIGR.tsv
 
-#control lines
+#control lines and content
 wc -l TIGRs/E_TIGR.tsv
+head TIGRs/E_TIGR.tsv
 
 #clean up
-rm TIGRs/temp*
+rm -f TIGRs/temp*
 ```
 
 
@@ -1081,11 +1110,12 @@ LC_ALL=C join -a1  -1 2 -2 1 -e'-' -t $'\t' -o 1.1,1.2,1.3,2.2 <(LC_ALL=C sort -
 #add in headers
 echo -e "accession\tCAZy\tCAZy_evalue\tCAZy_Description" | cat - CAZYmes/temp4 > CAZYmes/F_CAZy.tsv
 
-#control lines
+#control lines and file content
 wc -l CAZYmes/F_CAZy.tsv
+head CAZYmes/F_CAZy.tsv
 
 #clean up
-rm CAZYmes/temp*
+rm -f CAZYmes/temp*
 ```
 
 
@@ -1122,10 +1152,10 @@ echo -e "accession\tTCBD_ID\tTCBD_evalue\tTCBD_description" | cat - TransporterD
 
 #control lines
 wc -l TransporterDB/G_TPDB.tsv
+head TransporterDB/G_TPDB.tsv
 
 #clean up
-rm TransporterDB/temp*
-
+rm -f TransporterDB/temp*
 ```
 
 
@@ -1158,11 +1188,12 @@ LC_ALL=C join -a1 -1 2 -2 1 -e'-' -t $'\t' -o1.1,0,2.2,1.4  <(LC_ALL=C sort -k2 
 #add in headers
 echo -e "accession\tHydDB\tDescription\tHydDB_evalue" | cat - HydDB/temp3 > HydDB/H_HydDB.tsv
 
-#control lines
+#control lines and content
 wc -l HydDB/H_HydDB.tsv
+head HydDB/H_HydDB.tsv
 
 #clean up
-rm HydDB/temp*
+rm -f HydDB/temp*
 ```
 
 
@@ -1218,7 +1249,7 @@ mv File*.faa split_faa
 #interproscan only works on no83-no89, so choose any of those
 ##SBATCH --ntasks-per-node=30: Adjust this to the total nr of CPUs you need
 #-j3 : Adjust this according to how many jobs you want to run in parallel
-cp $script_folder/interproscan_run .
+cp $script_folder/interproscan_run.sh .
 
 #start job
 sbatch interproscan_run.sh
@@ -1257,6 +1288,9 @@ echo -e "accession\tIPR\tIPRdescription\tIPR_PFAM\tIPR_PFAMdescription\tIPR_TMHM
 
 #control lines: 2070
 wc -l IPRscan/I_IPR.tsv
+
+#view file content 
+less -S IPRscan/I_IPR.tsv
 
 #clean up
 rm -f IPRscan/temp*
@@ -1317,6 +1351,9 @@ echo -e "accession\tTopHit\tE_value\tPecID\tTaxID\tTaxString" | cat - NCBI_NR/te
 #control lines
 wc -l NCBI_NR/J_Diamond.tsv
 
+#view file content
+head NCBI_NR/J_Diamond.tsv
+
 #clean up
 rm -f NCBI_NR/temp*
 ```
@@ -1336,6 +1373,10 @@ python3 $script_folder/merge_df.py */[A-Z]_*tsv accession Annotations.txt
 #control that the number of rows is correct: 2070
 wc -l Annotations.txt
 
+#view content of file
+#column allows to display the rows a bit cleaner allowing for easier reading
+column -t -s $'\t' Annotations.txt | less -S
+
 #close to conda environment
 conda deactivate
 ```
@@ -1343,26 +1384,26 @@ conda deactivate
 
 **Question/Homework --> Let's figure out what Igniccous is doing**
 
-- Download the table `Annotations.txt` to your personal computer using scp.
+- Download the table `Annotations.txt` to your personal computer using `scp`.
 - Compare the different annotations, have a look at how they differ.
 - Make one separate table for each of the two genomes
 - For Ingicoccus (GCA_000017945), copy the accession numbers and KO ids into a new file and upload or copy and paste them to the [KEGG mapper](https://www.genome.jp/kegg/mapper.html). Use this tool to get some first insights into the metabolic capacities of that organism. 
 
 Based on this try to answer:
 
-  - **Does Igni use glycolysis or gluconeogenesis (or both)?** <br/>
-  This question allows us to figure out whether our organism might use carbon sources like sugars (via glycolysis, if we have this we might look further into whether we have a fermenting organism) or uses acetyl-CoA to make their own sugars, which could be then used in other pathways (gluconeogenesis). <br/>
+  - **Does Igni use glycolysis or gluconeogenesis (or both)?**  
+  This question allows us to figure out whether our organism might use carbon sources like sugars (via glycolysis, if we have this we might look further into whether we have a fermenting organism) or uses acetyl-CoA to make their own sugars, which could be then used in other pathways (gluconeogenesis).  
 
-  - **Is Igni likely an anaerobic or aerobic organism?** <br/>
+  - **Is Igni likely an anaerobic or aerobic organism?**  
   This question can help us to decide what growth conditions we need and whether O2 is required for our organism to generate energy.
 
-  - **Is Ingi and autotroph or heterotroph?** <br/>
+  - **Is Ingi and autotroph or heterotroph?**  
   Again, this question is important if we want to know how to grow our organism, do we need to feed it sugars so that it grows, or can it grow on CO2. If it is involved in CO2 and/or methane cycling it might also have an impact in global carbon cycles.
 
-  - **Can Igni reduce sulfur?**  <br/>
+  - **Can Igni reduce sulfur?**  
   If Igni grows on sulfur, we could add sulfur to a potential growth medium. Plus, for the environmental side of things we want to look into lithotrophy and how organism in our environment are involved in nitrogen, sulfur, metal or hydrogen cycling.
 
-  - **If Igni reduces sulfur, what does it oxidize?** <br/>
+  - **If Igni reduces sulfur, what does it oxidize?**  
   Same as above.
 
 The Input for the website should look something like this:  
@@ -1392,10 +1433,9 @@ There are several things to check, but oxidative phosphorylation is a good start
 
 Answer for **Is Ingi and autotroph or heterotroph?**
 
-Igni is an autotroph that encodes the dicarboxylate-hydroxybutyrate cycle (big red circle highlights the genes of the pathway.<br/><br/>
-This one is a bit more tricky, since the malate dehydrogenase, 1.1.1.37, is absent if we look at the map (small red box).<br/>
-However, if we dig into the annotation tables, we can find the blast hit to WP_012123403.1 (likely gene ID 13020) hits to a malate dehydrogenase and we can see that most databases view the gene as a malate/lactate dehydrogenase (i.e. arCOG00246). Malate dehydrogenases are very easy to mix-up with lactate dehydrogenases and that happened here with the KO annotations. 
-<br/><br/>
+Igni is an autotroph that encodes the dicarboxylate-hydroxybutyrate cycle (big red circle highlights the genes of the pathway.  
+
+This one is a bit more tricky, since the malate dehydrogenase, 1.1.1.37, is absent if we look at the map (small red box). However, if we dig into the annotation tables, we can find the blast hit to WP_012123403.1 (likely gene ID 13020) hits to a malate dehydrogenase and we can see that most databases view the gene as a malate/lactate dehydrogenase (i.e. arCOG00246). Malate dehydrogenases are very easy to mix-up with lactate dehydrogenases and that happened here with the KO annotations.  
 
 As a general tip, if only a few genes of a pathway are lacking --> have a second look into the table and search the other annotations. If we have genes where its hard to distinguish between substrate specificity sometimes a tree might help or looking at the catalytic site of a protein, depending on how well studied our protein of interest is:
 
@@ -1403,22 +1443,31 @@ As a general tip, if only a few genes of a pathway are lacking --> have a second
 
 Answer for **Can Igni reduce sulfur? **
 
-Yes, Igni can reduce sulfur using K18367/arCOG01069, which encodes CoA-dependent NAD(P)H_sulfur_oxidoreductase [EC:1.8.1.18]. <br/><br/>
+Yes, Igni can reduce sulfur using K18367/arCOG01069, which encodes CoA-dependent NAD(P)H_sulfur_oxidoreductase [EC:1.8.1.18]. 
+
+
 This one is a bit tricky and something you do not find this hit looking at the pathway maps alone. 
 
+To find the issue with the maps: go to the metabolic pathway overview, click on show matched objects and search for K18367. You will see we will not find a hit here, but if we search for this KO in our table we can find it, so what is the issue?  
 
-To find the issue with the maps: go to the metabolic pathway overview, click on show matched objects and search for K18367. You will see we will not find a hit here, but if we search for this KO in our table we can find it, so what is the issue? <br/><br/>If we search for K18367 across the KEGG database, we find some info [here](https://www.genome.jp/dbget-bin/www_bget?ko:K18367). We first see that this enzyme is not linked to a pathway (and a problem of the pathway map tool) and also the explanation that this enzyme is involved in NAD(P)H-linked sulfur reduction. We can confirm this by showing that (a) this gene is similar to a characterized gene in Pyrococcus but also since we find sulfite transporters (i.e. arCOG02050/WP_011998105.1) which might be involved in getting the produced H2S outside of the cell.
+If we search for K18367 across the KEGG database, we find some info [here](https://www.genome.jp/dbget-bin/www_bget?ko:K18367). We first see that this enzyme is not linked to a pathway (and a problem of the pathway map tool) and also the explanation that this enzyme is involved in NAD(P)H-linked sulfur reduction. We can confirm this by showing that (a) this gene is similar to a characterized gene in Pyrococcus but also since we find sulfite transporters (i.e. arCOG02050/WP_011998105.1) which might be involved in getting the produced H2S outside of the cell.
 
 
 Answer for **If Igni reduces sulfur, what does it oxidize? **
 
-Igni gains energy by reduction of elemental sulfur to hydrogen sulfide using molecular hydrogen as the electron donor. <br/><br/>Again, this is not something the Kegg mapper will tell us. To figure this out we can again use different approaches: (a) search the literature and find out what related organisms do, i.e. Pyrococcus and see whether our organism has a similar gene set, (b) search our Annotation table for potential electron donors that might make sense and are also used by other S reducers. 
-<br/><br/>The second approach (and some background reading in most cases) will lead us to K06281 and K06282. These hit to a [NiFe]_Group_1g hydrogenase and we can check [here](https://services.birc.au.dk/hyddb/browser/class/nife-group-1g/) what exactly this hydrogenase typically is doing. We need to check this, because for hydrogenases it is sometimes tricky to say, whether they are involved energy reactions. If we check this specific example we find that it is involved in hydrogenotrophic respiration using sulfur as terminal electron acceptor, so perfect!
-<br/><br/>A word of warning, the HydDB for hydrogenases will never be perfect. So also here, for more uncertain hits it might make sense to build a tree for hydrogenases to see if we really have a 1g hydrogenase.
+Igni gains energy by reduction of elemental sulfur to hydrogen sulfide using molecular hydrogen as the electron donor. 
+
+Again, this is not something the Kegg mapper will tell us. To figure this out we can again use different approaches: 
+(a) search the literature and find out what related organisms do, i.e. Pyrococcus and see whether our organism has a similar gene set, 
+(b) search our Annotation table for potential electron donors that might make sense and are also used by other S reducers. 
+<
+
+The second approach (and some background reading in most cases) will lead us to K06281 and K06282. These hit to a [NiFe]_Group_1g hydrogenase and we can check [here](https://services.birc.au.dk/hyddb/browser/class/nife-group-1g/) what exactly this hydrogenase typically is doing. We need to check this, because for hydrogenases it is sometimes tricky to say, whether they are involved energy reactions. If we check this specific example we find that it is involved in hydrogenotrophic respiration using sulfur as terminal electron acceptor, so perfect!
+
+
+A word of warning, the HydDB for hydrogenases will never be perfect. So also here, for more uncertain hits it might make sense to build a tree for hydrogenases to see if we really have a 1g hydrogenase.
 
 </details>
-
-
 
 
 
@@ -1436,11 +1485,7 @@ We provide a R tutorial [here](https://github.com/ndombrowski/R_tutorial). This 
 
 ## Python magic
 
-This section will be extended once the author of this tutorial has time (o.O). However, once you have to deal with 5000 genomes python becomes much more attractive to do the parsing esp. compared to RStudio. 
-
-
-
-
+This section will be extended once the author of this tutorial has time. However, once you have to deal with 5000 genomes python becomes much more attractive to do the parsing esp. compared to RStudio. 
 
 
 
