@@ -141,7 +141,7 @@ wdir=${base_dir}/${user_name}
 cpus=2
 
 #location of some custom python and perl scripts
-export script_folder="/export/lv3/scratch/bioinformatics_workshop/S12_annotations/scripts/"
+export script_folder="/export/lv3/scratch/bioinformatics_workshop/S11b_annotations/scripts/"
 
 #locations of the individual databases
 cog_db="/export/data01/databases/cogs/hmms/NCBI_COGs_Oct2020.hmm"
